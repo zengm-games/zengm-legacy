@@ -1,0 +1,231 @@
+<div data-bind="dropdown: 'roster'"></div>
+
+<h1><span data-bind="text: team.region"></span> <span data-bind="text: team.name"></span> Roster <span data-bind="newWindow: []"></span></h1>
+<p>More: <a data-bind="attrLeagueUrl: {href: ['team_finances', abbrev]}">Finances</a> | <a data-bind="attrLeagueUrl: {href: ['game_log', abbrev, season]}">Game Log</a> | <a data-bind="attrLeagueUrl: {href: ['team_history', abbrev]}">History</a></p>
+<div id="picture" class="team-picture"></div>
+<div id="teamInfo">
+    <h3>Record: <span data-bind="recordAndPlayoffs: [abbrev, season, team.won, team.lost, team.playoffRoundsWon, 'noSeason']"></span></h3>
+
+    <p data-bind="visible: isCurrentSeason">
+      <span data-bind="text: numRosterSpots"></span> open roster spots for entire team<br>
+      <span data-bind="text: numActiveSpots"></span> open active spots for entire team<br>
+      Payroll: <span data-bind="currency: [payroll, 'M']"></span><br>
+      Salary cap: <span data-bind="currency: [salaryCap, 'M']"></span><br>
+      Profit: <span data-bind="currency: [team.profit, 'M']"></span><br>
+      <span data-bind="visible: showTradeFor">Strategy: <span data-bind="text: team.strategy"></span></span>
+    </p>
+</div>
+
+<p data-bind="visible: editable" id="instructions">Drag and drop row handles to move players and override the coach.</p>
+<!--<p data-bind="visible: editable" id="instructions">starting lineup - position (<span class="roster-position">&#9632;</span>) / pitchers (<span class="roster-spitcher">&#9632;</span>)   , bench - position(<span class="roster-bposition">&#9632;</span>) / pitchers(<span class="roster-bpitcher">&#9632;</span>)  , and farm system - AAA(<span class="roster-farm1">&#9632;</span>)/AA(<span class="roster-farm2">&#9632;</span>)/A(<span class="roster-farm3">&#9632;</span>) .</p>-->
+<p data-bind="visible: editable" id="instructions">The first 8 hitters are the starting lineup (by batting order) and the rest are your bench. The first 5 pitchers are your starters (ace to fifth), next is your closer, then your bench. After the active roster you have your farm system (the farm system isn't simulated, but those players are developing). </p>
+<p data-bind="visible: editable" id="instructions"> The coach will pick your starting 8 positions after your first game, but you can override the coach by using the POS column. </p>
+<!-- <p data-bind="visible: editable" id="instructions"> (Instructions repeated at bottom for smaller screens)</p> -->
+
+<!-- <p data-bind="visible: editable" id="instructions" class="alert alert-danger"><b>NOTE:</b> New roster page may not be picking up user inactive/active changes for game. If you just use Let Coach Reorder Roster it should be fine. </p> -->
+
+<!-- starters - 8 position plus 5 pitchers (<span class="roster-position">&#9632;</span>) , rest of roster - bench and relief pitchers (<span class="roster-bpitcher">&#9632;</span>)  , and farm system (<span class="roster-farm3">&#9632;</span>) -->
+<p data-bind="visible: editable"><button class="btn btn-default" id="roster-auto-sort">Let Coach Reorder Roster</button></p>
+
+
+<!--<p data-bind="visible: editable" id="instructions">Drag and drop row handles to move players between the starting lineup (<span class="roster-starter">&#9632;</span>) and the bench (<span class="roster-bench">&#9632;</span>).</p>
+<p data-bind="visible: editable"><button class="btn btn-default" id="roster-auto-sort">Auto sort roster</button></p> -->
+
+
+<!--<table class="table table-striped table-bordered table-condensed "> -->
+<table class="table table-condensed "> 
+<!--<table class="table table-striped table-bordered table-condensed roster roster-off"> -->
+<tr>
+<td>
+
+<h2>Hitters</h2>
+<h4>Lineup/Bench</h4>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-off" id="roster-off-active">
+    <thead>
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th >Contract</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th >Contract</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+
+	  
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Quarterback Rating">Rate</th><th title="Passing Completion Percentage">%</th><th title="Total Passing Yards">TY</th><th title="Passing Yards Per Attempt">Y/A</th><th title="Touchdowns">TD</th><th title="Interceptions">Int</th><th title="Rushing Yards">RushY</th><th title="Rushing Yards Per Attempt">Y/A</th><th title="Receiving Yards">RecY</th><th title="Receiving Yards Per Catch">Y/C</th><th title="Lead Blocker">LB</th><th title="Pass Attempts When Worst Blocker">PA</th><th title="Playing Time Modifier" data-bind="visible: editable" style="text-align: center">PT <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+    </thead>
+
+    <tbody data-active="1">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.off.active-->
+        <tr data-bind="attr: {class: $index() === 7 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+    <!--      <td data-bind="text: pos"></td> -->
+          <td data-bind="text: age"></td>
+          <td data-bind="text: yearsWithTeam"></td> 
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span> 
+          </td> 
+		  
+ 
+        <td data-bind="if: $parent.editable, visible: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier, event: {change: $root.ptChange}"></select>
+          </td>
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>
+
+<h4>Farm</h4>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-off" id="roster-off-inactive">
+    <thead>
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="At Bats">AB</th><th title="Batting Average">BA</th><th title="Runs">R</th><th title="Runs Batted In">RBI</th><th title="Home Runs">HR</th><th title="Wins Above Replacement">WAR</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th title="Games Played">GP</th><th title="At Bats">AB</th><th title="Batting Average">BA</th><th title="Runs">R</th><th title="Runs Batted In">RBI</th><th title="Home Runs">HR</th><th title="Wins Above Replacement">WAR</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th title="Games Played">GP</th><th title="Batting Average">BA</th><th title="Home Runs">HR</th><th title="Wins Above Replacement">WAR</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th title="Games Played">GP</th><th title="Batting Average">BA</th><th title="Home Runs">HR</th><th title="Wins Above Replacement">WAR</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th >Contract</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+    
+	</thead>
+
+    <tbody data-active="0">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.off.inactive-->
+        <tr data-bind="attr: {class: $index() === 20 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+          <td data-bind="text: age"></td>
+          <td data-bind="text: yearsWithTeam"></td> 
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span> 
+          </td> 
+
+		
+        <td data-bind="if: $parent.editable, visible: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier, event: {change: $root.ptChange}"></select>
+          </td>
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>
+
+
+</td>
+<td>
+
+
+<h2>Pitchers</h2>
+<h4>Starters/Closer/Relief</h4>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-def" id="roster-def-active">
+    <thead>
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Inning Pitched">IP</th><th title="Strike Outs Per 9 Innings">K/9</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th title="Games Played">GP</th><th title="Wins">W</th><th title="Saves">S</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th title="Games Played">GP</th><th title="Wins">W</th><th title="Saves">S</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Wins">W</th><th title="Saves">S</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th title="Games Played">GP</th><th title="Wins">W</th><th title="Saves">S</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th >Contract</th></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+
+	  </thead>
+  
+    <tbody data-active="1">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.def.active-->
+        <tr data-bind="attr: {class: $index() === 4 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+          <td data-bind="text: age"></td>
+         <td data-bind="text: yearsWithTeam"></td> 
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span> 
+          </td> 
+		  
+		  
+   <!--       <td data-bind="if: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier, event: {change: $root.ptChange}"></select>
+          </td> -->
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>
+
+<h4>Farm</h4>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-def" id="roster-def-inactive">
+    <thead>
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Inning Pitched">IP</th><th title="Strike Outs Per 9 Innings">K/9</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th title="Games Played">GP</th><th title="Wins">W</th><th title="Saves">S</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th title="Position" data-bind="visible: editable" style="text-align: center">POS <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th title="Games Played">GP</th><th title="Wins">W</th><th title="Saves">S</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+<!--      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th title="Games Played">GP</th><th title="Wins">W</th><th title="Saves">S</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr> -->
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th >Contract</th></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+    </thead>
+  
+    <tbody data-active="0">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.def.inactive-->
+        <tr data-bind="attr: {class: $index() === 20 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+          <td data-bind="text: age"></td>
+          <td data-bind="text: yearsWithTeam"></td> 
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span> 
+          </td> 
+		  
+		  
+ <!--         <td data-bind="if: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier, event: {change: $root.ptChange}"></select>
+          </td> -->
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>
+
+</td>
+</tr>
+</table>

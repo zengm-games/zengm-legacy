@@ -1,0 +1,16 @@
+<div data-bind="dropdown: 'player-shot-locations'"></div>
+
+<h1>OL, K, and Def Stats <span data-bind="newWindow: []"></span></h1>
+<p>More: <a data-bind="attrLeagueUrl: {href: ['player_stats', season]}">QB, WR, and RB Stats</a> </p>
+<!--<p>More: <a data-bind="attrLeagueUrl: {href: ['player_stats', season]}">QB, WR, and RB Stats</a> | <a data-bind="attrLeagueUrl: {href: ['player_stat_dists', season]}">Stat Distributions</a></p> -->
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed" id="player-shot-locations">
+    <thead>
+<!--      <tr><th colspan="5"></th><th colspan="3" style="text-align: center" title="At Rim">At Rim</th><th colspan="3" style="text-align: center" title="Low Post">Low Post</th><th colspan="4" style="text-align: center" title="Mid-Range">Mid-Range</th><th colspan="3" style="text-align: center" title="Three-Pointers">3PT</th></tr>
+      <tr><th>Name</th><th title="Position">Pos</th><th>Team</th><th title="Games Played">GP</th><th title="Games Started">GS</th><th title="Lead Rush Blocker">LB</th><th title="Worst Pass Blocker">PA</th><th title="Run Minus Pass Blocking Per Play">RMP/Pl</th><th title="Made">M</th><th title="Attempt">A</th><th title="Percentage">%</th><th title="Sacks">Sk</th><th title="Rushed At">RA</th><th title="Passed At">PA</th><th title="Runs And Passes At Per PlayPercentage">RPA/Pl</th><th title="Made">M</th><th title="Attempted">A</th><th title="Percentage">%</th></tr> -->
+      <tr><th colspan="5"></th><th colspan="4" style="text-align: center" title="Offensive Line">OL</th><th colspan="3" style="text-align: center" title="Kicker">K</th><th colspan="6" style="text-align: center" title="Defense">De</th></tr>
+      <tr><th>Name</th><th title="Position">Pos</th><th>Team</th><th title="Games Played">GP</th><th title="Games Started">GS</th><th title="Lead Rush Blocker">LB</th><th title="Worst Pass Blocker">PA</th><th title="Run Minus Pass Blocking Per Play">RMP/Pl</th><th title="Total Plays">TP</th><th title="Made">M</th><th title="Attempt">A</th><th title="Percentage">%</th><th title="Sacks">Sk</th><th title="Interceptions">Int</th><th title="Rushed At">RA</th><th title="Passed At">PA</th><th title="Runs And Passes At Per PlayPercentage">RPA/Pl</th><th title="Total Plays">TP</th></tr>
+    </thead>
+  </table>
+</div>

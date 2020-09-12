@@ -1,0 +1,13 @@
+<h1>Free Agents <span data-bind="newWindow: []"></span></h1>
+<p>More: <a data-bind="attrLeagueUrl: {href: ['upcoming_free_agents']}">Upcoming Free Agents</a></p>
+
+<p>You currently have <strong data-bind="text: numRosterSpots"></strong> open roster spots and <strong data-bind="currency: [capSpace, 'M']"></strong> in cap space. <span class="glyphicon glyphicon-question-sign help-icon" id="help-salary-cap" data-placement="bottom"></span></p>
+<p class="text-danger" id="game-sim-warning" style="display: none">Stop game simulation to sign free agents.</p>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed" id="free-agents">
+    <thead>
+      <tr><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Overall">Ovr</th><th title="Potential">Pot</th><th title="At Bats">AB</th><th title="Runs">R</th><th title="Home Runs">HR</th><th title="Innings Pitched">IP</th><th title="Strike Outs Per 9 Innings">K/9</th><th title="Earned Run Average">ERA</th><th title="Wins Above Replacement">WAR</th><th>Asking for</th><th>Mood</th><th>Negotiate</th></tr>
+    </thead>
+  </table>
+</div>

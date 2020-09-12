@@ -1,0 +1,20 @@
+<div data-bind="dropdown: 'league-finances'"></div>
+
+<h1>Association Recruiting Budgets <span data-bind="newWindow: []"></span></h1>
+
+<p>
+<p class="clearfix">Your recruiting cash is given to you by the school. It is based on the number of players who have left school that year and you get $1000 per national tournament game that teams in your conference play in.</p>
+<p class="clearfix">Prestige is from 0 to 100. The higher your prestige the easier it is to recruit players. It is impacted by regular season, conference tournament, and national tournament performance</p>
+
+ <!-- Salary cap: <strong data-bind="currency: [salaryCap, '']"></strong> (teams over this amount cannot sign free agents for more than the minimum contract)<br>
+  Minimum payroll limit: <strong data-bind="currency: [minPayroll, '']"></strong> (teams with payrolls below this limit will be assessed a fine equal to the difference at the end of the season)<br>
+  Luxury tax limit: <strong data-bind="currency: [luxuryPayroll, '']"></strong> (teams with payrolls above this limit will be assessed a fine equal to <span data-bind="text: luxuryTax"></span> times the difference at the end of the season) -->
+</p>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed" id="league-finances">
+    <thead>
+      <tr><th>Team</th><th>Recruiting Budget</th><th>Prestige</th><th>Conference</th><th>Division</th></tr>
+    </thead>
+  </table>
+</div>

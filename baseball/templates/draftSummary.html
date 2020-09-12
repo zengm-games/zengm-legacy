@@ -1,0 +1,13 @@
+<div data-bind="dropdown: 'draft-summary'"></div>
+
+<h1><span data-bind="text: season"></span> Draft Summary <span data-bind="newWindow: []"></span></h1>
+<p>More: <a data-bind="attrLeagueUrl: {href: ['draft_scouting']}">Future Draft Scouting</a></p>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed" id="draft-results">
+    <thead>
+      <tr><th colspan="3"></th><th colspan="5" style="text-align: center">At Draft</th><th colspan="5" style="text-align: center">Current</th><th colspan="7" style="text-align: center">Career Stats</th></tr>
+      <tr><th>Pick</th><th>Name</th><th title="Position">Pos</th><th>Team</th><th>Age</th><th title="Overall rating">Ovr</th><th title="Potential rating">Pot</th><th>Skills</th><th>Team</th><th>Age</th><th title="Overall rating">Ovr</th><th title="Potential rating">Pot</th><th>Skills</th><th title="At Bats">AB</th><th title="Batting Average">BA</th><th title="Weighted On Base Averge">wOBA</th><th title="Innings Pitched">IP</th><th title="Earned Run Average">ERA</th><th title="Fielding Independent Pitching">FIP</th><th title="Wins Above Replacement">WAR</th></tr>
+    </thead>
+  </table>
+</div>

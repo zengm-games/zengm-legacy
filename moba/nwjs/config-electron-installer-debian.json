@@ -1,0 +1,6 @@
+{
+    "bin": "mobagm",
+    "icon": "../build/img/mobagm-icon.png",
+    "section": "games",
+    "categories": [ "GNOME", "GTK", "Game" ]
+}

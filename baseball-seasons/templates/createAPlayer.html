@@ -1,0 +1,200 @@
+<h1>Create A Player <span data-bind="newWindow: []"></span></h1>
+
+<p>Here, you can create a custom player with whatever attributes and ratings you want. If you want to make a whole league of custom players, you should probably create a <a href="/manual/custom_rosters">custom roster file</a>.</p>
+
+<form method="POST" data-bind="attrLeagueUrl: {action: ['create_a_player']}">
+
+<div class="row">
+  <div class="col-md-7">
+    <h2>Attributes</h2>
+
+    <div class="row">
+      <div class="col-sm-6 form-group">
+        <label for="cap-name">Name</label>
+        <input type="text" class="form-control" id="cap-name" name="name" data-bind="value: name"></input>
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-age">Age</label>
+        <input type="text" class="form-control" id="cap-age" name="age" value="19"></input>
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-tid">Team</label>
+        <select class="form-control" id="cap-tid" name="tid" data-bind="foreach: teams">
+          <option data-bind="attr: {value: tid}, text: region + ' ' + name"></option>
+        </select>
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-hgt">Height (inches)</label>
+        <input type="text" class="form-control" id="cap-hgt" name="hgt" value="78"></input>
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-weight">Weight (lbs)</label>
+        <input type="text" class="form-control" id="cap-weight" name="weight" value="220"></input>
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-pos">Position</label>
+        <select class="form-control" id="cap-pos" name="pos" data-bind="foreach: positions">
+          <option data-bind="attr: {value: pos}, text: pos"></option>
+        </select>
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-born-loc">Hometown</label>
+        <input type="text" class="form-control" id="cap-born-loc" name="born-loc" value="USA"></input>
+      </div>
+    </div>
+
+    <h2>Appearance</h2>
+
+    <div class="form-group">
+      <label for="cap-appearance-option">You can either create a cartoon face or specify the URL to an image.</label>
+      <select class="form-control" id="cap-appearance-option" name="appearance-option" data-bind="options: appearanceOptions, value: appearanceOption" style="max-width: 150px"></select>
+    </div>
+
+    <div class="row" data-bind="visible: appearanceOption() === 'Cartoon Face'">
+      <div class="col-sm-4">
+        <div id="picture" style="max-height: 225px; max-width: 150px"></div>
+        <center>
+          <button class="btn btn-default" id="randomize-face">Randomize</button>
+        </center>
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-fatness">Width (0 to 1)</label>
+            <input type="text" class="form-control" id="cap-face-fatness" name="face-fatness" data-bind="value: face().fatness"></input>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-color">Skin Color</label>
+            <input type="text" class="form-control" id="cap-face-color" name="face-color" data-bind="value: face().color"></input>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-eyes">Eyes</label>
+            <select class="form-control" id="cap-eyes" name="face-eyes" data-bind="options: faceOptions.eyes, value: face().eyes()[0].id"></select>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-eyes-angle">Eye Angle (-20 to 30)</label>
+            <input type="text" class="form-control" id="cap-face-eyes-angle" name="face-eyes-angle" data-bind="value: face().eyes()[0].angle"></input>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-nose">Nose</label>
+            <select class="form-control" id="cap-nose" name="face-nose" data-bind="options: faceOptions.nose, value: face().nose.id"></select>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-nose-flip">Nose Flip</label>
+            <input type="checkbox" class="form-control" id="cap-face-nose-flip" name="face-nose-flip" data-bind="checked: face().nose.flip"></input>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-mouth">Mouth</label>
+            <select class="form-control" id="cap-mouth" name="face-mouth" data-bind="options: faceOptions.mouth, value: face().mouth.id"></select>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-hair">Hair</label>
+            <select class="form-control" id="cap-hair" name="face-hair" data-bind="options: faceOptions.hair, value: face().hair.id"></select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group" data-bind="visible: appearanceOption() === 'Image URL'">
+      <label for="cap-image-url">Image URL</label>
+      <input type="text" class="form-control" id="cap-image-url" name="image-url" value="http://"></input>
+      <span class="help-block">Your image must be hosted externally. If you need to upload an image, try using <a href="http://imgur.com/">imgur</a>. For ideal display, crop your image so it has a 2:3 aspect ratio (such as 100px wide and 150px tall).</span>
+    </div>
+  </div>
+
+  <div class="clearfix visible-sm visible-xs"></div>
+
+  <div class="col-md-5">
+    <h2>Ratings</h2>
+
+    <p>All ratings are on a scale of 0 to 100.</p>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="form-group">
+          <label for="cap-rating-pot">Potential</label>
+          <input type="text" class="form-control" id="cap-rating-pot" name="rating-pot" value="50"></input>
+        </div>
+      </div>
+      <div class="col-xs-8">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <h3>Physical</h3>
+        <div class="form-group">
+          <label for="cap-rating-hgt">Sit. Smarts</label>
+          <input type="text" class="form-control" id="cap-rating-hgt" name="rating-hgt" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-stre">Clutch</label>
+          <input type="text" class="form-control" id="cap-rating-stre" name="rating-stre" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-spd">Endurance</label>
+          <input type="text" class="form-control" id="cap-rating-spd" name="rating-spd" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-jmp">Work Effort</label>
+          <input type="text" class="form-control" id="cap-rating-jmp" name="rating-jmp" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-endu">Team Player</label>
+          <input type="text" class="form-control" id="cap-rating-endu" name="rating-endu" value="50"></input>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <h3>Hit/Field</h3>
+        <div class="form-group">
+          <label for="cap-rating-ins">Hitting</label>
+          <input type="text" class="form-control" id="cap-rating-ins" name="rating-ins" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-dnk">Power</label>
+          <input type="text" class="form-control" id="cap-rating-dnk" name="rating-dnk" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-ft">Fielding Arm</label>
+          <input type="text" class="form-control" id="cap-rating-ft" name="rating-ft" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-fg">Running Speed</label>
+          <input type="text" class="form-control" id="cap-rating-fg" name="rating-fg" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-tp">Fielding</label>
+          <input type="text" class="form-control" id="cap-rating-tp" name="rating-tp" value="50"></input>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <h3>Pitching</h3>
+        <div class="form-group">
+          <label for="cap-rating-blk">Pitching Speed</label>
+          <input type="text" class="form-control" id="cap-rating-blk" name="rating-blk" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-stl">Accuracy</label>
+          <input type="text" class="form-control" id="cap-rating-stl" name="rating-stl" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-drb">Change</label>
+          <input type="text" class="form-control" id="cap-rating-drb" name="rating-drb" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-pss">Curve</label>
+          <input type="text" class="form-control" id="cap-rating-pss" name="rating-pss" value="50"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-reb">Slider</label>
+          <input type="text" class="form-control" id="cap-rating-reb" name="rating-reb" value="50"></input>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<center>
+  <button type="submit" class="btn btn-primary btn-lg" id="create-a-player">Create Player</button>
+</center>
+</form>

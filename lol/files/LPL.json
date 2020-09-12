@@ -1,0 +1,17 @@
+{
+    "teams": [
+	
+           {"tid": 0, "cid": 0, "did": 0, "region": "Empire Gaming", "name": "Empire", "abbrev": "EGA", "pop": 12},
+            {"tid": 1, "cid": 0, "did": 0, "region": "Sky10", "name": "Sky10", "abbrev": "S10", "pop": 11},
+            {"tid": 2, "cid": 0, "did": 0, "region": "Young Warrior Gaming", "name": "Young Warrior", "abbrev": "YWG", "pop": 10},
+            {"tid": 3, "cid": 0, "did": 0, "region": "eLite5", "name": "eLite5", "abbrev": "EL5", "pop": 9},
+            {"tid": 4, "cid": 0, "did": 0, "region": "Proper Logic Gaming", "name": "Proper Logic", "abbrev": "PLG", "pop": 8},
+            {"tid": 5, "cid": 0, "did": 0, "region": "Faith Gaming", "name": "Faith", "abbrev": "FG", "pop": 7},
+            {"tid": 6, "cid": 0, "did": 0, "region": "Team Unity", "name": "Unity", "abbrev": "TUN", "pop": 6},
+            {"tid": 7, "cid": 0, "did": 0, "region": "Xtatic", "name": "Xtatic", "abbrev": "XTC", "pop": 5},
+            {"tid": 8, "cid": 0, "did": 0, "region": "Team Repulse", "name": "Repulse", "abbrev": "TRP", "pop": 4},
+            {"tid": 9, "cid": 0, "did": 0, "region": "Legendary eSports", "name": "Legendary", "abbrev": "LGD", "pop": 3},
+            {"tid": 10, "cid": 0, "did": 0, "region": "Team YP", "name": "YP", "abbrev": "YP", "pop": 2},
+            {"tid": 11, "cid": 0, "did": 0, "region": "Rage Gaming", "name": "Rage", "abbrev": "RGE", "pop": 1}
+	]
+}

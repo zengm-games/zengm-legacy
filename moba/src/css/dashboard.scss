@@ -1,0 +1,640 @@
+.margin-t-20 {
+  margin-top: 20px;
+}
+
+a {
+  color: $dashboardFontColor1;
+  line-height: 23px;
+  &:hover {
+    color: $dashboardFontColor1;
+  }
+}
+
+.bs-sidebar {
+  .bs-sidenav {
+    background-color: $dashboardBgColor1;
+    border: 3px solid $borderColor3;
+  }
+  .nav {
+    li {
+      font-family: $dashboardFont1;
+      padding: 2px 20px;
+      a {
+        color: $dashboardFontColor3;
+        border-bottom: 1px solid $borderColor2;
+        padding: 5px 0;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: none;
+          background-color: $dashboardFontColor2;
+          color: $dashboardFontColor5;
+        }
+        &:focus {
+          text-decoration: none;
+          background-color: inherit;
+          color: $dashboardFontColor2;
+        }
+      }
+    }
+    .active {
+      padding-right: 5px;
+
+      a,
+      &:hover a,
+      &:focus a,
+      &:active a {
+        color: $dashboardFontColor2;
+        font-size: 14px;
+        border-right: 4px solid $dashboardFontColor1;
+        font-weight: 600;
+        background-color: transparent;
+        padding-bottom: initial;
+        border-bottom: none;
+      }
+    }
+    .bs-navheader {
+      color: $dashboardFontColor1;
+      font-size: 11px;
+      font-weight: 600;
+      margin-top: 0;
+      padding: 20px 20px 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+#screenshot-league {
+  h1 {
+    font-size: 30px;
+    font-family: $dashboardFont1;
+    color: $baseFontColor;
+    padding-top: 5px;
+    letter-spacing: -1px;
+  }
+  h3 {
+    font-size: 22px;
+    font-family: $dashboardFont1;
+    color: $baseFontColor;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+
+  table {
+    border: none;
+    background-color: $dashboardBgColor1;
+    font-family: $dashboardFont1;
+
+    thead tr th {
+      padding: 15px;
+      color: $baseFontColor;
+      font-weight: 500;
+      font-size: 18px;
+      border: none;
+
+      span {
+        color: inherit;
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          border: none;
+        }
+        td {
+          padding: 10px 15px;
+          border: none;
+          color: $dashboardFontColor3;
+          a {
+            color: $dashboardFontColor3;
+          }
+          span {
+            color: inherit;
+          }
+        }
+
+        &:nth-child(2n+1) td {
+          background-color: $dashboardBgColor2;
+          color: $baseFontColor;
+          a {
+            color: $baseFontColor;
+          }
+        }
+      }
+      .separator td {
+        border-bottom: 1px solid $dashboardFontColor3;
+      }
+      tr.info {
+        td {
+          background-color: $infoColor1 !important;
+          color: $dashboardFontColor5 !important;
+          a {
+            color: $dashboardFontColor5 !important;
+          }
+          span {
+            color: inherit !important;
+          }
+        }
+
+        &:hover {
+          td {
+            background-color: $infoColor1 !important;
+            color: $dashboardFontColor5 !important;
+            opacity: 0.8;
+            a {
+              color: $dashboardFontColor5 !important;
+            }
+            span {
+              color: inherit !important;
+            }
+          }
+        }
+      }
+
+      tr.success {
+        td {
+          background-color: $successColor1 !important;
+          color: $dashboardFontColor5 !important;
+          a {
+            color: $dashboardFontColor5 !important;
+          }
+          span {
+            color: inherit !important;
+          }
+        }
+
+        &:hover {
+          td {
+            background-color: $successColor1 !important;
+            color: $dashboardFontColor5 !important;
+            opacity: 0.8;
+            a {
+              color: $dashboardFontColor5 !important;
+            }
+            span {
+              color: inherit !important;
+            }
+          }
+        }
+      }
+
+      tr.danger {
+        td {
+          background-color: $dangerColor1 !important;
+          color: $dashboardFontColor5 !important;
+          a {
+            color: $dashboardFontColor5 !important;
+          }
+          span {
+            color: inherit !important;
+          }
+        }
+
+        &:hover {
+          td {
+            background-color: $dangerColor1 !important;
+            color: $dashboardFontColor5 !important;
+            opacity: 0.8;
+            a {
+              color: $dashboardFontColor5 !important;
+            }
+            span {
+              color: inherit !important;
+            }
+          }
+        }
+      }
+
+      tr.warning {
+        td {
+          background-color: $warningColor1 !important;
+          color: $dashboardFontColor5 !important;
+          a {
+            color: $dashboardFontColor5 !important;
+          }
+          span {
+            color: inherit !important;
+          }
+        }
+
+        &:hover {
+          td {
+            background-color: $warningColor1 !important;
+            color: $dashboardFontColor5 !important;
+            opacity: 0.8;
+            a {
+              color: $dashboardFontColor5 !important;
+            }
+            span {
+              color: inherit !important;
+            }
+          }
+        }
+      }
+    }
+
+    tfoot {
+      tr {
+        th, td {
+          border: none;
+        }
+      }
+    }
+  }
+
+  table#messages {
+    border: 1px solid $dashboardFontColor3;
+    background-color: transparent;
+
+    td {
+      background-color: transparent;
+      padding: initial;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 16px;
+
+      a {
+        color: $dashboardFontColor3;
+        padding: 4px 20px;
+      }
+
+      &:first-child a {
+        border-right: 1px solid $dashboardFontColor3;
+      }
+    }
+  }
+
+  .game-details {
+    span {
+      color: $baseFontColor;
+      font-family: $dashboardFont1;
+    }
+  }
+
+  .detail-section {
+    p, span {
+      color: $dashboardFontColor3;
+      font-family: $dashboardFont1;
+    }
+  }
+
+  ul.table-style1 {
+    background-color: $dashboardBgColor1;
+    border: 3px solid $borderColor1;
+    padding: 0 15px;
+
+    .schedule-row {
+      background-color: transparent;
+      border: none;
+      padding: 5px 0;
+      border-bottom: 1px solid $borderColor2;
+      font-family: $dashboardFont1;
+      text-align: center;
+      width: 100%;
+      height: 65px;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        line-height: 13px;
+        font-size: 13px;
+        color: $dashboardFontColor3;
+        width: 44%;
+        display: table;
+        height: 53px;
+
+        &:first-child {
+          float: left;
+          text-align: left;
+        }
+        &:last-child {
+          float: right;
+          text-align: right;
+        }
+        .span {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+
+      .schedule-at {
+        font-size: 17px;
+        line-height: 55px;
+        color: $dashboardFontColor1;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  ul.table-style2 {
+    background-color: transparent;
+    border: 3px solid $borderColor2;
+    padding: 0;
+
+    .list-group-item {
+      background-color: $dashboardFontColor2;
+      border: 1px solid;
+      padding: 10px 15px;
+      border-bottom: 1px solid $borderColor2;
+      font-family: $dashboardFont1;
+      width: 100%;
+
+      span {
+        color: $dashboardFontColor5;
+      }
+    }
+
+    .schedule-row {
+      background-color: $dashboardFontColor2;
+      border: none;
+      padding: 5px 15px;
+      border-bottom: 1px solid $borderColor2;
+      font-family: $dashboardFont1;
+      text-align: center;
+      width: 100%;
+
+      &:last-child {
+        border: none;
+      }
+
+      &.list-group-item-success {
+        background-color: $dashboardBgColor3;
+
+        a {
+          color: $dashboardFontColor2;
+        }
+        .schedule-at {
+          color: $dashboardFontColor5;
+        }
+      }
+
+      .schedule-results {
+        float: left;
+        width: 50px;
+        text-align: center;
+        color: $dashboardFontColor5;
+
+        & + a {
+          float: left;
+          text-align: left;
+        }
+
+        .schedule-wl {
+          font-size: 16px;
+          text-decoration: underline;
+          width: 0;
+          float: left;
+          text-align: center;
+          line-height: 35px;
+          color: inherit;
+        }
+      }
+
+      a {
+        line-height: 35px;
+        font-size: 16px;
+        color: $dashboardFontColor5;
+        width: 30%;
+        overflow: hidden;
+
+        &:last-child {
+          float: right;
+          text-align: right;
+        }
+        span {
+          color: inherit;
+        }
+
+        &.w42 {
+          width: 42%;
+        }
+      }
+
+      .schedule-at {
+        font-size: 16px;
+        line-height: 35px;
+        color: $dashboardFontColor1;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .table-responsive {
+    overflow: visible;
+
+    table {
+      thead {
+        tr > th {
+          padding: 15px 5px;
+          font-size: 15px;
+        }
+      }
+      tbody {
+        tr > td {
+          padding: 10px 5px;
+          font-size: 13px;
+          color: $dashboardFontColor3;
+          a {
+            color: $dashboardFontColor3;
+          }
+        }
+      }
+    }
+
+    table.table-style3 {
+      border: none;
+      background-color: transparent;
+
+      tbody {
+        tr {
+          &:nth-child(2n+1) {
+            td {
+              background-color: inherit;
+            }
+          }
+          &:first-child {
+            td {
+              color: $dashboardFontColor2 !important;
+            }
+          }
+        }
+      }
+    }
+    .table-hover {
+      tbody {
+        tr {
+          &:hover {
+            td, th {
+              background-color: $dashboardFontColor2;
+              color: $dashboardFontColor5;
+              a {
+                color: $dashboardFontColor5;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 6px;
+    }
+    &::-webkit-scrollbar-button {
+      display: none;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track-piece {
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #399797;
+    }
+  }
+  #trade-summary {
+    background-color: $dashboardFontColor2;
+    h3, h4, h5, div, span, ul {
+      color: $widgetColor;
+    }
+  }
+  #game-log-list tbody tr:hover td, #messages tbody tr:hover td {
+    background-color: $dashboardFontColor2 !important;
+    color: $dashboardFontColor5 !important;
+    a {
+      color: $dashboardFontColor5 !important;
+    }
+  }
+
+}
+
+.input-group-addon {
+  &:first-child,
+  &:last-child {
+    background-color: $borderColor1;
+    color: $baseFontColor;
+    border-color: $baseFontColor;
+  }
+}
+
+table.table {
+  thead {
+    .sorting,
+    .sorting_asc,
+    .sorting_desc,
+    .sorting_asc_disabled,
+    .sorting_desc_disabled {
+      cursor: pointer;
+      *cursor: hand;
+    }
+
+    .sorting {
+      background: url('../img/sorting.png') no-repeat center right;
+    }
+    .sorting_asc {
+      background: url('../img/sorting-up.png') no-repeat center right;
+    }
+    .sorting_desc {
+      background: url('../img/sorting-down.png') no-repeat center right;
+    }
+    .sorting_asc_disabled {
+      background: url('../img/sorting-up.png') no-repeat center right;
+    }
+    .sorting_desc_disabled {
+      background: url('../img/sorting-down.png') no-repeat center right;
+    }
+  }
+}
+
+.pagination {
+  li {
+    a, span {
+      color: $dashboardFontColor1;
+      background-color: $dashboardFontColor2;
+    }
+  }
+  .active {
+    a, a:hover, a:focus, span, span:hover, span:focus {
+      color: $dashboardFontColor2;
+      background-color: $borderColor1;
+      border-color: $dashboardBgColor2;
+    }
+  }
+}
+
+.btn {
+  color: $dashboardFontColor1;
+  background-color: $dashboardFontColor2;
+  border-color: transparent;
+
+  &:hover, &:focus, &:active {
+    color: $dashboardFontColor1;
+    background-color: $dashboardFontColor2;
+    border-color: transparent;
+    opacity: 0.8;
+  }
+}
+
+.btn-default {
+  color: $baseFontColor;
+  background-color: $btnDefaultBgColor;
+  border-color: $widgetColor;
+  &:active,
+  &:hover,
+  &:focus {
+    color: $baseFontColor;
+    background-color: $btnDefaultBgColor;
+    border-color: $widgetColor;
+    opacity: 0.7;
+  }
+}
+
+.btn-primary, .btn-primary[disabled] {
+  color: $dashboardFontColor2;
+  background-color: $borderColor1;
+  border-color: $dashboardBgColor2;
+
+  &:hover, &:focus, &:active {
+    color: $dashboardFontColor2;
+    background-color: $borderColor1;
+    border-color: $dashboardBgColor2;
+    opacity: 0.8;
+  }
+}
+
+.btn-danger {
+  color: #ffffff;
+  background-color: $dangerColor1;
+  border-color: $dangerColor2;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $dangerColor1;
+    border-color: $dangerColor2;
+    opacity: 0.7;
+  }
+}
+
+.btn-success {
+  color: #fff;
+  background-color: $successColor1;
+  border-color: $successColor2;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $successColor1;
+    border-color: $successColor2;
+    opacity: 0.7;
+  }
+}

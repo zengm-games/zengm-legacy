@@ -1,0 +1,325 @@
+<h1><span data-bind="text: region"></span> <span data-bind="text: name"></span> Dashboard <span data-bind="newWindow: []"></span></h1>
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="row">
+      <div class="col-sm-4 hidden-xs">
+        <h3></h3>
+        <table class="table table-striped table-bordered table-condensed">
+          <thead>
+            <tr><th width="100%">Team</th><th align="right">GB</th></tr>
+          </thead>
+          <tbody data-bind="foreach: confTeams">
+            <tr data-bind="css: {separator: $index() === 5, info: highlight}"><td><span data-bind="text: rank"></span>. <a data-bind="attrLeagueUrl: {href: ['roster', abbrev]}, text: region"></a></td><td align="right" data-bind="text: gb"></td></tr>
+          </tbody>
+        </table>
+        <a data-bind="attrLeagueUrl: {href: ['standings']}">» League Standings</a>
+      </div>
+      <div class="col-sm-8">
+        <div style="text-align: center">
+          <span style="font-size: 48px"><span data-bind="text: won"></span>-<span data-bind="text: lost"></span></span><br>
+          <span style="font-size: 24px">
+            <!-- ko if: playoffRoundsWon() < 0 -->
+              <span data-bind="ordinal: rank"></span> in conference
+            <!-- /ko -->
+            <!-- ko if: playoffRoundsWon() === 0 -->
+              <span>Made playoffs</span>
+            <!-- /ko -->
+            <!-- ko if: playoffRoundsWon() === 1 -->
+              <span>Made league finals</span>
+            <!-- /ko -->
+            <!-- ko if: playoffRoundsWon() === 2 -->
+              <span>League champs</span>
+            <!-- /ko -->
+            <!-- ko if: playoffRoundsWon() === 3 -->
+              <span>Super Bowl champs</span>
+            <!-- /ko -->
+            <!-- ko if: playoffRoundsWon() === 4 -->
+              <span>Super Bowl champs</span>
+            <!-- /ko -->
+          </span>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <h3>Team Offense</h3>
+            <p>
+			
+      Points: <span data-bind="round: [pts, 0]"></span> (<span data-bind="ordinal: ptsRank"></span>)<br>
+     Yards: <span data-bind="round: [ty, 0]"></span> (<span data-bind="ordinal: tyRank"></span>)<br>
+    Yards/Play: <span data-bind="round: [ytp, 2]"></span> (<span data-bind="ordinal: ytpRank"></span>)<br>
+    PassYards: <span data-bind="round: [stl, 0]"></span> (<span data-bind="ordinal: stlRank"></span>)<br>
+    RushYards: <span data-bind="round: [drb, 0]"></span> (<span data-bind="ordinal: drbRank"></span>)<br>
+	  
+<!--      <a data-bind="attrLeagueUrl: {href: ['player', teamLeaders.stl.pid]}, text: teamLeaders.stl.name"></a>: <span data-bind="round: [teamLeaders.stl.stat, 0]"></span> PassY<br>
+      <a data-bind="attrLeagueUrl: {href: ['player', teamLeaders.drb.pid]}, text: teamLeaders.drb.name"></a>: <span data-bind="round: [teamLeaders.drb.stat, 0]"></span> RushY<br> 
+      <a data-bind="attrLeagueUrl: {href: ['player', teamLeaders.orb.pid]}, text: teamLeaders.orb.name"></a>: <span data-bind="round: [teamLeaders.orb.stat, 0]"></span> RecY<br> 
+      <a data-bind="attrLeagueUrl: {href: ['player', teamLeaders.fgaMidRange.pid]}, text: teamLeaders.fgaMidRange.name"></a>: <span data-bind="round: [teamLeaders.fgaMidRange.stat, 2]"></span> Sacks<br> -->
+ 			
+			
+      <!--        <a data-bind="attrLeagueUrl: {href: ['player', teamLeaders.pts.pid]}, text: teamLeaders.pts.name"></a>: <span data-bind="round: [teamLeaders.pts.stat, 1]"></span> pts<br>
+              <a data-bind="attrLeagueUrl: {href: ['player', teamLeaders.trb.pid]}, text: teamLeaders.trb.name"></a>: <span data-bind="round: [teamLeaders.trb.stat, 1]"></span> reb<br>
+              <a data-bind="attrLeagueUrl: {href: ['player', teamLeaders.ast.pid]}, text: teamLeaders.ast.name"></a>: <span data-bind="round: [teamLeaders.ast.stat, 1]"></span> ast<br>
+              <a data-bind="attrLeagueUrl: {href: ['roster']}">» Full Roster</a>-->
+            </p>
+            <h3>League Defense</h3>
+            <p>
+		
+      Points: <span data-bind="round: [oppPts, 0]"></span> (<span data-bind="ordinal: oppPtsRank"></span>)<br>
+      Yards: <span data-bind="round: [oppty, 0]"></span> (<span data-bind="ordinal: opptyRank"></span>)<br> 
+      Yards/Play: <span data-bind="round: [oppyp, 2]"></span> (<span data-bind="ordinal: oppypRank"></span>)<br> 
+      PassYards: <span data-bind="round: [depy, 0]"></span> (<span data-bind="ordinal: depyRank"></span>)<br> 
+      RushYards: <span data-bind="round: [dery, 0]"></span> (<span data-bind="ordinal: deryRank"></span>)<br> 
+	  
+		
+      <!--<a data-bind="attrLeagueUrl: {href: ['player', leagueLeaders.stl.pid]}, text: leagueLeaders.stl.name"></a>, <a data-bind="attrLeagueUrl: {href: ['roster', leagueLeaders.stl.abbrev]}, text: leagueLeaders.stl.abbrev"></a>: <span data-bind="round: [leagueLeaders.stl.stat, 0]"></span> PassY<br>
+      <a data-bind="attrLeagueUrl: {href: ['player', leagueLeaders.drb.pid]}, text: leagueLeaders.drb.name"></a>, <a data-bind="attrLeagueUrl: {href: ['roster', leagueLeaders.drb.abbrev]}, text: leagueLeaders.drb.abbrev"></a>: <span data-bind="round: [leagueLeaders.drb.stat, 0]"></span> RushY<br>  
+      <a data-bind="attrLeagueUrl: {href: ['player', leagueLeaders.orb.pid]}, text: leagueLeaders.orb.name"></a>, <a data-bind="attrLeagueUrl: {href: ['roster', leagueLeaders.orb.abbrev]}, text: leagueLeaders.orb.abbrev"></a>: <span data-bind="round: [leagueLeaders.orb.stat, 0]"></span> RecY<br>  
+      <a data-bind="attrLeagueUrl: {href: ['player', leagueLeaders.fgaMidRange.pid]}, text: leagueLeaders.fgaMidRange.name"></a>, <a data-bind="attrLeagueUrl: {href: ['roster', leagueLeaders.fgaMidRange.abbrev]}, text: leagueLeaders.fgaMidRange.abbrev"></a>: <span data-bind="round: [leagueLeaders.fgaMidRange.stat, 0]"></span> Sacks<br> 
+			
+			
+              <a data-bind="attrLeagueUrl: {href: ['leaders']}">» League Leaders</a><br>
+              <a data-bind="attrLeagueUrl: {href: ['player_stats']}">» Player Stats</a>-->
+            </p>
+            <h3>Inbox</h3>
+            <table class="table table-bordered table-condensed" id="messages">
+              <tbody data-bind="foreach: messages">
+                  <tr data-bind="css: {unread: !read()}"><td class="year"><a data-bind="text: year, attrLeagueUrl: {href: ['message', mid]}"></td><td class="from"><a data-bind="text: from, attrLeagueUrl: {href: ['message', mid]}"></a></td></tr>
+              </tbody>
+            </table>
+            <p>
+              <a data-bind="attrLeagueUrl: {href: ['inbox']}">» All Messages</a>
+            </p>
+          </div>
+          <div class="col-xs-6">
+            <h3>Team Stats</h3>
+            <p>
+			
+      Points: <span data-bind="round: [pts, 0]"></span> (<span data-bind="ordinal: ptsRank"></span>)<br>
+      Allowed: <span data-bind="round: [oppPts, 0]"></span> (<span data-bind="ordinal: oppPtsRank"></span>)<br>
+     Yards: <span data-bind="round: [ty, 0]"></span> (<span data-bind="ordinal: tyRank"></span>)<br>
+      Allowed: <span data-bind="round: [oppty, 0]"></span> (<span data-bind="ordinal: opptyRank"></span>)<br> 
+			
+			
+<!--              Points: <span data-bind="round: [pts, 1]"></span> (<span data-bind="ordinal: ptsRank"></span>)<br>
+              Allowed: <span data-bind="round: [oppPts, 1]"></span> (<span data-bind="ordinal: oppPtsRank"></span>)<br>
+              Rebounds: <span data-bind="round: [trb, 1]"></span> (<span data-bind="ordinal: trbRank"></span>)<br>
+              Assists: <span data-bind="round: [ast, 1]"></span> (<span data-bind="ordinal: astRank"></span>)<br> -->
+              <a data-bind="attrLeagueUrl: {href: ['team_stats']}">» Team Stats</a>
+            </p>
+            <h3>Finances</h3>
+            <p>
+              Avg Attendance: <span data-bind="numberWithCommas: att"></span><br>
+              Revenue (YTD): <span data-bind="currency: [revenue, 'M']"></span><br>
+              Profit (YTD): <span data-bind="currency: [profit, 'M']"></span><br>
+              Cash: <span data-bind="currency: [cash, 'M']"></span><br>
+              Payroll: <span data-bind="currency: [payroll, 'M']"></span><br>
+              Salary Cap: <span data-bind="currency: [salaryCap, 'M']"></span><br>
+              <a data-bind="attrLeagueUrl: {href: ['team_finances']}">» Team Finances</a><br>
+              <a data-bind="attrLeagueUrl: {href: ['league_finances']}">» League Finances</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix visible-sm"></div>
+  <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-12 col-xs-6">
+        <!-- ko if: showPlayoffSeries -->
+          <h3>Playoffs</h3>
+          <p>
+            <b><span data-bind="text: seriesTitle"></span></b><br>
+            <span data-bind="matchup: [0, 0]"></span><br>
+            <a data-bind="attrLeagueUrl: {href: ['playoffs']}">» Playoffs</a>
+          </p>
+        <!-- /ko -->
+        <!-- ko if: !showPlayoffSeries() -->
+          <h3>Upcoming Games</h3>
+          <ul class="list-group" data-bind="foreach: upcoming" style="margin-bottom: 6px">
+            <li class="list-group-item schedule-row">
+              <a data-bind="attrLeagueUrl: {href: ['roster', teams[0].abbrev]}"><span data-bind="text: teams[0].region"></span></a>
+              <span class="schedule-at">@</span>
+              <a data-bind="attrLeagueUrl: {href: ['roster', teams[1].abbrev]}"><span data-bind="text: teams[1].region"></span></span></a>
+            </li>
+          </ul>
+          <p data-bind="visible: upcoming().length === 0">None</p>
+          <a data-bind="attrLeagueUrl: {href: ['schedule']}">» Schedule</a>
+        <!-- /ko -->
+      </div>
+      <div class="col-md-12 col-xs-6">
+        <h3>Completed Games</h3>
+        <ul class="list-group" data-bind="foreach: completed" style="margin-bottom: 6px">
+          <li class="list-group-item schedule-row" data-bind="css: {'list-group-item-success': won, 'list-group-item-danger': !won}">
+            <div class="schedule-results">
+              <div class="schedule-wl" data-bind="text: won ? 'W' : 'L'"></div>
+              <div class="schedule-score"><a data-bind="attrLeagueUrl: {href: ['game_log', $root.abbrev, $root.season, gid]}, text: score + overtime"></a></div>
+            </div>
+            <a data-bind="attrLeagueUrl: {href: ['roster', teams[0].abbrev]}"><span data-bind="text: teams[0].abbrev"></span></a>
+            <span class="schedule-at">@</span>
+            <a data-bind="attrLeagueUrl: {href: ['roster', teams[1].abbrev]}"><span data-bind="text: teams[1].abbrev"></span></span></a>
+          </li>
+        </ul>
+        <p data-bind="visible: completed().length === 0">None</p>
+        <a data-bind="attrLeagueUrl: {href: ['game_log']}">» Game Log</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Offense </h3>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed" id="roster">
+    <thead>
+	
+<!--      <tr><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th >Contract</th><th title="Passing Completions">PassC</th><th title="Passing Attempts">PassA</th><th title="Passing Completion Percentage">%</th><th title="Total Passing Yards">TY</th><th title="Passing Yards Per Attempt">Y/A</th><th title="Touchdowns">TD</th><th title="Interceptions">Int</th><th title="Rushing Yards">RushY</th><th title="Rushing Yards Per Attempt">Y/A</th><th title="Rushing Touchdowns">TD</th><th title="Receiving Yards">RecY</th><th title="Receiving Yards Per Catch">Y/C</th><th title="Receiving Touchdowns">TD</th><th title="Lead Blocker">LB</th><th title="Pass Attempts When Worst Blocker">PA</th></tr> -->
+      <tr><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th >Contract</th><th title="Speed">Spd</th><th title="Strength">Str</th><th title="Endurance">End</th><th title="Athleticism">A</th><th title="Height">Hgt</th><th title="Hands">Hnd</th><th title="GameIQ">GIQ</th><th title="Toughness">Tgh</th><th title="Awareness">Awr</th><th title="Passing">Pss</th><th title="Receiving">Rec</th><th title="Blocking">Blk</th></tr>
+	  
+    </thead>
+    <tbody data-bind="foreach: lineup">
+      <tr >
+        <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+        <td data-bind="text: pos"></td>
+        <td data-bind="text: age"></td>
+        <td data-bind="round: [stats.yearsWithTeam, 0]"></td>
+<!--        <td data-bind="text: yearsWithTeam"></td> -->
+        <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+        <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+ <!--       <td data-bind="visible: $parent.isCurrentSeason"> -->
+        <td >
+          <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+        </td>
+<!--        <td data-bind="round: [stats.fg, 0]"></td>
+        <td data-bind="round: [stats.fga, 0]"></td>
+        <td data-bind="round: [stats.fgp, 1]"></td>
+        <td data-bind="round: [stats.stl, 0]"></td>
+        <td data-bind="round: [stats.pya, 1]"></td>
+        <td data-bind="round: [stats.blk, 0]"></td>
+        <td data-bind="round: [stats.inter, 0]"></td>
+        <td data-bind="round: [stats.drb, 0]"></td>
+        <td data-bind="round: [stats.ruya, 1]"></td>
+        <td data-bind="round: [stats.ft, 0]"></td>
+        <td data-bind="round: [stats.orb, 0]"></td>
+        <td data-bind="round: [stats.reyc, 1]"></td>
+        <td data-bind="round: [stats.pf, 0]"></td>
+        <td data-bind="round: [stats.olr, 0]"></td>
+        <td data-bind="round: [stats.olp, 0]"></td> -->
+
+
+        <td><span data-bind="text: ratings.hgt"></span><span data-bind="visible: ratings.dhgt() !== 0, css: { 'text-success': ratings.dhgt() > 0, 'text-danger': ratings.dhgt() < 0 }"> (<span data-bind="text: ratings.dhgt() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dhgt"></span>)</span></td>
+        <td><span data-bind="text: ratings.stre"></span><span data-bind="visible: ratings.dstre() !== 0, css: { 'text-success': ratings.dstre() > 0, 'text-danger': ratings.dstre() < 0 }"> (<span data-bind="text: ratings.dstre() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dstre"></span>)</span></td>
+        <td><span data-bind="text: ratings.spd"></span><span data-bind="visible: ratings.dspd() !== 0, css: { 'text-success': ratings.dspd() > 0, 'text-danger': ratings.dspd() < 0 }"> (<span data-bind="text: ratings.dspd() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dspd"></span>)</span></td>
+        <td><span data-bind="text: ratings.jmp"></span><span data-bind="visible: ratings.djmp() !== 0, css: { 'text-success': ratings.djmp() > 0, 'text-danger': ratings.djmp() < 0 }"> (<span data-bind="text: ratings.djmp() > 0 ? '+' : ''"></span><span data-bind="text: ratings.djmp"></span>)</span></td>
+        <td><span data-bind="text: ratings.endu"></span><span data-bind="visible: ratings.dendu() !== 0, css: { 'text-success': ratings.dendu() > 0, 'text-danger': ratings.dendu() < 0 }"> (<span data-bind="text: ratings.dendu() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dendu"></span>)</span></td>
+        <td><span data-bind="text: ratings.hnd"></span><span data-bind="visible: ratings.dhnd() !== 0, css: { 'text-success': ratings.dhnd() > 0, 'text-danger': ratings.dhnd() < 0 }"> (<span data-bind="text: ratings.dhnd() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dhnd"></span>)</span></td>
+        <td><span data-bind="text: ratings.ins"></span><span data-bind="visible: ratings.dins() !== 0, css: { 'text-success': ratings.dins() > 0, 'text-danger': ratings.dins() < 0 }"> (<span data-bind="text: ratings.dins() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dins"></span>)</span></td>
+        <td><span data-bind="text: ratings.dnk"></span><span data-bind="visible: ratings.ddnk() !== 0, css: { 'text-success': ratings.ddnk() > 0, 'text-danger': ratings.ddnk() < 0 }"> (<span data-bind="text: ratings.ddnk() > 0 ? '+' : ''"></span><span data-bind="text: ratings.ddnk"></span>)</span></td>
+        <td><span data-bind="text: ratings.ft"></span><span data-bind="visible: ratings.dft() !== 0, css: { 'text-success': ratings.dft() > 0, 'text-danger': ratings.dft() < 0 }"> (<span data-bind="text: ratings.dft() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dft"></span>)</span></td>
+  <!--      <td><span data-bind="text: ratings.fg"></span><span data-bind="visible: ratings.dfg() !== 0, css: { 'text-success': ratings.dfg() > 0, 'text-danger': ratings.dfg() < 0 }"> (<span data-bind="text: ratings.dfg() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dfg"></span>)</span></td>
+        <td><span data-bind="text: ratings.tp"></span><span data-bind="visible: ratings.dtp() !== 0, css: { 'text-success': ratings.dtp() > 0, 'text-danger': ratings.dtp() < 0 }"> (<span data-bind="text: ratings.dtp() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dtp"></span>)</span></td> -->
+        <td><span data-bind="text: ratings.blk"></span><span data-bind="visible: ratings.dblk() !== 0, css: { 'text-success': ratings.dblk() > 0, 'text-danger': ratings.dblk() < 0 }"> (<span data-bind="text: ratings.dblk() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dblk"></span>)</span></td>
+        <td><span data-bind="text: ratings.stl"></span><span data-bind="visible: ratings.dstl() !== 0, css: { 'text-success': ratings.dstl() > 0, 'text-danger': ratings.dstl() < 0 }"> (<span data-bind="text: ratings.dstl() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dstl"></span>)</span></td>
+        <td><span data-bind="text: ratings.drb"></span><span data-bind="visible: ratings.ddrb() !== 0, css: { 'text-success': ratings.ddrb() > 0, 'text-danger': ratings.ddrb() < 0 }"> (<span data-bind="text: ratings.ddrb() > 0 ? '+' : ''"></span><span data-bind="text: ratings.ddrb"></span>)</span></td>
+<!--        <td><span data-bind="text: ratings.pss"></span><span data-bind="visible: ratings.dpss() !== 0, css: { 'text-success': ratings.dpss() > 0, 'text-danger': ratings.dpss() < 0 }"> (<span data-bind="text: ratings.dpss() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpss"></span>)</span></td>
+        <td><span data-bind="text: ratings.reb"></span><span data-bind="visible: ratings.dreb() !== 0, css: { 'text-success': ratings.dreb() > 0, 'text-danger': ratings.dreb() < 0 }"> (<span data-bind="text: ratings.dreb() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dreb"></span>)</span></td>
+        <td><span data-bind="text: ratings.cvr"></span><span data-bind="visible: ratings.dcvr() !== 0, css: { 'text-success': ratings.dcvr() > 0, 'text-danger': ratings.dcvr() < 0 }"> (<span data-bind="text: ratings.dcvr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dcvr"></span>)</span></td>
+        <td><span data-bind="text: ratings.kck"></span><span data-bind="visible: ratings.dkck() !== 0, css: { 'text-success': ratings.dkck() > 0, 'text-danger': ratings.dkck() < 0 }"> (<span data-bind="text: ratings.dkck() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dkck"></span>)</span></td> -->
+	
+
+		
+	
+	
+ <!--     <tr><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th>Contract</th><th title="Games Played">GP</th><th title="Minutes Per Game">Min</th><th title="Points Per Game">Pts</th><th title="Rebounds Per Game">Reb</th><th title="Assists Per Game">Ast</th><th title="Player Efficiency Rating">PER</th></tr>
+    </thead>
+    <tbody data-bind="foreach: starters">
+      <tr>
+        <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+        <td data-bind="text: pos"></td>
+        <td data-bind="text: age"></td>
+        <td data-bind="text: yearsWithTeam"></td>
+        <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+        <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+        <td>
+          <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+        </td>
+        <td data-bind="text: stats.gp"></td>
+        <td data-bind="round: [stats.min, 1]"></td>
+        <td data-bind="round: [stats.pts, 1]"></td>
+        <td data-bind="round: [stats.trb, 1]"></td>
+        <td data-bind="round: [stats.ast, 1]"></td>
+        <td data-bind="round: [stats.per, 1]"></td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Defense and Kicking</h3>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed" id="roster">
+    <thead>
+	
+<!--      <tr><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th >Contract</th><th title="Sacks">Sk</th><th title="Running And Passing Plays At">RPA</th><th title="Running Plays At">RA</th><th title="Passing Plays At">PA</th><th title="Interceptions">Int</th><th title="Total Plays">TP</th><th title="Field Goals Made">FG-M</th><th title="Field Goals Attempted">FG-A</th><th title="Field Goal Percentage">%</th></tr> -->
+      <tr><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th >Contract</th><th title="Speed">Spd</th><th title="Strength">Str</th><th title="Endurance">End</th><th title="Athleticism">A</th><th title="Height">Hgt</th><th title="Hands">Hnd</th><th title="GameIQ">GIQ</th><th title="Aggressiveness">Agg</th><th title="Motor">Mtr</th><th title="Defensive Rushing">DRu</th><th title="Tackling">Tkl</th><th title="Coverage">Cvr</th><th title="Kicking">Kck</th></tr>
+
+	  </thead>
+    <tbody data-bind="foreach: starters">
+      <tr >
+        <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+        <td data-bind="text: pos"></td>
+        <td data-bind="text: age"></td>
+        <td data-bind="round: [stats.yearsWithTeam, 0]"></td>
+        <!--<td data-bind="text: yearsWithTeam"></td> -->
+        <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+        <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+ <!--       <td data-bind="visible: $parent.isCurrentSeason"> -->
+        <td >
+          <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+        </td>
+	
+        <td><span data-bind="text: ratings.hgt"></span><span data-bind="visible: ratings.dhgt() !== 0, css: { 'text-success': ratings.dhgt() > 0, 'text-danger': ratings.dhgt() < 0 }"> (<span data-bind="text: ratings.dhgt() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dhgt"></span>)</span></td>
+        <td><span data-bind="text: ratings.stre"></span><span data-bind="visible: ratings.dstre() !== 0, css: { 'text-success': ratings.dstre() > 0, 'text-danger': ratings.dstre() < 0 }"> (<span data-bind="text: ratings.dstre() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dstre"></span>)</span></td>
+        <td><span data-bind="text: ratings.spd"></span><span data-bind="visible: ratings.dspd() !== 0, css: { 'text-success': ratings.dspd() > 0, 'text-danger': ratings.dspd() < 0 }"> (<span data-bind="text: ratings.dspd() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dspd"></span>)</span></td>
+        <td><span data-bind="text: ratings.jmp"></span><span data-bind="visible: ratings.djmp() !== 0, css: { 'text-success': ratings.djmp() > 0, 'text-danger': ratings.djmp() < 0 }"> (<span data-bind="text: ratings.djmp() > 0 ? '+' : ''"></span><span data-bind="text: ratings.djmp"></span>)</span></td>
+        <td><span data-bind="text: ratings.endu"></span><span data-bind="visible: ratings.dendu() !== 0, css: { 'text-success': ratings.dendu() > 0, 'text-danger': ratings.dendu() < 0 }"> (<span data-bind="text: ratings.dendu() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dendu"></span>)</span></td>
+        <td><span data-bind="text: ratings.hnd"></span><span data-bind="visible: ratings.dhnd() !== 0, css: { 'text-success': ratings.dhnd() > 0, 'text-danger': ratings.dhnd() < 0 }"> (<span data-bind="text: ratings.dhnd() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dhnd"></span>)</span></td>
+        <td><span data-bind="text: ratings.ins"></span><span data-bind="visible: ratings.dins() !== 0, css: { 'text-success': ratings.dins() > 0, 'text-danger': ratings.dins() < 0 }"> (<span data-bind="text: ratings.dins() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dins"></span>)</span></td>
+<!--        <td><span data-bind="text: ratings.dnk"></span><span data-bind="visible: ratings.ddnk() !== 0, css: { 'text-success': ratings.ddnk() > 0, 'text-danger': ratings.ddnk() < 0 }"> (<span data-bind="text: ratings.ddnk() > 0 ? '+' : ''"></span><span data-bind="text: ratings.ddnk"></span>)</span></td>
+        <td><span data-bind="text: ratings.ft"></span><span data-bind="visible: ratings.dft() !== 0, css: { 'text-success': ratings.dft() > 0, 'text-danger': ratings.dft() < 0 }"> (<span data-bind="text: ratings.dft() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dft"></span>)</span></td> -->
+        <td><span data-bind="text: ratings.fg"></span><span data-bind="visible: ratings.dfg() !== 0, css: { 'text-success': ratings.dfg() > 0, 'text-danger': ratings.dfg() < 0 }"> (<span data-bind="text: ratings.dfg() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dfg"></span>)</span></td>
+        <td><span data-bind="text: ratings.tp"></span><span data-bind="visible: ratings.dtp() !== 0, css: { 'text-success': ratings.dtp() > 0, 'text-danger': ratings.dtp() < 0 }"> (<span data-bind="text: ratings.dtp() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dtp"></span>)</span></td>
+    <!--    <td><span data-bind="text: ratings.blk"></span><span data-bind="visible: ratings.dblk() !== 0, css: { 'text-success': ratings.dblk() > 0, 'text-danger': ratings.dblk() < 0 }"> (<span data-bind="text: ratings.dblk() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dblk"></span>)</span></td>
+        <td><span data-bind="text: ratings.stl"></span><span data-bind="visible: ratings.dstl() !== 0, css: { 'text-success': ratings.dstl() > 0, 'text-danger': ratings.dstl() < 0 }"> (<span data-bind="text: ratings.dstl() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dstl"></span>)</span></td>
+        <td><span data-bind="text: ratings.drb"></span><span data-bind="visible: ratings.ddrb() !== 0, css: { 'text-success': ratings.ddrb() > 0, 'text-danger': ratings.ddrb() < 0 }"> (<span data-bind="text: ratings.ddrb() > 0 ? '+' : ''"></span><span data-bind="text: ratings.ddrb"></span>)</span></td> -->
+        <td><span data-bind="text: ratings.pss"></span><span data-bind="visible: ratings.dpss() !== 0, css: { 'text-success': ratings.dpss() > 0, 'text-danger': ratings.dpss() < 0 }"> (<span data-bind="text: ratings.dpss() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpss"></span>)</span></td>
+        <td><span data-bind="text: ratings.reb"></span><span data-bind="visible: ratings.dreb() !== 0, css: { 'text-success': ratings.dreb() > 0, 'text-danger': ratings.dreb() < 0 }"> (<span data-bind="text: ratings.dreb() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dreb"></span>)</span></td>
+        <td><span data-bind="text: ratings.cvr"></span><span data-bind="visible: ratings.dcvr() !== 0, css: { 'text-success': ratings.dcvr() > 0, 'text-danger': ratings.dcvr() < 0 }"> (<span data-bind="text: ratings.dcvr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dcvr"></span>)</span></td>
+        <td><span data-bind="text: ratings.kck"></span><span data-bind="visible: ratings.dkck() !== 0, css: { 'text-success': ratings.dkck() > 0, 'text-danger': ratings.dkck() < 0 }"> (<span data-bind="text: ratings.dkck() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dkck"></span>)</span></td>
+	
+	
+	
+ <!--     <tr><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th>Contract</th><th title="Games Played">GP</th><th title="Minutes Per Game">Min</th><th title="Points Per Game">Pts</th><th title="Rebounds Per Game">Reb</th><th title="Assists Per Game">Ast</th><th title="Player Efficiency Rating">PER</th></tr>
+    </thead>
+    <tbody data-bind="foreach: starters">
+      <tr>
+        <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+        <td data-bind="text: pos"></td>
+        <td data-bind="text: age"></td>
+        <td data-bind="text: yearsWithTeam"></td>
+        <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+        <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+        <td>
+          <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+        </td>
+        <td data-bind="text: stats.gp"></td>
+        <td data-bind="round: [stats.min, 1]"></td>
+        <td data-bind="round: [stats.pts, 1]"></td>
+        <td data-bind="round: [stats.trb, 1]"></td>
+        <td data-bind="round: [stats.ast, 1]"></td>
+        <td data-bind="round: [stats.per, 1]"></td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<a data-bind="attrLeagueUrl: {href: ['roster']}">» Full Roster</a>

@@ -1,0 +1,1139 @@
+{
+  "champions": [
+    {
+      "hid": 0,
+      "name": "Aatrox",
+      "ratings": {
+        "attack": 80,
+        "defense": 40,
+        "ability": 30
+        
+      }
+    },
+    {
+      "hid": 1,
+      "name": "Ahri",
+      "ratings": {
+        "attack": 30,
+        "defense": 40,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 2,
+      "name": "Akali",
+      "ratings": {
+        "attack": 50,
+        "defense": 30,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 3,
+      "name": "Alistar",
+      "ratings": {
+        "attack": 60,
+        "defense": 90,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 4,
+      "name": "Amumu",
+      "ratings": {
+        "attack": 20,
+        "defense": 60,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 5,
+      "name": "Anivia",
+      "ratings": {
+        "attack": 10,
+        "defense": 40,
+        "ability": 100
+      }
+    },
+    {
+      "hid": 6,
+      "name": "Annie",
+      "ratings": {
+        "attack": 20,
+        "defense": 30,
+        "ability": 100
+      }
+    },
+    {
+      "hid": 7,
+      "name": "Ashe",
+      "ratings": {
+        "attack": 70,
+        "defense": 30,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 8,
+      "name": "Azir",
+      "ratings": {
+        "attack": 60,
+        "defense": 30,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 9,
+      "name": "Bard",
+      "ratings": {
+        "attack": 40,
+        "defense": 40,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 10,
+      "name": "Blitzcrank",
+      "ratings": {
+        "attack": 40,
+        "defense": 80,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 11,
+      "name": "Brand",
+      "ratings": {
+        "attack": 20,
+        "defense": 20,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 12,
+      "name": "Braum",
+      "ratings": {
+        "attack": 30,
+        "defense": 90,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 13,
+      "name": "Caitlyn",
+      "ratings": {
+        "attack": 80,
+        "defense": 20,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 14,
+      "name": "Cassiopeia",
+      "ratings": {
+        "attack": 20,
+        "defense": 30,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 15,
+      "name": "Cho'Gath",
+      "ratings": {
+        "attack": 30,
+        "defense": 70,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 16,
+      "name": "Corki",
+      "ratings": {
+        "attack": 80,
+        "defense": 30,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 17,
+      "name": "Darius",
+      "ratings": {
+        "attack": 90,
+        "defense": 50,
+        "ability": 10
+      }
+    },
+    {
+      "hid": 18,
+      "name": "Diana",
+      "ratings": {
+        "attack": 70,
+        "defense": 60,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 19,
+      "name": "Dr. Mundo",
+      "ratings": {
+        "attack": 50,
+        "defense": 70,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 20,
+      "name": "Draven",
+      "ratings": {
+        "attack": 90,
+        "defense": 30,
+        "ability": 10
+      }
+    },
+    {
+      "hid": 21,
+      "name": "Ekko",
+      "ratings": {
+        "attack": 50,
+        "defense": 30,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 22,
+      "name": "Elise",
+      "ratings": {
+        "attack": 60,
+        "defense": 50,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 23,
+      "name": "Evelynn",
+      "ratings": {
+        "attack": 40,
+        "defense": 20,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 24,
+      "name": "Ezreal",
+      "ratings": {
+        "attack": 70,
+        "defense": 20,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 25,
+      "name": "Fiddlesticks",
+      "ratings": {
+        "attack": 20,
+        "defense": 30,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 26,
+      "name": "Fiora",
+      "ratings": {
+        "attack": 100,
+        "defense": 40,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 27,
+      "name": "Fizz",
+      "ratings": {
+        "attack": 60,
+        "defense": 40,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 28,
+      "name": "Galio",
+      "ratings": {
+        "attack": 30,
+        "defense": 70,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 29,
+      "name": "Gangplank",
+      "ratings": {
+        "attack": 70,
+        "defense": 60,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 30,
+      "name": "Garen",
+      "ratings": {
+        "attack": 70,
+        "defense": 70,
+        "ability": 10
+      }
+    },
+    {
+      "hid": 31,
+      "name": "Gnar",
+      "ratings": {
+        "attack": 60,
+        "defense": 50,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 32,
+      "name": "Gragas",
+      "ratings": {
+        "attack": 40,
+        "defense": 70,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 33,
+      "name": "Graves",
+      "ratings": {
+        "attack": 80,
+        "defense": 50,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 34,
+      "name": "Hecarim",
+      "ratings": {
+        "attack": 80,
+        "defense": 60,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 35,
+      "name": "Heimerdinger",
+      "ratings": {
+        "attack": 20,
+        "defense": 60,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 36,
+      "name": "Irelia",
+      "ratings": {
+        "attack": 70,
+        "defense": 40,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 37,
+      "name": "Janna",
+      "ratings": {
+        "attack": 30,
+        "defense": 50,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 38,
+      "name": "Jarvan IV",
+      "ratings": {
+        "attack": 60,
+        "defense": 80,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 39,
+      "name": "Jax",
+      "ratings": {
+        "attack": 70,
+        "defense": 50,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 40,
+      "name": "Jayce",
+      "ratings": {
+        "attack": 80,
+        "defense": 40,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 41,
+      "name": "Jinx",
+      "ratings": {
+        "attack": 90,
+        "defense": 20,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 42,
+      "name": "Kalista",
+      "ratings": {
+        "attack": 80,
+        "defense": 20,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 43,
+      "name": "Karma",
+      "ratings": {
+        "attack": 10,
+        "defense": 70,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 44,
+      "name": "Karthus",
+      "ratings": {
+        "attack": 20,
+        "defense": 20,
+        "ability": 100
+      }
+    },
+    {
+      "hid": 45,
+      "name": "Kassadin",
+      "ratings": {
+        "attack": 30,
+        "defense": 50,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 46,
+      "name": "Katarina",
+      "ratings": {
+        "attack": 40,
+        "defense": 30,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 47,
+      "name": "Kayle",
+      "ratings": {
+        "attack": 60,
+        "defense": 60,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 48,
+      "name": "Kennen",
+      "ratings": {
+        "attack": 60,
+        "defense": 40,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 49,
+      "name": "Kha'Zix",
+      "ratings": {
+        "attack": 90,
+        "defense": 40,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 50,
+      "name": "Kogmaw",
+      "ratings": {
+        "attack": 80,
+        "defense": 20,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 51,
+      "name": "LeBlanc",
+      "ratings": {
+        "attack": 10,
+        "defense": 40,
+        "ability": 100
+      }
+    },
+    {
+      "hid": 52,
+      "name": "Lee Sin",
+      "ratings": {
+        "attack": 80,
+        "defense": 50,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 53,
+      "name": "Leona",
+      "ratings": {
+        "attack": 40,
+        "defense": 80,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 54,
+      "name": "Lissandra",
+      "ratings": {
+        "attack": 20,
+        "defense": 50,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 55,
+      "name": "Lucian",
+      "ratings": {
+        "attack": 80,
+        "defense": 50,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 56,
+      "name": "Lulu",
+      "ratings": {
+        "attack": 40,
+        "defense": 50,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 57,
+      "name": "Lux",
+      "ratings": {
+        "attack": 20,
+        "defense": 40,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 58,
+      "name": "Malphite",
+      "ratings": {
+        "attack": 50,
+        "defense": 90,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 59,
+      "name": "Malzahar",
+      "ratings": {
+        "attack": 20,
+        "defense": 20,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 60,
+      "name": "Maokai",
+      "ratings": {
+        "attack": 30,
+        "defense": 80,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 61,
+      "name": "Master Yi",
+      "ratings": {
+        "attack": 100,
+        "defense": 40,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 62,
+      "name": "Miss Fortune",
+      "ratings": {
+        "attack": 80,
+        "defense": 20,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 63,
+      "name": "Mordekaiser",
+      "ratings": {
+        "attack": 40,
+        "defense": 60,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 64,
+      "name": "Morgana",
+      "ratings": {
+        "attack": 10,
+        "defense": 60,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 65,
+      "name": "Nami",
+      "ratings": {
+        "attack": 40,
+        "defense": 30,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 66,
+      "name": "Nasus",
+      "ratings": {
+        "attack": 70,
+        "defense": 50,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 67,
+      "name": "Nautilus",
+      "ratings": {
+        "attack": 40,
+        "defense": 60,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 68,
+      "name": "Nidalee",
+      "ratings": {
+        "attack": 50,
+        "defense": 40,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 69,
+      "name": "Nocturne",
+      "ratings": {
+        "attack": 90,
+        "defense": 50,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 70,
+      "name": "Nunu",
+      "ratings": {
+        "attack": 40,
+        "defense": 60,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 71,
+      "name": "Olaf",
+      "ratings": {
+        "attack": 90,
+        "defense": 50,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 72,
+      "name": "Orianna",
+      "ratings": {
+        "attack": 40,
+        "defense": 30,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 73,
+      "name": "Pantheon",
+      "ratings": {
+        "attack": 90,
+        "defense": 40,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 74,
+      "name": "Poppy",
+      "ratings": {
+        "attack": 60,
+        "defense": 60,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 75,
+      "name": "Quinn",
+      "ratings": {
+        "attack": 90,
+        "defense": 40,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 76,
+      "name": "Rammus",
+      "ratings": {
+        "attack": 40,
+        "defense": 100,
+        "ability": 50
+      }		
+    },
+    {
+      "hid": 77,
+      "name": "Rek'Sai",
+      "ratings": {
+        "attack": 80,
+        "defense": 50,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 78,
+      "name": "Renekton",
+      "ratings": {
+        "attack": 80,
+        "defense": 50,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 79,
+      "name": "Rengar",
+      "ratings": {
+        "attack": 70,
+        "defense": 40,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 80,
+      "name": "Riven",
+      "ratings": {
+        "attack": 80,
+        "defense": 50,
+        "ability": 10
+      }
+    },
+    {
+      "hid": 81,
+      "name": "Rumble",
+      "ratings": {
+        "attack": 30,
+        "defense": 60,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 82,
+      "name": "Ryze",
+      "ratings": {
+        "attack": 20,
+        "defense": 20,
+        "ability": 100
+      }
+    },
+    {
+      "hid": 83,
+      "name": "Sejuani",
+      "ratings": {
+        "attack": 50,
+        "defense": 70,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 84,
+      "name": "Shaco",
+      "ratings": {
+        "attack": 80,
+        "defense": 40,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 85,
+      "name": "Shen",
+      "ratings": {
+        "attack": 30,
+        "defense": 90,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 86,
+      "name": "Shyvana",
+      "ratings": {
+        "attack": 80,
+        "defense": 60,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 87,
+      "name": "Singed",
+      "ratings": {
+        "attack": 40,
+        "defense": 80,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 88,
+      "name": "Sion",
+      "ratings": {
+        "attack": 50,
+        "defense": 90,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 89,
+      "name": "Sivir",
+      "ratings": {
+        "attack": 90,
+        "defense": 30,
+        "ability": 10
+      }
+    },
+    {
+      "hid": 90,
+      "name": "Skarner",
+      "ratings": {
+        "attack": 70,
+        "defense": 60,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 91,
+      "name": "Sona",
+      "ratings": {
+        "attack": 50,
+        "defense": 20,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 92,
+      "name": "Soraka",
+      "ratings": {
+        "attack": 20,
+        "defense": 50,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 93,
+      "name": "Swain",
+      "ratings": {
+        "attack": 20,
+        "defense": 60,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 94,
+      "name": "Syndra",
+      "ratings": {
+        "attack": 20,
+        "defense": 30,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 95,
+      "name": "Tahm Kench",
+      "ratings": {
+        "attack": 20,
+        "defense": 60,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 96,
+      "name": "Talon",
+      "ratings": {
+        "attack": 90,
+        "defense": 30,
+        "ability": 10
+      }
+    },
+    {
+      "hid": 97,
+      "name": "Taric",
+      "ratings": {
+        "attack": 40,
+        "defense": 80,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 98,
+      "name": "Teemo",
+      "ratings": {
+        "attack": 50,
+        "defense": 30,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 99,
+      "name": "Thresh",
+      "ratings": {
+        "attack": 50,
+        "defense": 60,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 100,
+      "name": "Tristana",
+      "ratings": {
+        "attack": 90,
+        "defense": 30,
+        "ability": 50
+      }
+    },
+    {
+      "hid": 101,
+      "name": "Trundle",
+      "ratings": {
+        "attack": 70,
+        "defense": 60,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 102,
+      "name": "Tryndamere",
+      "ratings": {
+        "attack": 100,
+        "defense": 50,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 103,
+      "name": "Twisted Fate",
+      "ratings": {
+        "attack": 60,
+        "defense": 20,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 104,
+      "name": "Twitch",
+      "ratings": {
+        "attack": 90,
+        "defense": 20,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 105,
+      "name": "Udyr",
+      "ratings": {
+        "attack": 80,
+        "defense": 70,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 106,
+      "name": "Urgot",
+      "ratings": {
+        "attack": 80,
+        "defense": 50,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 107,
+      "name": "Varus",
+      "ratings": {
+        "attack": 70,
+        "defense": 30,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 108,
+      "name": "Vayne",
+      "ratings": {
+        "attack": 100,
+        "defense": 10,
+        "ability": 10
+      }
+    },
+    {
+      "hid": 109,
+      "name": "Veigar",
+      "ratings": {
+        "attack": 20,
+        "defense": 20,
+        "ability": 100
+      }
+    },
+    {
+      "hid": 110,
+      "name": "Vel'Koz",
+      "ratings": {
+        "attack": 20,
+        "defense": 20,
+        "ability": 100
+      }
+    },
+    {
+      "hid": 111,
+      "name": "ViSquare",
+      "ratings": {
+        "attack": 80,
+        "defense": 50,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 112,
+      "name": "Viktor",
+      "ratings": {
+        "attack": 20,
+        "defense": 40,
+        "ability": 100
+      }
+    },
+    {
+      "hid": 113,
+      "name": "Vladimir",
+      "ratings": {
+        "attack": 20,
+        "defense": 60,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 114,
+      "name": "Volibear",
+      "ratings": {
+        "attack": 70,
+        "defense": 70,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 115,
+      "name": "Warwick",
+      "ratings": {
+        "attack": 70,
+        "defense": 40,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 116,
+      "name": "Square.pn",
+      "ratings": {
+        "attack": 80,
+        "defense": 50,
+        "ability": 20
+      }
+    },
+    {
+      "hid": 117,
+      "name": "Xerath",
+      "ratings": {
+        "attack": 10,
+        "defense": 30,
+        "ability": 100
+      }
+    },
+    {
+      "hid": 118,
+      "name": "Xin Zhao",
+      "ratings": {
+        "attack": 80,
+        "defense": 60,
+        "ability": 30
+      }
+    },
+    {
+      "hid": 119,
+      "name": "Yasuo",
+      "ratings": {
+        "attack": 80,
+        "defense": 40,
+        "ability": 40
+      }
+    },
+    {
+      "hid": 120,
+      "name": "Yorick",
+      "ratings": {
+        "attack": 60,
+        "defense": 60,
+        "ability": 60
+      }
+    },
+    {
+      "hid": 121,
+      "name": "Zac",
+      "ratings": {
+        "attack": 30,
+        "defense": 70,
+        "ability": 70
+      }
+    },
+    {
+      "hid": 122,
+      "name": "Zed",
+      "ratings": {
+        "attack": 90,
+        "defense": 20,
+        "ability": 10
+      }
+    },
+    {
+      "hid": 123,
+      "name": "Ziggs",
+      "ratings": {
+        "attack": 20,
+        "defense": 40,
+        "ability": 90
+      }
+    },
+    {
+      "hid": 124,
+      "name": "Zilean",
+      "ratings": {
+        "attack": 20,
+        "defense": 50,
+        "ability": 80
+      }
+    },
+    {
+      "hid": 125,
+      "name": "Zyra",
+      "ratings": {
+        "attack": 40,
+        "defense": 30,
+        "ability": 80
+      }
+    }
+  ]
+}

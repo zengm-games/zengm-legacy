@@ -1,0 +1,18 @@
+CACHE MANIFEST
+
+gen/app.js
+gen/bbgm.css
+fonts/glyphicons-halflings-regular.woff
+ico/logo.png
+ico/new_window.png
+img/datatables/sort_asc.png
+img/datatables/sort_both.png
+img/datatables/sort_desc.png
+
+NETWORK:
+*
+
+FALLBACK:
+/ /
+
+# LAST UPDATED: Wed Dec 27 21:33:53 EDT 2019

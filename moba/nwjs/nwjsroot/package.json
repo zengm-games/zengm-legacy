@@ -1,0 +1,20 @@
+{
+    "name": "mobagm",
+    "main": "app/app.js",
+    "nodejs": true,
+    "chromium-args": "--enable-logging=stderr",
+    "inject_js_start": "app/preload.js",
+    "premissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "history",
+        "webNavigation"
+    ],
+    "window": {
+        "id": "mobagm-window",
+        "width": 1280, "height": 800,
+        "min_width": 800, "min_height": 600,
+        "fullscreen": false
+    }
+}

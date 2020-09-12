@@ -1,0 +1,387 @@
+.disabled {
+  display: none !important;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("../img/background4.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100%;
+  position: relative;
+
+
+}
+
+.changedBg {
+  background-image: url("../img/background3.jpg");
+  &:before {
+    opacity: .6 !important;
+  }
+}
+
+.changedBgGreen {
+  background-image: url("../img/backgroundgreen.jpg");
+  &:before {
+    opacity: .6 !important;
+  }
+}
+
+.changedBgLightGreen {
+  background-image: url("../img/backgroundlightgreen.jpg");
+  &:before {
+    opacity: .6 !important;
+  }
+}
+
+.main-board {
+  position: relative;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.moba-logo1 {
+  margin-top: 18px;
+  img {
+    width: 318px;
+    height: 62px;
+  }
+}
+
+.moba-logo2 {
+  margin: 20px auto 0 auto;
+  float: initial;
+  width: 430px;
+
+  img {
+    width: 430px;
+    height: 85px;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: $dashboardFont1;
+  color: $baseFontColor;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+p, span, div {
+  color: $baseFontColor;
+}
+
+.dropdown-wrapper1 {
+  margin-top: 38px;
+  width: 230px;
+  height: 34px;
+}
+
+.dropdown-wrapper2 {
+  margin-top: initial;
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.nav-item-wrapper {
+  display: table;
+  margin-right: 10px;
+  font-family: 'Lato', sans-serif;
+
+  .nav-item {
+    display: table-cell;
+    width: 110px;
+    height: 34px;
+    padding: initial;
+    vertical-align: middle;
+    border: 1px solid $baseFontColor;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: $baseFontColor !important;
+
+    &:hover, &:focus {
+      background-color: inherit !important;
+      border-color: inherit !important;
+      opacity: 0.8;
+    }
+
+    span {
+      margin-left: 10px;
+
+      .caret {
+        float: right;
+        margin-right: 10px;
+        margin-top: 7px;
+      }
+    }
+  }
+  &:hover {
+    .dropdown-menu {
+      display: block;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-wrapper {
+  margin: 50px 0;
+
+  .btn-wrapper {
+    width: 230px;
+    float: right;
+    position: relative;
+
+    .dashboard-box-new {
+      height: 56px;
+      margin-bottom: 15px;
+
+      .btn-new-league {
+        background-image: linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+        background-image: -o-linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+        background-image: -moz-linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+        background-image: -webkit-linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+        background-image: -ms-linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+        color: $dashboardFontColor2;
+      }
+    }
+  }
+}
+
+.btn-custom1 {
+  width: 230px;
+  height: 56px;
+  display: table-cell;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  font-size: 14px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    opacity: 0.8;
+    color: $dashboardFontColor2;
+  }
+  &[disabled] {
+    opacity: 0.7;
+    cursor: progress;
+  }
+}
+
+.btn-gradient1 {
+  background-image: linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+  background-image: -o-linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+  background-image: -moz-linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+  background-image: -webkit-linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+  background-image: -ms-linear-gradient(bottom, #399797 50%, #3fa8a8 50%);
+  color: $dashboardFontColor2;
+}
+
+.btn-guide-store {
+  color: $baseFontColor;
+  background-color: transparent;
+  border: 2px solid $baseFontColor;
+}
+
+.dashboard-boxes {
+  max-width: 880px;
+  max-height: 442px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  float: left;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #399797;
+  }
+
+  .league-block {
+    width: 245px;
+    height: 109px;
+    margin: initial;
+    margin-right: 50px;
+    margin-bottom: 57px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    .btn-custom2 {
+      width: 245px;
+      height: 109px;
+      font-weight: bold;
+      text-align: left;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-family: 'Lato', sans-serif;
+      background-color: transparent;
+      color: $baseFontColor;
+
+      strong {
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      span {
+        font-size: 16px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+        color: $baseFontColor;
+      }
+    }
+
+    &:nth-child(3n+3) {
+      margin-right: 10px;
+    }
+  }
+  li form.delete button, li a.delete {
+    border-radius: 0 4px 0 4px;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    opacity: initial;
+    color: $baseFontColor;
+  }
+}
+/* Fix to make the client-side router work on links whose content
+   changes when clicked, like the "League" button. */
+a span, a strong, a div { pointer-events:none; }
+/* A related fix: some buttons are not clickable without this. */
+.btn { position:relative; }
+
+.footer-menu {
+  margin: 0 auto 13px auto;
+
+  .footer-menu-item {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: $baseFontColor;
+    padding: 0 10px;
+  }
+  .shape-1 {
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    vertical-align: text-top;
+  }
+}
+
+.footer-version {
+  font-size: 11px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.newleague-wrapper {
+  margin-top: 84px;
+  margin-bottom: 50px;
+
+  .row {
+    margin-bottom: 45px;
+    &:last-child {
+      margin-bottom: initial;
+    }
+  }
+
+  .select-wrapper2 {
+
+    label {
+      font-size: 18px;
+      font-family: $baseFont;
+      color: $baseFontColor;
+    }
+
+    .form-control {
+      width: 360px;
+      height: 53px;
+      font-size: 16px;
+      color: #a2a7a2;
+      background-color: transparent;
+    }
+
+    .help-block {
+      font-size: 13px;
+      color: $secondFontColor;
+
+      a {
+        color: $baseFontColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.new_window {
+  margin-left: 5px;
+}
+
+.form-control {
+  background-color: transparent !important;
+  color: $dashboardFontColor3 !important;
+  border-color: $dashboardFontColor3 !important;
+
+  &:focus,
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+select.form-control {
+  option {
+    background-color: $borderColor1 !important;
+    color: $dashboardFontColor3 !important;
+    border: none;
+  }
+}

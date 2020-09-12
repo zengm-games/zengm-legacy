@@ -1,0 +1,74 @@
+<div data-bind="dropdown: 'history'"></div>
+
+<h1>Regular Season and Conference Tournament (CT) Summary <span data-bind="newWindow: []"></span></h1>
+
+<p></p>
+<div class="row">
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="row">
+      <div class="col-sm-12 col-xs-6">
+
+        <h4>Champions</h4>
+        <p>ACC: <span data-bind="css: {'bg-info': champ.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', champ.abbrev, season]}"><span data-bind="text: champ.region"></span> <span data-bind="text: champ.name"></span></a></span><br>
+        Big North: <span data-bind="css: {'bg-info': champ2.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', champ2.abbrev, season]}"><span data-bind="text: champ2.region"></span> <span data-bind="text: champ2.name"></span></a></span><br> 
+        SEC: <span data-bind="css: {'bg-info': champ3.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', champ3.abbrev, season]}"><span data-bind="text: champ3.region"></span> <span data-bind="text: champ3.name"></span></a></span><br> 
+        PCC: <span data-bind="css: {'bg-info': champ4.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', champ4.abbrev, season]}"><span data-bind="text: champ4.region"></span> <span data-bind="text: champ4.name"></span></a></span><br> 
+        Mid West: <span data-bind="css: {'bg-info': champ5.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', champ5.abbrev, season]}"><span data-bind="text: champ5.region"></span> <span data-bind="text: champ5.name"></span></a></span><br> </p>
+		        <a data-bind="attrLeagueUrl: {href: ['playoffs', season]}">Playoff Brackets</a></p>
+        <h4>Best Records</h4>
+        <p>ACC: <span data-bind="css: {'bg-info': awards.bre.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.bre.abbrev, season]}"><span data-bind="text: awards.bre.region"></span> <span data-bind="text: awards.bre.name"></span></a> (<span data-bind="text: awards.bre.won"></span>-<span data-bind="text: awards.bre.lost"></span>)</span><br>
+        Big North: <span data-bind="css: {'bg-info': awards.brw.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', awards.brw.abbrev, season]}"><span data-bind="text: awards.brw.region"></span> <span data-bind="text: awards.brw.name"></span></a> (<span data-bind="text: awards.brw.won"></span>-<span data-bind="text: awards.brw.lost"></span>)</span><br>
+        SEC: <span data-bind="css: {'bg-info': awards.br2.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', awards.br2.abbrev, season]}"><span data-bind="text: awards.br2.region"></span> <span data-bind="text: awards.br2.name"></span></a> (<span data-bind="text: awards.br2.won"></span>-<span data-bind="text: awards.br2.lost"></span>)</span><br>
+        PCC: <span data-bind="css: {'bg-info': awards.br3.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', awards.br3.abbrev, season]}"><span data-bind="text: awards.br3.region"></span> <span data-bind="text: awards.br3.name"></span></a> (<span data-bind="text: awards.br3.won"></span>-<span data-bind="text: awards.br3.lost"></span>)</span><br>
+        Mid West: <span data-bind="css: {'bg-info': awards.br4.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', awards.br4.abbrev, season]}"><span data-bind="text: awards.br4.region"></span> <span data-bind="text: awards.br4.name"></span></a> (<span data-bind="text: awards.br4.won"></span>-<span data-bind="text: awards.br4.lost"></span>)</span><br></p>
+      </div>
+ 
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-6">
+    <h4>All-American Teams</h4>
+    <!-- ko foreach: awards.allLeague -->
+      <h5 data-bind="text: title"></h5>
+      <!-- ko foreach: players -->
+        <span data-bind="css: {'bg-info': tid() === $root.userTid()}"><a data-bind="attrLeagueUrl: {href: ['player', pid]}, text: name"></a> (<a data-bind="attrLeagueUrl: {href: ['roster', abbrev, $root.season]}, text: abbrev"></a>)</span><br>
+      <!-- /ko -->
+    <!-- /ko -->
+    <br>
+  </div>
+  <div class="col-md-3 col-sm-4 col-xs-6">
+    <h4>All-American Defensive Teams</h4>
+    <!-- ko foreach: awards.allDefensive -->
+      <h5 data-bind="text: title"></h5>
+      <!-- ko foreach: players -->
+        <span data-bind="css: {'bg-info': tid() === $root.userTid()}"><a data-bind="attrLeagueUrl: {href: ['player', pid]}, text: name"></a> (<a data-bind="attrLeagueUrl: {href: ['roster', abbrev, $root.season]}, text: abbrev"></a>)</span><br>
+      <!-- /ko -->
+    <!-- /ko -->
+    <br>
+  </div>
+  <div class="clearfix visible-sm"></div>
+  <div class="col-md-3 col-sm-12">
+  <!-- put something else here? -->
+<!--   <h4>Retired Players</h4> -->
+   <h4>Awards</h4> 
+   
+    <p style="-moz-column-width: 12em; -moz-columns: 12em; -webkit-columns: 12em; columns: 12em;">
+<!--        <p>Player Of Year: <strong><a data-bind="attrLeagueUrl: {href: ['player', awards.finalsMvp.pid]}, css: {'bg-info': champ.tid() === userTid()}, text: awards.finalsMvp.name"></a></strong></span><br>
+          <span data-bind="round: [awards.finalsMvp.pts, 1]"></span> pts, <span data-bind="round: [awards.finalsMvp.trb, 1]"></span> reb, <span data-bind="round: [awards.finalsMvp.ast, 1]"></span> ast</p> -->
+<!--     <div class="col-sm-12 col-xs-6"> -->
+        <h4>Player of the Year</h4>
+        <p><span data-bind="css: {'bg-info': awards.mvp.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['player', awards.mvp.pid]}, text: awards.mvp.name"></a></strong> (<a data-bind="attrLeagueUrl: {href: ['roster', awards.mvp.abbrev, season]}, text: awards.mvp.abbrev"></a>)</span><br>
+        <span data-bind="round: [awards.mvp.pts, 1]"></span> pts, <span data-bind="round: [awards.mvp.trb, 1]"></span> reb, <span data-bind="round: [awards.mvp.ast, 1]"></span> ast</p>
+        <h4>Defensive Player of the Year</h4>
+        <p><span data-bind="css: {'bg-info': awards.dpoy.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['player', awards.dpoy.pid]}, text: awards.dpoy.name"></a></strong> (<a data-bind="attrLeagueUrl: {href: ['roster', awards.dpoy.abbrev, season]}, text: awards.dpoy.abbrev"></a>)</span><br>
+        <span data-bind="round: [awards.dpoy.trb, 1]"></span> reb, <span data-bind="round: [awards.dpoy.blk, 1]"></span> blk, <span data-bind="round: [awards.dpoy.stl, 1]"></span> stl</p>
+      <!--  <h4>Sixth Man of the Year</h4>
+        <p><span data-bind="css: {'bg-info': awards.smoy.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['player', awards.smoy.pid]}, text: awards.smoy.name"></a></strong> (<a data-bind="attrLeagueUrl: {href: ['roster', awards.smoy.abbrev, season]}, text: awards.smoy.abbrev"></a>)</span><br>
+        <span data-bind="round: [awards.smoy.pts, 1]"></span> pts, <span data-bind="round: [awards.smoy.trb, 1]"></span> reb, <span data-bind="round: [awards.smoy.ast, 1]"></span> ast</p> -->
+        <h4>Freshman of the Year</h4>
+        <p><span data-bind="css: {'bg-info': awards.roy.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['player', awards.roy.pid]}, text: awards.roy.name"></a></strong> (<a data-bind="attrLeagueUrl: {href: ['roster', awards.roy.abbrev, season]}, text: awards.roy.abbrev"></a>)</span><br>
+        <span data-bind="round: [awards.roy.pts, 1]"></span> pts, <span data-bind="round: [awards.roy.trb, 1]"></span> reb, <span data-bind="round: [awards.roy.ast, 1]"></span> ast</p>
+<!--      </div>	-->
+
+    </p>
+  </div>
+</div>

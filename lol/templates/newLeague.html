@@ -1,0 +1,72 @@
+<h1>Create New League</h1>
+
+<form action="/new_league" method="POST" role="form">
+  <div class="row">
+  
+  
+   <div class="form-group col-md-3 col-sm-3">
+      <label for="new-league-typeid">Which game type do you want to play?</label>
+      <select class="form-control" id="new-league-typeid" name="typeid" data-bind="foreach: gameType">
+        <option data-bind="attr: {value: typeid}, text: name()"></option>
+      </select>
+    </div>
+  
+  
+    <div class="clearfix visible-xs"></div>
+  
+   <div class="form-group col-md-2 col-sm-2">
+      <label for="new-league-patchid">Champion Patch Options</label>
+      <select class="form-control" id="new-league-patchid" name="patchid" data-bind="foreach: patchType">
+        <option data-bind="attr: {value: patchid}, text: name()"></option>
+      </select>
+    </div>
+  
+  
+    <div class="clearfix visible-xs"></div>
+    
+  
+    <div class="form-group col-md-2 col-sm-2">
+      <label for="new-league-name">League name</label>
+      <input class="form-control" id="new-league-name" type="text" name="name" data-bind="attr: {value: name}">
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="form-group col-md-3 col-sm-3">
+      <label for="new-league-tid">Which team do you want to manage?</label>
+      <select class="form-control" id="new-league-tid" name="tid" data-bind="foreach: teams">
+        <option data-bind="attr: {value: tid, selected: tid() === $root.lastSelectedTid()}, text: region() "></option>
+      </select>
+      <span class="help-block" id="pop-text"></span>
+    </div>
+
+    <div class="clearfix visible-sm"></div>
+
+    <div class="col-md-2 col-sm-2">
+      <div class="form-group">
+        <label for="new-league-rosters">Customize</label>
+        <select class="form-control" id="new-league-rosters" name="rosters">
+          <option value="random" selected="selected">Random Players</option>
+          <option value="custom-rosters">Upload League File</option>
+        </select>
+        <span class="help-block">Teams in your new league can either be filled by randomly-generated players or by players from a <a href="http://basketball-gm.com/manual/customization/">custom League File</a> you upload.</span>
+      </div>
+      <div id="custom-rosters" style="display: none">
+        <input type="file" name="custom-rosters" id="custom-rosters-file">
+        <p class="text-danger" style="margin-top: 1em" data-bind="visible: invalidLeagueFile">Error: Invalid League File</p>		
+      </div>
+      <div id="randomize-rosters" class="checkbox" style="display: none">
+        <label>
+          <input name="randomize-rosters" value="1" type="checkbox"> Shuffle Rosters
+        </label>
+      </div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="col-md-12 col-sm-5 text-center">
+      <div class="visible-sm invisible-xs"><br><br></div>
+      <button type="submit" class="btn btn-lg btn-primary" id="create-new-league" data-bind="disable: disableSubmit">Create New League</button>
+    </div>
+  </div>
+</form>

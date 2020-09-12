@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="eyebrows" transform="translate(0.000000, -82.000000)">
+            <g id="1" transform="translate(0.000000, 82.000000)">
+                <g>
+                    <g>
+                        <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                        <g transform="translate(120.681585, 164.311079)" id="haircut_color_path" fill="#7F5035">
+                            <path d="M15.6685943,0.0327344533 C3.56729447,0.834585086 -0.637206557,13.0224964 0.0765940358,12.8771519 C4.31051122,9.93920726 9.5495134,7.41943834 14.4981985,7.12115952 C26.4989973,6.11875322 43.9830566,15.3311685 43.9298793,15.137136 C43.3282123,12.8929017 42.5809775,9.31804523 41.8675489,7.10369833 C40.1942013,5.76876051 23.7968532,-0.506181398 15.6685943,0.0327344533 Z"></path>
+                            <path d="M88.6685943,0.0327344533 C76.5672945,0.834585086 72.3627934,13.0224964 73.076594,12.8771519 C77.3105112,9.93920726 82.5495134,7.41943834 87.4981985,7.12115952 C99.4989973,6.11875322 116.983057,15.3311685 116.929879,15.137136 C116.328212,12.8929017 115.580977,9.31804523 114.867549,7.10369833 C113.194201,5.76876051 96.7968532,-0.506181398 88.6685943,0.0327344533 Z" transform="translate(94.965000, 7.570080) scale(-1, 1) translate(-94.965000, -7.570080) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

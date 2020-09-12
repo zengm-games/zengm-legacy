@@ -1,0 +1,10 @@
+<div data-bind="dropdown: 'player-stat-dists'"></div>
+
+<h1>Player Stat Distributions <span data-bind="newWindow: []"></span></h1>
+<p>More: <a data-bind="attrLeagueUrl: {href: ['player_stats', season]}">Hitting Stats</a> | <a data-bind="attrLeagueUrl: {href: ['player_shot_locations', season]}">Pitching Stats</a></p>
+
+<p>These <a href="http://en.wikipedia.org/wiki/Box_plot">box plots</a> show the league-wide distributions of player stats for all active players in the selected season. Black plots are for this league and blue plots are from the 2013 MLB season, for comparison. MLB data was generously provided by <a href="http://www.fangraphs.com">fangraphs.com</a>. The five vertical lines in each plot represent the minimum of the scale, the minimum, the first <a href="http://en.wikipedia.org/wiki/Quartile">quartile</a>, the median, the third quartile, the maximum, and the maximum of the scale.</p>
+
+<table id="player-stat-dists">
+  <tbody></tbody>
+</table>

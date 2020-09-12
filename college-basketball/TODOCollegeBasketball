@@ -1,0 +1,410 @@
+Bugs
+----
+
+- exploit, get your money back when you release players, can make them more expensive so that they don't get recruited and you can scoop them up for cheap later.
+
+- Dashboard sorts by Overall record while GB is for conference. Should be sort conference then OVR
+
+- message sends them to pro basketball subreddit and not college
+
+- box score, should show 200 minutes, not 240
+
+- recruiting budget screen empty (both team and league pages don't show it)
+
+- improved scheduling if number of teams different than 320 and 80. At least balanced by conference.
+
+Ideas
+-----
+
+- Coaches:
+
+	https://www.reddit.com/r/ZenGMBasketballCoach/comments/7d53vh/college_basketball_idea_coaches/?st=ja2pkhtk&sh=04b53158
+	- keep track of just you as a coach, and not your teams.
+	- May want to make the difficulty of game harder
+
+- upload player locations/cities
+
+- redshirt
+
+- talk to coach before leaving early, pay to stop players from leaving early
+
+- conference player of year, conference freshman of year
+
+- NIT
+
+- Allow users to switch conferences
+
+- Torn ACL get extra year (5th year)
+
+- Redshirt players
+
+- Add ranking near name on schedule.
+
+
+
+Limit number of teams from a conference
+--------------------------------------
+
+- too many ACC get into NT
+
+- worst conferences still too good, 13th seeds should be winners of worst conference not major conference teams.
+
+- change from 20 to 32 conferences.
+
+Relative Team Strength
+----------------------
+
+Make it more like real life?
+
+BUGS
+-----
+
+Skipping recruiting to 0 days bug.
+
+Why does it do it here, but not in other games?
+
+
+BUGS
+----
+
+Event Log shows wrong winner for conference?
+
+
+Move up to another Conference
+----------------------------
+
+- don't just get fired, get job offers
+
+Awards
+------
+ - for conference players
+
+
+AP Ranking
+-------------
+
+- include power ranking as well instead of talent near end of season?
+
+Bribes
+------
+
+- be able to over pay players
+
+- maybe in finance section
+
+Bugs
+---------
+
+- Event Log shows wrong winner for conference?
+
+- streaks of how and away games, not rotated, need to randomize
+
+
+Upload/Export BUGS
+------------------
+
+- initial export and upload can work (FIXED)
+- during season export and upload doesn't work sometimes, why? (FIXED)
+
+Owner Message bugs
+------------------
+
+- made final four and owner had the sweet 16 message
+
+Recruiting Class BUGS
+---------------------
+
+Lose 3rd recruiting class, gets lumped in with 2nd class?? (causes freshman to still be in HS as well?) (FIXED)
+
+Recruiting BUGS
+---------------
+Some players stay in HS after season starts instead of being Freshman? (FIXED)
+
+
+Quick Change
+------------
+
+Change Event Log statement by removing "the" since talking about the state. (FIXED)
+
+BUGS
+----
+
+- Fix recruiting class, use similar code as draft fix?
+
+
+Deleting stast impacts YWT
+
+YWT correct? throwing off budgets?
+
+Only delete older than 4 years (to not mess with YWT? or just delete everything else)
+Option to automatically delete stats older than 4 years?
+
+Give 25% of remaining money?
+
+Get offered jobs, move up or lateral
+
+
+either have user pick conference
+
+or sim entire league, about 3x slower than basketballgm
+
+have conference tourny
+
+have 64 tourney
+w/ alternate 64 tourney
+
+recruit instead of sign
+-based on distance/money/prestige
+
+that is pretty much it
+
+
+
+1) get some basic conferences and schedules in (adjustable, based on aggressiveness)
+- done
+- need to add rest of teams
+- top 5 based on states
+- next 15 based on cities
+2) create tourney set up?
+- almost done
+- need to make part of regular season
+
+bugs
+- not being ordered by conference wins?
+post
+
+2a) first tourney still regular seasons, can use current format, but stats still need to be regular season
+
+pretty much done
+maybe better display historical conference winners?
+
+2b) second tourney actually 64 team playoff
+- take winners of conference tourney
+- then seed based on combined rankings
+
+I) make new playoff
+create new playoff page
+create new summary page (history? look up)
+then connect to game
+II) similar to old playoff
+III) then make first playoff part of regular season
+
+template helpers
+conference
+    ko.bindingHandlers.recordAndPlayoffs = {
+	
+national	
+    ko.bindingHandlers.recordAndPlayoffs64 = {
+
+
+
+
+
+
+3) do recruiting
+- distance and prestige impacts mood.
+- so only some available (can make very restrictive even for good teams
+4) refine and clean up (remove trading aspect)
+5) owner message, should be president's message
+
+
+DI,DII,DIII
+rise from DIII? (future game?)
+or just rise from worst team in D1?
+
+use this for the teams
+http://en.wikipedia.org/wiki/List_of_U.S._states'_largest_cities_by_population
+
+top four divisions are states
+
+next 12 are state cities
+
+
+
+don't forget
+1) top 25 rankings (done)
+2) conference champs auto bid for NT (done)
+3) RPI rankings  (done)
+4) power rankings - based on opp adjustment (done)
+
+
+1) quarters to half
+2) draft/free agent to recruit
+3) RPI/power  (done)
+
+
+1) conf summary, player stats missing
+not being sorted
+
+
+1) smoother transition from message to free agency - needs time to process
+2) player location
+3) team location
+4) miles away
+5) impacts resigning
+6) initial signing price, but no further cost
+7) AI, less dropping of players?
+8) 
+
+
+get coordinates for largest cities, used for schools
+http://www.geonames.org/US/VA/largest-cities-in-virginia.html
+
+top 5 conferences take top 1-2 cities
+smaller conferences get rest
+
+probably want to filter remaining conferences by pop size. So more schools in more populated areas
+
+
+
+need to calculate recruiting distance:
+http://stackoverflow.com/questions/14560999/using-the-haversine-formula-in-javascript
+Number.prototype.toRad = function() {
+   return this * Math.PI / 180;
+}
+
+var lat2 = 42.741; 
+var lon2 = -71.3161; 
+var lat1 = 42.806911; 
+var lon1 = -71.290611; 
+
+var R = 6371; // km 
+//has a problem with the .toRad() method below.
+var x1 = lat2-lat1;
+var dLat = x1.toRad();  
+var x2 = lon2-lon1;
+var dLon = x2.toRad();  
+var a = Math.sin(dLat/2) * Math.sin(dLat/2) + 
+                Math.cos(lat1.toRad()) * Math.cos(lat2.toRad()) * 
+                Math.sin(dLon/2) * Math.sin(dLon/2);  
+var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+var d = R * c; 
+
+alert(d);
+
+
+----------------------
+
+TODO
+
+1) for new recruiting class - add miles
+2) make sure contract.amount goes to 0 after first year
+3) make sure players stay with teams (contracts should last through 4 years)
+4) expand recruiting class? need enough players 12 players/ 4years = 3/year on average (currently only 2 rounds)
+5) make sure idle/player/etc match up with 
+6) create player contract criteria based on miles/prestige/pasthistory
+
+do next?
+7) update free agent page, roster page with correct cash left amount (essentially done, roster page may not need anything (or just ending cash))
+8) turn negotiate into sign
+- clean up page, reduce to most simple, then put that into free agent page
+
+9) free agent page, remove stats and put more ratings
+
+10) recruiting doesn't scan through every day, just finishes after one day
+
+11) prevent getting recruit that are too expensive
+
+
+MAJOR ISSUES
+1) bringing in team location to create miles for new players
+2) changing negotiate button to autosign button
+
+
+
+FIXES:
+core/contractnegotionation line 29 (negiotiatoin spelled wrong)
+core/league.js 557 spelling strategy contending?
+js/util/message.js 130 coachs -> coaches
+
+1) sorting currency by whole number, not first digit (e-mail)
+2) get miles right (check then e-mail)
+3) adjust teams, add location (done)
+4) optimize miles/mood/value calculate (getting close) (somewhat, need either 1) more cash, 2) lower player, 3) dramatic drop in needs over time- for some it could go higher, maybe a range of +10% to -20%)
+5) add more players (done)
+6) fix transition, 1) bring to free agency 2) then do days (currently does days first and all in one step)
+7) clean up, remove all non needed salary, budget info (salary palyer page, budget finance pages) (somewhat)
+8) owner messages adjust
+9) 2 halves, not 4 quarters (done)
+10) when payroll adds is combines digits, not by math ( 700 + 0 = 7000, not 700) (e-mail? with sorting contract issue?) (done)
+11) achievements (done)
+12) upload teams (done), create players, fantasy draft
+
+
+13) 2nd season, finance cash updated? free agency area yes, but league finance no?
+13) 2nd season, player contract amounts not zero?, any impact from this? yes, need to set these to zero
+
+14) make sure cash is saved after recruiting period, not during season?
+15) excess recruits from first year need to be in line with excess recruits for next 4 years
+- more at start
+- less each year after
+
+
+16) upload teams - give current team set up
+17) check player page upload - need location? (less used?)
+
+18) user manual
+
+19) remove HOF?
+
+
+20) why aren't teams adding players? always allow players to be added if cost is zero?
+
+21) player contract amount - should be different for each team (done?)
+22) have computer be aggressive for better players (only look for top 25?) (done)
+23) some payroll still showing up, not all players deleted? (fixed)
+24) difficulty, set this (done)
+25) win 30 games didn't work, check out why (fixed) 
+26) recruiting, left and came back, undeined days left?
+27) conference playoff seeds correct? 
+28) recruit classes after initial set up not being created (seemed there, why didn't load?) 
+2019 free agency, new recruits don't load?
+2020 they come back
+29) make GB just conference
+30) so slow to save old player data? does compiling improve?
+31) power ranking: show conference?
+
+
+TODO before going live
+32) OWNER MESSAGE (MUST IMPROVE) (fixed)
+33) MILES CALC (MUST IMRPOVE) (fixed)
+
+call teams.filter before doing player generate enter team location data into that function
+
+
+
+34) CONFERNCE Ranking calc (NEED TO CHECK)
+35) Games back?
+36) conference rank, by actual tournament, not winp
+37) manual
+38) when you get fired, can't move on
+
+39) monthly for national doesn't work (may have been another bug)
+
+Would Like
+38) SCORES DURING TOURNAMENTS LISTED
+39) Allow AI teams to cut players, or make recruiting classes more even (not random for each team) (make go in order when be created)
+
+1) team filter
+2) contract sort by string, not int/real
+3) three versions of game
+college basketball coach
+college basketball coach seasons
+college basketball coach big 5
+
+collegebasketball.zengm.com
+collegebasketballseasons.zengm.com
+collegebasketballbigfive.zengm.com
+
+4) subreddit, 
+
+/r/zengmcollege
+
+
+
+
+
+
+
+
+

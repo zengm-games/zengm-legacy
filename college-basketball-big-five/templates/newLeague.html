@@ -1,0 +1,49 @@
+<h1>Create New Association</h1>
+
+<form action="/new_league" method="POST" role="form">
+  <div class="row">
+    <div class="form-group col-md-4 col-sm-5">
+      <label for="new-league-name">Association name</label>
+      <input class="form-control" id="new-league-name" type="text" name="name" data-bind="attr: {value: name}">
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="form-group col-md-4 col-sm-5">
+      <label for="new-league-tid">Which team do you want to manage?</label>
+      <select class="form-control" id="new-league-tid" name="tid" data-bind="foreach: teams">
+        <option data-bind="attr: {value: tid, selected: tid() === $root.lastSelectedTid()}, text: region() + ' ' + name()"></option>
+      </select>
+      <span class="help-block" id="pop-text"></span>
+    </div>
+
+    <div class="clearfix visible-sm"></div>
+
+    <div class="col-md-4 col-sm-5">
+      <div class="form-group">
+        <label for="new-league-rosters">Customize</label>
+        <select class="form-control" id="new-league-rosters" name="rosters">
+          <option value="random" selected="selected">Random Players</option>
+          <option value="custom-rosters">Upload Association File</option>
+        </select>
+        <span class="help-block">Teams in your new association can either be filled by randomly-generated players or by players from a <a href="http://basketball-gm.com/manual/customization/">custom Association File</a> you upload.</span>
+      </div>
+      <div id="custom-rosters" style="display: none">
+        <input type="file" name="custom-rosters" id="custom-rosters-file">
+      </div>
+      <div id="randomize-rosters" class="checkbox" style="display: none">
+        <label>
+          <input name="randomize-rosters" value="1" type="checkbox"> Shuffle Rosters
+        </label>
+      </div>
+    </div>
+
+    <div class="clearfix visible-xs"></div>
+
+    <div class="col-md-12 col-sm-5 text-center">
+      <div class="visible-sm invisible-xs"><br><br></div>
+      <button type="submit" class="btn btn-lg btn-primary" id="create-new-league">Create New Association</button>
+       <span class="help-block">Once the association is being created, give it a little while (under a minute). A completely new 13 man roster is being created for each of the 80 teams.</span>	  
+    </div>
+  </div>
+</form>

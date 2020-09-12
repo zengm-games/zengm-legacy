@@ -1,0 +1,29 @@
+<div data-bind="dropdown: 'leaders'"></div>
+
+<h1>League Leaders <span data-bind="newWindow: []"></span></h1>
+
+<p>Only eligible players are shown (pitchers need to average 1 inning per game and hitters need to aveage 3.1 at bats per game).</p>
+
+<div class="row" data-bind="foreach: categories">
+  <div class="col-md-4 col-sm-6">
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered table-condensed leaders">
+        <thead>
+          <tr><th data-bind="text: name"></th><th data-bind="text: stat, attr: {title: title}"></th></tr>
+        </thead>
+        <tbody data-bind="foreach: data">		
+<!--               <tr data-bind="if: (stat<3)">		  -->
+<!--           <tr data-bind="css: {'info': userTeam}"><td><span data-bind="text: i"></span>. <span data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></span>, <a data-bind="text: abbrev, attrLeagueUrl: {href: ['roster', abbrev, $root.season]}"></a></td><td data-bind="round: [stat, 3]"></tr> -->
+           <tr data-bind="css: {'info': userTeam}"><td><span data-bind="text: i"></span>. <span data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></span>, <a data-bind="text: abbrev, attrLeagueUrl: {href: ['roster', abbrev, $root.season]}"></a></td><td data-bind="roundVaries2: [statname,stat, 0]"></tr>
+<!--    			</tr>		   -->
+		 </tbody>		 
+      </table>
+    </div>
+  </div>
+  <!--ko if: $index() % 3 === 2-->
+    <div class="clearfix visible-md visible-lg"></div>
+  <!--/ko-->
+  <!--ko if: $index() % 2 === 1-->
+    <div class="clearfix visible-sm"></div>
+  <!--/ko-->
+</div>

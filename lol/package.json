@@ -1,0 +1,21 @@
+{
+  "name": "basketball-gm",
+  "version": "3.4.0",
+  "description": "A single-player basketball simulation game. Make trades, set rosters, draft players, and try to build the next dynasty, all from within your web browser. The game is implemented entirely in client-side JavaScript, backed by IndexedDB.",
+  "author": "Jeremy Scheff <jdscheff@gmail.com>",
+  "main": "js/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/dumbmatter/basketball-gm/"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/dumbmatter/basketball-gm/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "~0.11.0".
+    "clean-css": "~2.2.23",
+    "bluebird": "~2.6.1"
+  },
+  "private": true
+}

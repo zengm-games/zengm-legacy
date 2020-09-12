@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="eyebrows" transform="translate(0.000000, -3564.000000)">
+            <g id="7" transform="translate(0.000000, 3564.000000)">
+                <g id="1">
+                    <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                    <g transform="translate(121.681585, 164.311079)" id="haircut_color_path" fill="#7F5035">
+                        <path d="M99.7960787,1.64229925 C111.406846,5.14579867 112.761902,17.9671416 112.099092,17.664952 C108.634583,13.8498826 104.096681,10.2161761 99.3419287,8.81233023 C87.8742019,5.13602319 68.7659155,10.1792673 68.8613776,10.0021701 C69.9524668,7.95080099 70.7438612,4.58818316 73.6779809,3.63855233 C76.6121005,2.6889215 91.9973763,-0.711264616 99.7960787,1.64229925 Z M13.134437,1.64229925 C20.9331394,-0.711264616 36.3184153,2.6889215 39.2525349,3.63855233 C42.1866545,4.58818316 42.9780489,7.95080099 44.0691381,10.0021701 C44.1646003,10.1792673 25.0563138,5.13602319 13.588587,8.81233023 C8.83383456,10.2161761 4.29593234,13.8498826 0.831423915,17.664952 C0.168613401,17.9671416 1.52366983,5.14579867 13.134437,1.64229925 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

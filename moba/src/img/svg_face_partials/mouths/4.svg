@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mouths" transform="translate(0.000000, -1658.000000)">
+            <g id="4-no-smile-thinner" transform="translate(0.000000, 1658.000000)">
+                <g id="2">
+                    <g id="4">
+                        <g>
+                            <path d="M209.945766,255.010875 C209.159223,255.071561 190.378537,252.896189 180.588337,254.749161 C180.308766,254.802161 179.584709,254.930389 178.95888,255.010875 C178.331652,254.930389 177.608423,254.802161 177.329709,254.749161 C167.53868,252.896189 152.24768,256.115503 145.945766,255.627075 C139.643852,255.138646 166.438223,257.460932 178.901109,257.489103 C191.478109,257.460932 210.732309,254.950189 209.945766,255.010875 Z" id="Shape" fill="#D4845A" fill-rule="nonzero"  class="color-burn-path" opacity="0.6" ></path>
+                            <path d="M189.255853,261.654948 C185.848982,261.892207 182.330149,262.277723 178.835202,262.353112 C175.339757,262.277723 171.821173,261.892207 168.413556,261.654948 C164.895719,261.410124 160.513039,260.973677 161.043987,261.29162 C165.042762,263.224997 169.086322,265.662394 178.834705,265.662394 C188.619661,265.662394 192.627891,263.020011 196.625173,261.086634 C197.156867,260.76869 192.77369,261.410124 189.255853,261.654948" id="Fill-388" fill="#D48E6A"  class="color-burn-path" opacity="0.6" ></path>
+                            <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

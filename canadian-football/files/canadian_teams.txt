@@ -1,0 +1,15 @@
+{
+       "teams" : [
+             {"tid": 0, "cid": 0, "did": 0, "region": "Hamilton", "name": "Tiger Cats", "abbrev": "HAM", "pop": 9},
+            {"tid": 1, "cid": 0, "did": 0, "region": "Montreal", "name": "Alouettes", "abbrev": "MON", "pop": 9},
+            {"tid": 2, "cid": 0, "did": 0, "region": "Ottawa", "name": "Redblacks", "abbrev": "OTT", "pop": 2},
+            {"tid": 3, "cid": 0, "did": 0, "region": "Toronto", "name": "Argonauts", "abbrev": "TOR", "pop": 8},
+            {"tid": 4, "cid": 0, "did": 0, "region": "Atlantic", "name": "Schooners", "abbrev": "ATL", "pop": 4},
+            {"tid": 5, "cid": 1, "did": 1, "region": "BC", "name": "Lions", "abbrev": "BC", "pop": 9},
+            {"tid": 6, "cid": 1, "did": 1, "region": "Calgary", "name": "Stampeders", "abbrev": "CAL", "pop": 15},
+            {"tid": 7, "cid": 1, "did": 1, "region": "Edmonton", "name": "Eskimos", "abbrev": "EDM", "pop": 12},
+            {"tid": 8, "cid": 1, "did": 1, "region": "Saskatchewan", "name": "Roughriders", "abbrev": "SAS", "pop": 10},
+            {"tid": 9, "cid": 1, "did": 1, "region": "Winnipeg", "name": "Blue Bombers", "abbrev": "WIN", "pop": 7}
+        ]
+
+}

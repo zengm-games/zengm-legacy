@@ -1,0 +1,44 @@
+<div data-bind="dropdown: 'playoffs'"></div>
+
+<h1>Playoffs <span data-bind="newWindow: []"></span></h1>
+
+<p data-bind="visible: !finalMatchups()">This is what the playoff matchups would be if the season ended right now.</p>
+
+<h3 class="hidden-xs">Eastern Conference <span class="pull-right">Western Conference</span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td>  </td>	  
+	  <td> Divisional </td>	  
+	  <td> Conference </td>	  
+	  <td> USFL Bowl </td>	  
+	  <td> Conference </td>	  
+	  <td> Divisional </td>	  
+	  </tr>	
+	  <tr>
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [1, 2]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [2, 1]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [3, 0]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [2, 0]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [1, 0]"></td>
+        <td width="14.28%" "></td>  
+      </tr>
+      <tr>
+      </tr>
+
+      <tr>
+        <td ></td> 
+        <td rowspan="2" data-bind="matchuptopseed: [1, 3]"></td>
+        <td rowspan="2" data-bind="matchuptopseed: [1, 1]"></td>
+        <td ></td>
+      </tr>
+
+      <tr>
+      </tr>	  
+
+    </tbody>
+  </table>
+</div>

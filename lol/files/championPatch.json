@@ -1,0 +1,1130 @@
+{
+  "meta": {
+    "phaseText": "2016 regular season",
+    "name": "League 1"
+  },
+  "championPatch": [
+    {
+      "role": "ADC",
+      "champion": "Ashe",
+      "rank": 62,
+      "cpid": 0
+    },
+    {
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "rank": 30,
+      "cpid": 1
+    },
+    {
+      "role": "ADC",
+      "champion": "Corki",
+      "rank": 13,
+      "cpid": 2
+    },
+    {
+      "role": "ADC",
+      "champion": "Draven",
+      "rank": 33,
+      "cpid": 3
+    },
+    {
+      "role": "ADC",
+      "champion": "Ezreal",
+      "rank": 10,
+      "cpid": 4
+    },
+    {
+      "role": "ADC",
+      "champion": "Graves",
+      "rank": 39,
+      "cpid": 5
+    },
+    {
+      "role": "ADC",
+      "champion": "Jinx",
+      "rank": 2,
+      "cpid": 6
+    },
+    {
+      "role": "ADC",
+      "champion": "Kalista",
+      "rank": 78,
+      "cpid": 7
+    },
+    {
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "rank": 83,
+      "cpid": 8
+    },
+    {
+      "role": "ADC",
+      "champion": "Lucian",
+      "rank": 60,
+      "cpid": 9
+    },
+    {
+      "role": "ADC",
+      "champion": "Miss Fortune",
+      "rank": 68,
+      "cpid": 10
+    },
+    {
+      "role": "ADC",
+      "champion": "Quinn",
+      "rank": 88,
+      "cpid": 11
+    },
+    {
+      "role": "ADC",
+      "champion": "Sivir",
+      "rank": 23,
+      "cpid": 12
+    },
+    {
+      "role": "ADC",
+      "champion": "Tristana",
+      "rank": 53,
+      "cpid": 13
+    },
+    {
+      "role": "ADC",
+      "champion": "Twitch",
+      "rank": 73,
+      "cpid": 14
+    },
+    {
+      "role": "ADC",
+      "champion": "Urgot",
+      "rank": 92,
+      "cpid": 15
+    },
+    {
+      "role": "ADC",
+      "champion": "Varus",
+      "rank": 43,
+      "cpid": 16
+    },
+    {
+      "role": "ADC",
+      "champion": "Vayne",
+      "rank": 17,
+      "cpid": 17
+    },
+    {
+      "role": "ADC",
+      "champion": "Mordekaiser",
+      "rank": 46,
+      "cpid": 18
+    },
+    {
+      "role": "Jungle",
+      "champion": "Aatrox",
+      "rank": 115,
+      "cpid": 19
+    },
+    {
+      "role": "Jungle",
+      "champion": "Amumu",
+      "rank": 29,
+      "cpid": 20
+    },
+    {
+      "role": "Jungle",
+      "champion": "Diana",
+      "rank": 9,
+      "cpid": 21
+    },
+    {
+      "role": "Jungle",
+      "champion": "Dr. Mundo",
+      "rank": 166,
+      "cpid": 22
+    },
+    {
+      "role": "Jungle",
+      "champion": "Ekko",
+      "rank": 55,
+      "cpid": 23
+    },
+    {
+      "role": "Jungle",
+      "champion": "Elise",
+      "rank": 71,
+      "cpid": 24
+    },
+    {
+      "role": "Jungle",
+      "champion": "Evelynn",
+      "rank": 25,
+      "cpid": 25
+    },
+    {
+      "role": "Jungle",
+      "champion": "Fizz",
+      "rank": 103,
+      "cpid": 26
+    },
+    {
+      "role": "Jungle",
+      "champion": "Gragas",
+      "rank": 150,
+      "cpid": 27
+    },
+    {
+      "role": "Jungle",
+      "champion": "Hecarim",
+      "rank": 85,
+      "cpid": 28
+    },
+    {
+      "role": "Jungle",
+      "champion": "Jarvan IV",
+      "rank": 163,
+      "cpid": 29
+    },
+    {
+      "role": "Jungle",
+      "champion": "Jax",
+      "rank": 108,
+      "cpid": 30
+    },
+    {
+      "role": "Jungle",
+      "champion": "Kayle",
+      "rank": 36,
+      "cpid": 31
+    },
+    {
+      "role": "Jungle",
+      "champion": "Kha'Zix",
+      "rank": 107,
+      "cpid": 32
+    },
+    {
+      "role": "Jungle",
+      "champion": "Lee Sin",
+      "rank": 119,
+      "cpid": 33
+    },
+    {
+      "role": "Jungle",
+      "champion": "Malphite",
+      "rank": 160,
+      "cpid": 34
+    },
+    {
+      "role": "Jungle",
+      "champion": "Maokai",
+      "rank": 174,
+      "cpid": 35
+    },
+    {
+      "role": "Jungle",
+      "champion": "Master Yi",
+      "rank": 20,
+      "cpid": 36
+    },
+    {
+      "role": "Jungle",
+      "champion": "Nautilus",
+      "rank": 168,
+      "cpid": 37
+    },
+    {
+      "role": "Jungle",
+      "champion": "Nidalee",
+      "rank": 89,
+      "cpid": 38
+    },
+    {
+      "role": "Jungle",
+      "champion": "Nocturne",
+      "rank": 56,
+      "cpid": 39
+    },
+    {
+      "role": "Jungle",
+      "champion": "Nunu",
+      "rank": 153,
+      "cpid": 40
+    },
+    {
+      "role": "Jungle",
+      "champion": "Olaf",
+      "rank": 137,
+      "cpid": 41
+    },
+    {
+      "role": "Jungle",
+      "champion": "Pantheon",
+      "rank": 149,
+      "cpid": 42
+    },
+    {
+      "role": "Jungle",
+      "champion": "Poppy",
+      "rank": 144,
+      "cpid": 43
+    },
+    {
+      "role": "Jungle",
+      "champion": "Rammus",
+      "rank": 130,
+      "cpid": 44
+    },
+    {
+      "role": "Jungle",
+      "champion": "Rek'Sai",
+      "rank": 127,
+      "cpid": 45
+    },
+    {
+      "role": "Jungle",
+      "champion": "Rengar",
+      "rank": 50,
+      "cpid": 46
+    },
+    {
+      "role": "Jungle",
+      "champion": "Sejuani",
+      "rank": 124,
+      "cpid": 47
+    },
+    {
+      "role": "Jungle",
+      "champion": "Shaco",
+      "rank": 79,
+      "cpid": 48
+    },
+    {
+      "role": "Jungle",
+      "champion": "Shyvana",
+      "rank": 3,
+      "cpid": 49
+    },
+    {
+      "role": "Jungle",
+      "champion": "Sion",
+      "rank": 172,
+      "cpid": 50
+    },
+    {
+      "role": "Jungle",
+      "champion": "Skarner",
+      "rank": 31,
+      "cpid": 51
+    },
+    {
+      "role": "Jungle",
+      "champion": "Tahm Kench",
+      "rank": 96,
+      "cpid": 52
+    },
+    {
+      "role": "Jungle",
+      "champion": "Trundle",
+      "rank": 138,
+      "cpid": 53
+    },
+    {
+      "role": "Jungle",
+      "champion": "Tryndamere",
+      "rank": 132,
+      "cpid": 54
+    },
+    {
+      "role": "Jungle",
+      "champion": "Udyr",
+      "rank": 67,
+      "cpid": 55
+    },
+    {
+      "role": "Jungle",
+      "champion": "Vi",
+      "rank": 94,
+      "cpid": 56
+    },
+    {
+      "role": "Jungle",
+      "champion": "Volibear",
+      "rank": 121,
+      "cpid": 57
+    },
+    {
+      "role": "Jungle",
+      "champion": "Warwick",
+      "rank": 42,
+      "cpid": 58
+    },
+    {
+      "role": "Jungle",
+      "champion": "Wukong",
+      "rank": 65,
+      "cpid": 59
+    },
+    {
+      "role": "Jungle",
+      "champion": "Xin Zhao",
+      "rank": 11,
+      "cpid": 60
+    },
+    {
+      "role": "Jungle",
+      "champion": "Zac",
+      "rank": 157,
+      "cpid": 61
+    },
+    {
+      "role": "Jungle",
+      "champion": "Fiddlesticks",
+      "rank": 143,
+      "cpid": 62
+    },
+    {
+      "role": "Middle",
+      "champion": "Ahri",
+      "rank": 8,
+      "cpid": 63
+    },
+    {
+      "role": "Middle",
+      "champion": "Akali",
+      "rank": 170,
+      "cpid": 64
+    },
+    {
+      "role": "Middle",
+      "champion": "Anivia",
+      "rank": 21,
+      "cpid": 65
+    },
+    {
+      "role": "Middle",
+      "champion": "Annie",
+      "rank": 18,
+      "cpid": 66
+    },
+    {
+      "role": "Middle",
+      "champion": "Azir",
+      "rank": 162,
+      "cpid": 67
+    },
+    {
+      "role": "Middle",
+      "champion": "Brand",
+      "rank": 81,
+      "cpid": 68
+    },
+    {
+      "role": "Middle",
+      "champion": "Cassiopeia",
+      "rank": 173,
+      "cpid": 69
+    },
+    {
+      "role": "Middle",
+      "champion": "Cho'Gath",
+      "rank": 48,
+      "cpid": 70
+    },
+    {
+      "role": "Middle",
+      "champion": "Diana",
+      "rank": 86,
+      "cpid": 71
+    },
+    {
+      "role": "Middle",
+      "champion": "Ekko",
+      "rank": 151,
+      "cpid": 72
+    },
+    {
+      "role": "Middle",
+      "champion": "Fizz",
+      "rank": 114,
+      "cpid": 73
+    },
+    {
+      "role": "Middle",
+      "champion": "Galio",
+      "rank": 131,
+      "cpid": 74
+    },
+    {
+      "role": "Middle",
+      "champion": "Jayce",
+      "rank": 125,
+      "cpid": 75
+    },
+    {
+      "role": "Middle",
+      "champion": "Karma",
+      "rank": 156,
+      "cpid": 76
+    },
+    {
+      "role": "Middle",
+      "champion": "Karthus",
+      "rank": 102,
+      "cpid": 77
+    },
+    {
+      "role": "Middle",
+      "champion": "Kassadin",
+      "rank": 165,
+      "cpid": 78
+    },
+    {
+      "role": "Middle",
+      "champion": "Katarina",
+      "rank": 64,
+      "cpid": 79
+    },
+    {
+      "role": "Middle",
+      "champion": "Kayle",
+      "rank": 136,
+      "cpid": 80
+    },
+    {
+      "role": "Middle",
+      "champion": "Kennen",
+      "rank": 148,
+      "cpid": 81
+    },
+    {
+      "role": "Middle",
+      "champion": "Kog'Maw",
+      "rank": 91,
+      "cpid": 82
+    },
+    {
+      "role": "Middle",
+      "champion": "LeBlanc",
+      "rank": 109,
+      "cpid": 83
+    },
+    {
+      "role": "Middle",
+      "champion": "Lissandra",
+      "rank": 139,
+      "cpid": 84
+    },
+    {
+      "role": "Middle",
+      "champion": "Lulu",
+      "rank": 159,
+      "cpid": 85
+    },
+    {
+      "role": "Middle",
+      "champion": "Lux",
+      "rank": 4,
+      "cpid": 86
+    },
+    {
+      "role": "Middle",
+      "champion": "Malzahar",
+      "rank": 27,
+      "cpid": 87
+    },
+    {
+      "role": "Middle",
+      "champion": "Morgana",
+      "rank": 75,
+      "cpid": 88
+    },
+    {
+      "role": "Middle",
+      "champion": "Orianna",
+      "rank": 141,
+      "cpid": 89
+    },
+    {
+      "role": "Middle",
+      "champion": "Ryze",
+      "rank": 177,
+      "cpid": 90
+    },
+    {
+      "role": "Middle",
+      "champion": "Swain",
+      "rank": 106,
+      "cpid": 91
+    },
+    {
+      "role": "Middle",
+      "champion": "Syndra",
+      "rank": 134,
+      "cpid": 92
+    },
+    {
+      "role": "Middle",
+      "champion": "Talon",
+      "rank": 34,
+      "cpid": 93
+    },
+    {
+      "role": "Middle",
+      "champion": "Twisted Fate",
+      "rank": 44,
+      "cpid": 94
+    },
+    {
+      "role": "Middle",
+      "champion": "Urgot",
+      "rank": 175,
+      "cpid": 95
+    },
+    {
+      "role": "Middle",
+      "champion": "Varus",
+      "rank": 116,
+      "cpid": 96
+    },
+    {
+      "role": "Middle",
+      "champion": "Veigar",
+      "rank": 15,
+      "cpid": 97
+    },
+    {
+      "role": "Middle",
+      "champion": "Vel'Koz",
+      "rank": 51,
+      "cpid": 98
+    },
+    {
+      "role": "Middle",
+      "champion": "Viktor",
+      "rank": 66,
+      "cpid": 99
+    },
+    {
+      "role": "Middle",
+      "champion": "Vladimir",
+      "rank": 128,
+      "cpid": 100
+    },
+    {
+      "role": "Middle",
+      "champion": "Xerath",
+      "rank": 77,
+      "cpid": 101
+    },
+    {
+      "role": "Middle",
+      "champion": "Yasuo",
+      "rank": 58,
+      "cpid": 102
+    },
+    {
+      "role": "Middle",
+      "champion": "Zed",
+      "rank": 38,
+      "cpid": 103
+    },
+    {
+      "role": "Middle",
+      "champion": "Ziggs",
+      "rank": 98,
+      "cpid": 104
+    },
+    {
+      "role": "Middle",
+      "champion": "Zilean",
+      "rank": 154,
+      "cpid": 105
+    },
+    {
+      "role": "Middle",
+      "champion": "Zyra",
+      "rank": 146,
+      "cpid": 106
+    },
+    {
+      "role": "Middle",
+      "champion": "Heimerdinger",
+      "rank": 122,
+      "cpid": 107
+    },
+    {
+      "role": "Support",
+      "champion": "Alistar",
+      "rank": 69,
+      "cpid": 108
+    },
+    {
+      "role": "Support",
+      "champion": "Annie",
+      "rank": 84,
+      "cpid": 109
+    },
+    {
+      "role": "Support",
+      "champion": "Bard",
+      "rank": 35,
+      "cpid": 110
+    },
+    {
+      "role": "Support",
+      "champion": "Blitzcrank",
+      "rank": 5,
+      "cpid": 111
+    },
+    {
+      "role": "Support",
+      "champion": "Brand",
+      "rank": 59,
+      "cpid": 112
+    },
+    {
+      "role": "Support",
+      "champion": "Braum",
+      "rank": 47,
+      "cpid": 113
+    },
+    {
+      "role": "Support",
+      "champion": "Galio",
+      "rank": 110,
+      "cpid": 114
+    },
+    {
+      "role": "Support",
+      "champion": "Janna",
+      "rank": 7,
+      "cpid": 115
+    },
+    {
+      "role": "Support",
+      "champion": "Karma",
+      "rank": 99,
+      "cpid": 116
+    },
+    {
+      "role": "Support",
+      "champion": "Kennen",
+      "rank": 105,
+      "cpid": 117
+    },
+    {
+      "role": "Support",
+      "champion": "Leona",
+      "rank": 45,
+      "cpid": 118
+    },
+    {
+      "role": "Support",
+      "champion": "Lulu",
+      "rank": 76,
+      "cpid": 119
+    },
+    {
+      "role": "Support",
+      "champion": "Morgana",
+      "rank": 16,
+      "cpid": 120
+    },
+    {
+      "role": "Support",
+      "champion": "Nami",
+      "rank": 24,
+      "cpid": 121
+    },
+    {
+      "role": "Support",
+      "champion": "Nautilus",
+      "rank": 72,
+      "cpid": 122
+    },
+    {
+      "role": "Support",
+      "champion": "Nunu",
+      "rank": 117,
+      "cpid": 123
+    },
+    {
+      "role": "Support",
+      "champion": "Sona",
+      "rank": 26,
+      "cpid": 124
+    },
+    {
+      "role": "Support",
+      "champion": "Soraka",
+      "rank": 12,
+      "cpid": 125
+    },
+    {
+      "role": "Support",
+      "champion": "Tahm Kench",
+      "rank": 93,
+      "cpid": 126
+    },
+    {
+      "role": "Support",
+      "champion": "Taric",
+      "rank": 101,
+      "cpid": 127
+    },
+    {
+      "role": "Support",
+      "champion": "Thresh",
+      "rank": 52,
+      "cpid": 128
+    },
+    {
+      "role": "Support",
+      "champion": "Vel'Koz",
+      "rank": 87,
+      "cpid": 129
+    },
+    {
+      "role": "Support",
+      "champion": "Zilean",
+      "rank": 40,
+      "cpid": 130
+    },
+    {
+      "role": "Support",
+      "champion": "Zyra",
+      "rank": 63,
+      "cpid": 131
+    },
+    {
+      "role": "Support",
+      "champion": "Fiddlesticks",
+      "rank": 113,
+      "cpid": 132
+    },
+    {
+      "role": "Top",
+      "champion": "Aatrox",
+      "rank": 97,
+      "cpid": 133
+    },
+    {
+      "role": "Top",
+      "champion": "Akali",
+      "rank": 169,
+      "cpid": 134
+    },
+    {
+      "role": "Top",
+      "champion": "Cassiopeia",
+      "rank": 185,
+      "cpid": 135
+    },
+    {
+      "role": "Top",
+      "champion": "Cho'Gath",
+      "rank": 82,
+      "cpid": 136
+    },
+    {
+      "role": "Top",
+      "champion": "Darius",
+      "rank": 22,
+      "cpid": 137
+    },
+    {
+      "role": "Top",
+      "champion": "Dr. Mundo",
+      "rank": 158,
+      "cpid": 138
+    },
+    {
+      "role": "Top",
+      "champion": "Ekko",
+      "rank": 145,
+      "cpid": 139
+    },
+    {
+      "role": "Top",
+      "champion": "Fiora",
+      "rank": 41,
+      "cpid": 140
+    },
+    {
+      "role": "Top",
+      "champion": "Fizz",
+      "rank": 178,
+      "cpid": 141
+    },
+    {
+      "role": "Top",
+      "champion": "Galio",
+      "rank": 90,
+      "cpid": 142
+    },
+    {
+      "role": "Top",
+      "champion": "Gangplank",
+      "rank": 1,
+      "cpid": 143
+    },
+    {
+      "role": "Top",
+      "champion": "Garen",
+      "rank": 6,
+      "cpid": 144
+    },
+    {
+      "role": "Top",
+      "champion": "Gnar",
+      "rank": 100,
+      "cpid": 145
+    },
+    {
+      "role": "Top",
+      "champion": "Hecarim",
+      "rank": 49,
+      "cpid": 146
+    },
+    {
+      "role": "Top",
+      "champion": "Irelia",
+      "rank": 19,
+      "cpid": 147
+    },
+    {
+      "role": "Top",
+      "champion": "Jarvan IV",
+      "rank": 104,
+      "cpid": 148
+    },
+    {
+      "role": "Top",
+      "champion": "Jax",
+      "rank": 142,
+      "cpid": 149
+    },
+    {
+      "role": "Top",
+      "champion": "Jayce",
+      "rank": 118,
+      "cpid": 150
+    },
+    {
+      "role": "Top",
+      "champion": "Karthus",
+      "rank": 95,
+      "cpid": 151
+    },
+    {
+      "role": "Top",
+      "champion": "Kassadin",
+      "rank": 186,
+      "cpid": 152
+    },
+    {
+      "role": "Top",
+      "champion": "Kayle",
+      "rank": 120,
+      "cpid": 153
+    },
+    {
+      "role": "Top",
+      "champion": "Kennen",
+      "rank": 133,
+      "cpid": 154
+    },
+    {
+      "role": "Top",
+      "champion": "Lissandra",
+      "rank": 123,
+      "cpid": 155
+    },
+    {
+      "role": "Top",
+      "champion": "Lulu",
+      "rank": 183,
+      "cpid": 156
+    },
+    {
+      "role": "Top",
+      "champion": "Malphite",
+      "rank": 70,
+      "cpid": 157
+    },
+    {
+      "role": "Top",
+      "champion": "Maokai",
+      "rank": 180,
+      "cpid": 158
+    },
+    {
+      "role": "Top",
+      "champion": "Nasus",
+      "rank": 80,
+      "cpid": 159
+    },
+    {
+      "role": "Top",
+      "champion": "Olaf",
+      "rank": 129,
+      "cpid": 160
+    },
+    {
+      "role": "Top",
+      "champion": "Pantheon",
+      "rank": 112,
+      "cpid": 161
+    },
+    {
+      "role": "Top",
+      "champion": "Poppy",
+      "rank": 176,
+      "cpid": 162
+    },
+    {
+      "role": "Top",
+      "champion": "Quinn",
+      "rank": 171,
+      "cpid": 163
+    },
+    {
+      "role": "Top",
+      "champion": "Renekton",
+      "rank": 14,
+      "cpid": 164
+    },
+    {
+      "role": "Top",
+      "champion": "Rengar",
+      "rank": 57,
+      "cpid": 165
+    },
+    {
+      "role": "Top",
+      "champion": "Riven",
+      "rank": 28,
+      "cpid": 166
+    },
+    {
+      "role": "Top",
+      "champion": "Rumble",
+      "rank": 164,
+      "cpid": 167
+    },
+    {
+      "role": "Top",
+      "champion": "Ryze",
+      "rank": 184,
+      "cpid": 168
+    },
+    {
+      "role": "Top",
+      "champion": "Shen",
+      "rank": 140,
+      "cpid": 169
+    },
+    {
+      "role": "Top",
+      "champion": "Shyvana",
+      "rank": 152,
+      "cpid": 170
+    },
+    {
+      "role": "Top",
+      "champion": "Singed",
+      "rank": 74,
+      "cpid": 171
+    },
+    {
+      "role": "Top",
+      "champion": "Sion",
+      "rank": 179,
+      "cpid": 172
+    },
+    {
+      "role": "Top",
+      "champion": "Swain",
+      "rank": 147,
+      "cpid": 173
+    },
+    {
+      "role": "Top",
+      "champion": "Tahm Kench",
+      "rank": 111,
+      "cpid": 174
+    },
+    {
+      "role": "Top",
+      "champion": "Teemo",
+      "rank": 135,
+      "cpid": 175
+    },
+    {
+      "role": "Top",
+      "champion": "Trundle",
+      "rank": 155,
+      "cpid": 176
+    },
+    {
+      "role": "Top",
+      "champion": "Tryndamere",
+      "rank": 61,
+      "cpid": 177
+    },
+    {
+      "role": "Top",
+      "champion": "Urgot",
+      "rank": 187,
+      "cpid": 178
+    },
+    {
+      "role": "Top",
+      "champion": "Vladimir",
+      "rank": 54,
+      "cpid": 179
+    },
+    {
+      "role": "Top",
+      "champion": "Volibear",
+      "rank": 167,
+      "cpid": 180
+    },
+    {
+      "role": "Top",
+      "champion": "Wukong",
+      "rank": 32,
+      "cpid": 181
+    },
+    {
+      "role": "Top",
+      "champion": "Yasuo",
+      "rank": 37,
+      "cpid": 182
+    },
+    {
+      "role": "Top",
+      "champion": "Yorick",
+      "rank": 182,
+      "cpid": 183
+    },
+    {
+      "role": "Top",
+      "champion": "Zac",
+      "rank": 161,
+      "cpid": 184
+    },
+    {
+      "role": "Top",
+      "champion": "Heimerdinger",
+      "rank": 126,
+      "cpid": 185
+    },
+    {
+      "role": "Top",
+      "champion": "Mordekaiser",
+      "rank": 181,
+      "cpid": 186
+    }
+  ]
+}

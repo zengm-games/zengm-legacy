@@ -1,0 +1,486 @@
+<div data-bind="dropdown: 'playoffs64'"></div>
+
+<h1>National Tournament (NT) <span data-bind="newWindow: []"></span></h1>
+
+<p data-bind="visible: !finalMatchups64()">This is what the national tournament matchups would be if the season ended right now.</p>
+
+<h3 class="hidden-xs" data-bind="visible: showPlayoffs32()">West <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody data-bind="visible: showPlayoffs32()">
+	  <tr> 
+	  <td>  </td>	  
+	  <td> round of 32 </td>	  
+	  <td> sweet 16 </td>	  
+	  <td> elite 8 </td>	  
+	  <td> final 4 </td>	  
+	  <td> championship </td>	  
+	  </tr>
+ 	  
+      <tr>
+<!--        <td width="14.28%" data-bind="matchup: [0, 0]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 0]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [2, 0]"></td>
+        <td rowspan="6" width="14.28%" data-bind="matchup: [3, 0]"></td>
+        <td rowspan="6" width="14.28%" data-bind="matchup: [4, 0]"></td>
+        <td rowspan="6" width="14.28%" data-bind="matchup: [5, 0]"></td>  -->
+
+        <td ></td>
+        <td rowspan="2" width="7.14%" data-bind="matchup: [0, 0]"></td>
+        <td rowspan="4" width="7.14%" data-bind="matchup: [1, 0]"></td>
+        <td rowspan="8" width="7.14%" data-bind="matchup: [2, 0]"></td>
+<!--        <td rowspan="10" width="7.14%" data-bind="matchup: [3, 0]"></td>
+        <td rowspan="12" width="7.14%" data-bind="matchup: [4, 0]"></td>  -->
+        <td rowspan="16" data-bind="matchup: [3, 0]"></td>
+        <td rowspan="32" data-bind="matchup: [4, 0]"></td>  
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 1]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+	  
+	  
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 2]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [1, 1]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 3]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>	  
+    </tbody>
+  </table>
+</div>
+
+<!--<p data-bind="visible: !finalMatchups()">This is what the playoff matchups would be if the season ended right now.</p> -->
+
+<h3 class="hidden-xs" data-bind="visible: showPlayoffs32()">Midwest <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody data-bind="visible: showPlayoffs32()">
+ 	  <tr> 
+	  <td>  </td>	  	  
+	  <td> round of 32 </td>	  
+	  <td> sweet 16 </td>	  
+	  <td> elite 8 </td>	  
+	  <td> final 4 </td>	  
+	  <td> championship </td>	  
+	  </tr>
+
+	  
+	  
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="7.14%" data-bind="matchup: [0, 4]"></td>
+        <td rowspan="4" width="7.14%" data-bind="matchup: [1, 2]"></td>
+        <td rowspan="8" width="7.14%" data-bind="matchup: [2, 1]"></td>
+        <td rowspan="16" ></td>
+        <td rowspan="32" ></td>  
+ 
+		
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 5]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+	  
+	  
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 6]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [1, 3]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 7]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>	  
+
+	  
+    </tbody>
+  </table>
+</div>
+
+
+
+<h3 class="hidden-xs" data-bind="visible: showPlayoffs32()">South <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody data-bind="visible: showPlayoffs32()">
+   
+	  <tr> 
+	  <td>  </td>	  	  
+	  <td> round of 32 </td>	  
+	  <td> sweet 16 </td>	  
+	  <td> elite 8 </td>	  
+	  <td> final 4 </td>	  
+	  <td> championship </td>	  
+	  </tr>
+	  
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="7.14%" data-bind="matchup: [0, 8]"></td>
+        <td rowspan="4" width="7.14%" data-bind="matchup: [1, 4]"></td>
+        <td rowspan="8" width="7.14" data-bind="matchup: [2, 2]"></td>
+        <td rowspan="16"  data-bind="matchup: [3, 1]"></td> 
+<!--        <td ></td>  -->
+       <td rowspan="32"></td>  
+        
+        <!--<td rowspan="12" width="7.14%" >championship</td> -->
+		
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 9]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+	  
+	  
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 10]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [1, 5]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 11]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>	  
+	  
+	  
+    </tbody>
+  </table>
+</div>
+
+
+
+<h3 class="hidden-xs" data-bind="visible: showPlayoffs32()">East <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody data-bind="visible: showPlayoffs32()">
+ 	  <tr> 
+	  <td>  </td>	  	  
+	  <td> round of 32 </td>	  
+	  <td> sweet 16 </td>	  
+	  <td> elite 8 </td>	  
+	  <td> final 4 </td>	  
+	  <td> championship </td>	  
+	  </tr>
+	  
+   <tr>
+        <td ></td>
+        <td rowspan="2" width="7.14%" data-bind="matchup: [0, 12]"></td>
+        <td rowspan="4" width="7.14%" data-bind="matchup: [1, 6]"></td>
+        <td rowspan="8" width="7.14%" data-bind="matchup: [2, 3]"></td>
+        <!--<td ></td> 
+        <td rowspan="32" width="7.14%"></td>  -->
+        <td rowspan="16" ></td>
+        <td rowspan="32" ></td>  
+		
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 13]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+	  
+	  
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 14]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [1, 7]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>
+      <tr>
+        <td ></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [0, 15]"></td>
+      </tr>
+      <tr>
+        <td ></td>
+      </tr>	  	  
+
+    </tbody>
+  </table>
+</div>
+
+
+<h3 class="hidden-xs" data-bind="visible: showPlayoffs64()">West <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody data-bind="visible: showPlayoffs64()">
+	  <tr> 
+	  <td> round of 64 </td>
+	  <td> round of 32 </td>	  
+	  <td> sweet 16 </td>	  
+	  <td> elite 8 </td>	  
+	  <td> final 4 </td>	  
+	  <td> championship </td>	  
+	  </tr>
+ 	  
+      <tr>
+<!--        <td width="14.28%" data-bind="matchup: [0, 0]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 0]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [2, 0]"></td>
+        <td rowspan="6" width="14.28%" data-bind="matchup: [3, 0]"></td>
+        <td rowspan="6" width="14.28%" data-bind="matchup: [4, 0]"></td>
+        <td rowspan="6" width="14.28%" data-bind="matchup: [5, 0]"></td>  -->
+
+        <td width="7.14%" data-bind="matchup: [0, 0]"></td>
+        <td rowspan="2" width="7.14%" data-bind="matchup: [1, 0]"></td>
+        <td rowspan="4" width="7.14%" data-bind="matchup: [2, 0]"></td>
+        <td rowspan="8" width="7.14%" data-bind="matchup: [3, 0]"></td>
+        <td rowspan="16" width="7.14%" data-bind="matchup: [4, 0]"></td>
+        <td rowspan="32" width="7.14%" data-bind="matchup: [5, 0]"></td>  
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 1]"></td>
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 2]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 1]"></td>
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 3]"></td>
+      </tr>
+	  
+	  
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 4]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 2]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [2, 1]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 5]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 6]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 3]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 7]"></td>
+      </tr>	  
+    </tbody>
+  </table>
+</div>
+
+<!--<p data-bind="visible: !finalMatchups()">This is what the playoff matchups would be if the season ended right now.</p> -->
+
+<h3 class="hidden-xs" data-bind="visible: showPlayoffs64()">Midwest <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody data-bind="visible: showPlayoffs64()">
+ 	  <tr> 
+	  <td> round of 64 </td>
+	  <td> round of 32 </td>	  
+	  <td> sweet 16 </td>	  
+	  <td> elite 8 </td>	  
+	  <td> final 4 </td>	  
+	  <td> championship </td>	  
+	  </tr>
+
+	  
+	  
+      <tr>
+        <td width="7.14%" data-bind="matchup: [0, 8]"></td>
+        <td rowspan="2" width="7.14%" data-bind="matchup: [1, 4]"></td>
+        <td rowspan="4" width="7.14%" data-bind="matchup: [2, 2]"></td>
+        <td rowspan="8" width="7.14%" data-bind="matchup: [3, 1]"></td>
+ 
+		
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 9]"></td>
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 10]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 5]"></td>
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 11]"></td>
+      </tr>
+	  
+	  
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 12]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 6]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [2, 3]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 13]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 14]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 7]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 15]"></td>
+      </tr>	  
+
+	  
+    </tbody>
+  </table>
+</div>
+
+
+
+<h3 class="hidden-xs" data-bind="visible: showPlayoffs64()">South <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody data-bind="visible: showPlayoffs64()">
+   
+	  <tr> 
+	  <td> round of 64 </td>
+	  <td> round of 32 </td>	  
+	  <td> sweet 16 </td>	  
+	  <td> elite 8 </td>	  
+	  <td> final 4 </td>	  
+	  <td> championship </td>	  
+	  </tr>
+	  
+      <tr>
+        <td width="7.14%" data-bind="matchup: [0, 16]"></td>
+        <td rowspan="2" width="7.14%" data-bind="matchup: [1, 8]"></td>
+        <td rowspan="4" width="7.14%" data-bind="matchup: [2, 4]"></td>
+        <td rowspan="8" width="7.14" data-bind="matchup: [3, 2]"></td>
+        <td rowspan="10" width="7.14%" data-bind="matchup: [4, 1]"></td> 
+        
+        <!--<td rowspan="12" width="7.14%" >championship</td> -->
+		
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 17]"></td>
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 18]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 9]"></td>
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 19]"></td>
+      </tr>
+	  
+	  
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 20]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 10]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [2, 5]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 21]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 22]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 11]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 23]"></td>
+      </tr>	  
+	  
+	  
+    </tbody>
+  </table>
+</div>
+
+
+
+<h3 class="hidden-xs" data-bind="visible: showPlayoffs64()">East <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody data-bind="visible: showPlayoffs64()">
+ 	  <tr> 
+	  <td> round of 64 </td>
+	  <td> round of 32 </td>	  
+	  <td> sweet 16 </td>	  
+	  <td> elite 8 </td>	  
+	  <td> final 4 </td>	  
+	  <td> championship </td>	  
+	  </tr>
+	  
+   <tr>
+        <td width="7.14%" data-bind="matchup: [0, 24]"></td>
+        <td rowspan="2" width="7.14%" data-bind="matchup: [1, 12]"></td>
+        <td rowspan="4" width="7.14%" data-bind="matchup: [2, 6]"></td>
+        <td rowspan="8" width="7.14%" data-bind="matchup: [3, 3]"></td>
+
+		
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 25]"></td>
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 26]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 13]"></td>
+      </tr>
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 27]"></td>
+      </tr>
+	  
+	  
+      <tr>
+        <td width="14.28%" data-bind="matchup: [0, 28]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 14]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchup: [2, 7]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 29]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 30]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchup: [1, 15]"></td>
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 31]"></td>
+      </tr>	  	  
+
+    </tbody>
+  </table>
+</div>
+

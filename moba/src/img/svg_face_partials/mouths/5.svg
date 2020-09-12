@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mouths" transform="translate(0.000000, -2229.000000)">
+            <g id="5-no-smile-thinker" transform="translate(0.000000, 2229.000000)">
+                <g id="Group-9">
+                    <path d="M186.228498,249.000007 C184.208957,248.996004 180.531885,250.661148 178.645206,251.720097 C176.758526,250.661148 173.081455,248.996004 171.061914,249.000007 C168.164593,249.006678 153,259.129184 153,259.129184 C154.861053,259.711362 161.183158,256.800474 165.384708,256.819598 C168.822182,256.834275 174.398871,259.93685 178.472038,260.51458 C178.472038,260.51458 178.58823,260.547047 178.645206,260.538596 C178.701435,260.547047 178.818124,260.51458 178.818124,260.51458 C182.891789,259.93685 188.468976,256.834275 191.905206,256.819598 C196.107005,256.800474 203.135215,259.711362 204.995522,259.129184 C204.995522,259.129184 189.125569,249.006678 186.228498,249.000007" id="Fill-384" fill="#D48E6A"  class="color-burn-path" opacity="0.6" ></path>
+                    <path d="M189.217575,265.766007 C185.810705,266.003267 182.291872,266.388783 178.796925,266.464171 C175.30148,266.388783 171.782896,266.003267 168.375279,265.766007 C164.857441,265.521184 160.474762,265.084737 161.005709,265.40268 C165.004484,267.336057 169.048044,269.773453 178.796427,269.773453 C188.581384,269.773453 192.589614,267.131071 196.586896,265.197693 C197.11859,264.87975 192.735413,265.521184 189.217575,265.766007" id="Fill-388" fill="#D48E6A"  class="color-burn-path" opacity="0.6" ></path>
+                    <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

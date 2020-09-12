@@ -1,0 +1,80 @@
+<div data-bind="dropdown: 'history'"></div>
+
+<h1>Season Summary <span data-bind="newWindow: []"></span></h1>
+
+<p></p>
+<div class="row">
+  <div class="col-md-3 col-sm-4 col-xs-12">
+    <div class="row">
+      <div class="col-sm-12 col-xs-6">
+        <h4 data-bind="visible: LCS()" >LCS Champion</h4>
+        <h4 data-bind="visible: LCSLadder()" >LCS Champion</h4>
+        <h4 data-bind="visible: LCK()" >LCK Champion</h4>
+        <h4 data-bind="visible: LPL()" >LPL Champion</h4>
+        <h4 data-bind="visible: LMS()" >LMS Champion</h4>
+        <h4 data-bind="visible: Worlds()" >Worlds Champion</h4>
+		
+        <p><span data-bind="css: {'bg-info': champ.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['roster', champ.abbrev, season]}"><span data-bind="text: champ.region"></span></a></strong></span><br>
+        <a data-bind="attrLeagueUrl: {href: ['playoffs', season]}">Playoffs Bracket</a></p>
+        <p>Finals MVP: <strong><a data-bind="attrLeagueUrl: {href: ['player', awards.finalsMvp.pid]}, css: {'bg-info': champ.tid() === userTid()}, text: awards.finalsMvp.name"></a></strong></span><br>
+          <span data-bind="round: [awards.finalsMvp.fg, 1]"></span> kills, <span data-bind="round: [awards.finalsMvp.fga, 1]"></span> deaths, <span data-bind="round: [awards.finalsMvp.fgp, 1]"></span> assists</p>
+		
+
+        <h4>Best Record</h4>
+        <p data-bind="visible: LCS()">LCS: <span data-bind="css: {'bg-info': awards.conf1.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf1.abbrev, season]}"><span data-bind="text: awards.conf1.region"></span></a> (<span data-bind="text: awards.conf1.won"></span>-<span data-bind="text: awards.conf1.lost"></span>)</span><br>
+        <p data-bind="visible: LCSLadder()">LCS: <span data-bind="css: {'bg-info': awards.conf1.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf1.abbrev, season]}"><span data-bind="text: awards.conf1.region"></span> </a> (<span data-bind="text: awards.conf1.won"></span>-<span data-bind="text: awards.conf1.lost"></span>)</span><br>
+        <p data-bind="visible: LCSLadder()">CS: <span data-bind="css: {'bg-info': awards.conf2.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf2.abbrev, season]}"><span data-bind="text: awards.conf2.region"></span> </a> (<span data-bind="text: awards.conf2.won"></span>-<span data-bind="text: awards.conf2.lost"></span>)</span><br>
+        <p data-bind="visible: LCSLadder()">Ladder: <span data-bind="css: {'bg-info': awards.conf3.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf3.abbrev, season]}"><span data-bind="text: awards.conf3.region"></span> </a> (<span data-bind="text: awards.conf3.won"></span>-<span data-bind="text: awards.conf3.lost"></span>)</span><br>
+        <p data-bind="visible: LCK()">LCK: <span data-bind="css: {'bg-info': awards.conf1.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf1.abbrev, season]}"><span data-bind="text: awards.conf1.region"></span> </a> (<span data-bind="text: awards.conf1.won"></span>-<span data-bind="text: awards.conf1.lost"></span>)</span><br>
+        <p data-bind="visible: LPL()">LPL: <span data-bind="css: {'bg-info': awards.conf1.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf1.abbrev, season]}"><span data-bind="text: awards.conf1.region"></span> </a> (<span data-bind="text: awards.conf1.won"></span>-<span data-bind="text: awards.conf1.lost"></span>)</span><br>
+        <p data-bind="visible: LMS()">LMS: <span data-bind="css: {'bg-info': awards.conf1.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf1.abbrev, season]}"><span data-bind="text: awards.conf1.region"></span> </a> (<span data-bind="text: awards.conf1.won"></span>-<span data-bind="text: awards.conf1.lost"></span>)</span><br>
+        <p data-bind="visible: Worlds()">LCS-NA: <span data-bind="css: {'bg-info': awards.conf1.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf1.abbrev, season]}"><span data-bind="text: awards.conf1.region"></span></a> (<span data-bind="text: awards.conf1.won"></span>-<span data-bind="text: awards.conf1.lost"></span>)</span><br>
+        <p data-bind="visible: Worlds()">LCS-EU: <span data-bind="css: {'bg-info': awards.conf2.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf2.abbrev, season]}"><span data-bind="text: awards.conf2.region"></span></a> (<span data-bind="text: awards.conf2.won"></span>-<span data-bind="text: awards.conf2.lost"></span>)</span><br>
+        <p data-bind="visible: Worlds()">LCK: <span data-bind="css: {'bg-info': awards.conf3.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf3.abbrev, season]}"><span data-bind="text: awards.conf3.region"></span></a>  (<span data-bind="text: awards.conf3.won"></span>-<span data-bind="text: awards.conf3.lost"></span>)</span><br>
+        <p data-bind="visible: Worlds()">LPL: <span data-bind="css: {'bg-info': awards.conf4.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf4.abbrev, season]}"><span data-bind="text: awards.conf4.region"></span></a> (<span data-bind="text: awards.conf4.won"></span>-<span data-bind="text: awards.conf4.lost"></span>)</span><br>
+        <p data-bind="visible: Worlds()">LMS: <span data-bind="css: {'bg-info': awards.conf5.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf5.abbrev, season]}"><span data-bind="text: awards.conf5.region"></span></a> (<span data-bind="text: awards.conf5.won"></span>-<span data-bind="text: awards.conf5.lost"></span>)</span><br>
+        <p data-bind="visible: Worlds()">WC: <span data-bind="css: {'bg-info': awards.conf6.tid() === userTid()}"><a  data-bind="attrLeagueUrl: {href: ['roster', awards.conf6.abbrev, season]}"><span data-bind="text: awards.conf6.region"></span> </a> (<span data-bind="text: awards.conf6.won"></span>-<span data-bind="text: awards.conf6.lost"></span>)</span><br>
+<!--        CS: <span data-bind="css: {'bg-info': awards.brw.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', awards.brw.abbrev, season]}"><span data-bind="text: awards.brw.region"></span> <span data-bind="text: awards.brw.name"></span></a> (<span data-bind="text: awards.brw.won"></span>-<span data-bind="text: awards.brw.lost"></span>)</span><br>
+        Ladder: <span data-bind="css: {'bg-info': awards.brw.tid() === userTid()}"><a data-bind="attrLeagueUrl: {href: ['roster', awards.brw.abbrev, season]}"><span data-bind="text: awards.brw.region"></span> <span data-bind="text: awards.brw.name"></span></a> (<span data-bind="text: awards.brw.won"></span>-<span data-bind="text: awards.brw.lost"></span>)</span><br></p>-->		
+      </div>
+    <!--  <div class="col-sm-12 col-xs-6">	  
+	     <h4 "visible: LCSLadder()">LCS Promotion </h4>
+        <p "visible: LCSLadder()"><span data-bind="css: {'bg-info': champ.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['roster', champ.abbrev, season]}"><span data-bind="text: champ.region"></span> <span data-bind="text: champ.name"></span></a></strong></span><br>
+        <p "visible: LCSLadder()"><span data-bind="css: {'bg-info': champ.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['roster', champ.abbrev, season]}"><span data-bind="text: champ.region"></span> <span data-bind="text: champ.name"></span></a></strong></span><br>
+        <p "visible: LCSLadder()"><span data-bind="css: {'bg-info': champ.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['roster', champ.abbrev, season]}"><span data-bind="text: champ.region"></span> <span data-bind="text: champ.name"></span></a></strong></span><br>
+        <h4>CS Promotion </h4>
+        <p "visible: LCSLadder()"><span data-bind="css: {'bg-info': champ.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['roster', champ.abbrev, season]}"><span data-bind="text: champ.region"></span> <span data-bind="text: champ.name"></span></a></strong></span><br>
+        <p "visible: LCSLadder()"><span data-bind="css: {'bg-info': champ.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['roster', champ.abbrev, season]}"><span data-bind="text: champ.region"></span> <span data-bind="text: champ.name"></span></a></strong></span><br>
+      </div>-->
+
+      <div class="col-sm-12 col-xs-6">
+        <h4>Most Valuable Player</h4>
+        <p><span data-bind="css: {'bg-info': awards.mvp.tid() === userTid()}"><strong><a data-bind="attrLeagueUrl: {href: ['player', awards.mvp.pid]}, text: awards.mvp.name"></a></strong> (<a data-bind="attrLeagueUrl: {href: ['roster', awards.mvp.abbrev, season]}, text: awards.mvp.abbrev"></a>)</span><br>
+        <span data-bind="round: [awards.mvp.fg, 1]"></span> kills, <span data-bind="round: [awards.mvp.fga, 1]"></span> deaths, <span data-bind="round: [awards.mvp.fgp, 1]"></span> assists</p>
+	  
+      </div>
+    </div>
+  </div>
+  <!--<div class="col-md-3 col-sm-4 col-xs-6">
+  </div>-->
+  
+  <div class="col-md-3 col-sm-4 col-xs-6">
+    <h4>All-League Teams</h4>
+    <!-- ko foreach: awards.allLeague -->
+      <h5 data-bind="text: title"></h5>
+      <!-- ko foreach: players -->
+        <span data-bind="css: {'bg-info': tid() === $root.userTid()}"><a data-bind="attrLeagueUrl: {href: ['player', pid]}, text: name"></a> (<a data-bind="attrLeagueUrl: {href: ['roster', abbrev, $root.season]}, text: abbrev"></a>)</span><br>
+      <!-- /ko -->
+    <!-- /ko -->
+    <br>
+  </div>
+  <div class="clearfix visible-sm"></div>
+  <div class="col-md-3 col-sm-12">
+    <h4>Retired Players</h4>
+    <p style="-moz-column-width: 12em; -moz-columns: 12em; -webkit-columns: 12em; columns: 12em;">
+      <!-- ko foreach: retiredPlayers -->
+        <a data-bind="attrLeagueUrl: {href: ['player', pid]}, text: name"></a> (age: <span data-bind="text: age"></span><span data-bind="visible: hof">; <a data-bind="attrLeagueUrl: {href: ['hall_of_fame']}">Hall of Fame</a></span>)<br>
+      <!-- /ko -->
+    </p>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+.navbar-brand {
+
+  padding: 19px;
+  height: 50px;
+
+  span > img {
+    width: 70px;
+  }
+}
+
+#top-menu {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom right, #46583b, #061902);
+  border: none;
+}
+
+#play-button-link {
+  padding: 16px 15px;
+  background-color: #3f7b3f;
+  color: #FFF;
+
+  &:hover, &:focus, &:active {
+    border: none;
+    opacity: 0.8;
+  }
+
+  span {
+    color: #FFFFFF;
+  }
+  .caret {
+    border-top-color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+  }
+}
+
+.open {
+  #play-button-link,
+  #play-button-link:hover,
+  #play-button-link:focus,
+  #play-button-link:active {
+
+    border: none;
+    opacity: 0.8;
+  }
+}
+
+nav.navbar-fixed-top {
+  .navbar-header {
+    .navbar-text-two-line-no-collapse {
+
+      line-height: 17px;
+      margin: 8px 5px 8px 13px;
+
+      span {
+        font-size: 14px;
+        color: $baseFontColor;
+        font-family: $baseFont;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .house-icon {
+    margin: 0 7.5px;
+    a {
+      color: $baseFontColor !important;
+    }
+  }
+  .nav-item-wrapper {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+.dropdown-menu {
+  background-color: $borderColor1;
+  li {
+    a {
+      position: relative;
+      padding-right: 70px;
+      color: $baseFontColor;
+
+      &:hover {
+        background-color: $dashboardFontColor2 !important;
+        color: $dashboardFontColor5 !important;
+      }
+    }
+  }
+}

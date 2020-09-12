@@ -1,0 +1,294 @@
+<h1><span data-bind="text: originalTid() === null ? 'Create Player' : 'Edit Player'"></span> <span data-bind="newWindow: []"></span></h1>
+
+<p>Here, you can <span data-bind="text: originalTid() === null ? 'create a custom player with' : 'edit a player to have'"></span> whatever attributes and ratings you want. If you want to make a whole league of custom players, you should probably create a <a href="http://basketball-gm.com/manual/customization/">custom League File</a>.</p>
+
+<p>Each player has a skill for each champion. You currently have to export the roster file to see these and make changes. However, using the Ave Champion Skill rating below you can quickly change all of them in order to make a player much better or worse quickly.</p>
+
+<div class="row">
+  <div class="col-md-7">
+    <h2>Attributes</h2>
+
+    <div class="row">
+      <div class="col-sm-6 form-group">
+    <!--  <div class="col-sm-3 col-xs-6 form-group">-->
+        <label for="cap-name">Name</label>
+        <input type="text" class="form-control" name="name" data-bind="textInput: p.name"></input>
+      </div>
+
+      <div class="col-sm-6 form-group">
+        <label for="cap-name">UserID</label>
+        <input type="text" class="form-control" name="name" data-bind="textInput: p.userID"></input>
+      </div>
+	  
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-age">Age</label>
+        <input type="text" class="form-control" name="age" data-bind="textInput: age"></input>
+      </div>
+	  
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-hgt">Height (inches)</label>
+        <input type="text" class="form-control" name="hgt" data-bind="textInput: p.hgt"></input>
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-weight">Weight (lbs)</label>
+        <input type="text" class="form-control" name="weight" data-bind="textInput: p.weight"></input>
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-pos">Position</label>
+        <select class="form-control" name="pos" data-bind="options: positions, value: p.pos"></select>
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-born-country">Region</label>
+<!--        <input type="text" class="form-control" name="born-loc" data-bind="options: country, optionsText: 'text', value: p.born.country, optionsValue: 'country'"></select> 		-->
+<!--        <input type="text" class="form-control" name="born-country" data-bind="options: country, value: p.born.country"></select> 		-->
+        <select class="form-control" name="born-country" data-bind="options: region, value: p.born.loc"></select> 		
+      </div>
+	  
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-born-country">Country</label>
+<!--        <input type="text" class="form-control" name="born-loc" data-bind="options: country, optionsText: 'text', value: p.born.country, optionsValue: 'country'"></select> 		-->
+<!--        <input type="text" class="form-control" name="born-country" data-bind="options: country, value: p.born.country"></select> 		-->
+        <select class="form-control" name="born-country" data-bind="options: country, value: p.born.country"></select> 		
+      </div>
+<!--      <div class="col-sm-6 form-group">-->
+      <!--<div class="col-sm-3 col-xs-6 form-group">-->
+      <div class="col-sm-6 col-xs-6 form-group">
+        <label for="cap-tid">Team</label>
+        <select class="form-control" name="tid" data-bind="options: teams, optionsText: 'text', value: p.tid, optionsValue: 'tid'"></select>
+     </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-born-country">Language 1</label>
+        <select class="form-control" name="born-country" data-bind="options: languages1, value: language1"></select> 		
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-born-country">Language 2</label>
+        <select class="form-control" name="born-country" data-bind="options: languages2, value: language2"></select> 		
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-born-country">Language 3</label>
+        <select class="form-control" name="born-country" data-bind="options: languages3, value: language3"></select> 		
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+        <label for="cap-born-country">Language 4</label>
+        <select class="form-control" name="born-country" data-bind="options: languages4, value: language4"></select> 		
+      </div>	   
+
+      <div class="col-sm-6 col-xs-6 form-group">
+        <label for="cap-born-loc">Contract Amount</label>
+        <div class="input-group">
+          <span class="input-group-addon">$</span>
+          <input type="text" class="form-control" name="contract-amount" data-bind="textInput: contract.amount">
+          <span class="input-group-addon">K per year</span>
+        </div>
+      </div>
+<!--      <div class="col-sm-6 form-group">-->
+<!--      <div class="col-sm-6 col-xs-6 form-group">-->
+      <div class="col-sm-3 col-xs-6 form-group">
+	  
+        <label for="cap-born-loc">Contract Exp.</label>
+        <input type="text" class="form-control" name="contract-exp" data-bind="textInput: contract.exp">
+      </div>
+      <div class="col-sm-3 col-xs-6 form-group">
+	  <label for="cap-born-loc">Turned Pro</label>
+        <input type="text" class="form-control" name="contract-exp" data-bind="textInput: p.draft.year">
+      </div>
+		<!--<div class="col-sm-6 col-xs-6 form-group">
+        <label for="cap-championAverage">Ave Skill</label>
+        <input type="text" class="form-control" name="championAverage" data-bind="textInput: championAverage"></input>
+      </div>-->	  
+    </div>
+
+    <h2>Appearance</h2>
+
+    <div class="form-group">
+      <label for="cap-appearance-option">You can either create a cartoon face or specify the URL to an image.</label>
+      <select class="form-control" name="appearance-option" data-bind="options: appearanceOptions, value: appearanceOption" style="max-width: 150px"></select>
+    </div>
+
+    <div class="row" data-bind="visible: appearanceOption() === 'Cartoon Face'">
+      <div class="col-sm-4">
+        <div id="picture" style="max-height: 225px; max-width: 150px"></div>
+        <center>
+          <button class="btn btn-default" id="randomize-face">Randomize</button>
+        </center>
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-fatness">Width (0 to 1)</label>
+            <input type="text" class="form-control" name="face-fatness" data-bind="textInput: p.face().fatness"></input>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-color">Skin Color</label>
+            <input type="text" class="form-control" name="face-color" data-bind="textInput: p.face().color"></input>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-eyes">Eyes</label>
+            <select class="form-control" name="face-eyes" data-bind="options: faceOptions.eyes, value: p.face().eyes()[0].id"></select>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-eyes-angle">Eye Angle (-20 to 30)</label>
+            <input type="text" class="form-control" name="face-eyes-angle" data-bind="textInput: p.face().eyes()[0].angle"></input>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-nose">Nose</label>
+            <select class="form-control" name="face-nose" data-bind="options: faceOptions.nose, value: p.face().nose.id"></select>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-nose-flip">Nose Flip</label>
+            <input type="checkbox" class="form-control" name="face-nose-flip" data-bind="checked: p.face().nose.flip"></input>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-mouth">Mouth</label>
+            <select class="form-control" name="face-mouth" data-bind="options: faceOptions.mouth, value: p.face().mouth.id"></select>
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="cap-face-hair">Hair</label>
+            <select class="form-control" name="face-hair" data-bind="options: faceOptions.hair, value: p.face().hair.id"></select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group" data-bind="visible: appearanceOption() === 'Image URL'">
+      <label for="cap-image-url">Image URL</label>
+      <input type="text" class="form-control" data-bind="textInput: p.imgURL"></input>
+      <span class="help-block">Your image must be hosted externally. If you need to upload an image, try using <a href="http://imgur.com/">imgur</a>. For ideal display, crop your image so it has a 2:3 aspect ratio (such as 100px wide and 150px tall).</span>
+    </div>
+  </div>
+
+  <div class="clearfix visible-sm visible-xs"></div>
+
+  <div class="col-md-5">
+    <h2>Ratings</h2>
+
+    <p>All ratings are on a scale of 0 to 100.</p>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="form-group">
+          <label for="cap-rating-pot">Potential</label>
+          <input type="text" class="form-control" name="rating-pot" data-bind="textInput: ratings.pot"></input>
+        </div>
+      </div>
+      <div class="col-xs-8">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <h3>Mental</h3>
+        <div class="form-group">
+          <label for="cap-rating-hgt">Adaptability</label>
+          <input type="text" class="form-control" name="rating-hgt" data-bind="textInput: ratings.hgt"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-stre">Fortitude</label>
+          <input type="text" class="form-control" name="rating-stre" data-bind="textInput: ratings.stre"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-spd">Consistency</label>
+          <input type="text" class="form-control" name="rating-spd" data-bind="textInput: ratings.spd"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-jmp">Team Player</label>
+          <input type="text" class="form-control" name="rating-jmp" data-bind="textInput: ratings.jmp"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-endu">Leadership</label>
+          <input type="text" class="form-control" name="rating-endu" data-bind="textInput: ratings.endu"></input>
+        </div>
+	      <h3>Champions</h3>		
+      <div class=" form-group">
+        <label for="cap-name">Ave Skill</label>
+        <input type="text" class="form-control" name="name" data-bind="textInput: p.championAverage"></input>
+        <label for="cap-name"> No longer need to change.</label>       
+        <label for="cap-name"> Champion skills will   </label>       
+        <label for="cap-name"> update automatically </label>       
+        <label for="cap-name"> based on rating changes. </label>       
+
+      </div>    	
+   		
+      </div>
+      <div class="col-xs-4">
+        <h3>Tactical</h3>
+        <div class="form-group">
+          <label for="cap-rating-ins">Awareness</label>
+          <input type="text" class="form-control" name="rating-ins" data-bind="textInput: ratings.ins"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-dnk">Laning</label>
+          <input type="text" class="form-control" name="rating-dnk" data-bind="textInput: ratings.dnk"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-ft">Team Fighting</label>
+          <input type="text" class="form-control" name="rating-ft" data-bind="textInput: ratings.ft"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-fg">Risk Taking</label>
+          <input type="text" class="form-control" name="rating-fg" data-bind="textInput: ratings.fg"></input>
+        </div>
+
+
+      </div>
+      <div class="col-xs-4">
+        <h3>Game</h3>
+        <div class="form-group">
+          <label for="cap-rating-tp">Positioning</label>
+          <input type="text" class="form-control" name="rating-tp" data-bind="textInput: ratings.tp"></input>
+        </div>		
+        <div class="form-group">
+          <label for="cap-rating-blk">Skill Shots</label>
+          <input type="text" class="form-control" name="rating-blk" data-bind="textInput: ratings.blk"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-stl">Last Hitting</label>
+          <input type="text" class="form-control" name="rating-stl" data-bind="textInput: ratings.stl"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-drb">Summoner Spells</label>
+          <input type="text" class="form-control" name="rating-drb" data-bind="textInput: ratings.drb"></input>
+        </div>
+        <h3>Physical</h3>		
+        <div class="form-group">
+          <label for="cap-rating-pss">Stamina</label>
+          <input type="text" class="form-control" name="rating-pss" data-bind="textInput: ratings.pss"></input>
+        </div>
+        <div class="form-group">
+          <label for="cap-rating-reb">Injury Prone</label>
+          <input type="text" class="form-control" name="rating-reb" data-bind="textInput: ratings.reb"></input>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<br>
+<h2>Champion Skill Editing</h2>
+
+<div class="row" style="margin-top: -9px">
+
+  <div class="col-xs-5">
+    <h3>Champion</h3>
+  </div>
+  <div class="col-xs-5">
+    <h3>Skill </h3>
+  </div>
+
+
+
+</div>
+
+  <div class="row" data-bind="foreach: champions">
+    <div class="col-xs-5 form-group">
+      <input type="text" class="form-control" name="name[]" data-bind="attr: {value: name}">
+    </div>
+    <div class="col-xs-5 form-group">
+      <input type="text" class="form-control" name="skill[]" data-bind="attr: {value: skill}">
+    </div>
+  </div> -->
+
+<br>
+<center>
+  <button class="btn btn-primary btn-lg" id="create-a-player" data-bind="text: originalTid() === null ? 'Create Player' : 'Edit Player'"></button>
+</center>

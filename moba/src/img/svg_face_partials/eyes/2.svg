@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="eyes" transform="translate(0.000000, -582.000000)">
+            <g id="2" transform="translate(0.000000, 582.000000)">
+                <g id="1">
+                    <g transform="translate(129.000000, 181.000000)" id="Group" fill="#7F5035">
+                        <g>
+                            <path d="M29.5092818,4.44892071 C23.1770182,-0.870314793 17.3575909,-0.728681657 10.7707364,1.31703195 C3.45223636,3.59029586 0.397118182,8.54594556 0.217336364,8.79867219 C0.608590909,8.93215621 18.5361273,0.423701775 32.8316727,8.50501775 C33.0275727,8.28840237 30.8047364,5.53738698 29.5092818,4.44892071 Z" id="Shape"></path>
+                            <ellipse id="Oval" fill-rule="nonzero" cx="16.5304364" cy="5.3660213" rx="6.42913636" ry="4.72122604"></ellipse>
+                        </g>
+                        <g transform="translate(84.500000, 5.500000) scale(-1, 1) translate(-84.500000, -5.500000) translate(68.000000, 0.000000)">
+                            <path d="M29.5092818,4.44892071 C23.1770182,-0.870314793 17.3575909,-0.728681657 10.7707364,1.31703195 C3.45223636,3.59029586 0.397118182,8.54594556 0.217336364,8.79867219 C0.608590909,8.93215621 18.5361273,0.423701775 32.8316727,8.50501775 C33.0275727,8.28840237 30.8047364,5.53738698 29.5092818,4.44892071 Z" id="Shape"></path>
+                            <ellipse id="Oval" fill-rule="nonzero" cx="16.5304364" cy="5.3660213" rx="6.42913636" ry="4.72122604"></ellipse>
+                        </g>
+                    </g>
+                    <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

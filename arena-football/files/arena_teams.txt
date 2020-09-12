@@ -1,0 +1,22 @@
+{
+       "teams" : [
+            {"tid": 0, "cid": 1, "did": 3, "region": "Arizona", "name": "Rattlers", "abbrev": "ARI", "pop": 11},
+            {"tid": 1, "cid": 0, "did": 0, "region": "Cleveland", "name": "Gladiators", "abbrev": "CLE", "pop": 8},
+            {"tid": 2, "cid": 1, "did": 3, "region": "Georgia", "name": "Force", "abbrev": "GEO", "pop": 3},
+            {"tid": 3, "cid": 0, "did": 0, "region": "Iowa", "name": "Barnstormers", "abbrev": "IOW", "pop": 1.5},
+            {"tid": 4, "cid": 0, "did": 1, "region": "Jacksonville", "name": "Sharks", "abbrev": "JAC", "pop": 2.5},
+            {"tid": 5, "cid": 0, "did": 0, "region": "Kansas City", "name": "Command", "abbrev": "KC", "pop": 2.2},
+            {"tid": 6, "cid": 1, "did": 3, "region": "Las Vegas", "name": "Outlaws", "abbrev": "LV", "pop": 1},
+            {"tid": 7, "cid": 1, "did": 3, "region": "Los Angeles", "name": "Kiss", "abbrev": "LA", "pop": 2},
+            {"tid": 8, "cid": 0, "did": 1, "region": "New Orleans", "name": "VooDoo", "abbrev": "NO", "pop": 5},
+            {"tid": 9, "cid": 0, "did": 1, "region": "Orlando", "name": "Predators", "abbrev": "ORL", "pop": 7},
+            {"tid": 10, "cid": 0, "did": 0, "region": "Philadelphia", "name": "Soul", "abbrev": "PHI", "pop": 3.5},
+            {"tid": 11, "cid": 1, "did": 2, "region": "Portland", "name": "Thunder", "abbrev": "POR", "pop": 1.25},
+            {"tid": 12, "cid": 1, "did": 2, "region": "San Antonio", "name": "Talons", "abbrev": "SAN", "pop": 1.75},
+            {"tid": 13, "cid": 1, "did": 2, "region": "San Jose", "name": "SaberCats", "abbrev": "SJ", "pop": 9},
+            {"tid": 14, "cid": 1, "did": 2, "region": "Spokane", "name": "Shock", "abbrev": "SPO", "pop": 4.5},
+            {"tid": 15, "cid": 0, "did": 1, "region": "Tampa Bay", "name": "Storm", "abbrev": "TB", "pop": 18}			
+
+        ]
+
+}

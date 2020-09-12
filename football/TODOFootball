@@ -1,0 +1,713 @@
+CFB
+------
+DPOY, use wins and opponent difficulty.
+
+
+
+- football finances
+
+- Trading, easy to fleace AI teams?
+- resigning own players too hard?
+- mood drops (become favorable too quickly during free agency)
+
+- adjust HOF, now that players have shorter careers? (DONE)
+- make HOF awards based (DONE)
+- make is slightly easier for player to improve, get higher OVRs?
+- make sure all teams have at least one running back (DONE)
+- MVP award based on QBR? plus winning?
+- remove rebuilding, etc on trade page (unless want to use)
+
+MVP/ROY
+
+- change the formula.
+
+Missing RBs
+
+- for longer term leagues the RBs go missing from starting rosters. Ratings too low?
+
+Scoring too high:
+
+- highest team is 40-45ppg, ten highest are 40-28 when they should be 33-25 ppg (FIXED!)
+
+
+
+Bugs
+
+- OT doesn't start with a kickoff? Makes sure half as well starts with kickoff
+- Add OT ties
+
+- Custom Roster Mode Broken (Fixed)
+
+- first season allow changes in playoffs, sometimes users get caught by this.
+
+-Live game issues: https://www.reddit.com/message/messages/7f27am
+
+- THE 72 Dolphins achievements doesn't work?
+
+? money ball achievemetns don't work?
+
+Schedule
+
+- change every year (DONE)
+
+HOF
+
+- fix player with QB info (DONE)
+- make sure there is balance (too many RB, too few QBs?) (DONE)
+
+- both run and pass stats for OL
+- fix defensive subbing issue (check roster size needs to check for defense as well)
+
+Leaders
+
+- add interceptions
+
+Subbing
+
+- offense pretty good
+- need to fix defense backups. Too many offensive players squezze out the defenders.
+- this also adjusts defensive stats, since currently some players get huge sack totals
+
+Bugs?
+
+- Player Ratings erratic
+- draft players rated very low
+- hard to keep 45 players under cap
+- cpu resigns player at unrealistic deals
+
+Weather
+
+- change in play?
+
+Bugs
+
+- historical team view, doesn't work
+- leageu leaders should be full right away
+- HOF doesn't look good, RB less, QBs more?
+
+CFL Bugs?
+
+- drag and drop on roster issues from inactive to active
+
+Gauranteed Money
+- Split so some not and some is
+
+Shuffle Roster
+
+- Does it work now?, put back in?
+
+Arena
+
+- player page, salary in millions (DONE)
+- Game Log broken
+
+Canada Football
+
+- Kicker doesn't kick
+- everyone wins championships (DONE)
+- team history not showing up (DONE)
+- Game Log broken
+
+SImplied player editor script
+- don't use json, but csv? Allow game to convert
+
+Salaries too high:
+- 70 OVR player asking for 15 million
+
+Playoff Option
+- seeding like basketball
+
+Ties
+- after one OT game can end in a tie
+- how to display etc.
+
+Defensive Player of Year
+- make interceptions based on coverage skill? not who is covering, but anyone on team.
+
+Schedule
+- non division schedule random, so not same teams every year.
+
+First year playoffs always will play to ensure AI team doesn't screw it up?
+
+
+Autoplay options menu
+- always sign above XX OVR
+- always sign
+- never resign
+
+Quick Sign
+- kind of like watch list
+- don't want to negotiate so many contracts
+
+Add endurance to OVR calc now that it is used during games
+
+Improved Trading Block
+
+Ratings rarely reach potential
+	- make more like Hockey?
+	- or keep like this?
+	
+Starting field position negative?
+
+New achievements
+	- https://www.reddit.com/r/ZenGMFootball/comments/4vhthz/ideas_for_new_achievements/
+
+Team average ratings page
+- for skills limit to certain positions
+- could show average age, height, and weight. then use these for achievements
+
+
+Flexible salary, draft classes
+	- based on roster file uploaded, salary calculation adjusted (min median and max ratings)
+
+
+
+roster UI
+  summary of changes
+    Replaced this nonsense "offense","defense","kicker","offensebench","defensebench","kickerbench","offenseinactive","defenseinactive","kickerinactive" with three properties:
+      offDefK: contains string "off", "def", or "k"
+      active: boolean
+      rosterOrder: integer, relative to position category (offDefK)
+  needs to be done
+    auto-sort (needs to set "active" and "rosterOrder" for each player)
+    limits (need to add check for number of active players before playing, similar to max/min roster check from basketball)
+  notes
+    UI updating during gamesim might be non-ideal (see commented out part of mapping in roster.js) - haven't tested it to see if this is purely a performance issue or if it causes functionality problems
+
+
+skills
+
+15?
+
+http://recruiting.scout.com/
+
+
+Running Speed
+Running Power
+Upper Body Strength
+Lower Body Strength
+Upper Body Quickness
+Lower Body Quickness
+Arm Strength
+Arm Acc
+
+Tackling
+Blocking
+
+Instincts
+Game IQ
+
+Awareness
+Poise and Leadership
+Intangibles
+Field Vision
+
+Aggression
+
+Size
+
+Body Control
+Hip Flexibility
+
+Feet
+
+Technique?
+
+Arm Length?
+
+Quickness off ball
+
+Pass Rushing Skills
+
+Disengaging skills
+
+Acceleration
+Breakaway Speed
+Elusiveness
+Tackle-Breaking Ability
+
+
+
+---------- general
+
+General
+-----
+
+Physical
+------
+Speed (acceleratino, could be athlete) (whatif)
+Strength (whatif)
+Endurance (whatif)
+Quickness/Athlete/Body Control (whatif-athlete)
+// remove? Height (hands?)
+Hands?
+//Hips?
+
+Mental
+--------
+GameIQ (whatif-technique?)
+Toughness -can take a pouding
+Awareness/Instincts (whatif- game instincts) - good for offense, know where holes are
+Aggressiveness - can give a pouding
+Motor - will be in position to give poutding
+// remove?Character (? less mised plays?)
+
+Skill
+------
+Throwing Accuracy
+Catching (whatif-hands?)
+Blocking (whatif-blocking)
+Rushing
+Tackling (run stopping?)
+Coverage
+Kick/Punt
+
+
+linemen
+-------
+rushing
+run stopping (awareness IQ)
+
+blocking
+running
+
+
+
+Offense
+? Running
+? Passing and receiving
+? Pass protection
+? Run blocking
+? Screen blocking
+
+Defense
+? Run defense
+? Pass rushing
+? Pass coverage
+
+Offense
+-------
+Running
+Passing
+Receiving
+PassProtection
+RunBlocking
+ScreenBlocking
+
+Defense
+-------
+RunDef
+PassRush
+PassCov
+
+
+Kicking
+
+
+9 total
+
+Kicking
+
+makes 10?
+
+
+Speed
+Strength
+
+Passing
+Receiving
+
+
+--------------------------
+
+11 offense
+11 defense
+
+sorted by
+QB
+RB
+WR
+OL
+
+CB
+S
+LB
+DL
+
+player can choose to have coach pick 11, or player can pick
+can have more WR less RB, more DL, less LB, etc
+
+new panel if player wants someone turned into something else (DL into LB?)
+
+offense minimums for coach (player doesn't have any mins, so if you don't have a QB, the best passer in your starting lineup will be used and your team will be forced to try to run a lot)
+1 QB
+1 RB
+1 WR/TE 
+4 OL
+
+defense min for coach (player doesn't have any mins)
+
+5 OL/LB 
+2 S/C 
+
+
+
+game
+------
+
+by series
+
+loop game
+---------
+loop possession
+---------
+loop down ( determine top mismatches for offense to use, running recieving, then pick among them)
+( 1st,2nd,3rd,4th)
+end on downs,new possession, or points
+----------
+
+-1)profiles
+http://espn.go.com/nfl/draft/combine
+http://www.nfl.com/combine/top-performers#year=2014&workout=FORTY_YARD_DASH&position=CB
+0) organizing roster really slowed down game, already like baseball
+- only do at start of season or after a change has taken place?
+- fix this, fix the game?
+
+team.js
+rosterAutoSort
+
+team.js
+checkrostersize
+
+lageue.js
+create
+
+season.
+newPhaseRegularSeason
+
+1) reduce games to 16
+2) 
+
+
+
+
+ovr groups
+---------
+QB
+WR
+WR/TE
+TE
+LB
+LB/S
+C
+S/C
+S
+P/K
+OL
+DL
+
+
+http://www.whatifsports.com/gd/Help/PlayerGuide.aspx
+Position 	Core Attributes 	Secondary Attributes 	Solid Core Values 	Star Core Values
+QB 	Strength, Game Instinct, Technique 	Athleticism, Elusiveness, Speed 	30, 35, 35 	40, 50, 40
+RB 	Elusiveness, Speed, Strength 	Athleticism, Game Instinct, Hands 	45, 35, 25 	60, 55
+FB 	Block, Strength 	Athleticism, Elusiveness 	45, 45 	40, 40
+WR 	Hands, Speed, Game Instinct, Elusiveness 	Athleticism, Technique 	40, 35, 25, 30 	55, 45
+TE 	Strength, Blocking, Game Instinct* 	Athleticism, Hands, Technique* 	35, 40, 30 	45, 50, 40
+OL 	Strength, Blocking, Game Instinct 	Technique, Athleticism 	40, 45, 25 	50, 50
+DL 	Strength, Tackling, Game Instinct 	Atheleticism, Speed, Technique 	40, 45, 25 	50, 50
+LB 	Strength, Tackle, Game Instinct 	Atheleticism, Speed, Technique 	35, 35, 35 	35, 35
+DB 	Speed, Tackling, Athleticism 	Technique, Strength, Game Instinct, Elusiveness 	35, 35, 35 	50, 45, 45
+K 	Strength, Technique 	Game Instinct 	40, 40 	40
+P 	Strength, Technique 	Game Instinct 	40, 40 	40
+* If you want a receiving TE, you may want to use more of the WR stats. 
+
+Strength (Strength)
+Game Instinct (Awareness/Instincs)
+Technique (throw,catch,rush,tackle)
+Athleticism, (athlete)
+Elusiveness, (don't have)
+Speed (speed)
+Blocking (blocking
+Hands (catch)
+
+?
+Work Ethic
+Endurance
+
+-----------------------
+
+1) probably going to need more than two rounds of drafting
+
+(got three, just need to clean up)
+(now expand to four) (could have more, football already very fast)
+should baseball be more? game already slow
+
+(done - 5 rounds)
+
+2) 2*13 = 26 players. that is 22 starters and 4 subs (need kicker as well) (probably need another profile or two)
+profiles
+draft.js 70
+league.js 279
+
+expand roster to 53, with 45 active (done)
+
+roster - 
+11 offense
+11 defense
+1 kicker/punter
+
+subs
+----
+offense
+defense
+k
+add punter
+
+long snapper ?
+
+inactive
+
+- done, take colors from baseball (done)
+- then sort correctly (need all position, maybe with more profiles)
+
+doesn't put defense in correct spot, need to look into
+
+
+//                if (numPlayersOnRoster > 15) { // mistake , team.js
+
+3) fix player creation first(draft,profiles), then roster(organize players), then season length, then focus on game
+
+
+
+0)
+run tests, why is it already so slow?
+
+remove player sorting, does that fix?
+
+is it the # of players?
+
+
+
+I)
+game
+------
+replace possession with series
+
+
+by series
+
+loop game
+---------
+loop possession
+---------
+loop down ( determine top mismatches for offense to use, running recieving, then pick among them)
+( 1st,2nd,3rd,4th)
+
+
+rushing distribution:
+    -3 or less (average of -4.2) : 3.08%
+    -2: 2.67%
+    -1: 6.11%
+    No gain: 9.45%
+    +1: 11.78%
+    +2: 12.79%
+    +3: 11.62%
+    +4: 9.55%
+    +5: 7.22%
+    +6: 4.85%
+    +7: 4.03%
+    +8: 3.06%
+    +9: 2.88%
+    +10: 1.37%
+    +11: 1.78%
+    +12: 1.02%
+    +13: 0.94%
+    +14: 0.88%
+    +15: 0.61%
+    +16: 0.57%
+    +17: 0.45%
+    +18: 0.39%
+    +19: 0.33%
+    +20: 0.22%
+    +21: 0.17%
+    +22: 0.17%
+    +23: 0.15%
+    +24: 0.14%
+    +25: 0.10%
+    +26 or greater (average of 38.5) : 1.46%
+
+passing/rushing distributions
+http://outsidethehashes.com/?p=60	
+	
+	
+record stats for offensive players (RB,WR,QB)
+but also record stats for offensive line (RB stats, QB sack stats for their man, QB sacks total)	
+defensive line (sacks,tackles, but also running stats for offensive RB,QB, etc)
+CB (tackles, but also wide receiver stats for their man)
+LB (could have both)
+keep track of total plays, play for their man,
+WAR - every play not to them adds to WAR, if to them depending on how play went the WAR could be +/- (can create WAR for every player, defense opposite of offense)
+
+rushing
+- 3 yards and under - tackled by correct man
+- over 3 yards, missed tackle, LB tackles within 10 (can be based on tackling ability or just LB rush stop ability, with odds) , S within 20, C after
+	
+passing
+- caught
+- tackled right away
+- if not, who tackles (depending on how deep, best tackler available, short - LB, crossing, S/LB, deep CB/S
+
+	
+end on downs,new possession, or points
+----------
+
+II) realism/stats
+
+makes sure game look real, 
+then put in stats, tackles, offense stats, defense stats plus how opposite offensive player did (for partial players, they can get partial stats, 
+
+III) playoffs/awards
+
+IV) trading/long term plays
+
+
+1) season should be by week, not day
+2) days left should be weeks left
+3) fix subbing
+
+- get correct rusher for sacks (I think so)
+- adjust fg/ep calc, seems too hard
+- check subs - make sure same type of player
+- sacks,int,fum,def off stat matches,more offensive stats
+     should be ready of Offensive line stats, Defesnive stats for 
+- half tackles
+
+4) Game Log
+- good way to track if game works correctly
+
+
+---------------------
+
+1)  ol/dl impact sacks, make sure - impact time through?
+2) points too high
+- punts not long enough
+- unbalance of attack too great when rushing/passing
+3) overall game balance
+4) passer rating too high for non qbs - look at growth - too fast, make growth stunted if not playing that position
+5) sub more
+6) passing distributed more
+7) remove console.logs
+8) injuries - increase rate by 4x
+9) adaptive, the more you pass the bigger focus defense puts on it, the more you rush the less focus. so need some balance
+
+10) dashboard
+11) playoffs - modified of baseball
+12) says days left (should be weeks left)
+13) game hangs up when running (infinite loop somewhere?)
+14) standings - seeding -> only need  6
+15) year 2014
+
+I) 
+-playoffs (done) (check rounds won 0,1,2,3,4)
+II)
+- player salaries
+- trade ai
+III)
+-dashboard
+
+IV)
+- google analytics
+
+- other : basketball to football
+-logo
+-title
+-e-mail
+-help documentation
+
+
+V)
+-improve game distribution (too much offense, too extreme pass vs rush, adaptive)
+
+VI)
+-standings - points for/against
+
+
+32 teams
+- trading block has tids
+
+Roster
+- sort needs to be better
+a) kicker not sorted right?
+- new html - split page up
+
+Salary
+- reduce so that teams start under 133, should have so many min players
+50 players, 133 is around 3m per players
+
+
+
+------------------------
+
+1) WR- need more distribution
+2) playoffs - instead of 0,1 show score
+3) interceptions too high (fixed)
+4) passing yards too high
+5) QBR in dashboard
+
+---------------------------
+
+1) Playoff, fix seeding, maybe do GB by WC
+2) season, hard code so it doesn't get messed up
+3) player season highs can be too high (make defense matter more and offense matter less in outcome)
+4) improve look of gamelog (smaller text)
+5) popup for games left
+
+6) turnover - make sure yardage correct, opp vs 
+
+----------------
+1) active spots, open roster 
+2) popup for active?
+3) season schedule
+4) adjust stats
+
+
+--------------------
+
+roster debug
+1) doesn't pick up changes in active/inactive unless you refresh page
+2) when roster moved around by user, players lose order number
+a) keep ordered
+b) keep track of starter, then reorder during game sim
+----------------------
+
+
+1) salary variance too great, low ovr/low pot guys ask for 10m
+
+
+2)HOF
+qbr: 0 player.js:2203
+gp: 16 player.js:2204
+ewas[i]: -95 player.js:2218
+ewa: -95 
+
+
+3) WR: on top spot
+QB below, why wasn't it sorted correctly?
+
+post here:?
+http://www.gamerswithjobs.com/forum/297
+
+http://www.operationsports.com/reviews/736/front-office-football-seven/?page=2#comment
+http://www.footballoutsiders.com/reviews/2014/review-front-office-football-seven
+
+http://www.maximumpc.com/article/how-tos/how_add_web_browser_game_your_steam_library
+
+http://www.cinemablend.com/games/Play-Your-Steam-Games-From-Browser-With-HTML-5-Codec-55368.html
+
+
+4) non QB at first spot, should be included in other options (Receiving, OL, can still run) (fixed)
+5) kicker injury bug (fixed)
+6) player creation bug (fixed)
+
+7) expand HOF to include OL, CB,S

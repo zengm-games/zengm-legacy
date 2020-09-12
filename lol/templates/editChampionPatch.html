@@ -1,0 +1,50 @@
+<h1>Edit Champion Patch Info</h1>
+
+<p>You can manually edit champion patch strength below or you can upload a champion patch file to specify all of the champion info at once. Uploading also allows you to add or subtract as many roles as you want for uploading into new leagues.</p>
+
+<h2>Upload Champion Patch File</h2>
+
+<p>The JSON file format is described in <a href="http://basketball-gm.com/manual/customization/teams/">the manual</a>. You can also  <a href="http://zengm.com/files/championPatch.json">download </a> the starting champion patch file to make changes for uploading. In leagues with changing champion patch data go to Tools > Export for the current patch data.</p>
+
+<p class="text-danger">Warning: selecting a valid champion patch file will instantly apply the new champion patch info to your league.</p>
+
+<p><input type="file" id="custom-patch"></p>
+
+<h2>Manual Editing</h2>
+
+<div class="row" style="margin-top: -9px">
+  <!--<div class="col-xs-3">
+    <h3>CPID</h3>
+  </div>-->
+  <div class="col-xs-4">
+    <h3>Name</h3>
+  </div>
+  <div class="col-xs-4">
+    <h3>Role </h3>
+  </div>
+  <div class="col-xs-4">
+    <h3>Patch Level (1=best)</h3>
+  </div>
+
+
+</div>
+
+<form method="POST" data-bind="attrLeagueUrl: {action: ['edit_champion_patch']}">
+  <div class="row" data-bind="foreach: championPatch">
+  <!--  <div class="col-xs-3 form-group">
+      <input type="text" class="form-control" name="cpid[]" data-bind="attr: {value: cpid}">
+    </div>-->
+    <div class="col-xs-4 form-group">
+      <input type="text" class="form-control" name="champion[]" data-bind="attr: {value: champion}">
+    </div>
+    <div class="col-xs-4 form-group">
+      <input type="text" class="form-control" name="role[]" data-bind="attr: {value: role}">
+    </div>
+    <div class="col-xs-4 form-group">
+      <input type="text" class="form-control" name="rank[]" data-bind="attr: {value: rank}">
+    </div>	
+  </div>
+  <center>
+    <button type="submit" class="btn btn-primary" id="edit-champion-patch">Update Patch Info</button>
+  </center>
+</form>

@@ -1,0 +1,28 @@
+{
+    "dest": "installers",
+    "installers": [
+        { "src": "linux", "format": "debian", "arch": "amd64" },
+        { "src": "osx",   "format": "dmg",    "arch": "amd64" }
+    ],
+    "formats": {
+        "debian": {
+            "bin": "mobagm",
+            "icon": "../build/img/mobagm-icon.png",
+            "section": "games",
+            "categories": [ "GNOME", "GTK", "Game" ]
+        },
+        "redhat": "debian",
+        "dmg": {
+            "appDir": "mobagm.app",
+            "appCategoryType": "public.app-category.games"
+        },
+        "squirrel": {
+            "bin": "mobagm",
+            "icon": "../build/img/mobagm-icon.ico"
+        },
+        "msi": {
+            "name": "mobagm",
+            "manufacturer": "Zen GM Games"
+        }
+    }
+}

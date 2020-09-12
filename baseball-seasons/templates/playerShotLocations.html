@@ -1,0 +1,21 @@
+<div data-bind="dropdown: 'player-shot-locations'"></div>
+
+<h1>Pitching Stats <span data-bind="newWindow: []"></span></h1>
+<p>More: <a data-bind="attrLeagueUrl: {href: ['player_stats', season]}">Hitting Stats</a> | <a data-bind="attrLeagueUrl: {href: ['player_stat_dists', season]}">Stat Distributions</a></p>
+
+<!--<p>Players currently on your team are <span class="text-info">highlighted in blue</span>. Players in the Hall of Fame are <span class="text-danger">highlighted in red</span>. Only players who have pitched more than 1 inning per game are shown.</p> 
+<p class="clearfix visible-xs"></p> -->
+
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed" id="player-shot-locations">
+    <thead>
+ <!--     <tr><th colspan="6"></th><th colspan="3" style="text-align: center" title="At Rim">At Rim</th><th colspan="3" style="text-align: center" title="Low Post">Low Post</th><th colspan="3" style="text-align: center" title="Mid-Range">Mid-Range</th><th colspan="3" style="text-align: center" title="Three-Pointers">3PT</th></tr> -->
+<!--      <tr><th>Name</th><th title="Position">Pos</th><th>Team</th><th title="Games Played">GP</th><th title="Games Started">GS</th><th title="Minutes">Min</th><th title="Made">M</th><th title="Attempted">A</th><th title="Percentage">%</th><th title="Made">M</th><th title="Attempted">A</th><th title="Percentage">%</th><th title="Made">M</th><th title="Attempted">A</th><th title="Percentage">%</th><th title="Made">M</th><th title="Attempted">A</th><th title="Percentage">%</th></tr> -->
+<!--      <tr><th>Name</th><th title="Position">Pos</th><th>Team</th><th title="Games Played">W</th><th title="Games Started">L</th><th title="Minutes">SV</th><th title="Made">G</th><th title="Attempted">GS</th><th title="Percentage">IP</th><th title="Made">K/9</th><th title="Attempted">BB/9</th><th title="Percentage">HR/9</th><th title="Made">BABIP</th><th title="Attempted">LOB%</th><th title="Percentage">GB%</th><th title="Made">HR/FB</th><th title="Attempted">ERA</th><th title="Percentage">FIP</th><th title="Percentage">warP</th></tr> -->
+<!--      <tr><th>Name</th><th title="Position">Pos</th><th>Team</th><th title="Games Played">W</th><th title="Games Started">L</th><th title="Minutes">SV</th><th title="Made">G</th><th title="Attempted">GS</th><th title="Percentage">IP</th><th title="Made">K/9</th><th title="Attempted">BB/9</th><th title="Percentage">HR/9</th><th title="Made">BABIP</th><th title="Percentage">GB%</th><th title="Made">HR/FB</th><th title="Attempted">ERA</th><th title="Percentage">FIP</th><th title="Percentage">warP</th></tr> -->
+      <tr><th>Name</th><th title="Position">Pos</th><th>Team</th><th title="Wins">W</th><th title="Losses">L</th><th title="Saves">S</th><th title="Innings Pitched">IP</th><th title="Strike Outs Per 9 Innings Pitched">K/9</th><th title="Bases On Balls Per 9 Innings Pitched">BB/9</th><th title="Home Runs Per 9 Innings Pitched">HR/9</th><th title="Opponent Batting Average Balls In Play">BABIP</th><th title="Ground Ball Percentage">GB%</th><th title="Home Runs / Fly Balls">HR/FB</th><th title="Earned Run Average">ERA</th><th title="Fielding Independent Pitching">FIP</th><th title="Wins Above Replacement - Pitching">warP</th></tr>
+
+	  </thead>
+  </table>
+</div>

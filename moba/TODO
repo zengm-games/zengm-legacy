@@ -1,0 +1,2053 @@
+-------------------------------------
+
+how to build steam
+
+clone
+move sdk over
+npm install --no-scripts
+change navbar.js
+update version (index.html and footer.js last was 1.28)
+npm run build
+cd nwjs
+delete existing nwjs build
+make
+go to mobagm.app in current directory
+cd mobagm-osx-amd64
+cp -Lr mobagm.app /tmp/  (creates file Steam can handle
+
+move to windows
+go to computer/tmp folder move mobagm.app
+
+move build to windows sdk
+
+run bat
+
+
+-------------------
+
+1) Easier for leagues to load?
+2) Improve draft page?
+3) 2020 draft format
+4) 2019 w/MSI?
+
+1) AMA at /r/league ?
+
+Next Update
+- more names for new conferences
+- two regions in same group *******88 (FIXED)
+- look at mobagm discord, bug reports
+- Player stats bug after trade (they disappear?) (FIXED)
+- OVR not related to ratings well enough?
+- if you get swept in finals the 3rd place team will be shown as runner up
+- debug steam directly
+- delet unnecarry file(country files) (DONE)
+- bring some god mod optinos into regular options area (background) (DONE)
+- champion synergy/counter page crash often
+- champion stats page crash often
+- remove store form mobagm (DONE)
+- Steam Library images (stadium image with mobagm logo?)
+- takes so long for leads to load (but create league is slower)
+- save prior league create
+- world dashboard shows split standings even when no split (FIXED)
+- new pick/ban method doesn't work with poor user picks/bans (FIXED)
+- colors off, white looks bad (multiplayer, contract negotiation, team highlighting) (FIXED0
+- multi team mode, remove one of the names (FIXED)
+- standings page shows two names for some teams
+- bring player picture into roster page
+
+- load league slower than create league **** need to fix
+- improve colors?
+- further test for bugs
+- get list of custom roster and make sure they all work
+
+- custom roster player pictures don't work on steam
+- discord, custom files not working?
+- make files work for LOLGM as well as zengm.
+- make champion pages more stable (why do they crash sometimes?)
+- champion synergy/counter pages use color codes as well to people know what they meaning
+actually, need exlanation about how it works, dropdown champi or row champ is better
+- not saving god mode changes after leaving league
+- Worlds with ladder standings page dropdown
+
+- region locked fantasy draft
+
+- champion /hero type just say LOL/DOTA2 style
+
+- Hof breaks when no best season (FIXED)
+awards for winin g championship, make sure jplayer has actually played for HOf (FIXED) (tset HOF not broken)
+
+- team abbreviations duplicates (FIXED)
+
+- LOL GM exports to LOL GM ***
+get LOL GM to moba GM and MoBA gm to lol gm working, for better sharing among free and paid users
+
+- create champion page that has synergy/counter/early/mid/late data on one page, 
+updates champions, also updates all players.
+- add the newer champions ***
+
+- patch page (.5 is aveage, 1.00 is unbeatable for any player)
+
+- coaches?
+
+- champion guide
+
+- using actual win artes 505 55% 45% instead of 0.05 -0.05
+- edit champion syn/count using 5 stats (positive, slighty pos, neutral, slightly neg, negative)
+
+Core Focus ***
+- league formats
+- champions (guides, new champs, champ editor, creating new champs, simplified champion data
+- get user rosters working and easier to do
+- bug fixes/qualifty of life improvements
+
+- god Mode option to adjust region strength
+
+-coaching hire option?
+
+- reddit chat review
+- uploading real champ file broken?
+
+- turning on real champion names breaks custom roster files? ***
+
+- LOL gm get working for custom rosters ****
+
+- disabling retirement doesn't always work allows some players to get through. (once they haven't been on a team)
+- using gode mode to unretire players doesn't work
+
+- Autoplay skip contract negotiations and keep players?
+
+- LOL gm exporting and importing same league doesn't work
+
+- LOL Gm prospects overpowered (?) 10+ 100 potential rookies every yaer
+
+
+- MoBa File import bug:
+https://www.reddit.com/r/zengmlol/comments/debbkl/mobagm_custom_roster_error/
+downloaded file
+
+file 
+works now:
+https://www.reddit.com/r/zengmlol/comments/dlaacy/lol_gm_worlds_roster_2019/
+unicorns region is 000.
+
+works nOW:
+https://www.reddit.com/r/zengmlol/comments/dle2vy/lol_worlds_updated_roster/
+
+older verion seems to work as well:
+https://www.reddit.com/r/zengmlol/comments/didato/lolgm_2019_rosters/
+
+
+Next update
+- new page for debuging
+- new page for customization
+- check dropdown for upload files not going backward
+- update changes
+
+1) update best of (DONE)
+2) check roster files for MOBA GM 
+2b) and LOL GM
+3) check bugged files (started)
+- year different than game and no starting year game state
+MOBAGM Worlds File Summer 2018 by HANABI.nu (BETA V2)
+-
+4) add new champions
+5) give usrs a way to add champinos
+6) say Lol style and Dota 2 Stype, user real champion names? (DONE0
+7) patch data random for each league?
+8) test using real champion names on refund rate (DONE)
+9) reduce number of userid's so game will load?
+
+Next Update
+
+MVP
+- always goes to a good player in weak conference
+- conference MVP, 
+- MVP adjust for power rankings?
+Dropdown
+- player stats/ratings, do by conference?
+Autoplay
+- not just month/week, but MSI and Worlds, skipping conference layoffs
+Residency Requirement 
+- for learning language and region change (NA to KR)
+Rookei of year not showing up in season summary.
+
+1/1/2020
+- game option to reset champion stats (no longer needed)
+- save champion stats by year? save current eyar, also a cumulative number? (Done)
+- longer term acadamy teams, just like a farm system, just be any player over x amount
+put in game optino make god mode option
+- historical patches, way to go back? before each worlds? or choose random
+- region power rankings (DONE)
+- custom roster that can play for many years
+- synergy area, api calc taking too long? review (found issue with synergy and countering pages, think robust now)
+- recycle retired players, for custom rosters
+- team stats not calculating for (SC, etc)
+- champion stats by year
+- made worlds quarter finals, not just made worlds in team history (DONE)
+- god mode gives users real ear/mid/late and synergy/counter data
+
+- missing players when loading by year, due to draft year not being set?
+- allow an increased roster size
+- when converting worlds to LCK, etc use correct corretion, not na
+- LPL conversion includes two teams that aren't in conference
+- track champion creation dates and gradually add them into the game
+- test import and export after a few years
+- standings conf dropdown (DONE)
+- for Worlds import with ladder, could sort by strength, then include remaining teams on ladders
+- beter keep custom players in league, test options and improve
+- synergy page still has issues, once data table goes bad need to reset local storage to fix
+- test export and import of leagues
+******** Next Updates future updates
+- long term playability of user files
+- update champions
+- update playoff formats
+
+1/19/2020 suggested featurse reddit
+- all stars
+- rank not just MMR?
+- streamers, augment team populaority
+1/21/2020
+- change EU conference name to latest version (from "EU League Championship Series" to "League European Championship"
+1/23/2020
+- spring split history highlighting for team doesn't work for champion(just knockout?) ** easy fix (removed because rows skip, same issue with all tables?)
+- same for summer?
+- 4th knockout team incorrect, also a wild card team that  participated in semi's so a team in msi semis get left out each year (FIXED)
+1/24/2020
+- Ace achievement doesn't work **8
+1/25/2020
+- allow editing of yearsWithTeam stat
+- yearsWithTeam adjusting player mood for free agency
+1/24/2020 discord
+- Legend, Rookie, Star, Superstar categories to give users a quick method to filter players
+1/25/2020
+- msi awards for players, spring/summer playoff winner awards? (will impact hof)
+1/25/2020
+- EU/NA Cs and Ladder showing up in Korean league?
+1/27/2020
+- instead of generic won regionals, have awards say which regions for player awards in case players move around
+1/28/2020
+- player page, salaries say M when should say K. **** (DONE)
+1/29/2020
+- missing languages, ukraine
+- champion editing
+1/29/2020
+- league export during playoffs, need to fix start/end like dashboard **** ??
+1/29/2020
+- 2019 LPL 1 & 2 seeds switchs during playoffs *** (DONE)
+2/4/2020
+- Aatrox in games sends game to 100+ minutes with KDa 0/0/0 for both top laners
+2/3/2020
+- Convert Ladder to LCS, but only have LCs tgeams. Fix file, currnelty all 30 show up?
+2/5/2020
+- tiebreakers kda variable not called, so can't be used in tie breaker calc, standings and playoffs? (DONE)
+2/7/2020
+- the "critical error occured during phase change" message has a link to basketball-gm.com. Need to change. (DONE)
+2/14/2020
+- number of years to learn a language (now 5? change to 3, make god mode option) (currently Under Residency Requireemnet)
+2/17/2020
+- filter league player stats by conference/league (using team dropdown or new one?), also league leaders
+2/17/2020
+- 2020 roster update, every 3rd or 4th game goes to 110 minutes
+
+remove synergy/countering pages until they are robust? (done)
+
+- fix missing standings page stuff (g.conf changes at random sports, but fresh league not changed)
+0: {cid: 0, name: "NA League Championship Series"}
+1: {cid: 3, name: "EU League Championship Series"}
+2: {cid: 6, name: "League Champions Korea"}
+3: {cid: 9, name: "Legends Pro League"}
+4: {cid: 12, name: "League Masters Series"}
+5: {cid: 15, name: "League Wild Card Series"}
+6: {cid: 6, name: "League Champions Korea"}
+7: {cid: 7, name: "Korea Challenger Series"}
+8: {cid: 8, name: "Korea Ladder"}
+9: {cid: 9, name: "Legends Pro League"}
+10: {cid: 10, name: "China Challenger Series"}
+11: {cid: 11, name: "China Ladder"}
+12: {cid: 12, name: "League Masters Series"}
+13: {cid: 13, name: "Taiwan Challenger Series"}
+14: {cid: 14, name: "Taiwan Ladder"}
+15: {cid: 15, name: "League Wild Card Series"}
+16: {cid: 16, name: "WC Challenger Series"}
+17: {cid: 17, name: "WC Ladder"}
+- test 2020 file
+
+2/22/2020
+- if no players on import, game doesn't create
+*******************88888888
+
+2/25/2020
+- edit how players are on each champion
+(edit champion synergy/countering)
+
+2/27/2020
+- master game sim adjuster, lower bound about 2 (disable autoshutoff at 110?) 9adjust 110 based on this number as well, 110/x*.7.
+
+3/2/2020
+- player win rate on team history page
+
+3/14/2020
+- LMS (region with 6 teams), will crash after last game of playoffs (worked prior to last update?)
+- discord has file link
+
+3/15/2020
+- when you sign free agents they disapear from roster at start of season (preseason? yes, went away once season starts. also impacts editing?) (FIXED)
+- champion stat page bugged
+- 1 week only does 1 day in free agency?
+- watch list inside pop up
+- ability to open up a new window to be able to do draft more effectively
+
+3/17/2020
+- update year
+
+3/19/2020
+- game log not matching real rounds when there is a bye?
+
+3/23/2020 (discord bugs)
+- trading unbalanced? (2020 user file)
+- CS teams have great players?
+- MMr not updating? Go into edit player to see if changes
+
+3/25/2020
+- champion stast in dropdown, with unstable warning? link to fixing steam/browser?
+
+3/28/2020
+- allow god mode to change conference names
+- maybe edit conference page
+- first allow for uploaded files
+
+3/31/2020 (e-mal)
+- draft page not working on Steam?
+
+4/2/2020
+- show team synergy on roster page?
+- bigger bonus for ADC/Sup, Jgl/MID?
+
+4/3/2020
+- coaches could come from retired players
+
+Next Next update
+- new feature? 
+- update playoffs? make adjustable?
+- add new variables?
+- test updating version and database with any past undefeinded variables that were added?
+
+
+Future featrues:
+
+- view more than one live game
+- adjustable playoffs
+
+
+Next update:
+- add tooltip (like with players and ratings) (DONe)
+for champions during draft that show counters and synergy
+- let god mode use real champions everywhere? or just draft page champ/syn page champ stats page?
+
+- tooltip, let use of real names (DONE)
+- fix formatting (DONE0
+
+Dropdown filter instead of search for pos (ADC, JGL)
+
+1) Bug
+- 1) changing yearswithteam (can upload in file, custmizeplayer doesn't edit stats yet)
+- 2) set up steam debuging system, fix Steam only bugs
+- switch teams in worlds bug
+TODO:
+---------
+- players don't retire, fix ratings? DONE
+- draft, using wrong player ratings for pick/bans
+may have fixed for gameSim (DONE)
+still ned t fix for live user dfraft? (DONE)
+- spring playoff, spring hostory and God Mode setings go away if leave website or close game?
+game not storing some variable form league to league (DONe0
+- playoffs go on forever after a few seasons
+- create team, liknk to team files and how to edit teams (DONE)
+- dashboard shows splits standings when no splits (world no splits)
+
+- when edit chanmpion name, change all patch names for that champ (done0
+
+- look for older reported bugs at /r/zengmlol
+- check discord
+- look at TODO older bugs
+
+Bugs:
+1) Stamina doesn't change, should adjust throughout career.
+2) 10 teams on Ladder, get to work (check for file at Bug Adding teams breaks game
+3) Chat kilk567 at 3:25 a few bugs/features
+
+Issues:
+- stability
+? delete box scores after first year
+? only allow autoplay of 1 season
+
+Features:
+- coaches
+- selecting lanes in draft
+- filter for fantasy draft
+- gm page that tracks gm even switching teams
+
+Bugs:
+1) Recruiting:
+Can't recruit even if have a good team. (DONe0
+2) Adding teams breaks game, use user file that has [BUG] Adding teams breaks the game (DONE0
+3) changing playoffs to a new playoffs (adding tids to schedule) (new featuers?)
+4) moving teams from NALCs to NA Cs to NA Ladder, roster shows correct standings but standings don't. (due to splits issue?)
+(can't find bug, standings issue?)
+5) League leaders, only for LCs, adjust for new game types for 100+ team league (or maybe even 57) (DONe0
+6) remove spring split standings columns if not using split league (DONe0
+7) winning doesn't bump hype up enough?
+8) aitrade roster bug (FIXED0
+9) Create a team bug, region flags
+
+10) winning worlds owner message
+11) AI teams not balanced
+12) history page, Cs and lader teams don't get awards but sho up
+Feature:
+- do difficulty from BBGM (DONe0
+
+TODO
+- clean up champion counter and synergy pages
+- clean up draft page
+- other bugs?
+
+Adjustments
+- review finances so ave steam, coaching, manager salary are in line with payroll
+
+
+
+Bugs
+- trading still uses prior team when recording stats? (from chat)
+
+- roster files don't work on steam.? (57 and worlds /w Ladder)
+
+
+- file, 
+
+Bugs
+- discord: i miss my wife
+
+
+
+
+
+
+
+Coach Mode options
+- play safe, lose alittle early, less chance of something really bad
+- play aggressive, gain a little early, greater chance of something really bad
+
+aggression by early/mid/late
+
+
+-clean up display of coach mode options (DONE)
+-have show up next to drafting, only show under tools if coach mode active (DONE)
+- ai teams need to select their coach mode options as well (DONE)
+- allow for no coach mode data for older leagues (DONE)
+- adjust Ai for difficulty (DONE)
+
+- can adjust player ratings by OVR or individual ratings
+
+
+- fix bugs
+
+
+
+Bug
+-----
+- shcedule page L W doesn't have game log link
+
+Bug ***
+----------
+-LCK has same teams from both region only have 5 teams with points, need way to break tiebreaker? 
+Breaks once regionals starts (seems to workf or me?)
+
+- uploading 127 team file to 57 team leage
+
+- adding new teams, need to expand number of prospefts, teams only have 3 or 4 players? (?)
+
+- importing with just team info give 1/0s of players (Fixed)
+
+importing file with created team
+creating team in league years in
+importing file in existing league with new teams
+
+- champion data imported correctly if changed
+
+Feature
+-----------
+current worlds structure?
+
+
+Features that help with leagues
+----------------
+- let user only do OVR for player editing/creating
+Bugs
+------
+- use ZenGM fix for MOBA GM new league random player area
+
+Bugs
+----------------
+- seting per split number of games in god mode, doesn't work (FIXED)
+- region import still using bench players, not letting people move forward
+- can't load file with added new teams (fixed)
+- can't load a file with edited champions
+
+Bugs
+1) creating a new teams and then creating a league with that exported file
+2) country flag
+3) AI teams are depowering teams with bad trades
+
+
+1) # of players goes to 4 before some games in long lived worlds w/ msi leagues
+
+1) conference sorting team records worlds 129 teams
+2) wc dashboard says made worlds but another team made it
+
+3) Form for submitting voting has been flagged as harmful, need to put a new link.
+
+
+1) prospect upload (DONE)
+2) Champion Data/patch check, upload they all reset (DONE)
+
+CREATE TEAM:
+- for new teams: allow them to pick player OVR and POTS (or all ratings)
+- for existing teams: allow them to pick logo, division, edit player ratings?
+
+- create team for leagues many years in (WORKS, made note about schedule)
+- crate team works for different league types (works)
+- create team can be used to edit teams divisions (WORKS)
+- change ratings of new players?
+
+1) make trading smarter, 
+
+1) bug exporting spring split and then reimporting
+features
+- player mode (major overhaul)
+- 
+AI trades:
+- done
+- need to refine?
+
+https://github.com/dumbmatter/basketball-gm/commits/master?after=9cf06b0a0e0d32fd0c964b06bce0d3a9b310da96+769
+
+bug fix:
+https://github.com/dumbmatter/basketball-gm/commit/32586815a3e58d943029b469803819bc913e5d1b
+
+egregious trade fix:
+https://github.com/dumbmatter/basketball-gm/commit/ac3eaec4be79cecab7a9d423d48b50b176086e54
+
+ai trade god mode option:
+https://github.com/dumbmatter/basketball-gm/commit/3c062df03486b542bdd82cdfc158c59851f83f9c
+
+
+core ai trade code?
+https://github.com/dumbmatter/basketball-gm/commits/master?after=9cf06b0a0e0d32fd0c964b06bce0d3a9b310da96+804
+
+transaction log defaults to all teams
+https://github.com/dumbmatter/basketball-gm/commit/595a4724a7ca93c98937456572b3dd037fa32ea8
+
+fix players with wrong team name
+https://github.com/dumbmatter/basketball-gm/commit/5b58be0fc902425d708c73b598cdcdb0e1c1a871
+
+initial work:
+https://github.com/dumbmatter/basketball-gm/commit/63a2782faea20131d27a5a86a2fbdb6cfffb8a9b
+
+1) counter/synergy says league finances on top (FIXED)
+2) uploading just team file doesn't populate correctly (players are 0/1) (FIXED)
+3) delete league doesn't work(same as reset game bug)
+delete_league/1
+delete_league/2
+delete_league/3
+etc
+4) entering league can have issues as well (same as reset game bug)
+l/1
+l/2
+l/3
+etc
+5) custom rosters don't line up correctly with teams (maybe when switching game types) (CAN'T FIND BUG)
+6) trading page not responsive in god mode? not the issue, just the data fields too long (FIXED)
+7) support champion stats not showing? (FIXED)
+8) switching teams bugged (only for picks/bans?) (CAN'T FIND BUG)
+9) clicking on a league sometimes takes more than one try
+10) uploading champion files doesn't work on Steam? (seems to work?) Only on edit champ page (FIXED)
+11) Editing champion and champion patch page then doing champion stats crahses  (working?) (FIXED)
+11) Pick/Bans players don't know to sim 1 day (FIXED)
+12) Create league, if you try to upload and then change mind you can't create league
+13) Wish list on roster page doesn't change color
+14) alterating columns have fixed color, user team highlighting doesn't work
+15) Chrome bug, firefox works? (FIXED? used async)
+16) Adding to champion patch(bug) (probably should check adding to champions as well)
+17) champion basic, etc pages sometimes crash (FIXED?)
+18) between split free agency and trading (can't trade and do free agents before Worlds) (DONE, could adjust this more)
+19) test moving teams around in worlds w/ ladder version (does it revert after split?)
+20) player champion win rate too strong?
+21) fantasy draft (FIXED)
+22) players leave after winning Worlds
+
+v1.01 bugs
+----------------
+1) custom roster bug in god mode (FIXED)
+2) contract negoiation messed up if you deacrease max contract cost (FIXED?)
+3) shuffle roster gets balanced rosters?
+4) champion live game 0 kda, 110 min?
+5) champion basic page crashing?
+6) imported file champion stats page broke?
+7) posted champ file breaks stats kda, etc
+8) fantasy ddraft won't sim afterwards (lcs custom worlds w/ ladder roster? worlds w/ msi)
+9) Xayah/Juilet counter not same accross as up/down (Fixed)
+10) Change onion head name and put team back in inition promotion spot.
+11) league leaders (FIXED)
+12) achievements
+13) edit page toFixed of undefined (edit team, edit champ)
+14) control file champion?
+15) hammi discord ?
+16) Brightside discord file?
+17) custom roster selects random team and not one chosen
+18) MVP team with best players, they all leave, if win championship players should stay
+19) hangingkid discord file (New_Champ_Pool_8_16_2017
+20) Region only checks whole team, not starters?
+21) MSI Groups, even when you lose games your wins increase
+22) split score not reset, if go 10-8 spring starts 10-8 for usmmer (FIXED)
+23) entering game during summer split brings back to spring split? (FIXED)
+24) not signing, review
+
+from before
+14) wish list, put in pop up
+
+v1.02 bugs
+----------------
+1) summer playoff preview uses spring results (FIXED)
+2) dashboard team stats wrong (FIXED)
+3) custom roster mode stays disabled, (FIXED)
+4) czeck flag doesn't appear in game (FIXED)
+5) remove message about liking game for now (browser redirects go in game and not web browser?) (REMOVED)
+6) regional bug,  HANABI 
+7) can't read playoffRoundsWonWorlds
+8) error switching teams in regular Worlds (can't read property of home of undefined)
+9) check discord bug reports section
+10) CP point bug when no points in Summer after getting points in Spring, but get in if less points in Summer and no points in Spring
+11) more first day  roster balancing
+12) days weeks mixed up
+13) bug with import slots, 3 started from region and won't let you move forward
+
+14) todo: order checkrostersize better (min 6, max 2 foregin, min 1 each position, max players?)
+
+Bug or feature:
+12) indonesian and malayian (DONE)
+
+Next Update
+------------
+- let people know they can use Worlds file to populate LCS, etc leagues and Worlds w/ Ladder league
+- let people know there is page that show all player changes (event log)
+- multiplayer
+- no one wanting to sign god mode option
+
+v1.03 bugs
+----------------
+
+- HANABI file, team record page doesn't work
+- wrong teams making it out of Groups for Worlds (group C)
+- filipino disappears when you try to modify language (DONE)
+- has thailand country, add thailand language(DONE)
+-  (check to see if other countries don't have languages) (DONE)
+- regional bug
+- worlds w/ ladder switching teams (w/ file?) broken
+- cahmpion win rate bug (.50019234) (adding roles?)
+- remove some objectionable names (KKK)
+- fantasy draft doesn't work with Worlds w/ Ladder? (FIXED)
+- make sure god mode option to keep countries together works?
+- MSI groups bug
+
+
+1) Fix both files
+2) MSI groups bug
+3) more new features?
+
+v1.04 bugs
+--------------
+- team records allow Spring
+- team records, only best records for LCS teams
+- Worlds Groups bug (FIXED)
+- changing regions in regular season ladder doesn't work (? can't consistently find this)
+- Vi counter page bug
+- draft phase doesn't work
+- darious executionaer
+- awards records doesn't record players who won titles (FIXED)
+- League death leaders blank (REMOVED)
+- team records, last playoff an dplayoff section oncly counts teams who made it out of groups in Worlds
+- Sorting by conference has no conference region names (FIXED)
+- playoff appearanced on team history page only show up if made out of gruops/ Worlds 
+- after finishing 7th in NA it prevents you from being in regionals even if you have more CP than other team
+- latin america flag using online source, so it doesn't work if offline (get saved to hardrive) (FIXED)
+- league leaders doesn't show historical info
+
+v1.05 bugs
+--------------
+- change files to have latin america
+- team records allow Spring
+- team records, only best records for LCS teams
+- fantasy draft names/languages run too long, need to make shorter or make languages flexible in width (FIXED)
+- cahmpion win rate bug (.50019234) (adding roles?) (don't see?)
+complete season in Worlds w/ Splits w/ Ladder in coach mode medium, change one team name, use god mode to see real champ names in draft
+- players should learn language of most common language on team (FIXED?)
+- lack of players for some of the minor regions (FIXED)
+- import rookies into league prospects page for Steam version
+- not generating players based on team countires/regions (FIXED)
+- not enough japanease (FIXED)
+- vietnameses way too prevalent (need more name lists)
+- no portugese players? (for brazil ?)
+- summer split worlds gropus HANABI July 18th, not accurate all the time (FIXED)
+tie breaker just take taems with 4 and over, not highest two
+- EU teams, should learn english not a random country language?
+
+add adjustment for all regions, make smaller ones slightly more prevalent?
+
+v1.06 bugs
+---------------
+- champion basic bug always appears now?
+- self made players are undefined names on watch list? (seem to work)
+- synergy of Azir and Yorick 2.8? auto win if on same team (FIXED)
+- midlaners taking dragon/baron instead of jungler? (FIXED)
+- import rule not apply to rest of team (issue with custom roster where bench players are imports) (FIXED)
+- not enough players at certain positions (increase free agents amoutns) (FIXED)
+
+v1.07 bugs
+-----------------
+- adding roles breaks champion basic page
+- only export taems get a broken file (works but not for years past first year?)
+
+v1.09 bugs
+--------------
+- no gender change option in edit player
+- import rookies into prospect page in Steam versoin
+- uploading custom roster file adds random players to teams
+
+Features
+- awards for conferences
+- awards records page, need to add
+- add 1st team
+- add split winner for region
+- adjust HOF? if based on awards
+- change from region - mvp to regional, dropdown etc
+
+
+
+Features
+- Hong Kong and Macao as nationalistires as part of Taiwan region (DONE)
+- splits playoff wins
+- MSI wins
+
+Features
+-------------
+-random things (champs disabled due to bug, random events popping up in inbox?, competitive rulings, player practicing a champ a ton and wanting to practice on stage, 
+- boosting(RARE), Toxic Behavior (uncommon), Off Stage Cheating(SUPER RARE) (suspension or 2-3 games to 2-3 splits/seasons)
+
+
+Features
+-----------
+- custom roster mode power level
+
+features:
+1) achievements
+2) steam achievements
+3) player picture variation by region
+4) Worlds w/ Ladder (but not NA)
+5) add female data spot 
+6) add pictures on roster page
+7) add more regions to God Mode prospect adjustment area
+7) add more countriest to God Mode prospect adjustment area
+8) expand edit Team in game editor
+9) ai trades 
+10) You can change teams country a flag in team editor.
+11) Female teams
+12) Female appearances
+13) Gender info
+14) Can serach players by gender
+15) Can play single matches
+16) You can add more teams in this game in game editor then this much
+17) You can remove currents teams in seasons in game editor if you want
+18) You can play match size like 10 vs 10 or any size if player want
+19) Player can add more players in same team, then roaster spot have. (God mode can but, that shows -x roaster spot) ?0
+20) Can set "clearly" team leader player in teams.
+21) Steam cloudy save (It's usefull)
+22) Can see "player avatars/portraits" -during the matchs, when or if someting happend there, when game simulate matches. (Those info it's not just only textbased if those was.)
+23) Can add sponsors in the game, that can effective game. (Like money sponsors or add sponors tournament/events, where you can get this sponsor or money. Or pc equiments sponsor that can boost x player (Mental/Tactical/Game) -skills.
+24) Cad add custom random events in the game, that can effective game. (Like lost member in team)
+25) Other teams offering coaching spot
+26) New page that pops up showing season summary
+27) Fix Bugs (suggest a bug to fix below)
+28) How to pages for picks/bans, creating roster files, creating team files, creating champion files, and in general playing the game.
+29) Making all text importable to allow for different languages
+30) rift rivals
+31) pick/bans based on just champion patch, or turn off synergy, countering, player champ ratings
+32) adjusthow easy/hard it is to keep players
+
+1) robust file
+2) achievements
+3) faces in line with country region (Done)
+5) colors
+4)smaller fixes
+
+
+?? Bugs
+----
+
+tricky
+----------------
+- watch list
+- click on league sometimes doesn't trigger
+- highlighting override for lighter table rows
+
+-achievements
+- steam achievemtns
+
+fixed
+----------
+- force ability to sign doesn't let you sign (fixed)
+
+
+todo
+------------
+- disable yearly position change, God Mode doesn't change (not seeing this)
+- ai disregards manually set import restriction
+- exporting league doesn't export champion points for teams (or they don't import) (FIXED)
+- fix faces, create by area
+- NA LCS Ladder, large number of top laners and supports?
+- uploading custom files to larger league (pro palyers are fine, rnadoms are 0 and 1)
+- editing champion data, cannot read proprty 'toFixed' of undefined
+- groups tiebreaker doesn't work
+- error opening basic chmapion page
+- YWT split MSI Worlds doesn't update? (FIXED)
+- rank update year? 
+- rank update when editing player (FIXED)
+
+
+- can't edut using champ info page
+- parse float on champ info page not working
+
+- try out champion/player files
+https://www.reddit.com/r/zengmlol/comments/8hml9a/worlds_2012_version_2_with_2013_rookies/ 1
+https://www.reddit.com/r/zengmlol/comments/8duh4n/lolgm_worlds_season_2_file_version_1 (same as first)
+https://www.reddit.com/r/zengmlol/comments/822dx1/2018_worlds_spring_season_update/ 2
+https://www.reddit.com/r/zengmlol/comments/6kinby/2017_summer_split_worlds/ 3
+https://www.reddit.com/r/zengmlol/comments/7dhg72/what_is_the_most_updated_worlds_roster/ 4
+
+1) 
+
+- 3rd place game winner sometimes shows as runner up (EU w/ Ladder happens)
+- finals mvp doesn't even play in finals
+
+- hype and refusing to join make sense?
+
+features
+--------------
+- recruiting before summer split
+- new propect adjustments
+- 
+
+
+Steam todo
+-------------
+- add achievements 
+
+visual todo colors
+------------------------
+- fix highlighting
+- fix achievements
+- fix dropdown menu
+- 
+
+not found
+----------
+-HOF doesn't open
+- MVP nwithonly 1 game?
+
+
+
+
+MOBA GM Bugs
+----------------
+
+1) Player Champion Stats/MMR when uploading champion patch info to Edit Champion
+2) Player Champion Stats/MMR when using LOL GM file
+3) Fix MSI/Worlds Groups issues?
+4) Team Records Page, Best Record, should only be LCS
+5) RosterAutoCheck, make sure each team has 5 players
+6) other bugs?
+
+7) Do pre steam bugs
+
+
+
+1) EU language bug, nonone speaks english? (FIXED)
+2) Finals MVPs go to Top Laner? (Fixed)
+3) Years with Team signings bug (Fixed)
+4) Min players doesn't impact AI
+5) Tier list like early/mid/late for start of season
+6) Pick/Ban page sort to make clearer (team by team, not pick by pick)
+7) search for countries and languages in free agent page (done)
+8) Worlds regionals bug? Summer split regionals before Worlds
+9) God Mode Player Retirement works?
+10) best record tracking on team awards/records page (should only od LCS)
+11) Free agents don't leave God Mode option
+12) autoplay will stop at free agency for some reason sometimes
+13) God Mode players leaving teams?
+14) Edit Teams lists correct? (WORKS)
+15) Edit champ lists correct?
+16) Edit Patch lists correct?
+17) adding champions
+18) adding patch
+
+11) Buy MOBA GM comments section
+
+- refuse to sign doens't work
+- allow to recruit before summer
+
+
+20) God Mode: only can use country
+21) God Mode: players will always want to stay (DONE)
+21b) God Mode: players will never refuse in free agency
+21c) God Mode: AI teams will always resign players
+22) Languages not showing up correctly when you have many?
+23) Spring MSI play-in groups playing too many games and not recording them?
+24) teams less than 5 player double check?
+25) can't read property smoy in team records
+26) player watch list
+
+Move release data to June
+
+A)
+Overview
+- Link to website (DONE)
+- customization
+- patch/champion changes
+- team changes
+B)
+- test expanding/shrinking champs/patches
+- test expanding/shrinking teams
+- test custom roster files
+C)
+- playoff bug fixes (done?)
+- ladder bug fixes(done?)
+D) 
+- ipc fixes?
+E)
+- images and champ names
+- working for web
+F)
+- deleting leagues
+G)
+- creating exe files
+- uploading to Steam
+
+H)
+- achievements
+- Steam Achievements
+
+
+-HOF (FIXED)
+-playoffs
+
+MSI Play-In
+Autoplays, auto 3 win
+
+-fantasy draft
+- region error f or created players (FIXED)
+
+God Mode
+- awards calc adjustments 
+- more regions
+- 
+
+pre steam
+- fix online pictures
+- fix delete indiv league
+- game restarts when deleting whole league
+
+Bugs braeking
+- playoff stats not recording for player during summer split
+
+Help Overview
+- goes to Basketball Gm, should be lol gm stuff
+
+Team Records
+- adjust for Worlds w/Ladder (only do LCS level info?)
+
+LOL GM Files
+- update champion data with latest champions
+- update player champion ratings
+
+- support/top for ladder versions
+- files
+- other bugs?
+
+Team Records
+- all league team messed up for Worlds? (history page is messed up, real award probably messed up)
+- best record for conference messed up, want only LCS/
+
+Standings Messed Up
+- Ladder and Now Worlds w/Splits
+
+
+Worlds to LCK - standings messed up (FIXED)
+Worlds to LCS - no player stats first year(FIXED)
+Worlds to Worlds w/ Ladder - teams aren't in correct locations, but it plays (FIXED)
+
+- MMR wrong for custom files?
+- position wrong for custom files?
+
+Create Player/Custom Player MMR
+- MMR updated when creating league?
+- MMR, make sure champion stats are for correct position for custom files
+- God Mode option, adjust how MMR calculated
+
+MMR/Rank
+- create/edit player
+- edit champion page
+- LOL GM file uploads
+
+Player Champion Data
+- LOL GM file uploads in edit champion page
+
+Champion File in game
+- update player data as well
+
+
+- create pick/ban page then restore old draft page
+
+- prospect page(FIXED)
+- doesn't display results of past draft classes
+
+- fantasy draft
+- phase change issue
+- draft display results issue
+
+
+- past prospect page not working
+
+-importing champions stops prospects from working?
+
+
+- player images
+- promotion/relegation summer split 
+- summer split promo teams play spring split gameSim
+- roster files, player idb
+- roster files, champ patch/basic info wrong?
+- Fantasy draft doesn't work for me, it just freezes on the page it's on. Even when I tried reducing it to a normal 10 team league.
+- I can't view the player page for free agents, it says 'Error Cannot read property 'championStats' of undefined"
+- Uploading previous Json files will not automatically create the players have their designated roles, meaning roles must be manually changed for each individual player (am using a spring split json file)
+- Uploading a json file with player/team names sometimes doesn't actually change team names
+- Cannot currently delete game saves. Clicking on the "Yes I'm sure, Delete" button doesn't work.
+
+- control private message roster files/ team files
+- other saved roster files
+
+-Am having a problem where my league won't progress forward at all.
+I will say that new ones I create (even full 129 teams) work fine, this one is using a 129 team imported league file that I made so I wouldn't have to rename every single team when I start up, with no other changes.
+
+- too many supports ****
+- YWT **
+- sandings (FIXED)
+- custom rosters/files
+
+
+A god mode options
+-( more support)
+-( more adc)
+-( more jgl)
+-( more top)
+-(more mid)
+- more countries
+- retirement
+- yearly position changes
+
+
+
+
+- Trading Block (fixed);
+- exporting files without players (Fixed)
+
+
+
+genPlayoffSeriesOld
+newSchedulePlayoffsDay
+4726
+
+- vau and victus gaming have same abbrev (FIXED)
+
+
+- Also, you can't sort players by MMR in Player Ratings. (FIXED)
+- On the ban page it should have team nickname first eg. CLG Bans rather than the current: bans CLG (FIXED)
+-Rakan is the first champion listed when sorted in Alphabetical order (FIXED)
+also, fixed a couple names that had spaces
+-Volibear and Quinn don't have any roles assigned (they were just really out of meta, if you add a role in the patch data they will show up) (EXPLAINED)
+- double teams:
+https://www.reddit.com/r/zengmlol/comments/8cl10r/moba_gm_beta_now_available/dxfuonj/
+A few teams are in 2 regions or moved regions.
+All Mid (LCK/NA Challenger) (DONE)
+Summerwolf(LPL/EU Challenger) (FIXED)
+Hamburg Lions(LCK, Team Beach is in their spot/EU Challenger) (FIXED)
+Team Beach(LPL/LCK in place of Hamburg Lions) (FIXED)
+Lollipoppy Illuminati (EU LCS/ LCK Challenger) (FIXED)
+Second listed region is the one they weren't a part of in LOLGM
+Random bug - In Worlds with splits/MSI/Ladder - clicking on the standings for Australian Gaming 
+will always redirect to Spirit Bomb Survivors - a team in a completely different league. (FIXED)
+Same issue with Siberian Wolves Esports, Team Latin North, and Latin South Gaming. (FIXED)
+ 
+ maybe fixed?
+- [Minimally tested] The AI drafts and bans alphabetically in the beginning.
+- My current game is getting stuck at MSI simulation. Using the most current worlds 2018 custom roster.  
+- There is a bug where players pick champs no matter what their role is. So there can be a Nami Top or Ahri Jungle for instance.
+ 
+ 
+features:
+-Could you maybe have like a KR ratio, NA Ratio, CN ratio, TW Ratio, and EU ratio? That'd be the dream!
+- make Bo3 playoffs with God Mode change
+- turn on summer split trades, etc.
+- tier list for each role in champion basic page?
+- job offers from other teams
+- adjust resigning criteria so players don't leave as often in God Mode
+
+LOL Bugs
+--------------
+
+- baron in gameSim adds to wrong ptsQrtr (fixed in MOBA GM)
+- recording stats for pts adds a point for baron when game ends  (fixed in MOBA GM)
+
+MOBA GM Bugs
+-------------
+
+- games too short, should be on average 37 min up to 50 min sometimes
+
+- too many combacks from losing an inhib or nexus turrets
+
+MOBA GM Features
+--------------------------
+
+- graph of gold over time for each game
+- include objectives in graph?
+
+
+From LOL GM
+--------------------
+
+- adjusted export name to not include playoff results for user team, breaks export
+
+Patch Tier Display:
+https://www.reddit.com/r/zengmlol/comments/7zx9ta/moba_gm_champion_basic_stats_page_updated_edit/durohfi/
+
+Bugs
+- barons taken, dragon taken broker in stats, review
+
+- can't delete single league, page broken
+
+God Mode
+- allow no retirement
+- allow for longer careers and less new prospects
+
+Champion Patch
+- length hard coded? User uploaded champs patches never get used
+
+Coach Mode
+- create page for picking and banning
+- use that info to run live game
+
+BansPicks Page
+- use god mode as template?
+- or use draft page as template?
+lets make a second template
+
+I'm thinking draft
+Load all champs, list picks and bans as they get taken and champ pool reduced
+
+
+0) Play will automatically be a live game in coach mode
+1) go to picks and bans
+2) then do live game
+
+1) Load game
+2) load champs
+3) create number of picks/bans
+4) then run draft
+5) then adjust opposing picks based on team comp 
+6) then sim actual game
+
+Bug - sort AI team roster before draft to make sure players make sense?
+
+How to do draft:
+1) isn't live game, but similar, it is coached game
+2) immediately brings up draft page
+3) do the champion stuff when schedule is created? if mode is coach mode?
+
+
+Champ Name Changes
+- DOTA 2 and LOL
+- describe as (counter focused - DOTA 2, meta focused - LOL)
+- Use useful descriptions of how they play
+Burst Tank - Malphite
+Burst Mage - Annie
+
+Bugs
+- game sim: ensure total CS/JGL doesn't surpass maximize possible
+- what would make this deal work on individual teams doesn't include a player from that team (bug with removing draft picks)
+
+Possible Features
+- allow players to come back after retirement
+
+Free Agency
+- have teams take positinal need into account
+- 125% value for missing position, 90% for second, and %50 for third?
+
+http://localhost:3000/
+chrome://inspect/#workers
+
+do you need any other coach mode options?
+
+let user then focus on 
+early/mid/late aggression? really it is dictated by
+
+MOBA Nice to have:
+- free agents, keep track of number of positions each team has, don't want more than 2 from a position
+
+- make resignings always easier with hype higher?
+
+MOBA TODO
+
+- 40 Champion points showing up on CS teams. in summer split, demoted teams?
+- GB fix in standings? (DONE)
+
+- regionals and groups use championpoints
+- test other game types to see if I broke them along the way
+
+Worlds w/ Splits
+- CP doesn't work
+- MSI historal all displays wrong winner and runner up
+
+Worlds w/ Splits w/ Ladder
+- doesn't save (or just takes forever) when new season starts
+
+
+Missing Playoff Stats for player:
+- stay teams get included because of champion points
+- need to ensure those teams get playoff row for types 6&7
+
+Coach Mode
+- in game strategies
+- champion selection
+
+Display current rankings for picking on a page
+Allow selection of champions
+
+More champion data
+- countering
+- synergy
+- mid/late game
+
+Strategy
+- Early/Mid/Late
+- Gank/Team/Splitpush (need champ data for this)
+- Poke/Burst/Sustain (need champ data for this)
+
+Champion Stats
+- by champ, by player?
+
+Add to player stats section?
+Create champ stats
+
+
+1) Champion stats, added to each player
+then for champ page take from each player to create final 
+
+- add during game
+- try to display on player page
+- create champ page for whole league
+
+2) Display by player
+
+3) Display by champions
+
+4) Coach God Mode Page
+- allows users to do stategy, early/mid/late(yes), gank/team/splitpush(maybe), poke/burst/sustain(maybe)
+
+5) Coach Champion Order Page
+- allows user to rank champs for each player
+
+6) In game champ selection
+
+7) Last chance review of strategy before game starts
+
+8) keep track of strategy/champs/etc and give win/loss?
+
+-------------
+
+two summerwolfs?
+
+Current
+-------------
+
+fix round won? (DONE)
+
+fix rounds won for Worlds?
+
+Promotion and Demotion Works for LCS w/ Ladder w/ MSI w/ Splits 
+- spring split
+- summer split
+
+add other CS/Ladder playoffs?
+
+
+phase 339, remove this once playoffroundswon types are finished
+
+season 3818, tidsWon, have for rest and increase if included
+
+1) when set up set to 0
+
+2) with each round won add 1,
+
+should be simple
+
+keep track of tids for each type?
+
+3) then add rest of ladder
+
+
+Game Options
+----------------
+
+1) Worlds w/ MSI w/ Splits, w/ just LCS NA ladder, or pick region
+
+2) Just LCS/CS no ladder
+
+
+
+Wokring?
+---------
+
+-LCK champ rounds won
+
+MOBA GM Bugs
+------------
+
+- two all mids, allmid and all mid
+- two beaches?
+- groups doesn't record round right, need to bring that back into main function
+
+MOBA GM - nice to have
+--------
+
+- Play all teams once, then do rest?
+
+- Stats, show LCS, CS, Ladder in player stats/team so you can filter better
+- or maybe a dropdown
+
+- need to learn how to add dropdowns, for stats and for season splits
+
+BBGM
+------
+
+Have up to April 10, 2017
+
+UI
+-------
+
+Get looking good
+merge with some of the new features?
+Create video (1 min? games simming and results showing up (dashboard), playbyplay happening, free agency)
+Create screenshots (edit patch page, edit champion page, edit team page, team history page, league history page (# of champions), player history page (# awards),)
+
+ 
+Looking really good, much easier on eyes. I enjoy using it now.
+
+Issues I've noticed so far:
+
+1) New image on first page makes seeing Leagues 2 and League 3 really hard. This is tricky because the page is both really dark and really bright in some spots. A few possible solutions:
+
+a) Dim all the lights or once they get to where League 2, etc are,
+b) Find a color that works with black and white, and/or
+c) I can get the image altered.
+
+2) Tables
+
+a) Tables such as the roster are cut off and have a scroller. I prefer how it was before. Now still have to scroll but see even less. In the future I need to reduce the number of columns and put in place some tabbing to show more information.
+
+b) On the other tables the scroller kind of works, but that is because the seperate columns for the up/down arrows have made the tables huge.
+
+c) The up/down arrow are too white. I notice them more than the title or the data on the page. 
+
+Still thinking about the best way to handle this. Using the old style, but with the arrows not too easy or hard to see would probably be best. Not sure how possible that is.
+
+3) Tools/God Mode had red and green buttons. That was definately better than the current white.
+
+4) Team History color codes the players (the colors are mentioned at the top of the page). That is all missing now in the table. The table is very white as well.
+
+5) Team and player highlighting could be a little dimmer. It is slightly on the bright side. 
+
+6) Highlighting when you scroll over a table on a player/team could be a little more subtle as well. How LOL GM was in the white version as far as color differentiation wasn't bad. Before thing were made a little darker. For us I think we just need it a little lighter. 
+
+7) Similarly with the popup messages when game scores are announced as the season is simulating (bottom left side). I think the colors need to be inverted. Light background with darker text. That way it jumps out more from the page and can be read a little easier. 
+Before it was a black background with white text. Now it probably needs to be white/grey background with black/dark green text.
+
+8) Flag by players name puts them on a watch list. When I click the flag it doesn't change color. So I don't know if the player has been added or taken of the list.
+
+9) Left side table I think you made it bigger to fit the whole screen. It isn't so bad. One issue with that is more stuff is coming. So with the current size it will be longer than the Dashboard page. So it just need to be able to get changed easier.
+If it isn't easy to change, need should go smaller now. There is at least one and maybe two more links going into that table for the final release. So sizing it with at least those two in mind makes sense now.
+
+10) The menu on left the highlighting doesn't cover the whole row. It starts with the first letter. It makes it a little bit awkward to read that first letter.
+
+11) When you go to tools God Mode and enable it the god mode option in the menu turn purple. I'm thinking this need needs to be inverted. So instead of Dark Purple, it needs to be a light purple.
+
+12) Player names don't have the link color. In general, there are links with just the grey (which looks fine, but may be confusing to users).
+
+I think that covers everything I've noticed so far. This is to start getting it really polished. 
+
+Overall, I really enjoy using it now. I think it is really looking good.
+
+
+*************************** UI
+- switch backgrounds
+- switch back to other scheme is user wants
+
+- playoffs, not used parts should be hidden
+
+Steam Post
+- in order to add the features I wanted I am pushing back the release date.
+- New release date October/November
+- possible with schedule update Spring so the game will still seem fresh next year.
+- earliest MOBA GM 2 would come out would then be Spring 2019 with an updated schedule for 2019 and many more features.
+
+New Images
+- records page (yes)
+- awards page (yes)
+- new god mode options (yes)
+- new sign player page (doesn't display correctly)
+- player page showing split
+- popup shortcut for ratings (yes)
+
+New Features
+- userIDs switched out
+
+Done
+-------
+
+- Index page converted (mostly)
+
+- Helpers have team lists
+
+- Create League page works
+
+Up Next
+-------
+- convert conferences and division, make standings work (do Ladder, but not promotion/demotion yet)
+
+Done
+
+- Worlds w/ Ladder Teams (28 left)
+
+Names
+
+4 EU CS: "Century", "Team Singing", "Shulk03", "Paris Gaming"
+58 Ladder: Fatal Towerdive, GGCallNash, Mandatory Fun, BetterNerfMinions, FFat20, ELO Submarine, First Bold, Juke Academy, JukesLikeJesus, AlmostEvil (Tag 665), Mid or Feed, Chicken Lords, It Tastes Purple, Jackson 5, Sick Moves, Never Flash-out, Never Surrender, Poke in Face, KS is Life, Nexus Down, Stole My Penta, One Trick Horse, OP Facecheck, Tank in da Bush, Trump Card (but NA is already made :-( ), RageQuit, Yolo Swag, Chasing Too Far, Too Much Shrooms, Invade lvl1, 3K ELO Ult, Press Alt+F4, ForgotToBuyStuff, Snub Cloud Drakes, Insert Generic Name, Team Nobody Tryhards (TNT), Fear The Fear, TheySeeMeRollin', Summoner's Council, Evil Toplaner, Bad Focus, AFK Jungler, Ward is Tryhard, Hangover, Pink Flappy Unicorns, Do The Flop, Stand Behind Mustache, Mantra, Retarded Mates, In Troll We Trust, Phantom Thieves, Alea Jacta Est, Kebab Masters, Happy Tree Friends, Powa Rangers, Cookie Makers, Death Sentence, SuppLivesMatter.
+18 More: Viril Geniuses, This Is Sparta, Pocket Pick, Thunderbots, Rebellion, Mass Effect, Coming Soon, Lords of Backdoor, Widowmakers, The Brotherhood, Cinq Baguettes, Horizon Zero Gank, White Fang United, Modern Shotcall, Glorious Escape, Theory Drafting, Carpe Diem (Europe because latin), Vae Victis (same).
+
+2  CD Chilly, CD burn 
+ 
+5 Cloud 10, Total Logic Gaming, Team All Mid, Pheonix 2, Walkquest
+
+1 Risen eSports
+
+1 Emerald Esports Club
+
+31 Game Essence, D-Trap- ,Siberian Wolves, Mad Corps, Format Gaming, Fuji Crew, Online Kingdom, Animal Squad, Opac Gaming, Cursed Plays, White Knights, Onion Heads, NoBeyond,High Voltage, Unicorn Hype, Acapella, CRTL-Z, Zero Friction, Claw eSport, Time2Live, Sixth Sense, Online Stars, Predators, Frenzy, No Strats, No Namers, Disco Warriors, Ampli2de, Dejavu, T.I.L.T, Omega Squad.
+
+2 EU: Novus, Chicks dig MMR
+1 LCK: Seoul Saints
+2 LPL: Team Panda, Statikk Gaming,
+
+24 Me
+
+Total 60+8+80= 148
+
+
+- convert schedule, so game runs
+
+- update players?
+
+players.develop (include top,adc, etc)
+players.genBaseMoods (if won championship, make players not refuse you, need to know that criteria)
+players.genBaseMoods (add back in randomnesss)
+players.addToFreeAgents (mood of free agents and resigning players, also factor in region, country, and language?)
+players.addStatsRow (adjust years with team? Maybe make seasons with team and count each split).
+player names, split into first and last, remove country from name function
+players.generate (need to ensure ,cDefault,topADC,topMID,topJGL,topTOP,topSUP are included when this is called)
+p = in object form for clarity
+players.updateValues (psOverride may need updating, fed to this function)
+players.moodColorText (adjust this to be more in line with reality, too hard to be ignored currently
+players.augmentpartial player (needs to start with these: ,cDefault,topADC,topMID,topJGL,topTOP,topSUP)
+players.checkStatisticalFeats (checkStatisticalFeat are used, need to add?)
+players.checkStatisticalFeat (featText, don't want to include score, but may want to include series score?)
+players.killone (has conditions now)
+
+players.name (need to use real country, not a random one);
+
+players.addToFreeAgents (remove notification if also is logged? or may logging happen only if on watch list?)
+
+core/player.js updated
+
+next 
+
+core/league.js
+
+league.create (need to add champion and champion patch files)
+league.create (need to create idb.cache.championPatch.add(cp) and idb.cache.champions.add(c);)
+league.create (remove this code block: // Fix missing +/-, blocks against in boxscore) REMOVED
+leage.create (removed this code block: // If needed, set missing +/-, blocks against to 0) REMOVED
+
+league.autoplay (when adding splits and more playoffs stuff, this will change with gameType and seasonSplit)
+
+league.close (expand wait time for larger leagues?)
+
+do champions also
+- update champions?
+
+do player names
+
+core/draft.js genPlayers
+
+
+
+bring over player names
+- need to bring over all the files, fix how they load, use old way
+- don't need to bring over all files, just add to countries that BBGM is weak in that I need a lot of, such as South Korea.
+
+see if game loads?
+
+- update teams?
+core/teams.js
+core/league.js?
+
+
+core/team (async function getRegions(tid) {) ( double check this, does it need a promise?)
+team.checkRosterSize  (pos and region handled correctly? does data actually load?)
+team.getNumGames (is this used? need to update it for Worlds w/ Ladder)
+
+- update game simulation
+game.js
+
+core/game.js  attendence should be based on both teams
+core/game.js clutch plays, should be MOBA not BBGM
+core/game.js adjust kill player conditions (in different spot, still works?)
+core/game.js 1 week left vs 1 day left vs 1 game left. Need to adjust this based on 3 game series, 1 game series, and playoffs
+
+
+
+gameSimulation.js
+
+core/gameSimulation.js  see if I can use type later?
+core/gameSimulation.js  simPossessions now simRegulation
+core/gameSimulation.js  checkGameTyingShot, update for LOL  (ace?)
+core/gameSimulation.js  checkGameWinner, update for LOL?  (what turns game around? going on kill streak to take team ahead? carrying, gap between KD is greater than team gap)
+
+
+- update box score and live game
+
+
+--------------------
+- did some ui
+- fix MMR/rank
+
+game sim runs
+
+- names in box score (fixed)
+
+live game
+make sure team composition correct? or just do playoffs?
+hopefully rest moves quickly, get ui done and Worlds w/ Ladder w/ Splits w/ MSI done
+
+- playoffs
+
+- get game completly running, updating rest of cores and files
+
+- player achievements
+
+- user achievements
+
+- do rest of ui
+
+done?
+
+- add faces
+- update ui to MOBA GM
+
+when to make a post about progress and a timeline?
+--------------------
+
+fixes:
+
+- removed (statsBlock) from popover, not sure why I can't change stats
+
+
+- make sure season runs
+core/phase.js
+core/season.js
+core/freeAgents.js
+
+-clean up remaining items
+core/contractNegotiation.js
+core/finances.js
+core/trade.js
+
+- update display on every page
+get game visually working
+
+Misc
+- roster.js (why do logos go in build area, but not flag images?)
+
+
+1) May
+Menu Top (remove login/register) (DONE)
+Menu Side (DONE)
+Team Records (DONE by conference dropdown doesn't show conference name, due to one conference?)
+Awards Records (DONE, make sure have kills, kda, assists, cs leaders)
+God Mode (DONE - do all work, need to go through lol-gm-basketballgm code for latest stuff)
+Edit Team Page (DONE)
+Add Champion page (DONE, but need to test files)
+Add Champion Patch page (DONE, but need to test files)
+Edit Player Page (DONE)
+
+
+Delete Old Data (NO CHANGE)
+Export Stats (DONE)
+Export League (DONE)
+Fantasy Draft (DONE)
+
+Playoffs
+- groups display (all display types, fix after have coded in playoffs) (DONE)
+
+core/season
+
+
+** Only include LCS teams in leaders/awards
+** Or have one for each league?
+
+core/phase
+
+sims?
+
+Achievements
+
+Faces file
+
+
+-------------------
+WORLDS FIXES
+- playoffMatchStore shouldn't show any team if same team (DONE)
+- last match of worlds playoffs isn't showing up, need to add (DONE)
+- display region in groups stage (DONE)
+
+OTHERS
+- achievements (DONE)
+- standings country flag (DONE) (DONE)
+- player region/names? (gets EU, LMS, etc working) (DONE)
+- player user ids (DONE)
+- edit team, hype not population (DONE)
+- faces
+
+- countries (commas)
+- flag labels, country not region
+
+Bugs
+- game still gets stuck sometimes, not enough players, don't let AI cut teams below 5 players
+
+2) May
+Playoffs
+Game Works
+
+3) May
+Update UI?
+
+4) May
+Player names
+User IDs
+Faces improved
+
+5) May/June
+Worlds w/ Splits w/ MSI w/ Ladder
+
+6) June/July
+Champion Stats
+- historical patch data
+- champion data listed
+- add early/late to champion information
+- add tank, support, mage, etc (make sure team balanced?)
+- counters too hard?
+- poke, sustain, all in
+- gank, split push, team fight
+
+
+7) June/July
+Coach Mode
+- pick/ban list
+- strategy page
+- uses champ info
+- practice skills
+- practice poke, sustain, etc
+
+8) July/August
+Player Mode
+- pick/ban champs real time
+- strategic desicion during game based on champ pool
+
+9) July/August
+Get game working with electron
+Get game working on steam
+Get achievements working on steam
+
+
+
+**TODAY**
+
+
+split wins into two splits (DONE)
+
+then split playoffs variables more to make sure both show up (DONE)
+
+series gets overwritten? (FIXED)
+
+add MSI seedings form worlds (DONE)
+
+move current MSI back a few rounds (like Worlds)
+- add to start end (DONE)
+- adjust playoffs2 display (DONE)
+- shift back playPlayoffsDay (DONE)
+- adjust to match playoffs2 and startend (DONE)
+- should work (DONE)
+- fix seeding criteria
+
+fix seeding criteria for MSI (do later?)
+
+fix seeding criteria for Worlds (DO later? have 2016 and 2017 version?)
+
+season.js 1185 does regionals show up for Worlds
+
+- make a non Ladder Worlds w/ MSI (working on)
+- continue a Ladder Worlds w/ MSI (use same ladder 
+
+add Ladder for NA
+- what is the format?
+
+- list conference in team history
+
+add Ladder for each of other regions
+- what is the format?
+
+make existing versions 2016, then update to 2017, then later have 2018
+Gode Mode option?
+
+DONE!
+
+Make sure it all works
+
+// MSI, should have seeding tournaments, should be able to use same from Worlds?
+// need to update playoffs rounds
+	// 	function seriesStartEnd(rnd) {
+
+// Add Worlds to Worlds w/ Ladder
+// Make adjustments to bring it in line with Splits and 2017
+// Add Ladder to Worlds w/ Ladder
+// make ladder a new game type?
+
+**CURRENT**
+
+MSI should lead into second split
+shouldn't do end of year stuff
+
+transition not changed, still goes to free agency instead of 2nd split
+
+
+
+work on Worlds w/ Ladder w/ Splits w/ MSI:
+- create spring and fall split
+- create promotion and demotion playoffs
+- create MSI and Worlds
+- do promotion and demotion
+
+
+Team Finances
+- should only show 3 years of salary
+- ranges on graphs?
+
+
+New Features
+
+- 3 game series option?, regular season has 3 games for one win/loss
+- instead of game score use results of series?
+
+- Coach Mode (god mode can turn all of these off)
+a) team strategy
+b) pick ban lists
+c) training schedule
+d) in game picks and bans
+d) in game strategy
+- sustain beats poke, all-in beats sustain, poke beats all-in
+- gank beats split push, split push beats team, team beats gank
+- best champ beats forced balance, extreme strategy beats best champ counter, balance beats extreme strategy.
+- early champ wins when aggressive, late champ wins when cautious
+
+need early/mid/late
+needs range, sustain
+needs aggressive early, aggressive late, 
+
+Coach Mode: control over draft and also set strategy after draft
+
+e) let players practice a role
+- champion skill adjusts based on role
+f) edit player page to change role, but no ratings for non god mode version
+
+g) Allow user to have Worlds w/ MSI w/Splits and no ladder.
+- Worlds (already have)
+- Worlds w/ Splits w/ MSI
+- Worlds w/ Ladder
+- Worlds w/ Splits w/ MSI w/ Ladder
+- Worlds w/ LCS and CS
+
+
+/////////// CLEAN UP newSchedulePlayoffsDay
+/////////// Then Add Worlds to g.gameType 6
+/////////// Then Add more in depth MSI / Worlds calc
+/////////// Then Add Ladder 
+
+
+h) allow users to edit players just using OVR
+
+- Champion Stats
+a) Save patch data historically, save champion data historically
+b) display overal champion data better
+c) display player champion data better
+d) add new data for champion to add to complexity
+e) page with champion changes, buffs and nerfs (sorting by this)
+f) champion page with graph of patch strength, all ratings, to players, etc.
+
+- Player Mode
+a) training schedule
+b) free agency, pick team
+c) in game decisions
+d) in game picks and bans
+e) let user pick starting ratings/champion ratings, maybe based on a pool?
+
+- Make Rosters Work for Worlds w/ Ladder
+
+a) need to create whole league, then switch teams and players around
+
+God Mode
+
+a) edit prize pool
+
+
+LOL GM FIXES AS WELL
+
+MultiTeam Mode
+a) picks and bans work for both teams
+
+Hype
+a) should be adjusted in ladder version. Ladder teams should peak at below 1. LCS teams should bottom at above 0.
+
+Dashboard
+a) leagueLeaders.ast.pid league leaders should be fgp
+
+
+Subbing
+--------
+
+- rotate among players who are close in skill
+- sort by taking into account languages and years with team
+
+
+UI
+------------
+
+Standings - missing player team highlight, when scrolling only highlights every other team
+
+Playoffs - strange color outcomes for background colors
+
+Dropdowns/tabs - all white
+
+White everywhere - too bright, needs to be softened, like the grey, or go with a greenish grey. The grey is smooth to me. The white jarring.
+
+Play button - I thought it was prettier before. 
+
+Create League - button should show it was pressed.
+
+--------------------
+others
+- links could just be grey colored
+- popups could be not black, but maybe not worth changeing now
+
+Free Agency
+-------------
+
+- Korean teams only get Korean players (maybe a few other countries, maybe have them be cost prohibative?)
+- Make sure free agency work by country/region
+- free agency should produce results like starting rosters
+
+
+Ladder
+----------------
+
+// For the larger ladder versions, 12, 20 teams may want to put in an alternative schedule that isn't longer than rest of divisions.
+// essentially, use the crappy schedule for ladder and play twice for CS and top league.
+// May need to use team MMR for ladder and not raw schedule wins and losses. (MOBA 2?)
+
+
+Edit Player
+-----------------
+
+- non god mode edit player
+- non god mode edit team
+
+
+LOL GM Bugs
+--------------
+
+- Career Total Player Stats
+
+- YWT bonus for preseason signings
+
+- Say sim one day durning playoffs, but counter says weeks.
+
+Future features
+------------------
+
+- Stadium? put link on roster?
+
+- Live Game
+	Abbrev and then players name
+
+- Roster Files:
+			test all the roster files and make sure game can handle them
+			better handle roster files for LCS in Worlds, Worlds in LCS, etc.			
+
+- God Mode: let users calibrate changes
+
+- God Mode: let user adjust how likely to retire
+- God Mode: let user adjust how good upcoming prospects are
+- God Mode: let user adjust contract size determination
+
+- God Mode: let users adjust starting team strength, wider dispersion, higher/lower average level
+		    let users adjust prospects as well, dispersion and average level
+			let users adjust tournament winnings, and  revenue per game, etc
+			
+- Languages: EU players should learn English and not a random EU language.
+			- based on most popular language
+			
+- Champion Patch Data Page: filters 
+							sorting
+							by year
+							by patch
+							
+- Champion Data Page: Gives more informatoin
+					  Early,Mid,Late
+					  Poke, Team Fight, Sustain, Gank, All In ratings
+			  			
+- Loading progress for new champ list uploads and league creation.
+
+- Trade Area: Put region
+
+- Sim 5 days, for playoffs
+
+- search Second Batch Of Ideas For Improving Game in /r/zengmlol
+
+- Remove Champ, Add Champ buttons?
+
+- dropdown, just Worlds, different areas of playoffs
+
+- change background image?
+
+- 17 starting year (need to make start at 16 because it adds one year for season)
+
+- 10 Bans
+- keep old way for future game option
+
+- Allow different game types to be compatable.
+
+- Link up achievements with steam
+
+- change odds of kills, deaths, etc. Allows for a more dota feel. 
+
+- change stat labels, allows for a more dota feel.
+
+- over time different regions can have better players (maybe based on who wins worlds?)
+
+- region in statistical feats. That way you can filter.
+
+- average OVR of team (or top players adjusts starting hype of team)
+-- Population level
+-- LOL populatiry level
+-- change over time, impact player ratings and how common they are
+-- higher the popularity the better the players
+-- bigger the country the more common the players
+
+- better teams also see better development of players
+
+- import focus (saved to reddit): team free agency should better match starting rosters, check link for specifics
+	make Korean players cheaper to import? more popular the country the better the players (who get paid more, but get paid less on an OVR basis).
+	have a distance factor?
+	
+- scrims? (MOBA GM 2)
+
+UI Update
+------------
+
+- Live game bold isn't bold enough (Make white?)
+
+- User option to change the background image (or give alternate images, such as white and black)
+
+- Remove fucking in the multiteam mode
+			
+MOBA GM 2
+-------------
+
+- ai request trades
+- have computer scan your roster to improve it by trading, then have an AI team request trade.
+
+- trading, be able to just give cash compensation
+
+- finances, being able to recruit different staff. different specific options. Coach Mode?
+
+- sister teams, minor league? Tournaments that help main team?
+
+- DOTA 2 champions, play styles, and tournament structures (heavy use of countering)
+
+- LOL 2018 playoff/league structure
+
+- Historical league structures? going back to beggining of game system
+
+- more advanced Coach Mode
+
+- more advanced Player Mode
+
+- ability to have coach types in GM mode.
+
+- remove IndexedDB so game can work on MAC
+
+- different camps (NA, KR, etc) for training
+
+- Show each teams/player's social media, could impact how easy they are to sign, salary and hype to team. (twitter, facebook, youtube, twitch)
+
+- Game points, best player 100. Person with most points gets MVP at end of season
+
+- Add Trading with Cash
+
+LOL GM Bugs
+-------------
+
+- skipping draft classes
+
+- Neither Fed nor World Beater when going undefeated in playoffs and regular season
+
+
+Future Ideas
+----------------
+
+- badges and traits
+https://www.reddit.com/r/zengmlol/comments/75hjly/idea_badgestraits/

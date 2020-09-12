@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mouths" transform="translate(0.000000, -3485.000000)">
+            <g id="7-closed-smirk" transform="translate(0.000000, 3485.000000)">
+                <g id="2">
+                    <g transform="translate(136.000000, 245.000000)" id="Group">
+                        <g fill-rule="nonzero" fill="#D4845A">
+                            <path d="M68.5177079,8.89328571 C62.2411387,13.0112685 56.1860674,12.5560619 50.1488772,13.048277 C48.6155478,13.1729833 45.5716363,13.5829623 42.0461149,13.5829623 C38.5205936,13.5829623 35.4762294,13.1729833 33.9429,13.048277 C27.9119116,12.5569482 21.8647849,13.0178786 15.5915429,8.90473328 C15.5919955,8.91346167 15.1406249,9.02503785 15.196984,9.07829455 C16.928136,10.4786379 21.3559461,15.0462906 25.1113627,17.4906156 C29.6901427,20.471609 33.9298401,21.6644992 42.0460923,21.6644992 C50.1623445,21.6644992 54.4020419,20.471609 58.9821573,17.4906156 C62.7366912,15.0462906 67.1645013,10.4786379 68.8956533,9.07829455 C68.9544569,9.02165766 68.5163725,8.90229954 68.5177079,8.89328571 Z" id="Shape"  class="color-burn-path" opacity="0.6" ></path>
+                        </g>
+                        <g transform="translate(41.428571, 0.000000)"></g>
+                    </g>
+                    <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                    <path d="M184.635408,270.421424 C182.62964,270.574088 180.557955,270.822146 178.500333,270.870655 C176.442417,270.822146 174.370879,270.574088 172.364672,270.421424 C170.293573,270.263893 167.713306,269.983062 168.025897,270.187642 C170.380144,271.431666 172.760757,273 178.50004,273 C184.260855,273 186.620668,271.299768 188.974036,270.055744 C189.287067,269.851165 186.706506,270.263893 184.635408,270.421424" id="Fill-388" fill="#D48E6A"  class="color-burn-path" opacity="0.6" ></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

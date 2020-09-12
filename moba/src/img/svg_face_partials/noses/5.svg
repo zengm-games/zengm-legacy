@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nose" transform="translate(0.000000, -2293.000000)">
+            <g id="5" transform="translate(0.000000, 2293.000000)">
+                <g id="2">
+                    <g transform="translate(163.681585, 221.311079)" id="Shape" fill="#D4845A">
+                        <path  class="color-burn-path" style="opacity:0.3"  d="M28.4261522,0.096656013 C29.6218043,1.78154209 30.7224022,4.28470097 31.2562609,5.91042669 C31.9428283,8.00200597 19.7053761,16.1789828 16.4327565,16.1789828 C13.1605913,16.1789828 0.923497826,8.0020309 1.60970652,5.91042669 C2.14342174,4.28470097 3.24449783,1.78154209 4.44026957,0.096656013 C0.442654348,4.46706846 -1.83573261,9.30674995 2.13945217,11.5184948 C4.48847826,12.8254078 11.9756761,18.4178496 16.4327565,18.4178496 C20.8907696,18.4178496 28.3771304,12.8254078 30.7261804,11.5184948 C34.7021783,9.30674995 32.4234326,4.46706846 28.4261522,0.096656013 Z"></path>
+                    </g>
+                    <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

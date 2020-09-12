@@ -1,0 +1,1769 @@
+TODO
+----
+- trading (adjusted)
+- player heights and weigths (adjusted)
+
+TODO
+-------
+- BB too low,
+- ERA too low to start with
+- SO too low
+
+Requests
+----------
+- power hitting for balanced
+- other strong players besides power hitters
+- balance game with lack of free agents
+- too few free agents
+- game iq greater impact on walks?
+- great role for fielding?
+
+
+BUG - 
+------------------------------------------
+
+- Player stats recorded wrong in playby play
+- happened with a home run
+
+- CY calc off, use WARP (DONE)
+
+- WARP falls in later years, why? player generation the same? (Somewhat fixed)
+- this effect HOF calcs, make war based on era of league? (fixed)
+
+- make positions changing standard? which is more popular
+
+Salary/WAR/OVR issue
+-------------------
+
+- make OVR rating based more on hitting/power
+- make fielding worth less, that way sluggers are paid the most?? position adjustments?
+
+Attendence Bug
+--------------
+
+Away games count for attendence, but home games don't. (Fixed?)
+
+Roster Bug
+-----------
+
+Change years doesn't change roster (FIXED)
+
+
+Update injury odds
+-------------------
+pitcher 56% of injuries (DONE)
+
+BUGS
+----
+
+	Pitchers pitching 16 innings, in statistical feats (DONE)
+
+	Postion players pitching (due to injuries, call up from minors) (DONE?)
+	One pitcher is pitching in playoffs ************ FIXED
+	
+	Schedule link next to upcoming games box send to game log and not schedule. (FIXED?)
+	Upcoming games show home @ away, but game is away @ home. (may cause incorrect attendence numbers) (FIXED?)
+	
+	
+	Injury Frequency? 
+	Review manager position priority, speed, fielding, etc (speedster at catcher)
+	
+	Players switching position too frequenty, even if rsoter isn't changed.
+	
+	Home/Away records, switched? (FIXED?)
+	
+Retire Numbers
+--------------
+
+God Mode feature?
+Allow GM to retire numbers	
+	
+International Players
+---------------------
+
+- add dominican republic, peurto rico , etc	
+	
+Playoffs
+-------
+	Start top 3-4 pitchers, not 5
+	
+Dropdown Positions
+--------
+	Not working?
+	
+
+Baseball
+--------
+
+Focus
+1) fun
+2) interface
+3) stats
+4) realism
+
+
+User Feedback
+
+1) Get Fantasy League going by sometime next week (!!!!!!!!!!) (done)
+a) fix playoff mvp decimal (done)
+b) fix saves (!!!!!!!!!) (done) (could allow them after, but not how pitching works currently)
+c) make strikeouts less likely (review!!) (done)
+d) fix CY win bug? (done)
+e) 3-5 round draft
+http://bleacherreport.com/articles/1219356-examining-the-percentage-of-mlb-draft-picks-that-reach-the-major-leagues/page/4
+first - 66%
+second - 49%
+3-5 - 32%
+6-10 - 20%
+11-20 - 11%
+20+ - 7%
+http://new.berecruited.com/athletes/521209/blog/061113-question-what-percentage-of-mlb-draft-picks-make-it-to-the-mlb-salary
+Round Selected / % Probability to Play
+in MLB
+Round 1 Selections -66% Probability to Play in MLB
+Round 2 Selections -49% Probability to Play in MLB
+Round 3-5 Selections -32% Probability to Play in MLB
+Round 6-10 Selections -20% Probability to Play in MLB
+Round 11-20 Selections -11% Probability to Play in MLB
+Round 21-50 Selections -7% Probability to Play in MLB
+
+All data and information used in this article is courtesy of Baseball Reference, Cornell University and Prospect Watch. By: Mike Rosenbaum / (MLB Prospects Lead Writer)
+on June 12, 2012
+
+
+f) Create A Player (still basketball positions) (done)
+g) Create New League (tell them it is loading) (done)
+
+h) make like basketball gm
+-dashboard
+-standings
+-schedule
+
+i) game played vs at bats on roster page
+
+j)roster, split hitters and pitchers !!!!!!!!!!!!!!!! 2
+
+
+k)let know when football available
+Thorisgodpoo
+
+l) farm system (clearer that they don't play games ,etc) (done)
+
+m) switching players (as well as current moving)
+
+o) make note - any player can play any position (done)
+
+p)error season.js 1606				series[rnd+1][0]  = {home: topseeds[0], away: team0};                //// error here :Uncaught TypeError: Cannot read property '0' of undefined 
+
+q) achievements - days in a row achievement , want to encourage coming back? or is that too spammy?
+
+r) world series shows oonference champs in team history (done)
+
+s) American and National League (instead could have MVP and runner up in other League)
+
+Ads
+- let people know league loading, not broken (done)
+- better dashboard? (done, schedule-done,standings-done)
+
+
+User Feedback
+-------------
+**1) mix of players (pitchers hit too well, not enough catchers)
+2) roster
+
+**2) normalize rosters (catchers missing)
+**3) make fielders more specialized
+
+4) rosters easier to use?
+
+split(using dashboard feature)
+side by side (only using WAR?)
+create two versions?
+
+
+??5) series more aligned (2-4 mainly, no 7)
+
+??7) season lumpy, games not even over time
+
+**??8) league awards MVP,CY,ROY
+9) DH for American League
+**10) standings has Con instead of League (done)
+
+
+**11)One more thing - I have been getting monster sized players and just saw a 7 foot, 246 lb 3B. Seems like player sizes are a little more basketball realistic than baseball
+
+12) season lumpy, make smooth  !!!!!!!!!! 1
+
+
+13) sixth man award still given out, just not on summary page - need to remove !!!!!!!!!!!!!! 3
+
+
+------------------------- feedback from /r/baseball
+zengm
+1) pinch hitters
+2) DH
+baseball
+1) position tied to players more (more rigid)
+2) pitchers hit worse
+3) better distribution, always a catcher, etc.
+4) roster page  wOBA,RBI
+5) live game Play-by-play stops in the middle of the game for me
+Uncaught TypeError: Cannot read property 'showPlayByPlay' of undefined game.js:769
+undefined gameLog.js:97
+undefined gameLog.js:98
+undefined gameLog.js:99
+ Yes I got an Injury,
+6) POS doesn't work with injuries?
+7)playoff BUG
+Uncaught TypeError: Cannot read property '0' of undefined
+tx.objectStore.openCursor.onsuccess
+season.js:1609 
+first day of playoffs
+
+After wild card round, top seed (not all seasons)
+
+When Correct:
+debug rnd:0 season.js:1608
+debug topseeds[0]:[object Object] season.js:1609  
+debug team0:[object Object] 
+
+when an error this not found:
+debug topseeds[0]:[object Object] season.js:1609  
+
+8) only pitchers pitch, and hitter hit (done)
+9) owner code based on 4 or 3 , if 4 will never say WS
+10) error screen - says Basketball GM
+11) live game doesn't go 9 innings, only goes to 5? 
+Uncaught TypeError: Cannot read property 'showPlayByPlay' of undefined 
+liveGame.js:161
+
+names getting corrupted
+
+
+12) new energy/ideal order field (starting pitchers) (done)
+13) make it so pitchers and hitters don't switch, or make roster page split in two, or make it so batters don't move to starting rotation (done)
+14) draft 5 rounds? 4-6? (done)
+15) draft youngest age 17, unusual? (done)
+18) expand dashboard stats?     (partially done, tested adding more)
+20) fielders shouldn't turn into RP and vica versa, check code (done)
+22) hitter too powerful (all hit 16 HR) harder to be good fielder and hitter (done)
+23) RP too poor (make worse on 2nd time around?) (done)
+26) league ERA too high (has to do with errors?) (done)
+27) hitters too similar , k/bb, # strikeouts, etc (use gameIQ etc to have more variation) (done) (power hitters get more balls, as well as good hitter to lesser degree)
+28) more variation among hitters (done)
+29) draft stats page has NBA numbers (fixed)
+32) draft summary page old stats (done)
+
+// already have above?
+32) roster page adjusted , seperate hitters and pitchers (or make it so hitters and pitchers can't switch positions)
+33) dashboard, show energy level of pitcher? that way they can see starting order (done)
+34) livegame doesn't go past 5 innings (done)
+
+
+
+
+6) draft in middle of season
+31) no-hitter stats
+30) All-Star game
+24) position players make too many errors (actual fielding chances, not errors) (done) (could still reduce)
+25) other teams offer trades
+21) dumb game down, make simpler to use (relatively to OOTP may still be an improvement)
+17) include all stats in roster, like dashboard
+19) DH instead of pitchers hitting? way to do both?
+1) conference champs: I thought I fixed that, but maybe it is in another area. I think I know what you are talking about now (it isn't a label, but something that says how you did that season). I should be able to get this fixed in the next update.
+4) Roster: seperate boxes for bench, starters, rp, lineup
+16) roster switch order and bench - split pitchers and hitters?
+5) Graphs: attendance not a big variation
+6) Hall of Fame: It should be adjusted. However, I haven't tested it. Based on your feedback I'll look to lower the criteria.
+7) Small market team cash: limit the ability to expand roster.
+8) Playoff MVP. I think those should be playoff stats as a whole. However, I'll have to review. It is the same way as in basketball, but he uses per game numbers so it isn't as obvious.
+show season stats, not playoff stats, need to review
+9) Cy Young, I think you found a bug. It should be based on ERA plus how many innings (although I may add wins and team wins at some point). I think it maybe was too heavily weighted on innings. I've put in a fix that should show up on the next update.
+1) add xFIP
+
+1) schedule, make in 2-5 series, not 7
+2) get offers from teams to be their GM if you do well
+3) pitchers can still be turned into hitters - need to stop this
+4) BA for hitters too high (WAR too easy), WAR for pitchers too hard
+5) computer values potential too much in draft
+6) bug in rest - not rotating right
+-injuries may throw it off?
+7) dashboard and standing calc are different
+- need to review (standings are correct, dashboard strange)
+- dashboard just uses wins, doesn't look at losses
+8) team-history (show conference champ instead of world series champ) , not sure how to change may have to e-mail dumbmatter
+
+http://baseball.zengm.com/l/1/roster
+says conference champs
+
+9) once you logout you can't log back in
+10) position bench sorted
+11) draft is probably slightly too weak compared to new league
+12) bug knocks out league history 
+13) disable draft pick trades, still enabled
+14) babip only off for my team
+15) HOF page gives a basketball link
+
+teamplatehelpers.js
+317
+
+9) http://baseball.zengm.com/manual/custom_rosters
+show how basketball labels translate to baseball
+10) based on position, adjust potential increase in skills (very hard for pitchers to improve H and Pw)
+11) BABIP in dashboard
+12) popups says your team defeated other team in confrec finals, not world sereies
+13) Dashboard ,not S, SB
+14)  first 3 seasons my average attendance fluctuated around 35,000 for this season and my last season it has stayed perfectly still at 25,000. I've tried offering 10 dollar tickets and my hype is all of the way full.
+what is going on?
+game.js 206 (caps at 25k not 50k?
+15) YWT not working, data not added
+16) can win 6th man award (popup? or field), just disable
+17) playoffs takes best 5 teams, not 3 division winner plus next 2 best
+18) finance graph ranges are baseball
+19) BABIP seems low for hitters(below average, should be higher)
+20) HOF, 1489 player.js df= -25 make top 5 years being 5 war no penalty. so 5 years of 7-8 war get you in
+21) popup says you won League Championship (should be world series)
+
+22) Cy Young, need to included wins, maybe team wins
+23) MVP shows season HR, RBI (not playoff)
+
+24) lost password page doesn't show up: http://baseball.zengm.com/account/lost_password
+25) WARF,WARS way low, need to increase
+26) WARP too hard, WARH too easy
+27) for HR, don't include speed
+28) warp, lower to 4.5, mult ratio by 1.5 to 2
+
+29) Next update, figure out roster page, maybe should have done from start - allow pitchers and hitters to be ranked differently
+figure out how numbers are placed, 
+then rearrange, so that numbers go from 0-7 hitters, 8-12 starter, 13 cl, bullpen, bench, rest
+
+30) include Losses on Dashboard
+
+31) add new updates list
+
+
+--------
+
+1) playoff mvp stat (fixed)
+2) energy fix
+3) pop up for playoffs says conference
+4) al/nl mvp
+5) make it so pitchers can't becomes hitters
+6) player profiles
+- pitchers can't improve hitting
+- make hitting more balanced
+- ovr/war regressions?
+- gains depend on position?
+7) mvp different team, and retired
+8) roster page, team variable to filter hitters and pitchers, allow for different header for closer/RP?
+9) improve editing of player position, auto calc, no tab
+10) achievement not stored corrected, fix?
+11) HOF, no people inducted yet - look into
+12) increase number of 90s (make draft less negative by 5?)
+13) SO total, not by 9
+14) seeding, include division winners
+15) issue with standings/games back - has to do with teams switching divisions - find and review this code
+16) need two more teams, split Conferences into 4 divisions (currently old school)
+17) Blown Saves
+
+18) RP subbed, don't hit
+
+
+1) ENERGY FIX (done)
+2) Player stats update (pitchers can't hit as well) (make stats realistics) (think I've done)
+- fix HR (done)
+- fix AVE (done)
+4) Pitchers turnings into 2B (maybe fixed?) (done)
+5) war pitchers - make sure normal (done, hitters too)
+6)
+7) draft scouting, first name initials
+
+
+1) HOF (major priority next update)
+2) relievers don't hit if not pitching more than 2 innings
+
+1) running speed falls off quickly **
+2) pitching speed falls of quickly **
+3) control stays longer with age **
+4) game IQ doesn't fall with age **
+
+5) trade, rule out use certain players
+
+6) Fix HOF!! major priority **
+7) playoffs?
+8) new pages, team player ratings page and stats page (prep for new roster) **
+- new pages don't work when trade doesn't work
+
+
+
+
+
+player database:
+http://seanlahman.com/baseball-archive/statistics/
+
+//// helpers.js
+    /**
+     * Ping a counter at basketball-gm.com.
+     *
+     * This should only do something if it isn't being run from a unit test and it's actually on basketball-gm.com.
+     *
+     * @memberOf util.helpers
+     * @param {string} type Either "league" for a new league, or "season" for a completed season
+     */
+    function bbgmPing(type) {
+        if (g.enableLogging) {
+            if (type === "league") {
+                _gaq.push(["_trackEvent", "BBGM", "New league", g.lid.toString()]);
+            } else if (type === "season") {
+                _gaq.push(["_trackEvent", "BBGM", "Completed season", g.season.toString()]);
+            }
+        }
+    }
+
+	
+	Are these numbers right?
+    ko.bindingHandlers.recordAndPlayoffs = {
+        update: function (element, valueAccessor) {
+            var abbrev, args, extraText, lost, option, output, playoffRoundsWon, season, won;
+
+            args = valueAccessor();
+            abbrev = ko.utils.unwrapObservable(args[0]);
+            season = ko.utils.unwrapObservable(args[1]);
+            won = ko.utils.unwrapObservable(args[2]);
+            lost = ko.utils.unwrapObservable(args[3]);
+            playoffRoundsWon = ko.utils.unwrapObservable(args[4]);
+            option = args.length > 5 ? ko.utils.unwrapObservable(args[5]) : null;
+
+            extraText = "";
+            if (playoffRoundsWon === 4) {
+                extraText = "league champs";
+            } else if (playoffRoundsWon === 3) {
+                extraText = "conference champs";
+            } else if (playoffRoundsWon === 2) {
+                extraText = "made conference finals";
+            } else if (playoffRoundsWon === 1) {
+                extraText = "made second round";
+            } else if (playoffRoundsWon === 0) {
+                extraText = "made playoffs";
+            }
+
+            output = '';
+            if (option !== "noSeason") {
+                output += '<a href="' + helpers.leagueUrl(["roster", abbrev, season]) + '">' + season + '</a>: ';
+            }
+            output += '<a href="' + helpers.leagueUrl(["standings", season]) + '">' + won + '-' + lost + '</a>';
+            if (extraText) {
+                output += ', <a href="' + helpers.leagueUrl(["playoffs", season]) + '">' + extraText + '</a>';
+            }
+
+            return ko.bindingHandlers.html.update(element, function () {
+                return output;
+            });
+        }
+    };	
+	
+
+
+
+Ready to play
+- after the below items should be ready for use
+
+Bugs
+- make sure all outs counted (should be 3*9 = 27) (teams could go no more than 0-27 10-37, etc.)
+
+Schedule
+- groups of games with same team
+
+
+Players
+
+- increase number of profiles
+- limit ability to be great at everything
+/// player arc
+   minor leaguers have potential
+   best could play right away
+   max growth is 5-10 in year?
+   with a peak in late 20s
+   drop off in early 30s
+   some players hold on until late 30s
+   long career arc for best players
+-improve formulas for labels (skills and display)    
+
+Stats
+-game.js writePlayerStats (can add stats here)
+
+only improve peak 28, slow decline/plat 32 poss steep decline
+
+Season
+
+- 162 games (have to change a lot of areas(contracts,injury, etc)
+
+Draft
+-expand to 10 rounds
+-season.js newPhaseAfterDraft
+-put in middle of season
+-season.js newPhase
+-season.js phaseText 470
+
+Playoffs
+-allow for Wild Card
+-correct number of teams
+-season.js newPhasePlayoffs
+-season.js newSchedulePlayoffsDay
+
+SeasonSummary
+-gold gloves (by position)
+-silver sluggers (by position)
+-top manager (lowest ovr vs highest wins)
+
+-season.js awards 66
+
+Roster
+
+- Do normal sorting, but make computer pick top 8 hitters/fielder, top 5 starers, bench, RP
+- player can impose selection if they want (2-9, each 5 1s, rest are bench/RP, can impose CL,Setup8,Setup7,Setup6,LR, IF Utility, OF Utility, or by base?)
+- impose more general(Starting Pitcher,Starting Fielder)
+- C,P,IF,OF are special, maybe special Catcher stat, or just use Defense,Arm,End(high) (catcher break down quicker, so don't want best hitters there, want high end/def/arm types)
+- ideally box score shows where they actually played
+
+
+- sorting by type?
+- sort pitchers and sort hitter separately (allow for override in --,++ section)
+
+
+- allow user to specificy 1B,etc or let Sim do it
+-use PT to allow force starts or positions (declare starting pitcher, declare position, otherwise computer decides)
+
+Box Score
+-box score, reduce number of listed players: alternative to foreach (1) use played vs players, or 2) only list first 25?
+-substitution or use for later?
+-gameLog.js 107 - sorts box score (order by atbats, future order by batting order, make that a variable? secondary variable) (order by pitches thrown or innings, also secondary variable)
+-(order by order number, with higher at bat total going first, or starter, or some other proxy variable (inning subbed))
+-(pitchers ordered same way probably produces correct box score (could break pitchers into another box for pitching stats?)
+
+-Win,Pitches,Strikes (Ks,BBs)
+-keep track of position(use to order with at bats)
+
+- Innings (correct for double plays, etc)
+- Pos (make played, and show actual position played at)
+
+- 0) match team stats with variables (should already work, except for advance stats-need to figure out)
+-*** Player Stats-why don't they track? (gp had to increase to 1)(need to watch for games played and minutes)
+- 1) try creating variables, track positions, track time at positions, track wins losses saves,  (team stats come through, player stats don't? away from boxscore?,check basketballgm code?)
+(need to run update players?, not being run?)
+(went to updateteam stats added 'pf' and it was included in page)(do that for rest of pages?, for players player update never called? see if it should be called after a game)
+- 2) Add H, E to boxscore along with runs
+- 3) do substitutions, rotations, and errors (create random variable that determines fielding effectiveness, and determines if play an error, harder plays more likely to become errors)
+
+a) add basic stats to 
+- Roster
+- Player Stats (filtering pitchers by innings, hitters by at bats)
+- Free Agents/negotiationlist
+-Trade
+-Trading Block
+-History
+
+-Hall of Fame (do with udpates stats, backup for WAR)
+-Watch List (do with advanced stats)
+b) then do advanced stats, w/l,positions (position, changed based on where played)
+-advanced
+-feeding box score positions to main roster
+-PER js/util/advStats.js (not being called?)
+-adjusting stats - js/core/player.js filterByStats
+
+- main advanced stats done 
+d) then do golden glove,sliver sluggers, MVP, Cy Young, Moy (fix silver slugger,labels) (done for now?)
+(errors-throw-defense-catch,golden glove awards)
+b) OVR-hitting OVR-pitching?
+
+Done List 1
+e) then do schedule/#games (162 games) (done)
+d) change playoff cut to show the more limited teams, currently cuts at 8 (done)
+c) Advanced stats (did rough versions of WAR)
+- fb,gb, (not showing, need to debug)
+-game.js function loadTeams initialize in p.stat
+-basic WAR - would need to improve later once advanced stat figured out
+- (just need to get errors/rotation/subs/playoffs/tradeAI)
+d) then do playoffs  (js/core/season.js function newPhasePlayoffs, playoff.html, js/views/playoffs.js, season.js newSchedulePlayoffsDay)
+-playoff projection page off now (from dashboard) - want to show all teams
+- initial estimate different from actual playoff playoff.js vs season.js?
+js/util/templatehelpers.js ko.bindingHandlers.recordAndPlayoffs 
+
+-1) display bye correctly
+-2) record teams correctly (only play WC in 1st round, bring in other teams in 2nd round)
+d) dashboard boxes? (in leagueDashboard.html)
+d) playoffs 1 game play in game
+a) clean up gamesim (use functions, may make later changes easier, also can make correct positions, maybe include errors/wins?)
+g) then do updated AI calc (done partially)
+- make sure positions correct
+
+-stealing, fielders
+-running fielders
+-hitting fielders
+
+- add errors
+
+
+Priority List 1
+(0) at end optimize ai so that results are in line with actual baseball
+
+(1)
+ii) do rotation (hitting subs can wait on probability of injury, user can determine risk level)
+(pitching subs base on loss of energy, that holds over and is gradually regained after a few games)
+(1a)
+c) then do subs/rotations (injuries)
+d) rotation (just mark 1-5, and rotate)
+
+
+player.js generate
+create p.energyLevel (keep track of eneregy through season, P,C will be most drained)and p.posPlayed="test" (make position played)
+
+only pick players to start game (not every half inning, since no subs?)
+
+(2)
+- (maybe wins and losses) (or wait until have subs)
+-compare runs at end then give it to pitcher (until relievers used)
+c) add win/loss/save (js/core/player.js addStatsRow)			
+
+(3)
+i) then do updated trade ai (make sure cut of date right)
+- based on lifetime expected war (adjustment made for youth risk)
+- based on need
+
+4)
+e) H/A on box score switched, last half inning not played if Home team ahead
+5)
+e) DH for AL, P for NL (can do at initial calc of batters)
+
+6)
+// middle of season?
+f) then do Draft (4 rounds?) (middle of season) (keep 2 rounds, but those players will matter) (phases: js/global.js, js/core/season.js,season.js newPhase 1240)
+(js/ui.js  updatePlayMenu)
+
+7) playbyplay
+8) golden glove
+
+
+// debug
+- babip not working
+- SO may be inflated, or atbats not inflated enough?  (H+SO)>AB ?
+
+
+Priority List 2
+j) then update manuals
+
+
+start with energy - every inning reduced for pitchers (sub pitchers)
+- don't worry about other players for now, randomly sub? (add that feature later, with pos button, force play, force play 1/4,1/2,3/4,full)
+
+start with injuries, can use that for health, subs, rotations
+
+- SO too much compared to AB (fixed), insert play by play to see where it is going wrong
+- play by play: box score gets errors
+- home/away switched
+- don't have to play last half inning if that team is ahead
+- fix BABIP and BABIPp (fixed)
+- update Player Stats
+
+				o = battingorder[batter[this.o]];
+				this.recordPlay("fga", this.o, [this.team[this.o].player[o].name]);		 
+				p = fielders[0];  				
+				this.recordPlay("fta", this.d, [this.team[this.d].player[p].name]);		 // this.team[this.o].player[p].name
+
+            this.recordPlay("missTp", this.o, [this.team[this.o].player[p].name]);
+this.recordPlay("blkLowPost", this.d, [this.team[this.d].player[p2].name, this.team[this.o].player[p].name]);
+          this.recordPlay("fgMidRange" + (andOne ? "AndOne" : ""), this.o, [this.team[this.o].player[p].name]);			
+
+- errors needs to not record double,triple,HR (done)? 
+- missing some outs (foul?)
+- track outs (like we do scores) in live update (done)
+- stealing home, not showing up?
+- show who is on base? when a new batter shows up or a steal takes place
+		
+-- Have Unearned Runs show up in pitching stats, game log, etc "pfE" (done)
+
+- home/away (fixed)
+
+2) (done,could review)
+- draft, potential (have higher potentials for top 2 rounds, top could be near starting and 100 max pot, other could need big boosts, but still high pot)
+- tradeAI (straightforwrad**)
+
+
+a) 
+- update stats display (easy**) (work on ** while I think about subs win/loss to do Monday)
+- have hitters and pitchers selected only at start of game, see how that improves time (could create a ranking at that point, then reuse based on energy)
+1)
+- fix box score, top first done twice (first two innings added together) (skip first half inning? in playby play?), stats not pushed for first inning, waits until 1.5 innings
+- if ahead bottom 9th, OT, stop game
+
+- wins/losses (hard to mod)
+- subs (hard to mod)
+
+team.js
+not needed?
+897 valueChange
+972 getPicks
+
+js/core/trade.js
+
+
+player.js
+value // where player value created (others have draft value)
+
+- make game realistic (straightforwrad**)
+4) Maybe
+- draft 2, location mid season
+- 
+5) work more or do football (see if it can be done quicker 2nd time)
+
+
+injury/energy
+
+1) feed variable (done)
+2) name of variable (done)
+-energy level track(game/season) (done)
+-rotation (done)
+- wins/losses/ (wins,losses done, war hr/fb fixed) 
+- golden glove awards (pos does adjust) (done - could improve display)
+- add fielding to war, 
+
+
+Left
+- gameplay realistic (ratings and pay in line)
+a) less strikeouts
+b) less likely hit turns into extra bases
+c) less impact from bad pitchers/fielders?
+d) reduce peak rating, brings salary in line, harder to be good in everything
+
+- make more outs
+
+*************** qw
+I) distribution in line with MLB - use distibution page (page done)
+- HR too little(2.5x greater chance) (slg slightly too high, need higher range with bigger low end)
+- ave too high (makes ab too high?, makes runs/rbis too high?, obp too high?) (era too high, fip OK-HR and BB cancel?)
+- stl too low? (need wider range and higher upside)
+- e% too high (more attempts?, fouls, double plays, more fair balls, error rate lower)
+- warH range needs to be larger and bottom lower
+- SO too high, BB way too high (need more balls in play that are throwouts)
+- warP middle too high
+
+
+II) clean up code to make changes easier
+III) add sub, injury
+- injury before start of game
+- injury during game
+
+- make picking players a function (make function for each position)
+- have it take into consideration injuries
+- when a new injury hits, sub for that position (field and batting at once)
+
+make function of position/order selection
+if injured removed
+if get injured replace at that specific position and spot in batting order
+
+update these functions
+updatePlayersOnCourt
+injuries
+injury
+
+this.team[t].player[p].injured
+
+Initial
+------
+pick from rest? or just take first one?
+1)check injury
+if so 2, if not 3
+2) sort bench, take top first
+3) pick best player for each position
+
+Injury
+-------
+1) if injury
+2) see who is available (not injured, not playing)
+3) take best replacement for that position
+
+
+2089
+			this.injuriesPos(this.d,fielders[0]);
+			this.injuriesPos(this.d,fielders[1]);
+738
+this.switchPlayers(t,p);	
+
+597
+
+subbing not taking place like I think
+? player just not being listed, need to track what happens after an injury - player should be removed
+follow players on court durint batting order to see if it changes	
+	
+changes to injury not saving?
+
+
+1) GS = tracks starters (done)
+2) if GS = true, can't sub  (done) (really want to track if played at all)
+3) if pitcher GS= false, can't picht more than an inning (done)
+-- if have time:
+4) value for skill.spd
+	
+5) make game realistic
+6) make pay realistic
+7) update skill formula? potential formula?	
+	
+8) update code to pick positions
+9) update code to allow picking of positions	
+	
+0ther teams rosters - don't display correctly	
+
+
+-----------------------  
+Thanks for the feedback. I put my comments below. For the most part I agree. I'll look to make these changes and get back to you.
+
+>Another issue: should there be a salary cap?
+Yeah, I should remove this. I'll look into it. (done)
+
+>* The roster page is confusing and maybe broken. It looks like it mixes up pitchers and position players with the auto sorting. The colors for >the legend are too similar. It's not clear how to set the position for a player, like if I want to have a LF play RF. It's not clear what the "PT" >modifier does in baseball.
+You are right, the PT isn't being used yet. What I was going to do is let users pick positions if they want to. Otherwise, the computer picks the positions from the top 13 players (8 fielders + 5 starter pitchers). Then the next 12 are used for subs. The rest is just the farm system.
+I'll look into the colors as well.
+
+(done)
+
+>* It might be better to have separate roster pages for pitchers and for position players.
+I'm hoping the position settings help make things clearer. The other games have them all on 1 page. So I am reluctant to go that route, since it would make it harder to make adjustments. This way also gives them the flexibility to carry more/less relievers or  less/more hitters.
+
+(done)
+
+>* In the Live Game simulation, players don't show up in the box score until they make a plate appearance.
+I can adjust this.
+
+(done, but not ordered by batting order)
+
+>* Scores by inning (like above box scores) should have labels for inning #, runs, hits, and errors.
+I'll look into this.
+
+(done)
+
+>* It shouldn't say "Basketball GM" with a basketball picture at the top
+I'll fix this.
+
+(done, could use a baseball picture)
+
+>* The longer season for baseball makes simulating a season slower than in basketball. Not sure what can be done about it, though. Should >have picked football ;)
+>* Simulating a day of games seems significantly slower for baseball than basketball. Combined with the higher number of games, this is >more problematic. See if you can optimize it. Chrome has some good profiling tools you can use to find parts of your code that are taking >the longest.
+Yeah, part of this may be coding it at the pitch level. Which enables richer stats (later I can give strike totals, pitch type, etc). However, it does slow things down. I'll look into how it can be sped up.
+In general, I think baseball people like stats. Once the football version is out then we could have a quick(football), medium(basketball), and slow sim(baseball). When I did testing in Chrome it was similar to OOTP.  However, a new player could probably play a few seasons in our version before they even figured out how to play OOTP given the download and user interface issues in that game.
+In general, I'll look to improve the game speed and user interface. But the competition is really weak in these areas. So I think it is a lower hurdle than it may at first seem.
+
+(I)
+
+>* The playoffs page is a little confusing, I think due to the wildcard round. Could use some more labels.
+I'll see what I can do.
+
+(done)
+
+>* In the Season Summary page, you show R/RBI/HR and IP/R/SO as the key stats for award winners. Shouldn't BA and ERA be in there?
+That was from when I didn't have ERA yet. I'll update those.
+
+(done)
+
+> * Also in the Season Summary page, you don't need to repeat "Silver Slugger" and "Golden Glove" for each player. Looks ugly.
+Yeah, I agree. I'll look into it again.
+
+(done)
+
+>* In some tables (like on the Player Stats page) the tooltips are still the basketball versions. Look at the "title" attributes here: >https://bitbucket.org/smw204/basketball-gm/src/da76256d4be176ad3f17526d4e9413c009878fa0/templates/playerStats.html?at=master
+OK, I'll look into that.
+
+(done)
+
+>* League Leaders page - categories should include minumums. Like in my league, the top 10 in ERA are all players who pitched only a few innings without giving up any runs. There is support for minimum stat requirements in js/views/leaders.js - see all the "minStats" stuff.
+Yeah, I need to review that.
+
+
+(done)
+
+player stats page minimums  (V)
+
+> * League Leaders should probably have separate categories for pitchers and hitters
+Actually, the last three are pitchers. I just need to update the explanation to include innings. But I could also have another page with pitchers.
+
+
+(done)
+
+>* The two top players in slugging percentage in my league were pitchers. Maybe a fluke, or maybe a problem with player ratings generation?
+I'll look into it. But Babe Ruth was a pitcher. You never know. :)
+
+(done) (could limit pitcher hitting ability to under 50?) (done) (II)
+
+update player pitching stats page (done)
+
+1)update player distr page (done)
+2)wins, losses (change name for wins, winsP?) (III) (done)
+
+
+>* In the draft, 18 year olds have really low "ovr" ratings, like 0-10. If that is by design, make sure you do a lot of testing to confirm player >development is reasonable.
+It is by design given how ovr and potential are calculated. I may need to rewrite some of that code so the draft ratings and potential are in line with MLB. The draft is still too strong at the top I think. In general, a HS player has no business at the MLB level. So it isn't crazy for the ovr to be really low. In baseball, some players take 8 years before they even play at the MLB level and then they can become All-Stars. 
+
+(IV) (done)
+
+>* All players in the draft are either 18 or 23.
+In baseball, you need to enter after HS or wait until your after your junior year of college and be over 21. Although, looking at it again there are some exceptions for junior college players. In general, that is pretty accurate, but I may want to include some more variation.
+
+(done)
+
+>* Should there even be a draft? It's not a huge part of baseball, AFAIK. If there is a draft, it shouldn't be a high stakes 2 round draft like the >NBA, right? Maybe this doesn't matter.
+It is a big part, but there is a huge lag. In general, I wouldn't want the ovr to be too good right after the draft, but all of those players could play if developed well. So even the bottom of the second round may get you a potential MVP, but they won't be good initially.
+Part of the reason for two rounds is just the coding of more rounds wasn't straightforward.
+However, the offsetting feature is that with the basketball game after the first 5-10 picks the players kinda suck. In fact, you could get rid of the 2nd round and it might not matter. But in the baseball version every draft pick could be a future starter. So there is a lot of trading that can take place based on how you want to build your team (strong farm or trade away potential for starters).
+Currently, it is more like Baseball Mogul. If there is demand I could always give it the depth of OOTP. However, there are performance trade offs there. Already the game is slower than basketball. If the number of players is 10x as big the trading is going to be much slower.
+
+>* Are there injuries?
+Yes. I'll review how often they happen. I'll probably need to review the types as well.
+----------------------
+
+logo?
+
+C,Starting order
+batting order
+
+S stats
+
+show subs in correct batting order position
+sub relivers before they bat
+
+roster - change color of battingorder and position fields
+
+
+------ impre user interface for roster
+sort should be batting order, then starting pitching, then closer, then bench then relief pitchers
+team
+
+
+
+879 team
+fts.sort
+
+272 team
+players.sort 
+called by:
+
+		256 team
+    function rosterAutoSort(ot, tid, cb) {
+        var players, playerStore, tx;
+		
+
+		called by:
+		512 roster
+---------------------
+
+767 player
+//                } else if (options.attrs[i] === "valueNoPot") {
+//                    fp.valueNoPot = value(p, {noPot: true, fuzz: options.fuzz});
+
+1513 player
+    function value(p, options) {
+	
+want for different positions
+want for hitting
+
+hitting + speed	 (top) (multiply)
+hitting + power (mid) (multiply)
+
+neither last
+speed + power - last?
+
+1516 get individal ratings, hitting (batting order), pitching(rotation, closer)
+
+
+roster.html/js
+// update look of roster (show position players, show hitters, bench/relief pitchers(organize these as well), farm
+team.js
+// pick hitting locations
+// pick starters 1-5
+// pick closer?
+	
+
+Saves (gamesim, display in players,teams) (done)
+
+make it easier to steal (done)
+
+logo create
+http://webcodertools.com/imagetobase64converter/Create
+
+future:
+0) add labels to roster (just changed up the instructions)
+
+1)remove position from everyone but starting 8?
+2)make sure last half inning not done if home team ahead
+3) make bench used more  (take out reliever when they come to bat, use bench to hit)
+4) move draft to middle of season
+
+5) long term testing
+
+6) negotiate button (next put a sign button)
+
+7) adaptive ai, trade/neg settings based on what has worked, gradually adjusted based on gameplay.
+
+8) pitching babip higher than hitting babip (should be fixed) *** (not fixed) ***
+9) make it so closer gets tired
+
+10) make stealing less likely (fixed?)
+11) remove salary cap from trades?
+12) make closer next best pitcher after starters
+
+13) see if I can compile
+14) create starter webpage - intro to baseball basketball
+
+15) make lower range of hitting more impactful
+16) pitchers should struggle to hit
+17) 
+
+Before release
+1) fix Babip BabipP difference (fixed, reduce odds of stealling, increase prop of success, reduce batting average)
+probMakePlay
+probtriestosteal (seems ok)
+probpickedoff 
+probstealsuccess (seems ok)
+
+make stealing easier, make fielding easier
+
+make stealing less
+make power hitting easier
+
+2) don't allow bottom of ninth (done)
+3) have relief pitchers get subbed when they bat
+4) division winners should always make playoffs
+5) closer not sorted right (recheck sort) (done)
+6) reset energy at start of season (done) and playoffs (maybe not needed?)
+7) WAR expiring contracts, ERA, BA (done)
+8) can trade without other team adding anything to get steals (fixed)
+
+9) reduce prepitch holding runner on (see how much speed that gains)
+
+10) come up with alternative quick baseball version (focus on speed less stat intensive)
+(or just give option to turn on turbo speed)
+
+
+(didn't really do much, the processing time is the stats)
+I) TURBO:
+a) by at bat (not pitch) (should be 3-4x faster)
+random(0-1)
+
+walk
+SO
+single
+gb,fb,ld,
+double
+gb,fb,ld 
+triple
+gb,fb,ld 
+HR
+gb,fb,ld 
+out
+gb,fb,ld and position
+
+everyatbat
+-pitcher energy (random pitch number created)
+-injury
+
+this should speed up game, but limits potential(which isn't used right now)
+could have a fast and slow version
+
+
+
+
+
+
+-------------------- change from basketball to baseball
+index.html
+33
+39 (google analytics)
+207
+227-231
+index.html finished
+
+core/game.js
+59
+core/season.js
+822 (survey)
+847                                 text: '<p>Hi. Sorry to bother you, but I noticed that you\'ve been playing this game a bit. Hopefully that means you like it. Either way, we would really appreciate some feedback so we can make this game better. <a href="mailto:baseball@zengm.com">Send an email</a> (baseball@zengm.com) or <a href="http://www.reddit.com/r/ZenGMBaseball/">join the discussion on Reddit</a>.'
+js/core/ finished
+
+js/ finished
+
+js/util/account.js
+62 (didn't change)
+68 account
+143
+219
+
+js/util/helpers.js
+368 didn't change
+
+js/util/ finished
+
+js/views/account.js
+53
+js/views/ up to dashboard
+
+js/views/longorregister
+26
+64
+
+js/data finished
+
+js/templates up to CreateAPlayer
+
+manualOverview.html
+106
+
+a) host
+https://www.webfaction.com/features
+b) website name
+c) compile?
+d) upload?
+e) advertise?
+f) improve game?
+
+
+
+
+
+   /**
+     * Perform appropriate substitutions.
+     *
+     * Can this be sped up?
+     * 
+     * @memberOf core.gameSim
+     * @return {boolean} true if a substitution occurred, false otherwise.
+     */
+    GameSim.prototype.updatePlayersOnCourt = function () {
+        var b, i, ovrs, p, pp, substitutions, t;
+
+        substitutions = false;
+
+		//// this is changing batting order
+		//// remove changes 
+		/*
+		
+        for (t = 0; t < 2; t++) {
+            // Overall values scaled by fatigue
+            ovrs = [];
+            for (p = 0; p < this.team[t].player.length; p++) {
+                // Injured or foulded out players can't play
+                if (this.team[t].player[p].injured || this.team[t].player[p].stat.pf >= 6) {
+                    ovrs[p] = -Infinity;
+                } else {
+                    ovrs[p] = this.team[t].player[p].valueNoPot * this.fatigue(this.team[t].player[p].stat.energy) * this.team[t].player[p].ptModifier * random.uniform(0.9, 1.1);
+                }
+            }
+
+            // Loop through players on court (in inverse order of current roster position)
+            i = 0;
+            for (pp = 0; pp < this.playersOnCourt[t].length; pp++) {
+                p = this.playersOnCourt[t][pp];
+                this.playersOnCourt[t][i] = p;
+                // Loop through bench players (in order of current roster position) to see if any should be subbed in)
+                for (b = 0; b < this.team[t].player.length; b++) {
+                    if (this.playersOnCourt[t].indexOf(b) === -1 && ((this.team[t].player[p].stat.courtTime > 3 && this.team[t].player[b].stat.benchTime > 3 && ovrs[b] > ovrs[p]) || ((this.team[t].player[p].injured || this.team[t].player[p].stat.pf >= 6) && (!this.team[t].player[b].injured && this.team[t].player[b].stat.pf < 6)))) {
+                        substitutions = true;
+
+                        // Substitute player
+                        this.playersOnCourt[t][i] = b;
+                        //p = b;
+                        this.team[t].player[b].stat.courtTime = random.uniform(-2, 2);
+                        this.team[t].player[b].stat.benchTime = random.uniform(-2, 2);
+                        this.team[t].player[p].stat.courtTime = random.uniform(-2, 2);
+                        this.team[t].player[p].stat.benchTime = random.uniform(-2, 2);
+
+                        // Keep track of deviations from the normal starting lineup for the play-by-play
+                        if (this.playByPlay !== undefined) {
+                            this.playByPlay.push({
+                                type: "sub",
+                                t: t,
+                                on: this.team[t].player[b].id,
+                                off: this.team[t].player[p].id
+                            });
+                        }
+
+                        // It's only a "substitution" if it's not the starting lineup
+                        if (this.startersRecorded) {
+                            this.recordPlay("sub", t, [this.team[t].player[b].name, this.team[t].player[p].name]);
+                        }
+                        break;
+                    }
+                }
+                i += 1;
+            }
+        }
+        */
+        // Record starters if that hasn't been done yet. This should run the first time this function is called, and never again.
+        /*if (!this.startersRecorded) {
+            for (t = 0; t < 2; t++) {
+                for (p = 0; p < this.team[t].player.length; p++) {
+                    if (this.playersOnCourt[t].indexOf(p) >= 0) {
+                        this.recordStat(t, p, "gs");
+                    }
+                }
+            }
+            this.startersRecorded = true;
+        }*/
+
+        return substitutions;
+    };
+
+
+
+
+
+
+IV) add saves, closer, ? 
+V) position adjustments (set position at closer, rotation 1,2,3,4,5, starting fielder 1b,2b,3b,ss,lf,rf,of, main util) (see how hard to do? , could be straightforward)
+
+
+VI) bats left and right, with adjustment to performance (later?)
+
+**************** future
+I) 
+
+
+- batting stats (only if at bats > needed amount)
+-playoffs (make energy 100?)
+
+-saves
+- position, sub rate, closer
+-sub/injury (position)
+-order box score by time intered game/batting position
+-sub based on endurance?, 
+
+
+
+player.js generate
+        p.injury = {type: "Healthy", gamesRemaining: 0};
+		p.energyLevel = 100;
+
+
+-pick players, rank player (do first time through, save, and then compare later, for now won't be needed and hsould really speed up playing time)
+- energy is lost, need to save data (fixed)
+- don't want injury popup to show up (fixed)
+
+
+- looping
+- picking starter - make sure energy reads correct, need a console log to test
+
+		
+game.js writeStats
+            // Injury crap - assign injury type if player does not already have an injury in the database
+            if (that.team[t].player[p].injured && player_.injury.type === "Healthy") {
+                player_.injury = player.injury(that.team[t].healthRank);
+                if (that.team[t].id === g.userTid) {
+                    eventLog.add(tx, {
+                        type: "injured",
+                        text: '<a href="' + helpers.leagueUrl(["player", player_.pid]) + '">' + player_.name + '</a> was injured! (' + player_.injury.type + ', out for ' + player_.injury.gamesRemaining + ' games)'
+                    });
+                }
+            }
+
+
+game.js writegamestats
+                if (this.team[t].player[p].injured) {
+                    gameStats.teams[t].players[p].injury = {type: "Injured", gamesRemaining: -1};
+                } else {
+                    gameStats.teams[t].players[p].injury = {type: "Healthy", gamesRemaining: 0};
+                }
+
+game.js loadteams
+                    for (i = 0; i < players.length; i++) {
+                        p = {id: players[i].pid, name: players[i].name, pos: players[i].pos, valueNoPot: player.value(players[i], {noPot: true}), stat: {}, compositeRating: {}, skills: [], injured: players[i].injury.type !== "Healthy", ptModifier: players[i].ptModifier};
+				
+game.js 	play
+                        // Injury countdown - This must be after games are saved, of there is a race condition involving new injury assignment in writeStats
+                        tx.objectStore("players").index("tid").openCursor(IDBKeyRange.lowerBound(g.PLAYER.FREE_AGENT)).onsuccess = function (event) {
+                            var changed, cursor, p;
+
+                            cursor = event.target.result;
+                            if (cursor) {
+                                p = cursor.value;
+
+                                changed = false;
+                                if (p.injury.gamesRemaining > 0) {
+                                    p.injury.gamesRemaining -= 1;
+                                    changed = true;
+                                }
+                                // Is it already over?
+                                if (p.injury.type !== "Healthy" && p.injury.gamesRemaining <= 0) {
+                                    p.injury = {type: "Healthy", gamesRemaining: 0};
+                                    if (p.tid === g.userTid) {
+                                        eventLog.add(tx, {
+                                            type: "healed",
+                                            text: '<a href="' + helpers.leagueUrl(["player", p.pid]) + '">' + p.name + '</a> has recovered from his injury.'
+                                        });
+                                    }
+                                    changed = true;
+                                }				
+				
+gameSimBaseball.js				
+
+    GameSim.prototype.injuries = function () {
+        var newInjury, p, t;
+
+        newInjury = false;
+
+        for (t = 0; t < 2; t++) {
+            for (p = 0; p < this.team[t].player.length; p++) {
+                // Only players on the court can be injured
+                if (this.playersOnCourt[t].indexOf(p) >= 0) {
+                    // According to data/injuries.ods, 0.25 injuries occur every game. Divided over 10 players and ~200 possessions, that means each player on the court has P = 0.25 / 10 / 200 = 0.000125 probability of being injured this play.
+                    if (Math.random() < 0.000125) {
+                        this.team[t].player[p].injured = true;
+                        newInjury = true;
+                        this.recordPlay("injury", t, [this.team[t].player[p].name]);
+                    }
+                }
+            }
+        }
+
+        // Sub out injured player
+        if (newInjury) {
+            this.updatePlayersOnCourt();
+        }
+    };
+	
+gameSimBaseball
+
+update, take out and put in player
+	
+	updatePlayersOnCourt
+	
+(use for substitutions?)	
+    GameSim.prototype.updatePlayingTime = function () {
+        var p, t;
+
+        for (t = 0; t < 2; t++) {
+            // Update minutes (overall, court, and bench)
+            for (p = 0; p < this.team[t].player.length; p++) {
+                if (this.playersOnCourt[t].indexOf(p) >= 0) {
+                    this.recordStat(t, p, "min", this.dt);
+                    this.recordStat(t, p, "courtTime", this.dt);
+                    this.recordStat(t, p, "energy", -this.dt * 0.04 * (1 - this.team[t].player[p].compositeRating.endurance));
+                    if (this.team[t].player[p].stat.energy < 0) {
+                        this.team[t].player[p].stat.energy = 0;
+                    }
+                } else {
+                    this.recordStat(t, p, "benchTime", this.dt);
+                    this.recordStat(t, p, "energy", this.dt * 0.1);
+                    if (this.team[t].player[p].stat.energy > 1) {
+                        this.team[t].player[p].stat.energy = 1;
+                    }
+                }
+            }
+        }
+    };
+	
+	
+	
+
+
+Once List 1 and List 2 finished
+-clean up, should be ready to use (but still be able to be improved)
+
+
+e) position changed at boxscore level goes up to other levels
+
+h) then do updated skills calc
+k) L/R hitting/pitching
+
+
+
+Website/E-mail
+- tell users who to e-mail/where to post comments (season.js newPhaseRegularSeason)
+
+Gameplay Overview
+- update for Baseball
+
+
+-injuries
+
+Live Game
+- play by play
+- box score and other information wrong
+
+
+
+stat lables
+-playerstats Stat Distribution (needs to be redone for baseball)
+-history.html, silver slugger, golden glove awards
+-mvp , add position
+
+
+trade ai
+- computer based on skills(the more the better)
+- computer based on needs (pay more for skills don't have, less for surplus)
+- computer based on timeline (give more farm if surplus, trade more starters if surplus for farm)
+Trades
+- trades, can't trade draft picks (need to remove that functionality)
+- (Future: three team trades?)
+
+
+
+Global Variables ?
+- roster max
+- roster min
+
+
+
+Order of Events
+- draft in middle of season
+//// should be based on # times team over cap (in js/global.js)
+    g.luxuryTax = 1.5;
+//// switch phases (draft before trade deadline)(in js/global.js, need to make sure text display is correct as well)
+    g.PHASE = {
+        FANTASY_DRAFT: -1,
+        PRESEASON: 0,
+        REGULAR_SEASON: 1,
+        AFTER_TRADE_DEADLINE: 2,
+        PLAYOFFS: 3,
+        BEFORE_DRAFT: 4,
+        DRAFT: 5,
+        AFTER_DRAFT: 6,
+        RESIGN_PLAYERS: 7,
+        FREE_AGENCY: 8
+    };
+
+
+Stats
+-----------
+GIQ	Cl	End	WE	TP	H	Pw	fArm	pSp	F	tSp	C	P1	P2	P3
+
+GameSim
+
+gameSimBaseball.js
+function (gameSim)
+74 playersoncourt = 
+76 function(updateplayersoncourt) (line 287 - put back in, handle injuries, lower endurance)
+
+function(run)
+function(simPossessions)
+function(updateteamcompositerating)252 (look up)
+function(simPossession)
+
+
+function(updatePlayingTime)
+function(injuries)
+function(updateplayersoncourt)
+function(updateSynergy)
+
+- injury prob(based on end, work effort?) (gradually increases with playing time, but basically constant for position players, shoots up for pitchers and then falls when rested)
+
+SIM AI
+-expand playing logic to include all 9 players with rotating starters
+-factor in injuries
+-factor in end,subs use bench
+
+Player stat combos
+-pitchers
+-1B
+-2B
+-3B
+-SS
+-LF
+-RF
+-CF
+-C
+1) positions (done)
+2) batting order (done)
+3) adjust skills for batting order and position
+4) update game logic (not fair) (should not have changed much) (done?)
+5) update game logic (fair) (capture more variations in positions)
+6) add line drive (done)
+7) track all variables
+8) do play by play
+9) game over if bottom and home team ahead
+10) plate appear (walks+atbats) at bats (hits + outs) hits (hits)
+	
+
+        positionplayers[t][0] = spitcher[t];
+        positionplayers[t][1] = firstbase[t];
+		positionplayers[t][2] = secondbase[t];
+        positionplayers[t][3] = thirdbase[t];
+        positionplayers[t][4] = shortstop[t];
+        positionplayers[t][5] = leftfield[t];
+		positionplayers[t][6] = rightfield[t];
+        positionplayers[t][7] = centerfield[t];
+        positionplayers[t][8] = catcher[t];
+
+	
+		
+Game AI/Current Stats
+---------------- Initial
+Batting
+AtBats H 2B 3B HR R RBI SB BB% K% ISO BABIP AVG OBP SLG OPS wOBA E%
+Pitching
+W L SV G GS IP K/9 BB/9 HR/9 BABIP LOB% GB% HR/FB ERA FIP 
+
+
+should be able to calculate all with
+- have fly,ground,line drive
+
+// can randomly pick area based on fly,ground,line drive
+// then choose hit/or who makes the play
+// then choose error
+- infield/outfield
+- infield (3B, bewteen SS 3B, SS, between 3B 2B or P, 2B, between 2B and 1B, 1B, C, between P and C)
+- outfield(LF, bewteen LF CF, CF, between CF RF, RF)
+
+later
+park factors
+
+later (use existing team stat data?)
+xFIP
+wRC+
+rest of WAR calc (need league average, could be a lot of processing) (could use prior league averages to speed things up initially?)
+
+team ratings
+-create page
+-allow for trade partners?
+
+
+
+
+
+---------------- STATS
+FIP:
+FIP = ((13*HR)+(3*(BB+HBP))-(2*K))/IP + constant
+
+xFIP:
+xFIP = ((13*(Flyballs * League-average HR/FB rate))+(3*(BB+HBP))-(2*K))/IP + constant
+
+The constant is solely to bring FIP onto an ERA scale and is generally around 3.20. You can find historical FIP constant values here, or you can derive the constant by taking league-average FIP and subtracting that from league-average ERA. League-average home run per fly ball rate varies on a yearly basis, but you can find those values here on the FanGraphs leaderboards.
+
+wRAA
+
+UBR
+
+wSB
+
+UZR
+
+
+WAR
+
+? Offensive players – Take wRAA, UBR & wSB, and UZR (which express offensive, base running, and defensive value in runs above average) and add them together. Add in a positional adjustment, since some positions are tougher to play than others, and then convert the numbers so that they’re not based on league average, but on replacement level (which is the value a team would lose if they had to replace that player with a “replacement” player – a minor leaguer or someone from the waiver wire). Convert the run value to wins (10 runs = 1 win) and voila, finished!
+
+? Pitchers – Where offensive WAR used wRAA and UZR, pitching WAR uses FIP. Based on how many innings a pitcher threw, FIP is turned into runs form, converted to represent value above replacement level, and is then converted from runs to wins.
+
+Park Factors (base 100, 90 10% less, 110 10% more likely in that park)
+
+1B lefty
+1b righty
+2b lefty
+2b righty
+3b lefty
+3b righty
+hr lefty
+hr righty
+GB
+FB
+LD
+
+
+Hitters
+
+ISO = ((2B) + (2*3B) + (3*HR)) / AB
+ISO = Extra Bases / At-Bats 
+
+BABIP
+Batting Average on Balls In Play (BABIP) measures how many balls in play against a pitcher go for hits. 
+
+The wOBA formula for the 2012 season was:
+
+wOBA = (0.691×uBB + 0.722×HBP + 0.884×1B + 1.257×2B + 1.593×3B +
+2.058×HR) / (AB + BB – IBB + SF + HBP)
+
+These weights change on a yearly basis, so you can find the specific wOBA weights for every year from 1871 to 2010 here.
+uBB (unintential Base on Balls) (IBB intentional base on balls) (SF sacrifice fly)
+
+wOBA and FIP constants
+Season	wOBA	wOBAScale	wBB	wHBP	w1B	w2B	w3B	wHR	runSB	runCS	R/PA	R/W	cFIP
+2014	.314	1.277	.690	.722	.888	1.271	1.616	2.101	.200	-.384	.110	9.264	3.048
+2013	.314	1.277	.690	.722	.888	1.271	1.616	2.101	.200	-.384	.110	9.264	3.048
+2012	.315	1.245	.691	.722	.884	1.257	1.593	2.058	.200	-.398	.114	9.544	3.095
+2011	.316	1.264	.694	.726	.890	1.270	1.611	2.086	.200	-.394	.112	9.454	3.025
+2010	.321	1.251	.701	.732	.895	1.270	1.608	2.072	.200	-.403	.115	9.643	3.079
+2009	.329	1.210	.707	.737	.895	1.258	1.585	2.023	.200	-.420	.120	9.994	3.097
+2008	.328	1.211	.708	.739	.896	1.259	1.587	2.024	.200	-.422	.120	10.032	3.132
+2007	.331	1.192	.711	.741	.896	1.253	1.575	1.999	.200	-.433	.124	10.250	3.240
+2006	.332	1.170	.708	.737	.890	1.241	1.557	1.970	.200	-.439	.126	10.365	3.147
+2005	.326	1.208	.703	.733	.890	1.252	1.578	2.017	.200	-.419	.120	9.971	3.020
+2004	.330	1.180	.707	.737	.890	1.244	1.563	1.983	.200	-.434	.124	10.272	3.049
+
+wRC – This is total runs created based of wOBA. It is calculated as (((wOBA – lgwOBA) / wOBAScale) + (lgR/PA)) * PA
+
+wRAA – This is the number of runs above average based off wOBA. It is calculated as (wOBA – lgwOBA) / wOBAScale * PA
+
+wOBAScale is typically around 1.15, but changes slightly from year to year depending on the weights used in wOBA.
+
+
+wSB by comparing each player’s stolen base runs created per opportunity with league average stolen base runs created per opportunity:
+
+wSB = SB * runSB + CS * runCS – lgwSB * (1B + BB + HBP – IBB) // average should be zero
+
+League stolen base runs (lgwSB) is:
+
+(SB * runSB + CS * runCS) / (1B + BB + HBP – IBB)
+
+runSB = 
+
+
+OPS is calculated simply as the sum of On-Base Percentage (OBP) and Slugging Average. Expressed as a full equation:
+
+OPS = (H + W + HB)/(AB + W + HB + SF) + TB/AB 
+
+
+http://tangotiger.net/wiki/index.php?title=Special:AllPages
+http://www.wikihow.com/Calculate-Baseball-WAR
+
+-FanGraphs stats
+-stadium impact (dimentsion, general description - pitchers park, hitters, lefty , righty)
+
+http://www.baseball-reference.com/blog/archives/6063
+----------------
+
+
+
+
+Future Sims
+-----------
+
+
+Player changes
+js/core/player.js
+js/core/player/
+
+GameSim changes
+js/core/game.js
+js/core/gameSim.js
+js/core/gamesim/
+
+Roster min size
+js/views/roster.js (doRelease)
+
+Roster size changes
+js/core/freeAgents.js (autosign)
+js/core/contractnegotiations.js (create)
+js/core/team.js (checkRosterSizes)
+js/views/roster.js (InitViewModel)
+
+
+Autofill of full roster
+js/core/league.js (create, look for numLeft - max roster, made based on RosterSize)
+js/core/league.js (need to adjust pots and baseRatings above it to have enough data (each only used once, so once run out can produce more))
+
+
+# of players in draft
+js/core/league.js (create, search round)
+
+
+
+
+
+Roster splits (starters backups farm)
+js/views/roster.js (highlighHandles)
+
+
+Playoffs
+js/util/templatehelpers.js  (label for round won)
+
+
+
+Current
+-------
+Basketball
+-grey dog software (download/$35/demo)
+-(pvp) whatifsports
+Baseball
+-basebal mogul($35new,free old)/OOTP  (OOTP has app version)
+-(pvp) whatifsports
+
+list
+http://compsimgames.about.com/od/sports/
+
+business model:
+https://news.ycombinator.com/item?id=7371246
+" You do not gain anything by the value adds except novelty. On the rare occasion you will get something of strength/power, but its not a permanent superiority: its merely early access. The entire reason it has become the model of success it is, is due to its availability to the masses in a harmless form: you get to pay for cosmetic differences only."
+
+Future
+------
+Football
+-football mogul
+-(pvp) whatifsports
+Soccer
+-football manager
+NCAA basketball
+-grey dog software (download)
+-(pvp) http://www.simulatedsports.com/
+-(pvp) whatifsports
+NCAA football
+-(pvp) whatifsports
+NCAA baseball
+?other minor games?
+any team sport
+?other sim games?
+conquest (general level/army) (NCAA type - work way up from soldier to emporer?)
+-navy
+-air
+-space
+-all
+-historic
+-future
+//////////////// same structure as moving from DIII to DI game, get recruited/pick next level)
+//////////////// each level can be simulated (actual task, with stats of performance to use to improve)
+-life of a soldier
+--1) start with indiv missions (pick best tactics/gear) (keep replaying until get promoted or can stay at that level)
+--2) command 5 soldiers (pick soldiers, pick tactics)
+--3) command 5 groups of 5 soldiers (pick groups, pick tactics?)
+--4) command 5 groups of 25 soldiers 
+--5) 5-125
+--6) 5-600
+--7) 5-3000
+--8) 5-15000
+etc.
+-life of a teacher
+--1) 1 class  (create strategyz(hard/easy,#homeworks/tests),watch students, intervene if troubles)
+--2) 1 department (track classes/teachers)
+--3) 1 school (track departments)
+--4) 5 schools (track schools)
+--5) 25 schools (track gruops of schools)
+--6) 125 schools
+--7) 5 counties (track county)
+--8) 5 states 
+--9) 5 regions
+etc.
+-life of an entreprenuer
+--1) idea formation (types of business)
+--2) getting (capital,employess(ifnec),etc)
+--3) initial production
+--4) growing
+--5) focus on 1 product/expand
+--6) focus on same industry/expand
+-life of a criminal
+--1) petty theft (what/where/how)
+--2) small gang (pick each member(5))
+--3) 5 small gangs (moderate gang)
+--4) 5 mod gangs (large gang)
+--5) 5 large (massive)
+--6) 5 massive 
+--7) 5 etc
+
+
+business (general level/corp) (NCAA type - work way up from employee to corporate empire?)
+-manu
+-software
+-retail/service
+-congl
+-drug
+-criminal
+
+Mutliplayer vs Single
+-all types? see where demand is
+
+
+

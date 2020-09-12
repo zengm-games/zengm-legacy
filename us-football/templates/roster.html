@@ -1,0 +1,410 @@
+<div data-bind="dropdown: 'roster'"></div>
+
+<h1><span data-bind="text: team.region"></span> <span data-bind="text: team.name"></span> Roster <span data-bind="newWindow: []"></span></h1>
+<p>More: <a data-bind="attrLeagueUrl: {href: ['team_finances', abbrev]}">Finances</a> | <a data-bind="attrLeagueUrl: {href: ['game_log', abbrev, season]}">Game Log</a> | <a data-bind="attrLeagueUrl: {href: ['team_history', abbrev]}">History</a></p>
+<div id="picture" class="team-picture"></div>
+<div id="teamInfo">
+    <h3>Record: <span data-bind="recordAndPlayoffs: [abbrev, season, team.won, team.lost, team.playoffRoundsWon, 'noSeason']"></span></h3>
+
+    <p data-bind="visible: isCurrentSeason">
+      <span data-bind="text: numRosterSpots"></span> open roster spots for entire team<br>
+      <span data-bind="text: numActiveSpots"></span> open active spots for entire team<br>
+      Payroll: <span data-bind="currency: [payroll, 'M']"></span><br>
+      Salary cap: <span data-bind="currency: [salaryCap, 'M']"></span><br>
+      Profit: <span data-bind="currency: [team.profit, 'M']"></span><br>
+      <span data-bind="visible: showTradeFor">Strategy: <span data-bind="text: team.strategy"></span></span>
+    </p>
+</div>
+
+<p data-bind="visible: editable" id="instructions">Drag and drop row handles to move players and override the coach.</p>
+<!--<p data-bind="visible: editable" id="instructions">starting lineup - position (<span class="roster-position">&#9632;</span>) / pitchers (<span class="roster-spitcher">&#9632;</span>)   , bench - position(<span class="roster-bposition">&#9632;</span>) / pitchers(<span class="roster-bpitcher">&#9632;</span>)  , and farm system - AAA(<span class="roster-farm1">&#9632;</span>)/AA(<span class="roster-farm2">&#9632;</span>)/A(<span class="roster-farm3">&#9632;</span>) .</p>-->
+<p data-bind="visible: editable" id="instructions">Offense, Defense, and Kicker are broken up into Active and Inactive. Then Active is split between starters and bench. You first starting K is your Kicker and the second is your Punter. </p>
+<p data-bind="visible: editable" id="instructions"> The coach will determine playing time for the active roster, but you can modify this up or down by using the PT column. </p>
+<p data-bind="visible: editable" id="instructions"> You can also modify the basic formation of the offense and defense by including more or less WR, CB, LB, etc.  </p>
+<p data-bind="visible: editable" id="instructions"> Put your passer (most likely a QB) in the first offensive spot. If you want to try without a QB, then put someone else there.  </p>
+
+<!-- <p data-bind="visible: editable" id="instructions" class="alert alert-danger"><b>NOTE:</b> New roster page may not be picking up user inactive/active changes for game. If you just use Let Coach Reorder Roster it should be fine. </p> -->
+
+<!-- starters - 8 position plus 5 pitchers (<span class="roster-position">&#9632;</span>) , rest of roster - bench and relief pitchers (<span class="roster-bpitcher">&#9632;</span>)  , and farm system (<span class="roster-farm3">&#9632;</span>) -->
+<p data-bind="visible: editable"><button class="btn btn-default" id="roster-auto-sort">Let Coach Reorder Roster</button></p>
+
+
+<!--<p data-bind="visible: editable" id="instructions">Drag and drop row handles to move players between the starting lineup (<span class="roster-starter">&#9632;</span>) and the bench (<span class="roster-bench">&#9632;</span>).</p>
+<p data-bind="visible: editable"><button class="btn btn-default" id="roster-auto-sort">Auto sort roster</button></p> -->
+
+
+
+
+<h2>Offense</h2>
+<h4>Active</h4>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-off" id="roster-off-active">
+    <thead>
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Quarterback Rating">Rate</th><th title="Passing Completion Percentage">%</th><th title="Total Passing Yards">TY</th><th title="Passing Yards Per Attempt">Y/A</th><th title="Touchdowns">TD</th><th title="Interceptions">Int</th><th title="Rushing Yards">RushY</th><th title="Rushing Yards Per Attempt">Y/A</th><th title="Receiving Yards">RecY</th><th title="Receiving Yards Per Catch">Y/C</th><th title="Lead Blocker">LB</th><th title="Pass Attempts When Worst Blocker">PA</th><th title="Playing Time Modifier" data-bind="visible: editable" style="text-align: center">PT <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+    </thead>
+
+    <tbody data-active="1">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.off.active-->
+        <tr data-bind="attr: {class: $index() === 10 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+          <td data-bind="text: pos"></td>
+          <td data-bind="text: age"></td>
+          <td data-bind="text: yearsWithTeam"></td>
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+          </td>
+         <td data-bind="text: stats.gp"></td>
+          <td data-bind="round: [stats.qbr, 1]"></td>
+		  
+        <td data-bind="round: [stats.fgp, 1]"></td>
+        <td data-bind="round: [stats.stl, 0]"></td>
+        <td data-bind="round: [stats.pya, 1]"></td>
+        <td data-bind="round: [stats.blk, 0]"></td>
+        <td data-bind="round: [stats.inter, 0]"></td>
+        <td data-bind="round: [stats.drb, 0]"></td>
+<!--        <td data-bind="round: [stats.pf, 0]"></td>  -->
+<!--        <td data-bind="round: [stats.era, 2]"></td>  -->
+<!--        <td data-bind="round: [stats.pf, 2]"></td> -->
+        <td data-bind="round: [stats.ruya, 1]"></td>
+        <td data-bind="round: [stats.orb, 0]"></td>
+        <td data-bind="round: [stats.reyc, 1]"></td>
+        <td data-bind="round: [stats.olr, 0]"></td>
+        <td data-bind="round: [stats.olp, 0]"></td>		  
+		  
+		  		  
+		  
+       <!--   <td data-bind="round: [stats.ruya, 1]"></td>
+          <td data-bind="round: [stats.reyc, 1]"></td>
+          <td data-bind="round: [stats.olrmpa, 2]"></td>
+          <td data-bind="round: [stats.fgpAtRim, 1]"></td>
+          <td data-bind="round: [stats.derpatp, 2]"></td> -->
+          <td data-bind="if: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier"></select>
+          </td>
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>
+
+<h4>Inactive</h4>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-off" id="roster-off-inactive">
+    <thead>
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Quarterback Rating">Rate</th><th title="Passing Completion Percentage">%</th><th title="Total Passing Yards">TY</th><th title="Passing Yards Per Attempt">Y/A</th><th title="Touchdowns">TD</th><th title="Interceptions">Int</th><th title="Rushing Yards">RushY</th><th title="Rushing Yards Per Attempt">Y/A</th><th title="Receiving Yards">RecY</th><th title="Receiving Yards Per Catch">Y/C</th><th title="Lead Blocker">LB</th><th title="Pass Attempts When Worst Blocker">PA</th><th title="Playing Time Modifier" data-bind="visible: editable" style="text-align: center">PT <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+    </thead>
+
+    <tbody data-active="0">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.off.inactive-->
+        <tr data-bind="attr: {class: $index() === 10 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+          <td data-bind="text: pos"></td>
+          <td data-bind="text: age"></td>
+          <td data-bind="text: yearsWithTeam"></td>
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+          </td>
+          <td data-bind="text: stats.gp"></td>
+          <td data-bind="round: [stats.qbr, 1]"></td>
+		  
+        <td data-bind="round: [stats.fgp, 1]"></td>
+        <td data-bind="round: [stats.stl, 0]"></td>
+        <td data-bind="round: [stats.pya, 1]"></td>
+        <td data-bind="round: [stats.blk, 0]"></td>
+        <td data-bind="round: [stats.inter, 0]"></td>
+        <td data-bind="round: [stats.drb, 0]"></td>
+<!--        <td data-bind="round: [stats.pf, 0]"></td>  -->
+<!--        <td data-bind="round: [stats.era, 2]"></td>  -->
+<!--        <td data-bind="round: [stats.pf, 2]"></td> -->
+        <td data-bind="round: [stats.ruya, 1]"></td>
+        <td data-bind="round: [stats.orb, 0]"></td>
+        <td data-bind="round: [stats.reyc, 1]"></td>
+        <td data-bind="round: [stats.olr, 0]"></td>
+        <td data-bind="round: [stats.olp, 0]"></td>		  
+		  
+		  		  
+		  
+       <!--   <td data-bind="round: [stats.ruya, 1]"></td>
+          <td data-bind="round: [stats.reyc, 1]"></td>
+          <td data-bind="round: [stats.olrmpa, 2]"></td>
+          <td data-bind="round: [stats.fgpAtRim, 1]"></td>
+          <td data-bind="round: [stats.derpatp, 2]"></td> -->
+          <td data-bind="if: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier"></select>
+          </td>
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<h2>Defense</h2>
+<h4>Active</h4>
+    <p data-bind="visible: isCurrentSeason">
+      <span data-bind="text: numRosterSpots"></span> open roster spots for entire team<br>
+      <span data-bind="text: numActiveSpots"></span> open active spots for entire team<br>
+    </p>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-def" id="roster-def-active">
+    <thead>
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Sacks">Sk</th><th title="Running And Passing Plays At">RPA</th><th title="Running Plays At">RA</th><th title="Passing Plays At">PA</th><th title="Interceptions">Int</th><th title="Total Plays">TP</th><th title="Rushing And Passing Plays At Defender Per Play">Def-Rate</th><th title="Playing Time Modifier" data-bind="visible: editable" style="text-align: center">PT <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+    </thead>
+  
+    <tbody data-active="1">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.def.active-->
+        <tr data-bind="attr: {class: $index() === 10 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+          <td data-bind="text: pos"></td>
+          <td data-bind="text: age"></td>
+          <td data-bind="text: yearsWithTeam"></td>
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+          </td>
+          <td data-bind="text: stats.gp"></td>
+		  
+        <td data-bind="round: [stats.fgaMidRange, 0]"></td>
+        <td data-bind="round: [stats.derpa, 0]"></td>
+        <td data-bind="round: [stats.der, 0]"></td>
+        <td data-bind="round: [stats.dep, 0]"></td>
+        <td data-bind="round: [stats.intery, 0]"></td>
+<!--        <td data-bind="round: [stats.pf, 0]"></td>  -->
+<!--        <td data-bind="round: [stats.era, 2]"></td>  -->
+        <td data-bind="round: [stats.dec, 0]"></td>		  
+		  <!--
+          <td data-bind="round: [stats.qbr, 1]"></td>
+          <td data-bind="round: [stats.ruya, 1]"></td>
+          <td data-bind="round: [stats.reyc, 1]"></td>
+          <td data-bind="round: [stats.olrmpa, 2]"></td>
+          <td data-bind="round: [stats.fgpAtRim, 1]"></td> -->
+          <td data-bind="round: [stats.derpatp, 2]"></td>
+          <td data-bind="if: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier"></select>
+          </td>
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>
+
+<h4>Inactive</h4>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-def" id="roster-def-inactive">
+    <thead>
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Sacks">Sk</th><th title="Running And Passing Plays At">RPA</th><th title="Running Plays At">RA</th><th title="Passing Plays At">PA</th><th title="Interceptions">Int</th><th title="Total Plays">TP</th><th title="Rushing And Passing Plays At Defender Per Play">Def-Rate</th><th title="Playing Time Modifier" data-bind="visible: editable" style="text-align: center">PT <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+    </thead>
+  
+    <tbody data-active="0">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.def.inactive-->
+        <tr data-bind="attr: {class: $index() === 10 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+          <td data-bind="text: pos"></td>
+          <td data-bind="text: age"></td>
+          <td data-bind="text: yearsWithTeam"></td>
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+          </td>
+          <td data-bind="text: stats.gp"></td>
+       <td data-bind="round: [stats.fgaMidRange, 0]"></td>
+        <td data-bind="round: [stats.derpa, 0]"></td>
+        <td data-bind="round: [stats.der, 0]"></td>
+        <td data-bind="round: [stats.dep, 0]"></td>
+        <td data-bind="round: [stats.intery, 0]"></td>
+<!--        <td data-bind="round: [stats.pf, 0]"></td>  -->
+<!--        <td data-bind="round: [stats.era, 2]"></td>  -->
+        <td data-bind="round: [stats.dec, 0]"></td>		  
+		  <!--
+          <td data-bind="round: [stats.qbr, 1]"></td>
+          <td data-bind="round: [stats.ruya, 1]"></td>
+          <td data-bind="round: [stats.reyc, 1]"></td>
+          <td data-bind="round: [stats.olrmpa, 2]"></td>
+          <td data-bind="round: [stats.fgpAtRim, 1]"></td> -->
+          <td data-bind="round: [stats.derpatp, 2]"></td>
+          <td data-bind="if: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier"></select>
+          </td>
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>
+
+<h2>Kicking</h2>
+<h4>Active</h4>
+
+
+    <p data-bind="visible: isCurrentSeason">
+      <span data-bind="text: numRosterSpots"></span> open roster spots for entire team<br>
+      <span data-bind="text: numActiveSpots"></span> open active spots for entire team<br>
+    </p>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-k" id="roster-k-active">
+    <thead>
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Field Goals Made">FG-M</th><th title="Field Goals Attempted">FG-A</th><th title="Field Goal Percentage">FG-%</th><th title="Extra Point Made">EP-M</th><th title="Extra Point Attempts">EP-A</th><th title="Extra Point Percentage">EP-%</th><th title="Punt Attempts">P-A</th><th title="Total Yards Punting">P-TY</th><th title="Punting Touchbacks">P-TB</th><th title="Playing Time Modifier" data-bind="visible: editable" style="text-align: center">PT <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+    </thead>
+
+    <tbody data-active="1">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.k.active-->
+        <tr data-bind="attr: {class: $index() === 10 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+          <td data-bind="text: pos"></td>
+          <td data-bind="text: age"></td>
+          <td data-bind="text: yearsWithTeam"></td>
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+          </td>
+          <td data-bind="text: stats.gp"></td>
+		  
+
+
+		  
+<td data-bind="round: [stats.fgAtRim, 0]"></td>
+<td data-bind="round: [stats.fgaAtRim, 0]"></td>
+<td data-bind="round: [stats.fgpAtRim, 1]"></td>
+<td data-bind="round: [stats.fgLowPost, 0]"></td>
+<td data-bind="round: [stats.fgaLowPost, 0]"></td>
+<td data-bind="round: [stats.fgpLowPost, 1]"></td>
+<td data-bind="round: [stats.punta, 0]"></td>
+<td data-bind="round: [stats.puntty, 0]"></td>
+<td data-bind="round: [stats.punttb, 0]"></td>		  
+		  
+		  
+		  
+		  
+		  
+
+		  
+		  
+          <!--<td data-bind="round: [stats.ruya, 1]"></td>
+          <td data-bind="round: [stats.reyc, 1]"></td>
+          <td data-bind="round: [stats.olrmpa, 2]"></td>
+          <td data-bind="round: [stats.fgpAtRim, 1]"></td>
+          <td data-bind="round: [stats.derpatp, 2]"></td> -->
+          <td data-bind="if: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier"></select>
+          </td>
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>
+
+<h4>Inactive</h4>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed roster roster-k" id="roster-k-inactive">
+    <thead>
+      <tr><th data-bind="visible: editable"></th><th>Name</th><th title="Position">Pos</th><th>Age</th><th title="Years With Team">YWT</th><th title="Overall Rating">Ovr</th><th title="Potential Rating">Pot</th><th data-bind="visible: isCurrentSeason">Contract</th><th title="Games Played">GP</th><th title="Field Goals Made">FG-M</th><th title="Field Goals Attempted">FG-A</th><th title="Field Goal Percentage">FG-%</th><th title="Extra Point Made">EP-M</th><th title="Extra Point Attempts">EP-A</th><th title="Extra Point Percentage">EP-%</th><th title="Punt Attempts">P-A</th><th title="Total Yards Punting">P-TY</th><th title="Punting Touchbacks">P-TB</th><th title="Playing Time Modifier" data-bind="visible: editable" style="text-align: center">PT <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-pt" data-placement="left"></span></th><th data-bind="visible: editable">Release <span class="glyphicon glyphicon-question-sign help-icon" id="help-roster-release" data-placement="left"></span></th><th data-bind="visible: showTradeFor">Trade For</th></tr>
+    </thead>
+
+    <tbody data-active="0">
+      <tr class="roster-sort-disabled"><td></td></tr>
+      <!-- ko foreach: players.k.inactive-->
+        <tr data-bind="attr: {class: $index() === 10 ? 'separator' : '', 'data-pid': pid}">  
+          <td class="roster-handle" data-bind="visible: $parent.editable"></td>
+          <td data-bind="playerNameLabels: [pid, name, injury, ratings.skills, watch]"></td>
+          <td data-bind="text: pos"></td>
+          <td data-bind="text: age"></td>
+          <td data-bind="text: yearsWithTeam"></td>
+          <td><span data-bind="text: ratings.ovr"></span><span data-bind="visible: ratings.dovr() !== 0, css: { 'text-success': ratings.dovr() > 0, 'text-danger': ratings.dovr() < 0 }"> (<span data-bind="text: ratings.dovr() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dovr"></span>)</span></td>
+          <td><span data-bind="text: ratings.pot"></span><span data-bind="visible: ratings.dpot() !== 0, css: { 'text-success': ratings.dpot() > 0, 'text-danger': ratings.dpot() < 0 }"> (<span data-bind="text: ratings.dpot() > 0 ? '+' : ''"></span><span data-bind="text: ratings.dpot"></span>)</span></td>
+          <td data-bind="visible: $parent.isCurrentSeason">
+            <span data-bind="currency: [contract.amount, 'M']"></span> thru <span data-bind="text: contract.exp"></span>
+          </td>
+          <td data-bind="text: stats.gp"></td>
+		  
+<td data-bind="round: [stats.fgAtRim, 0]"></td>
+<td data-bind="round: [stats.fgaAtRim, 0]"></td>
+<td data-bind="round: [stats.fgpAtRim, 1]"></td>
+<td data-bind="round: [stats.fgLowPost, 0]"></td>
+<td data-bind="round: [stats.fgaLowPost, 0]"></td>
+<td data-bind="round: [stats.fgpLowPost, 1]"></td>
+<td data-bind="round: [stats.punta, 0]"></td>
+<td data-bind="round: [stats.puntty, 0]"></td>
+<td data-bind="round: [stats.punttb, 0]"></td>		  
+		  
+          <td data-bind="if: $parent.editable">
+            <select class="form-control" data-bind="options: $root.ptModifiers, optionsText: 'text', optionsValue: 'ptModifier', value: ptModifier"></select>
+          </td>
+          <td data-bind="visible: $parent.editable">
+            <button class="btn btn-default btn-xs" data-action="release" data-bind="enable: canRelease">Release</button>
+          </td>
+          <td data-bind="visible: $parent.showTradeFor">
+            <form method="POST" style="margin: 0" data-bind="attrLeagueUrl: {action: ['trade']}">
+              <input type="hidden" name="pid" data-bind="attr: {value: pid}">
+              <button type="submit" class="btn btn-default btn-xs">Trade For</button>
+            </form>
+          </td>
+        </tr>
+      <!-- /ko -->
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="haircuts" transform="translate(0.000000, -8294.000000)">
+            <g id="16" transform="translate(0.000000, 8294.000000)">
+                <g>
+                    <polygon id="haircut_color_path" fill="#513A2A" fill-rule="nonzero" points="273.990727 80.2635151 247.069673 48.8870373 230.413529 45.5567735 218.963214 34.423922 147.499312 29.2103677 92.1115986 65.4674868 134.881759 50.7092925 91.6544529 70.9270545 78.6318778 92.7237739 70.0947564 165.195169 87.0787775 153.277795 76.388149 178.217085 87.5366878 172.386875 79.4774352 193.972858 88.9086522 185.654436 93.4995139 226.739044 98.4931827 210.104783 112.314675 236.452184 111.466191 151.946143 135.409194 120.604283 190.241657 158.272255 151.17691 110.996709 243.822697 171.168251 216.782419 120.389565 251.14006 151.946143 246.780025 236.603572 263.551253 210.14006 268.83304 226.739044 271.712618 189.00827 283.901869 193.972858 270.572509 172.016629 283.589284 175.343703 271.712618 149.928074 289.438555 161.822009"></polygon>
+                    <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

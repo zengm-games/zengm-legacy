@@ -1,0 +1,19 @@
+<div data-bind="dropdown: 'player-stats'"></div>
+
+<h1>QB, WR, and RB Stats <span data-bind="newWindow: []"></span></h1>
+<p>More: <a data-bind="attrLeagueUrl: {href: ['player_shot_locations', season]}">OL, K, and Def Stats</a> </p>
+<!--<p>More: <a data-bind="attrLeagueUrl: {href: ['player_shot_locations', season]}">OL, K, and Def Stats</a> | <a data-bind="attrLeagueUrl: {href: ['player_stat_dists', season]}">Stat Distributions</a></p> -->
+
+<p>Players currently on your team are <span class="text-info">highlighted in blue</span>. Players in the Hall of Fame are <span class="text-danger">highlighted in red</span>. </p>
+
+<p class="clearfix visible-xs"></p>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed" id="player-stats">
+    <thead>
+      <tr><th colspan="5"></th><th colspan="14" style="text-align: center" title="Passing">Passing</th><th colspan="4" style="text-align: center" title="Rushing">Rushing</th><th colspan="4" style="text-align: center" title="Receiving">Receiving</th></tr> 
+      <tr><th>Name</th><th title="Position">Pos</th><th>Team</th><th title="Games Played">GP</th><th title="Games Started">GS</th><th title="Made">M</th><th title="Attempted Not Including Sacks">A</th><th title="Percentage Not Including Sacks">%</th><th title="Attempted Including Sacks">A</th><th title="Percentage Including Sacks">%</th><th title="Total Yards">TY</th><th title="Yards Per Attempt">Y/A</th><th title="Touchdowns">TD</th><th title="TouchDown Percentage">TD%</th><th title="Interceptions">Int</th><th title="Interception Percentage">Int%</th><th title="Sacks">Sck</th><th title="Sack Percentage">Sck%</th><th title="Quarterback Rating">Rate</th><th title="Attempts">A</th><th title="Total Yards">TY</th><th title="Yards/Attempt">Y/A</th><th title="Touchdowns">TD</th><th title="Receptions">R</th><th title="Total Yards">TY</th><th title="Yards/Attempt">Y/A</th><th title="Touchdowns">TD</th></tr> 
+
+    </thead>
+  </table>
+</div>

@@ -1,0 +1,25 @@
+{
+       "teams" : [
+	   
+            {"tid": 0, "cid": 0, "did": 0, "region": "Philadelphia", "name": "Stars", "abbrev": "PHI", "pop": 16},
+            {"tid": 1, "cid": 0, "did": 0, "region": "New Jersey", "name": "Generals", "abbrev": "NJ", "pop": 14},
+            {"tid": 2, "cid": 0, "did": 0, "region": "Pittsburgh", "name": "Maulers", "abbrev": "PIT", "pop": 3},
+            {"tid": 3, "cid": 0, "did": 0, "region": "Washington", "name": "Federals", "abbrev": "WAS", "pop": 3},
+            {"tid": 4, "cid": 0, "did": 1, "region": "Birmingham", "name": "Stallions", "abbrev": "BIR", "pop": 14},
+            {"tid": 5, "cid": 0, "did": 1, "region": "Tampa Bay", "name": "Bandits", "abbrev": "TB", "pop": 14},
+            {"tid": 6, "cid": 0, "did": 1, "region": "New Orleans", "name": "Breakers", "abbrev": "NO", "pop": 8},
+            {"tid": 7, "cid": 0, "did": 1, "region": "Memphis", "name": "Showboats", "abbrev": "MEM", "pop": 7},
+            {"tid": 8, "cid": 0, "did": 1, "region": "Jacksonville", "name": "Bulls", "abbrev": "JAC", "pop": 6},
+            {"tid": 9, "cid": 1, "did": 2, "region": "Houston", "name": "Gamblers", "abbrev": "HOU", "pop": 13},
+            {"tid": 10, "cid": 1, "did": 2, "region": "Michigan", "name": "Panthers", "abbrev": "MIC", "pop": 10},
+            {"tid": 11, "cid": 1, "did": 2, "region": "San Antonio", "name": "Gunslingers", "abbrev": "SA", "pop": 7},
+            {"tid": 12, "cid": 1, "did": 2, "region": "Oklahoma", "name": "Outlaws", "abbrev": "OKL", "pop": 6},
+            {"tid": 13, "cid": 1, "did": 2, "region": "Chicago", "name": "Blitz", "abbrev": "CHI", "pop": 5},
+            {"tid": 14, "cid": 1, "did": 3, "region": "Los Angeles", "name": "Express", "abbrev": "LA", "pop": 10},
+            {"tid": 15, "cid": 1, "did": 3, "region": "Arizona", "name": "Wranglers", "abbrev": "AZ", "pop": 10},
+            {"tid": 16, "cid": 1, "did": 3, "region": "Denver", "name": "Gold", "abbrev": "LA", "pop": 9},
+            {"tid": 17, "cid": 1, "did": 3, "region": "Oakland", "name": "Invanders", "abbrev": "MON", "pop": 7}						
+
+        ]
+
+}

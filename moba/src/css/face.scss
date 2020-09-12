@@ -1,0 +1,43 @@
+/* === START OF: face partials styles === */
+.face{
+	position: relative;
+	overflow: hidden;
+
+	svg{
+		max-height: 150px;
+	}
+}
+.face__part{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	svg{
+		width: 100%;
+	}
+}
+.face__part--lowest{
+	z-index: 10;
+}
+.face__part--low{
+	z-index: 20;
+}
+.face__part--middle{
+	z-index: 30;
+}
+.face__part--upper{
+	z-index: 35;
+}
+.face__part--top{
+	z-index: 40;
+}
+
+/*those are for ALL paths of some partials (mouth, nose)*/
+.face__part--color-burn path,
+.face__part--color-burn ellipse,
+	/*.color-burn-path is a class for some specific paths inside the faceforms SVGs. Burning them allows to add shadows on skin. */
+.color-burn-path{
+	mix-blend-mode: multiply;
+}
+/* === END OF: face partials styles === */

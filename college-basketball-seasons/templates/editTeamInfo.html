@@ -1,0 +1,76 @@
+<h1>Edit Team Info</h1>
+
+<p>You can manually edit the teams below or you can upload a teams file to specify all of the team info at once.</p>
+
+<h2>Upload Teams File</h2>
+
+
+<p>The JSON file format is described in <a href="http://basketball-gm.com/manual/customization/teams/">the manual</a>. As an example you can download <a href="http://zengm.com/files/current_teams_main.txt" download>a teams file containing the current default teams</a>. </p>
+<p>On average, the team with the highest starting prestige will have the best team to start with. The team with the lowest starting prestige will be the worst. </p>
+<p>It takes 3 seasons for a team to move. So any location changes (latitude and longitude) will only take effect for newly created recruiting classes (the game stores 3 years worth).</p>
+
+<p class="text-danger">Warning: selecting a valid team file will instantly apply the new team info to your league.</p>
+
+<p><input type="file" id="custom-teams"></p>
+
+<h2>Manual Editing</h2>
+
+<!--<div class="row" style="margin-top: -9px">-->
+<div class="row" style="margin-top: -3px">
+  <div class="col-xs-1">
+    <h4>Abbrev</h4>
+  </div>
+  <div class="col-xs-2">
+    <h4>Region</h4>
+  </div>
+  <div class="col-xs-2">
+    <h4>Name</h4>
+  </div>
+  <div class="col-xs-2">
+    <h4>Starting Prestige</h4>
+  </div>
+  <div class="col-xs-2">
+    <h4>City</h4>
+  </div>
+  <div class="col-xs-1">
+    <h4>State</h4>
+  </div>
+  <div class="col-xs-1">
+    <h4>Latitude</h4>
+  </div>
+  <div class="col-xs-1">
+    <h4>Longitude</h4>
+  </div>  
+</div>
+
+<form method="POST" data-bind="attrLeagueUrl: {action: ['edit_team_info']}">
+  <div class="row" data-bind="foreach: teams">
+    <div class="col-xs-1 form-group">
+      <input type="text" class="form-control" name="abbrev[]" data-bind="attr: {value: abbrev}">
+    </div>
+    <div class="col-xs-2 form-group">
+      <input type="text" class="form-control" name="region[]" data-bind="attr: {value: region}">
+    </div>
+    <div class="col-xs-2 form-group">
+      <input type="text" class="form-control" name="name[]" data-bind="attr: {value: name}">
+    </div>
+    <div class="col-xs-2 form-group">
+      <input type="text" class="form-control" name="pop[]" data-bind="attr: {value: pop}">
+    </div>
+    <div class="col-xs-2 form-group">
+      <input type="text" class="form-control" name="city[]" data-bind="attr: {value: city}">
+    </div>
+    <div class="col-xs-1 form-group">
+      <input type="text" class="form-control" name="state[]" data-bind="attr: {value: state}">
+    </div>
+    <div class="col-xs-1 form-group">
+      <input type="text" class="form-control" name="latitude[]" data-bind="attr: {value: latitude}">
+    </div>
+    <div class="col-xs-1 form-group">
+      <input type="text" class="form-control" name="longitude[]" data-bind="attr: {value: longitude}">
+    </div>	
+  </div>
+  <center>
+    <button type="submit" class="btn btn-primary" id="edit-team-info">Update Team Info</button>
+  </center>
+</form>

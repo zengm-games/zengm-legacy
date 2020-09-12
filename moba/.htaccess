@@ -1,0 +1,40 @@
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^manifest_hack$ manifest_hack.html
+RewriteRule ^test$ test.html
+RewriteRule ^test_case$ test_case.html
+
+RewriteCond %{REQUEST_URI} !^/bbgm.appcache
+RewriteCond %{REQUEST_URI} !^/robots.txt
+RewriteCond %{REQUEST_URI} !^/css
+RewriteCond %{REQUEST_URI} !^/fonts
+RewriteCond %{REQUEST_URI} !^/gen
+RewriteCond %{REQUEST_URI} !^/ico
+RewriteCond %{REQUEST_URI} !^/img
+RewriteCond %{REQUEST_URI} !^/manifest_hack
+RewriteCond %{REQUEST_URI} !^/manifest.webapp
+RewriteCond %{REQUEST_URI} !^/test
+RewriteRule ^.*$ index.html
+
+AddType image/svg+xml svg
+AddType image/svg+xml svgz
+
+AuthUserFile /home/zengm/moba.zengm.com/.htpasswd
+AuthName EnterPassword
+AuthType Basic
+require valid-user
+
+
+# Hide files starting with a dot (.htaccess and .htpasswd in particular)
+<Files .*>
+order allow,deny
+deny from all
+</Files>

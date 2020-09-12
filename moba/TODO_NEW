@@ -1,0 +1,30 @@
+From /u/TricksyZerg on reddit:
+
+Ah if it would be too much of a hassle, I think it's better to focus on the bugs instead. I took the liberty of making a small bug list for the game. These are bugs I encountered while playing the game myself plus it includes bugs from the last 2 months of posts on the subreddit (since the last update).
+
+Bugs
+
+- Changes made to player info (team, overall, picture etc.) are sometimes getting reset once progressing to regular season, if you edit them with God Mode during preseason. I believe this may also happen with just signing players without God Mode in preseason. Once it starts happening, it happens all the time in that save. (mycoder may have already fixed this if you have an intermediate version that he was working on before the next update, as he did say he fixed it in a comment after the last update!)
+- In the "Worlds" game mode with the 2019 year format, the LPL Round 1 is skipped (both series end 0-0) and the lower seeded team in both matches automatically goes through to the next round.
+- The tiebreaker system currently triggers based on the number of wins a team has in a group (with tiebreaker games counting towards overall wins), so a team with 3 wins in the original group stage will get to 4 wins if they win the tiebreaker, thus potentially causing another tiebreaker with a 4-win team in the group. (this is not how tiebreakers work, they only happen based on wins in the original group stage).
+- The Champion Stats menu link seems to be broken (went through this with mycoder, it was working for him, but doesn't seem to be working for most people). Worth noting that mycoder removed some other champion info pages in a previous update as they weren't working either, he was planning to fix them and bring them back in the future. However even one of the pages that remained isn't working.
+- Unspecified draft issues / not being able to draft at all (I was not able to replicate this, was working when I tried it)
+
+Nitpicks
+
+- Fix the spelling mistake in the main menu (it says "enphasis" instead of "emphasis") (this has been there since the dawn of man and is tearing me apart hahah) (was also fixed by mycoder after the last update if you have that version)
+- Maybe remove the unfinished and unusable options in God Mode? To signal it being kind of a "complete" game
+- Change remarks in the UI of "one day" to "one week" as you currently sim through the game one week at a time. (found in live sim menu at least)
+
+Small Features (for clarity and common sense)
+
+- Show stats for champions played ALL TIME in player menu or for entire current season, currently it only shows the stats for either the current regular season or current playoffs. Resetting the stats for playoffs is pretty useless in my opinion, as that is usually the time when you would want to know what champions your opponents are playing the most. On a player-to-player basis this information can't be found anywhere else either.
+- Currently, in the Worlds mode with just one split per year, there is an additional regional qualifier for each major region to determine their third seed to go to Worlds. It's not the real life system and I don't feel it is necessary as the same teams have already faced each other in playoffs, which even have a Third Place match. It would make more sense if all those teams qualified directly through their playoff performance. In the "worlds w/splits" mode, there are two splits and in that mode, the regional qualifiers are necessary as teams qualify for those via championship points accumulated through both splits.
+
+just adding to this - I was now able to replicate the drafting bug. It doesn't usually stop working right away, but it's hard to get through a season where you draft every game without it bugging. Specifically pressing the "Start Bans/Picks" button doesn't do anything for me
+
+https://discord.com/channels/@me/728307725548781598
+- So atm when you use the fantasy draft option you can draft from all regions. What I want is a option that locks drafts to regions so teams can only draft players from their own region. It’s annoying playing Korea and then NA steals all the players xD mycoder said he would add this but never got around to it
+
+https://discord.com/channels/@me/746114221972127866
+- Hey sorry for the fr but i run a mobagm league in discord and the game's lack of an option to toggle off the tragic death rate can potentially ruin it. From what I've heard you have control of the game now after parting ways with mycoder so is there any way for you to add in an option to remove tragic deaths? Or if there's an easy fix that already exists that'd be cool too. Thanks.

@@ -1,0 +1,17 @@
+<h1>Potential Recruits <span data-bind="newWindow: []"></span></h1>
+<!-- <p>More: <a data-bind="attrLeagueUrl: {href: ['upcoming_free_agents']}">Upcoming Recruits</a></p> -->
+
+<p> Each school gives coaches a budget to recruit players. The budgets are based on 1) number of players who have left ($3,750 per year with team, max $15k each) and 2) how well your conference did in the NT ($1k per game played).  Your budget allows you to do home visits, invite recruits to campus, send materials, make phone calls, etc. So naturally players who are further away will require more money. Higher prestige will lower attention needed to get a recruit and therefore lower the cost to recruit. </p>
+<p> The amount to recruit tells you how much money you will need to spend on home visits, etc. (streamlined in one number for playability) in order to recruit that player at a particular stage in the recruiting season.  Later on players are more desperate, needs less convincing, and become cheaper to recruit.</p>
+ 
+
+<p>You currently have <strong data-bind="text: numRosterSpots"></strong> open roster spots and <strong data-bind="currency: [capSpace, '']"></strong> in recruiting cash. <span class="glyphicon glyphicon-question-sign help-icon" id="help-salary-cap" data-placement="bottom"></span></p>
+<p class="text-danger" id="game-sim-warning" style="display: none">Stop game simulation to sign recruits.</p>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-condensed" id="free-agents">
+    <thead>
+      <tr><th>Name</th><th title="Position">Pos</th><th title="Year">Yr</th><th title="City">City</th><th title="State">St</th><th title="Miles From School">Mi</th><th title="Overall">Ovr</th><th title="Potential">Pot</th><th title="Composite Rating (Overall + Potential)">Comp</th><th title="Height">Hgt</th><th title="Strength">Str</th><th title="Speed">Spd</th><th title="Jumping">Jmp</th><th title="Endurance">End</th><th>Amount to Recruit</th><th>Mood</th><th>Recruit</th></tr>
+    </thead>
+  </table>
+</div>

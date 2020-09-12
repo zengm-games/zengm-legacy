@@ -1,0 +1,846 @@
+LOL Post Bugs
+----
+
+a)-No NA players in EU
+Should be mainly Korea
+Look at Worlds custom roster file.
+
+b) - Supplement regions with KR and not NA/EU
+- Look at current Worlds custom roster for correct regions
+
+c) Team Mood
+
+d) From a UI stand point I think it'd be great if you added in loading animations, cool game dude
+
+e) expenses setting to 0? (only in chrome?)
+
+f) latest champions
+
+g) tutorial
+
+h) how to play game, what works
+
+i) user interface ugly,
+https://www.reddit.com/r/leagueoflegends/comments/5llg31/i_made_a_free_singleplayer_league_of_legends/dbwr9sb/?context=3
+
+j) remove register link, in achievements
+
+k) sort meta by top 5/6 champes per role
+
+i) an app
+
+l) Sup killing dragon alone?
+
+m) clearer meta
+
+n) player stats after CS-20 reads as rebounds in player section
+https://www.reddit.com/r/leagueoflegends/comments/5llg31/i_made_a_free_singleplayer_league_of_legends/dbwuyrg/?context=3
+
+o) be a client and a more colourful layout
+
+p) multiplayer
+
+q)
+Front End Developement
+from AGlasgowThing sent 18 minutes ago
+Hi,
+I was just wondering if you are looking for any front end design/development for your GMLOL game as I would be keen to get involved.
+AGT
+
+r) latest champion meta (many on this, may want to make a user option **************** or fix old files?)
+
+s) LCS ladder message off? 
+
+Some feedback, I advanced from the lowest league to the LCS and every time I got a mail from the manager saying something like, @I hope we play in the CS or LCS soon@ even though I just advanced to that league and after that I got fired after coming 4th in my first season in the LCS, my 4th total season in the team, feels a bit odd?
+
+t) finances
+
+Im liking it so far, its pretty entertaining.
+My only complaint is about the finances. In my team finances i can see all the income i have from streams, wins, etc and that is great. But maybe you could improve a bit the format. For example, if i hover the mouse i can see i have 180.0K cash, but i am spending 1231423 (some random numbers) in salaries. That difference in formats make it a bit harder to understand what is going on
+
+w) More beginner friendly
+This game looks pretty awesome! I, myself, am extremely confused by it - not really knowing where I should start, what stats matter more, etc. and I'm the kind of person who likes being given that information so it's not entirely for me, however maybe if I had access to that information or if it was a bit more beginner-friendly I could definitely see myself interested.
+
+x) Watch list bug:
+Just tried it! I enjoyed it a lot I binge played like 3 hours! I noticed there's some funky stuff happening on the watch list. I list a player on the future talent page and when season ends, after re-contract with current players my watch list become empty. Which can be fixed by going listing another player on watch list. Not so sure if it was a bug..
+
+Happened in CHrome
+
+y) Debugging - sent to Basketball GM
+
+z)Full Korean team in wrong region.
+
+aa) bans in game logo
+
+ab) gold changes
+Just someting weird that maybe you can fix,when watching the live game it seems the gold lead is a bit unrealistic at times,when doing it in one of my games the oposing team literaly got 20k gold while my team got 1k(my team was 68k the oponent was at like 80 and ended at 101)i find this to be basicly impossible in any lcs game.
+
+ac) stats for player champion picks
+
+ad) let user do picks and bans (another person asked for this, getting a lot of feedback about this)
+
+ae)
+
+Do you want help with the design?
+from Kalahal sent 31 minutes ago
+Do you want help with the design?
+
+ad) give money to trade for player
+
+ae) can't baron or dragon within certain time period:
+
+22:28 - FG - HugeHunter, Golems, and Question3 killed the Dragon Dragon (2-1)
+22:21 - FG - HugeHunter, Golems, WrongFury, Stop9, and Question3 killed the Baron Baron (1-0)
+Holy shit the ROTATIONS MAN
+
+No problem man, Somehow the game does not think that it takes time to rotate between obj, most of the time you don't notice it but sometimes a dragon gets killed 10 sec later then a tower or in this case baron
+
+af) what is he talking about:
+
+post replyI made a free single-player League of Legends e-sports management game. Play in your browser (no download).
+from BilgeXA via /r/leagueoflegends sent 24 minutes ago
+Half the page is just a giant (468x436), embedded, mime-encoded binary image of the old nexus model, displayed at 18x18 on the page. Someone who is this incompetent at web design cannot reasonably be expected to make good software, and for that reason, I don't have any interest in playing your presumably buggy and inept game.
+
+ag) guide to winning:
+
+from PM_ME_TITSorASS via /r/leagueoflegends sent an hour ago
+in 10 years I was able to turn EL5 to a complete dynasty Won the 2022 season then since 2026 I have been to the finals every year and only not one it once and I just finished 2031 year. I've also managed to keep my top laner and jungler for 8 years and my Mid for 5 and I just keep rotating my bot lane ever 2nd year lol
+
+mycoder[S] 1 point just now 
+Nice job! This is a basic template to how to play the game.
+
+ah) realism, comebacks to easy?
+
+How do I lose in Game 5 of the LCS Finals, with a 5k Gold Lead? I feel like there's some issues with your sims. Reverse swept in the finals, and lose game 5 with a 5k lead? That's pretty unrealistic.
+
+ai) better interface and easier gameplay
+
+Way too complicated for the average costumer like me. Make the interface and the gameplay more user-friendly and I might give it a chance. 2/5
+
+aj) short summary of players/team
+
+I would add a little feature for short summeries so that I can be more lazy, like for my jungler my little bio is
+AnOnGolemX The owner wants him out So far he's been alright, with an average KDA of 1.5/3/2.5 and a kill partisipation of 58%
+And for my mid
+RiseOftheGolem Our highest ranked player with the biggest room for improvment
+I'm in the process of doing his stats, but you could make the game auto do that. Other than that make it so that the stat grids are expandable so they aren't just 3-5 letter abbreviations. It looks fun though!
+
+ak)
+
+runs slow
+
+al) boostap improved?
+
+No problem! I was really into front end web dev for a while and stumbled upon this design for bootstrap. It's based off of googles paper design and looks clean and kinda like android. It's super easy to implement and looks a lot better than stock bootstrap. Link
+http://fezvrasta.github.io/bootstrap-material-design/#about
+
+am) If I could make a suggestion do a tutorial mode please.
+
+an) Cool. BTW When you are mousing over things in the "statistical feats" section, the "jungle/dragon/baron" all list "rebounds" instead of whatever. ****
+
+ao)
+Some features that you might want to consider implementing:
+-The patch needs to have more information i.e sort by best/worst champions, Champions with the highest ban, sort by role etc.
+-More information on other teams i.e champions most picked by the team and performance stats on these champions.
+
+ap) Strategy ***
+
+I won it all in my third season!
+What worked for me is signing free agents with low current skill but high potential to long term contracts. I then traded them for good current players until I had 5 played in the high 70 to high 80 range. They swept the finals.
+
+
+aq) Player Mood , perform better and stick around with team
+Also maybe some way to motivate players to continue doing well, or do better. And maybe stick with the team after the season is over.
+
+ar) Getting Fired Bugs ****
+- doesn't let you stay with new team.
+
+as) secondary ban ( need an enhanced ban page were you list from best to worst)
+
+at) patch page, highlights important buffs and nerfs
+EDIT: The patch could also be implemented under stats just for a read only option and under tools for editing. Every-time the patch note changes it could also highlight the important buffs/nerfs.
+
+au) finance tab, list of profit loss and not just graphs
+
+av) Chinese version
+
+Hello I'm a Chinese LOL Community's editor,would you mind me sharing your game with my conmmunity?
+from Wha1efall sent 46 minutes ago
+Hello! I'm a Chinse LOL community's editor,and I love your game [LOL e-sports management game ],and I want to share your game with our community. I will translate the main features into chinese with text,because I don't understand code language LOL. If you have any questions please let me know! Happy new year!
+
+aw) currency option (play in euros)
+
+ax) game strategy
+
+How does the Firing system work. I was fired from a 2-time LCS champion team, after I was fired this team won 5 more titles without changing anything. Then I get fed to a ladder team again, I do my usual tank the first season gut the roster and pick up high potential players throughout the season for next season. It usually takes me 2 seasons in the ladder then I climb straight to LCS. So first ladder team I get, takes me 2 seasons I finally get a really good roster, I get fired, then that team goes on to make the LCS and is now top 4 in LCS with exact same roster I made. New team, okay, I do the same strategy, somehow I don't make challenger series with a stacked roster in my second season, so third season, I get even more stacked, and make CS, and will without a doubt make LCS the following year, but I get fired! How can I get fired when I just won the Ladder with best record and really low player salaries.
+
+ay) fix all help links and make for each sport
+
+az) Not valid?
+
+Security vulnerability
+from alyssathegryphon sent 10 minutes ago
+Btw you have a stored xss on your website. For the lol subdomain you can sign up with your name being "><svg/onload=confirm(1)> then go to http://lol.zengm.com/l/1/league_finances to have a prompt showing. http://i.imgur.com/7hpR960.png let me me know if you need anything else
+
+ba) tutorial?
+
+bb) "big sorry" (use as an owner message)
+
+bc) stats for champ you play and play against 
+
+- me: making this like dotabuff would be good as well (don't have synergy/counter yet, but when available)
+
+bd) make mood responses have a higher range so everyone is not always insulted
+
+be) high contract players still on free agency market
+
+bf) starting difficulty matters?
+
+bg) team comp mattered, not just ratings
+
+bh) buy players together? 
+
+- me: maybe have hype adjust based on signings?
+
+bi) team compositin mattering more, point system for teamplay?
+
+bj) Speed, look to improve
+
+bk) for ideas:
+
+https://en.wikipedia.org/wiki/Extreme_Warfare#Total_Extreme_Wrestling_2016
+
+bl) Dark Mode
+
+bm)
+
+post replyI made a free single-player League of Legends e-sports management game. Play in your browser (no download).
+from JohnnyBrawoo via /r/leagueoflegends sent 44 minutes ago
+If you get a good design, this thing can become really popular
+
+bo) roster page, switch by location (upgrade)
+
+bp) Coach Mode strats
+
+Hey liking your LoL manage game! :) Quick question/suggestion i guess:
+-Will there be options like Team Training as: 'Play x scrims each day' and 'Go to bootcamp'.
+-What about some extra settings in team strats, like: Botlane take ignite, play aggresive option. Or 'Play safe untill jungler comes for gank'.
+Fight for first dragon, fight for first baron, double tp bot when pushed back.
+I think you get the gist :P Like some extra strats. Thanks for your time!
+
+bq) Clean up Best of Page
+
+br) I have an NA import on my LCK team. 10/10
+
+bs) pick ban explanation:
+
+https://www.reddit.com/r/leagueoflegends/comments/5llg31/i_made_a_free_singleplayer_league_of_legends/dby1zkg/?context=3&st=ixhsus1w&sh=05b4bad1
+
+bt) monthly newletter about top champs
+
+bu) more interaction with coach and owner in coach mode
+
+bv) Fired, you can switch teams, but it won't let you move forward. Have to skip
+
+bw) Better tutorial.
+
+bx) Watching more than one play by play for a week.
+
+by) Trade stops working in later years?
+
+bz) Trading random, make it based on need more.
+
+ca) Worlds set up off:
+
+In the Worlds league, the highest seeded teams that didn't win the playoff finals are getting a worlds spot over the teams that actually made the finals and lost.
+
+
+cb) trading includes salary as negative
+
+cc) trading: request certain players or filter what other teams can offer.
+
+- along with this, have ai teams have certain things they want to better filter trades.
+
+cd) import file from LCS and make it work for worlds
+
+ce) global MMR drops, MMR moves with a lag?
+
+cf) retrain players to play different position
+
+cg) save manager history for when you get fired
+
+ch) mood so negative?
+
+ci) players switching positions
+
+https://www.reddit.com/message/messages/78uktb
+
+
+cj) 110 minutes bug back?
+
+ck) playoffs won't finished
+
+cl) BUG
+https://www.reddit.com/r/zengmlol/comments/5ltff4/my_personal_feedback_plus_a_few_questions/?st=ixi8hub8&sh=4bea937a
+
+cm) Scrims, let two teams play each other
+
+cn) When players leave give more details as to why, maybe have in owners message?
+
+co) Team history page, retired players greyed out? Less confusion when it comes to players leaving.
+
+cp) Increase English in Europe (young people speek more)
+
+http://www.pewresearch.org/fact-tank/2015/10/08/more-than-any-other-foreign-language-european-youths-learn-english/
+
+cq)  popup before live game, not an error, if check roster size doesn't work
+
+cr) Ladder, have a way to identify league (CS, LCS, Ladder)
+- in game log
+- other places?
+
+cs) Is hype too responsive?
+
+ct) JC doesn't impact jungle killing enough?
+
+cu) God Mode, can make ave champ skill infinite almost. Need to cap at 100.
+
+cv) individual league teams
+
+- better filter for all league (based on games played)
+
+cw) HOF factors in awards? Maybe awards length?
+
+cx) Worlds, Break into a few segments (championship, regionals, etc)
+
+cy) Remove Overalls:
+
+- game option, just Overall, 12 ratings, 50 ratings
+
+cz) GM contract with expectations 3 years at first, then get an extension etc.
+
+da) too many 90+ players after a few years that are very cheap.
+
+db) more options on coaches and analysts.
+
+dc) Coach Mode: 
+
+- allow better defense of baron
+- team strategy
+
+
+dd) role ratings? probably not
+
+de) role swap without god mode (let play in wrong role or switch roles)
+
+df) expenses: be more specific about what the impact is
+
+dg) analysts send pick/ban suggestions before games (good with Coach Mode)
+
+dh) Roster spot for coaches (after coach mode is there)
+
+di)Bench player streaming as well as game streaming revenue
+
+dj) Player opinions - have a basic player moral system in place, teams with no communication, language barriers, or unbalanced rosters will be unhappy and email you, causing you to deal with the issues. Trading, benching streaming, winning, and training can help.
+
+- player personalities, have to mesh a correct balance
+
+dk) champion stats per player
+
+dj) player mood
+
+dl) players too good after a few years, all 100?
+
+dm) more info on each stat
+
+dn) less mad
+
+do) Bug: players play in wrong position, still pick that position's champs
+
+dp) Allow Worlds roster to work for other leagues, just pull those teams
+
+dq) Bug: Flag only shows region, not switching to country?
+
+dr) Player help with revenue due to streaming while not playing
+
+ds) Combine regular and playoff stats for dashboard roster pages. Maybe do a toggle?
+
+or do a dropdown option: all games
+
+dt) Champion win rates
+
+dw) swap out player nicknames with champion names
+
+dx) downloadable version:
+
+https://www.reddit.com/r/leagueoflegends/comments/5llg31/i_made_a_free_singleplayer_league_of_legends/dc3kdjj/?context=3&st=ixnixv5v&sh=e0160770
+
+dy) Notification about watch List players, if they become free agents for instance.
+
+dz) 10 bans, initial then 4 after each team has had two picks
+
+ea) pages for each champion, pages for each player and champion
+
+eb) more achievements:
+
+https://www.reddit.com/r/leagueoflegends/comments/5llg31/i_made_a_free_singleplayer_league_of_legends/dc5hne0/?context=3&st=ixoweiwb&sh=6caf6b86
+
+ec) fuzz lowers over time
+
+ed) coaches eveluate players
+
+
+On a slightly related note, because I'm thinking of other management games where the coach has a stat for how well he/she can judge a players ability and potential, do you see yourself working on implementing coaches in the game? I can imagine it would take a long time and a considerable amount of work, but I'm curious what you think of doing that. It would be a cool dynamic to add to the game and help managers shape their team philosophies/styles.
+
+ef) new owner messages:
+
+https://www.reddit.com/message/messages/7aa41l
+
+eg) http://www.esportsearnings.com/games/164-league-of-legends/countries
+
+use to calculate how many players, but also use earnings to calc how good those players are.
+
+eh) bug for complex picks/bans, mainly with Support, always go first, but picks wrong champion
+
+ei) YWT not consistent, throwing off region switching after 2 years (only with imported files? can't find with new leagues)
+
+ej) keeping player in region more, maybe make pay up out of region?
+
+ek) Loyalty trait. Also boost streaming revenue
+
+el) better portraits, real person, portrait moves?, show movie of player?
+
+em) jungle farm should only go to one player, not other players
+
+en) cash in trades
+
+eo) player salaries have millions in places
+
+ep) menu says weeks and not days (should be weeks)
+Once you finish the playoffs at the end of a season and are waiting for the games after you to be completed (if you didnt win the finals) it counts down from 100 weeks, declining one "week" for each game thats played when i think its supposed to say days?
+
+eq)
+Also the Dutch ones usually learn some German too since it's mandatory.
+
+er) More champion attributes.
+
+es) some good players for cheap, some really expensive
+
+et) overall different in different pages for older players?
+
+ew) ******** upload of champions list allows for adding of new champs, maybe in game sim account for this?
+- then let people upload champion files of different lengths
+
+ex)
+
+ey)
+
+ez)
+
+Bug
+---
+
+- improve performance delete new stuff as well.
+
+- ladder HOF should only include LCS stats
+a) LCS stats seperate (each league stats seperate)
+b) new variable that tracks HOF poitns each year
+c) only save LCS stats
+
+
+- Free agency page has wrong Overall and Potential, but click on player is 20, 20
+
+- remove account login links
+
+Bugs crashing
+- random, LCS EU w/ Ladder firefox (CHECKED, SEEMED OK)
+
+- trading bloc freezing
+
+Bug
+- I have found out a little bug. After finishing playoffs, a couple of my players have retired. When i try to continue, i receive this message: "Your team has less than the minimum number of players (6). You must add players (through free agency or trades) before continuing." I'm stuck there, since I'm not allowed to sign free agents or make trades at that moment of the season.
+- happens before free agency?
+
+Stats
+------
+
+- Damage Dealt/ (Taken less important)
+- Damage Dealt per minutes
+- net CS per minute (first 10 and whole game) ** could do now
+- wards per minutes
+
+CSGO
+----
+ 
+-  what the major is about in the pro scene:  https://www.youtube.com/watch?v=J52upZra2H0
+
+Player willing to sign with team that need them more
+-------------------------------------------------
+
+Ratings
+- age impacts some more than others
+- POT helps OVR improve too much?
+
+Country only teams
+------------------
+- free agency, give bonus to players from same region/country/language. Willing to pay more for them.
+
+Computer only picks ploayers from those countries
+-------------------
+- allow teams to be country based and not just region based
+
+Different kinds of player demands
+---------------------------------
+- https://www.reddit.com/r/zengmlol/comments/5qa67v/ideadifferent_kinds_of_contract/?st=iyj34ybo&sh=f5692fba
+
+Bug
+----
+
+- two rows for same year:
+
+https://www.reddit.com/r/zengmlol/comments/5qdsl4/bug_free_agency_overalls_not_accurate_if_the/?st=iyjesast&sh=8a336976
+
+************ PUT In
+
+Retire rate higher
+OVR decline lower
+make ratings change based on type of rating
+easier to recruit players from same region/country/language as team (DONE - cheaper and teams will look to only resign from country at first)
+
+Mental Adaptability: Increase > Prime Age > Decline (how it works now)
+Fortitude: Increase > Prime Age > Slight Decline 
+Consistency: Increase > Prime Age > Static/ Slight Increase
+ Team Player: Increase > Prime Age > Static/ Slight Increase 
+ Leadership: Increase > Prime Age > Static/ Slight Increase
+ 
+Tactical Awareness: Increase > Prime Age > Slight Decline
+ Laning: Increase > Prime Age > Static/ Slight Increase
+ Team Fighting: Increase > Prime Age > Static/ Slight Increase
+ Risk Taking: Static with slight fluctuations.
+Game Positioning: Increase > Prime Age > Decline (how it works now) 
+Skill Shots: Increase > Prime Age > Decline (how it works now) 
+Last Hitting: Increase > Prime Age > Decline (how it works now) 
+Summoner Spells: Increase > Prime Age > Decline (how it works now)
+Physical Stamina: Static to slight/moderate decrease
+Injury Resistant: Increase > Prime Age > Decline (how it works now)
+maybe we should ask others cause there's much room for interpretation.
+
+* Champ Lists - completely redo existing champs
+
+Improve Performance:
+https://www.reddit.com/r/zengmlol/comments/5ocf7r/problem_after_improve_performance/?st=iyqm85w2&sh=8afcb85e
+
+**** Korean should have a higher rating (rated higher, plus salary makes for very expensive)
+
+
+A1) I think it's more than around year 10 that frustrates me/diminishes the game the most. It's like I'm the only one putting out 85+ players. I might see like 2-5 everywhere when I have 5 on my team. All leagues work like copy cats. If other teams notice I'm putting $$$ into infrastructure they would be too cause they know that's what I'm doing consistently over them if they want to win. I see a few teams with a comparable profit pool. they just never invest it which is weird. You can even see in LOL right now people are heavily investing in that.
+B2) It's more about the player with OVR higher. I don't have examples in front of me. But when I see an 80 ovr/pot mid laner that's 20-21 asking for 150 and then a 20 ovr/88 pot rookie asking for 135. there's no way the rookie should ask for roughly the same sal. for such a small future upside and low present value. Even now most high potential rookies go to Challenger first for 1-3 splits. There are a few exceptions, but the game treats the exceptions as the norm. This becomes even weirder in ladder too. when there's the threat of promotion/demotion where sometimes you need results now.
+B3) I think this is wrong. It works that way for the Top end of the LCS. "Legacy" Teams like C9, TSM, etc who only have the smallest of %ages to be kicked (even tho there are players that just leave after a split or 2 Santorin/amazing come to mind even tho they had lots of potential). where they know they won't be relegated. But teams and players that take offers from mid/low-end teams want 1-year deals due to instability in income/a spot for the teams and relegation for players. I feel like the default should be 2 and then sway depending on conditions. League rosters are very volatile like every year there's always 2-4 teams that rework their entire roster per region.
+B5) I think that's fine if the player attitude is green towards you, but if they are red but willing to negotiate I don't think they should instantly accept or ask for a retarded amount. Also negotiation with a player that REALLY wants to join, like a dark green, when negotiation. price should be able to go down. If you're a top tier team you can get players for less money that aren't in the top 3% of players, even then there is an example of this for top tier players in the NBA taking less money for a super team.
+
+Finances: adjust based on hype, no static
+
+MMR: make it more in line with OVR? make sure it moves right
+
+Bugs:
+-When I upload any custom game file the free agency pool is always NAN on the first year. The game won't go forward if I sign any FA even if I negotiate them to an actual salary.
+
+-Fix double ratings year
+
+------------------
+
+Promotion updated
+
+backwards:
+https://www.reddit.com/r/zengmlol/comments/5so33s/lcs_promotion_backwards/?st=iyxr8xku&sh=58d4963d (FIXED)
+
+Canada doesnt't have flag? (FIXED)
+
+EU with two different flags. (FIXED)
+
+----------------------
+
+uncapped streaming
+- worlds should be much higher
+- 
+
+Stats
+---------
+
+- damaged delt 
+- damaged taken
+
+Other awards
+-----------
+
+- conference MVP
+- conference champion
+
+-------------------
+
+Bugs
+----
+
+AI teams have an edge recruiting?
+
+-------------------
+
+Worlds w/ Ladder
+
+- Let user picks which regions have ladders? Could be one or all
+
+Ladder Version
+------------------
+
+- too easy, just spend as much as you can on facilities, etc
+- in two season in LCS and won't get fired
+
+
+----------------------------
+
+** Update the guides for all the games
+** Add forum link for all the games
+
+** Allow for champion changes with existing leagues
+
+2913544121
+
+Double ratings for same year
+-------------------------
+
+- look to fix (signed in preseason?)
+- only when 17?
+
+Bugs
+--------
+
+- flags dont' all work for NA?
+- check recent worlds file
+
+
+
+Changing LCS/CS criteria
+-----------------------
+
+
+
+Sister Teams
+------------
+
+- Controlling two team, Sister teams
+- multiteam mode
+- expanded roster size
+
+Hype by OVR
+-----------
+
+- having starting roster generate hype, not just wins
+
+All Start Events
+----------------
+
+ - Team Fire vs Team Ice with all starts from all regions
+ - Wild Card region all stars
+ 
+Keep User Adjusted Schedule
+--------------------------
+
+- automatically gets cleared?
+
+More name files
+---------------
+
+- Finnish Players
+
+Bugs
+----
+ - Roster player ratings dont take last row, player page works, can test using edit player feature
+
+Transfer between teams with money
+---------------------------------
+
+- When to add?
+- Need to add?
+
+Switzerland
+-----------
+
+Edit player needs swiss (DONE)
+
+Future Ideas
+------------
+
+- Expenses:
+https://www.reddit.com/r/zengmlol/comments/5fqk16/idea_new_methods_for_expense_settings/?st=iw5papuq&sh=93ef2f98
+
+Player stats filtering better
+-----------------------------
+
+- players with only 3 games are showing up
+
+
+Groups
+------
+
+Show wins and losses
+
+LCS more teams
+-------------
+
+- issue with addings teams to LCS, user gave file (Fixed!)
+
+Edit OVR bug
+------------
+only happens later in LCS w/ Ladder?
+
+Infiinite Playoffs
+------------------
+
+LCS w/ Ladder (FXIED)
+
+
+Getting Fired
+-------------
+
+Doesn't work? (switch teams works, not sure about this, need to do poorly and lose a lot of money)
+- finally figure out javascript console entering information and ensure I get fired first year  (FIXED!)
+
+Edit Player
+-----------
+
+- Age doesn't change/update (FIXED!)
+
+Italy
+-----
+
+- add using old list (DONE)
+
+Trading BLock
+-----
+
+- LCK,             (may be some team not having enough players, ones available are all new)
+- 4 weeks issue?
+
+Bugs
+----
+
+- popup show 1-0, just get rid of it (FIXED)
+
+- trading block broken
+
+Expanded Wild Card with tournaments
+----------------------------------
+
+	Have each wild card region with a tournament
+
+Awards
+-------
+
+	- By league. And whole LOL?
+
+Playoff formats (God Mode)
+---------------
+
+	- allow user to pick each league formats?
+	
+
+Region
+------
+
+	- keep track of region from year to year
+	- keep track of languages
+
+Country Flags:
+-------------
+
+	- make sure all are using logo and not link
+	
+Awards
+------
+
+	Each position gets one slot on first team.
+	
+Schedule
+------
+
+	Make World leagues play similar number of games
+
+Free Agency/Signing
+-------------------
+
+	Keep track of positions, like skill
+	If a team has none of something that position more willing to sign
+	Team also willing to pay more
+
+STATS
+-----
+
+Leagueofgraphs.com
+  has team stats
+  has player stats
+  ensure game is close to these
+  bad teams need more assists?
+  custom roster mode is actually close to reality
+
+REVIEW
+------
+
+Player Ratings
+  Make more balanced, so good players don't have all traits
+  
+Banning/Picking
+  User picks do support first?
+  
+Wild Card Awards
+  Bigger Gap in KDA needed?
+  
+  
+New Feature
+-----------
+
+Team Country
+  Based on player composition team country image changes
+	need list of country images
+	need to be able to palce image in standings
+	limit to EU at first?
+	
+Enhanced God Mode
+	Allow players to not retire, just like a watch list?
+	
+Watch all games for a day/week
+
+Worlds
+----------
+
+/u/gingersmashyou seedings
+		- top two teams make worlds
+		- next best team is determined by regionals
+  
+
+Bugs
+---------
+  
+Owner Messages
+	- still negative after doing well?
+
+Achievements
+	- Wood doesn't work
+	- Ladder Climber 2 doesn't register ladder correctly (are these two switched)
+	
+Refusing
+	- refuses, but still wants to sign in free agency right away
+	
+Attendence
+	- too low for Worlds, streaming is more like viewers than attendence. So for playoffs could be much higher.
+	
+Balance
+---------
+
+	Worlds ratings too high, salaries too high?
+	
+	Korea should have better players?, make this vary by country?
+	
+Estimated Revenue
+---------
+		
+	Along with payroll?

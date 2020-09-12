@@ -1,0 +1,48 @@
+<h1>Edit Team Info</h1>
+
+<p>You can manually edit the teams below or you can upload a teams file to specify all of the team info at once.</p>
+
+<h2>Upload Teams File</h2>
+
+<p>The JSON file format is described in <a href="http://basketball-gm.com/manual/customization/teams/">the manual</a>. As examples, you can download <a href="http://zengm.com/files/LCS.json">LCS </a>,  <a href="http://zengm.com/files/LCSLadder.json" >LCS w/ Ladder </a>,  <a href="http://zengm.com/files/LCK.json">LCK </a>,  <a href="http://zengm.com/files/LPL.json" >LPL </a>,  <a href="http://zengm.com/files/LMS.json">LMS </a>, and  <a href="http://zengm.com/files/Worlds.json">Worlds </a> team files.</p>
+
+<p class="text-danger">Warning: selecting a valid team file will instantly apply the new team info to your league.</p>
+
+<p><input type="file" id="custom-teams"></p>
+
+<h2>Manual Editing</h2>
+
+<div class="row" style="margin-top: -9px">
+  <div class="col-xs-3">
+    <h3>Abbrev</h3>
+  </div>
+  <div class="col-xs-3">
+    <h3>Organization </h3>
+  </div>
+  <div class="col-xs-3">
+    <h3>Short Name</h3>
+  </div>
+  <div class="col-xs-3">
+    <h3>Starting Hype</h3>
+  </div>
+</div>
+
+<form method="POST" data-bind="attrLeagueUrl: {action: ['edit_team_info']}">
+  <div class="row" data-bind="foreach: teams">
+    <div class="col-xs-3 form-group">
+      <input type="text" class="form-control" name="abbrev[]" data-bind="attr: {value: abbrev}">
+    </div>
+    <div class="col-xs-3 form-group">
+      <input type="text" class="form-control" name="region[]" data-bind="attr: {value: region}">
+    </div>
+    <div class="col-xs-3 form-group">
+      <input type="text" class="form-control" name="name[]" data-bind="attr: {value: name}">
+    </div>
+    <div class="col-xs-3 form-group">
+      <input type="text" class="form-control" name="pop[]" data-bind="attr: {value: pop}">
+    </div>
+  </div>
+  <center>
+    <button type="submit" class="btn btn-primary" id="edit-team-info">Update Team Info</button>
+  </center>
+</form>

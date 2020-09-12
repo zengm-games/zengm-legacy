@@ -1,0 +1,7 @@
+*~
+*.pyc
+*.sublime-project
+*.sublime-workspace
+test_case.html
+data/nba*
+player.filter.txt

@@ -1,0 +1,7 @@
+improve team history display
+- show peak ovr, peak pot, etc.
+
+
+2nd free agency seasons
+team.js 332 pos can not read pos of undefined
+

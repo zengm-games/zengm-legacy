@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ears" transform="translate(0.000000, -64.000000)">
+            <g id="1" transform="translate(0.000000, 64.000000)">
+                <g>
+                    <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                    <path d="M215,194 C194,197 175,194 153,194 C131,194 109.204811,179.832558 109.206594,179.834236 C95.2901908,168.555552 94.2415122,172.323138 94.24125,186.180512 C94.2409877,196.32946 101.378191,216.326547 104.582627,222.612115 C106.718401,226.801611 105.735281,232.836089 112.073244,233.07155 C114.463334,233.16029 116.006772,231.379818 116.006772,231.379818 L243.171653,231.379818 C243.171653,231.379818 244.71509,233.16029 247.105181,233.07155 C253.443117,232.836089 252.722233,226.801585 254.858034,222.612115 C258.062469,216.326547 264.675202,196.329434 264.67494,186.180512 C264.674704,172.323164 236,191 215,194 Z" id="body_color_path" fill="#E8AC83" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

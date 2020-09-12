@@ -1,0 +1,601 @@
+<div data-bind="dropdown: 'playoffs'"></div>
+
+<h1>Playoffs <span data-bind="newWindow: []"></span></h1>
+
+<p data-bind="visible: !finalMatchups()">This is what the playoff matchups would be if the season ended right now.</p>
+
+
+<h3 class="hidden-xs" data-bind="visible: LCSConference()">LCS Championship Tournament <span class="pull-right"></span></h3>
+<h3 class="hidden-xs" data-bind="visible: WorldsPlayoff()">NA LCS Championship Tournament <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td data-bind="visible: LCSConference()"> Quarterfinals </td>
+	  <td data-bind="visible: LCSConference()"> Semifinals </td>	  
+	  <td data-bind="visible: LCSConference()"> Finals</td>	  
+	  <td data-bind="visible: LCSConference()"> 3rd Place Game </td>	  
+	  <td data-bind="visible: WorldsPlayoff()"> Quarterfinals </td>
+	  <td data-bind="visible: WorldsPlayoff()"> Semifinals </td>	  
+	  <td data-bind="visible: WorldsPlayoff()"> Finals / 3rd Place Game </td>	  
+	  </tr>
+	  <tr>
+	  
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [1, 0]"></td>
+        <td rowspan="4" width="0%" data-bind="matchup: [2, 0]"></td>
+	  
+	  </tr>
+      <tr>
+        <td data-bind="matchup: [0, 0]"></td> 
+      </tr>
+	  
+      <tr>
+        <td data-bind="matchup: [0, 1]"></td>  
+      </tr>
+	  
+	  <tr>
+	  
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [1, 1]"></td>
+
+	  
+	  </tr>	  
+
+	  <tr>
+	  
+        <td  width="14.28%"></td> 
+        <td  rowspan="2" width="14.28%"></td>
+        <td  rowspan="4" width="0%"  data-bind="matchup: [2, 1]"></td>
+	  
+	  </tr>	  
+	  
+    </tbody>
+  </table>
+</div>
+
+
+
+<h3 class="hidden-xs" data-bind="visible: WorldsPlayoff()">EU LCS Championship Tournament <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td data-bind="visible: WorldsPlayoff()"> Quarterfinals </td>
+	  <td data-bind="visible: WorldsPlayoff()"> Semifinals </td>	  
+	  <td data-bind="visible: WorldsPlayoff()"> Finals / 3rd Place Game </td>	  
+	  </tr>
+	  <tr>
+	  
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [1, 10]"></td>
+        <td rowspan="4" width="0%" data-bind="matchup: [2, 9]"></td>
+	  
+	  </tr>
+      <tr>
+        <td data-bind="matchup: [0, 12]"></td> 
+      </tr>
+	  
+      <tr>
+        <td data-bind="matchup: [0, 13]"></td>  
+      </tr>
+	  
+	  <tr>
+	  
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [1, 11]"></td>
+
+	  
+	  </tr>	  
+
+	  <tr>
+	  
+        <td  width="14.28%"></td> 
+        <td  rowspan="2" width="14.28%"></td>
+        <td  rowspan="4" width="0%"  data-bind="matchup: [2, 10]"></td>
+	  
+	  </tr>	  
+	  
+    </tbody>
+  </table>
+</div>
+
+
+
+<h3 class="hidden-xs" data-bind="visible: LCKConference()" >LCK Championship Playoffs <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td data-bind="visible: LCKConference()" > Wild Card </td>	  
+	  <td data-bind="visible: LCKConference()" > Quarterfinals </td>
+	  <td data-bind="visible: LCKConference()" > Semifinals </td>	  
+	  <td data-bind="visible: LCKConference()" > Finals </td>	  
+	  </tr>
+	  <tr>
+	  
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [1, 7]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchuptopseed: [2, 6]"></td>
+        <td rowspan="6" width="0%" data-bind="matchuptopseed: [3, 1]"></td> 
+	  
+	  </tr>
+      <tr>
+        <td data-bind="matchup: [0, 9]"></td>  
+      </tr>
+
+	  
+    </tbody>
+  </table>
+</div>
+
+
+<h3 class="hidden-xs" data-bind="visible: LPLConference()" >LPL Championship Playoffs <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td data-bind="visible: LPLConference()" > Gauntlet </td>	  
+	  </tr>	
+	  <tr> 
+	  <td data-bind="visible: LPLConference()" > Round 1 </td>	  
+	  <td data-bind="visible: LPLConference()" > Round 2 </td>
+	  <td data-bind="visible: LPLConference()" > Seeding Match </td>	  
+	  <td data-bind="visible: LPLConference()" > Quarterfinals </td>	  
+	  </tr>
+	  <tr>
+	  
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [1, 8]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [2, 7]"></td>
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [3, 2]"></td> 
+	  
+	  </tr>
+      <tr>
+        <td data-bind="matchup: [0, 10]"></td>  
+  
+      </tr>
+      <tr>
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" ></td>
+        <td rowspan="2" width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [3, 3]"></td>
+      </tr>	  
+		<tr>
+		
+		</tr>	  
+		<tr>
+	  <td data-bind="visible: LPLConference()" > Final Stage </td>	  
+		
+		</tr>	  
+      <tr>
+		  <td data-bind="visible: LPLConference()" > Semifinals </td>	  
+		  <td data-bind="visible: LPLConference()" > Finals / 3rd Place Match </td>
+      </tr>
+      <tr>
+        <td  width="14.28%" data-bind="matchuptopseed: [4, 0]"></td>  
+        <td rowspan="2"  data-bind="matchup: [5, 0]"></td>  
+      </tr>
+      <tr>
+        <td  width="14.28%" data-bind="matchuptopseed: [4, 1]"></td>  
+        <td rowspan="2"  data-bind="matchup: [5, 1]"></td>  
+      </tr>
+
+	  
+    </tbody>
+  </table>
+</div>
+
+
+<h3 class="hidden-xs" data-bind="visible: LMSConference()" >LMS Championship Playoffs <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td data-bind="visible: LMSConference()" > Quarterfinals </td>
+	  <td data-bind="visible: LMSConference()" > Semifinals </td>	  
+	  <td data-bind="visible: LMSConference()" > Finals </td>	  
+	  </tr>
+	  <tr>
+	  
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" data-bind="matchuptopseed: [1, 9]"></td>
+        <td rowspan="4" width="14.28%" data-bind="matchuptopseed: [2, 8]"></td>
+	  
+	  </tr>
+      <tr>
+        <td data-bind="matchup: [0, 11]"></td>  
+      </tr>
+
+	  
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+<h3 class="hidden-xs" data-bind="visible: LCSExtended()" >LCS Promotion Games<span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td data-bind="visible: LCSExtended()"  > Qualifiers </td>
+	  </tr>
+	  <tr> 
+	  <td width="14.28%" data-bind="visible: LCSExtended()"  > First Round </td>
+	  <td data-bind="visible: LCSExtended()" > Finals / 3rd Place Match </td>
+	  </tr>
+
+      <tr>
+        <td data-bind="matchup: [0, 2]"></td> 
+        <td rowspan="2" data-bind="matchup: [1, 2]"></td> 
+      </tr>
+      <tr>
+        <td data-bind="matchup: [0, 3]"></td>  
+      </tr>
+      <tr>
+        <td ></td>  
+        <td  data-bind="matchup: [1, 3]"></td> 
+      </tr>
+	  
+	  <tr> 
+	  <td  data-bind="visible: LCSExtended()" > Promotion Games </td>	  
+	  </tr>
+
+      <tr   >
+      <td  data-bind="matchuptopseed: [2, 2]"></td>  
+
+      </tr>
+      <tr  >
+        <td   data-bind="matchuptopseed: [2, 3]"></td>  
+		
+      </tr>
+	  
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<h3 class="hidden-xs" data-bind="visible: LCSExtended()" >CS Promotion Games - Bracket A<span class="pull-right"></span></h4>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td data-bind="visible: LCSExtended()"  > Round 1 </td>
+	  <td data-bind="visible: LCSExtended()"  > Round 2 </td>	  
+	  <td data-bind="visible: LCSExtended()"  > Finals </td>	  
+	  </tr>
+
+	  
+	  <tr>
+
+	  
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%" ></td>
+        <td rowspan="2" width="0.00%"   data-bind="matchuptopseed: [2, 4]"></td>
+	  
+      </tr>
+      <tr>
+        <td width="14.28%"   data-bind="matchup: [0, 4]"></td> 
+      </tr>
+      <tr>
+        <td ></td> 
+        <td   data-bind="matchup: [1, 4]"></td> 
+      </tr>
+      <tr>
+        <td  width="14.28%"   data-bind="matchup: [0, 5]"></td>  
+      </tr>
+
+
+	  
+    </tbody>
+  </table>
+</div>
+
+
+<h3 class="hidden-xs" data-bind="visible: LCSExtended()">CS Promotion Games - Bracket B<span class="pull-right"></span></h4>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td data-bind="visible: LCSExtended()"> Round 1 </td>
+	  <td data-bind="visible: LCSExtended()"> Round 2 </td>	  
+	  <td data-bind="visible: LCSExtended()"> Finals </td>	  
+
+	  </tr>
+
+	  <tr>
+        <td width="14.28%" ></td> 
+        <td rowspan="2" width="14.28%"  data-bind="matchuptopseed: [1, 5]"></td>
+        <td rowspan="4" width="0%"   data-bind="matchup: [2, 5]"></td>
+	  </tr>
+      <tr>
+        <td  data-bind="matchup: [0, 6]"></td>  
+      </tr>
+      <tr>
+        <td   data-bind="matchup: [0, 7]"></td>  
+        <td rowspan="2" width="14.28%"  data-bind="matchup: [1, 6]"></td>
+      </tr>	  
+      <tr>
+        <td  data-bind="matchup: [0, 8]"></td>  
+      </tr>	  
+
+	  
+    </tbody>
+  </table>
+</div>
+
+<h3 class="hidden-xs" data-bind="visible: LCSExtended()">CS Promotion Games - Third Place Match<span class="pull-right"></span></h4>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+	  <td>  </td>
+
+	  </tr>
+	  
+      <tr>
+        <td data-bind="matchup: [3, 0]"></td>  
+      </tr>
+
+	  
+    </tbody>
+  </table>
+</div> 
+
+<h3 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >Worlds - Regional Finals <span class="pull-right"></span></h3>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >NA - Regional Finals <span class="pull-right"></span></h4>
+<!--	  <td data-bind="visible: WorldsPlayoff()"> NA - Regional Finals </td>	  -->
+	  </tr>
+	  <tr> 
+	  <td width="14.28%" data-bind="visible: WorldsPlayoff()"> Semifinals </td>	  
+	  <td  data-bind="visible: WorldsPlayoff()"> Finals  </td>	  
+	  </tr>
+     <tr>
+        <td data-bind="matchup: [6, 0]"></td> 
+        <td rowspan="2" data-bind="matchup: [7, 0]"></td> 
+      </tr>
+	  
+      <tr>
+        <td data-bind="matchup: [6, 1]"></td>  
+      </tr>
+   </tbody>
+  </table>
+</div>
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+
+		<tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >EU - Regional Finals <span class="pull-right"></span></h4>
+	  </tr>
+	  <tr> 
+	  <td width="14.28%" data-bind="visible: WorldsPlayoff()"> Semifinals </td>	  
+	  <td data-bind="visible: WorldsPlayoff()"> Finals  </td>	  
+	  </tr>
+     <tr>
+        <td data-bind="matchup: [6, 2]"></td> 
+        <td rowspan="2" data-bind="matchup: [7, 1]"></td> 
+      </tr>
+	  
+      <tr>
+        <td data-bind="matchup: [6, 3]"></td>  
+      </tr>
+   </tbody>
+  </table>
+</div>
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+		<tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >LCK - Regional Finals <span class="pull-right"></span></h4>
+	  </tr>
+	  <tr> 
+	  <td width="14.28%" data-bind="visible: WorldsPlayoff()"> Semifinals </td>	  
+	  <td  data-bind="visible: WorldsPlayoff()"> Finals  </td>	  
+	  </tr>
+     <tr>
+        <td data-bind="matchup: [6, 4]"></td> 
+        <td rowspan="2" data-bind="matchup: [7, 2]"></td> 
+		
+      </tr>
+	  
+      <tr>
+        <td data-bind="matchupStore: [6, 5]"></td>  
+      </tr>
+   </tbody>
+  </table>
+</div>
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+		<tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >LPL - Regional Finals <span class="pull-right"></span></h4>
+	  </tr>
+	  <tr> 
+	  <td width="14.28%" data-bind="visible: WorldsPlayoff()"> Semifinals </td>	  
+	  <td data-bind="visible: WorldsPlayoff()"> Finals  </td>	  
+	  </tr>
+     <tr>
+        <td data-bind="matchup: [6, 6]"></td> 
+        <td rowspan="2" data-bind="matchup: [7, 3]"></td> 
+		
+      </tr>
+	  
+      <tr>
+        <td data-bind="matchup: [6, 7]"></td>  
+      </tr>
+   </tbody>
+  </table>
+</div>
+<!--<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+		<tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >LMS - Regional Finals <span class="pull-right"></span></h4>
+	  </tr>
+	  <tr> 
+	  <td width="14.28%" data-bind="visible: WorldsPlayoff()"> Semifinals </td>	  
+	  <td data-bind="visible: WorldsPlayoff()"> Finals  </td>	  
+	  </tr>
+     <tr>
+        <td data-bind="matchupStore: [6, 8]"></td> 
+        <td rowspan="2" data-bind="matchup: [7, 4]"></td> 
+      </tr>
+	  
+      <tr>
+        <td data-bind="matchupStore: [6, 9]"></td>  
+      </tr>
+   </tbody>
+  </table>
+</div>-->
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+		<tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >WC - Regional Finals <span class="pull-right"></span></h4>
+	  </tr>
+	  <tr> 
+	  <td width="14.28%" data-bind="visible: WorldsPlayoff()"> Semifinals </td>	  
+	  <td data-bind="visible: WorldsPlayoff()"> Finals  </td>	  
+	  </tr>
+     <tr>
+        <td data-bind="matchup: [0, 14]"></td> 
+        <td rowspan="2" data-bind="matchup: [1, 12]"></td> 
+      </tr>
+	  
+      <tr>
+        <td data-bind="matchup: [0, 15]"></td>  
+      </tr>	  
+	  	  
+    </tbody>
+  </table>
+</div>
+
+
+<h3 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >Worlds - Groups <span class="pull-right"></span></h3>
+
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >Group A <span class="pull-right"></span></h4>
+<!--	  <td data-bind="visible: WorldsPlayoff()"> NA - Regional Finals </td>	  -->
+</tr>	  
+      <tr>
+<!--            <td data-bind="matchupGroup: [8, 0]"></td>  -->
+            <td width="14.28%" data-bind="matchupNoBold: [8, 0]"></td>  
+            <td data-bind="matchupNoBold: [8, 1]"></td>  
+      </tr>	  
+      <tr>
+      </tr>	  
+
+    </tbody>
+  </table>
+</div>
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >Group B <span class="pull-right"></span></h4>
+<!--	  <td data-bind="visible: WorldsPlayoff()"> NA - Regional Finals </td>	  -->
+</tr>	  
+      <tr>
+<!--             <td data-bind="matchupGroup: [8, 1]"></td>  -->
+            <td  width="14.28%" data-bind="matchupNoBold: [8, 2]"></td>  
+            <td data-bind="matchupNoBold: [8, 3]"></td>  
+      </tr>	  
+      <tr>
+      </tr>	  
+
+    </tbody>
+  </table>
+</div>
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >Group C <span class="pull-right"></span></h4>
+<!--	  <td data-bind="visible: WorldsPlayoff()"> NA - Regional Finals </td>	  -->
+</tr>	  
+      <tr>
+<!--              <td data-bind="matchupGroup: [8, 2]"></td>  -->
+            <td width="14.28%" data-bind="matchupNoBold: [8, 4]"></td>  
+            <td data-bind="matchupNoBold: [8, 5]"></td>  
+      </tr>	  
+      <tr>
+			
+      </tr>	  
+
+    </tbody>
+  </table>
+</div>
+
+
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <tr> 
+<h4 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >Group D <span class="pull-right"></span></h4>
+<!--	  <td data-bind="visible: WorldsPlayoff()"> NA - Regional Finals </td>	  -->
+</tr>	  
+      <tr>
+<!--        <td data-bind="matchupGroup: [8, 3]"></td>   -->
+            <td width="14.28%" data-bind="matchupNoBold: [8, 6]"></td>  
+            <td data-bind="matchupNoBold: [8, 7]"></td>  
+      </tr>	  
+      <tr>
+			
+      </tr>	  
+
+    </tbody>
+  </table>
+</div>
+
+<h3 class="hidden-xs" data-bind="visible: WorldsPlayoff()" >Worlds - Playoffs <span class="pull-right"></span></h3>
+<div class="table-responsive">
+  <table class="table-condensed" width="100%">
+    <tbody>
+	  <td width="14.28%" data-bind="visible: WorldsPlayoff()"> Quarterfinals </td>	  	  
+	  <td width="14.28%" data-bind="visible: WorldsPlayoff()"> Semifinals </td>	  
+	  <td width="14.28%" data-bind="visible: WorldsPlayoff()"> Finals  </td>	  
+
+      <tr>
+        <td width="14.28%" data-bind="matchupNothing: [9, 0]"></td>  
+        <td width="14.28%" rowspan="2" data-bind="matchupNothing: [10, 0]"></td>  
+        <td rowspan="4" data-bind="matchupNothing: [11, 0]"></td>  
+      </tr>	  
+      <tr>
+        <td data-bind="matchupNothing: [9, 1]"></td>  
+      </tr>	  
+      <tr>
+        <td width="14.28%" data-bind="matchupNothing: [9, 2]"></td>  
+        <td rowspan="2" data-bind="matchupNothing: [10, 1]"></td>  
+      </tr>	  
+      <tr>
+        <td data-bind="matchupNothing: [9, 3]"></td>  
+      </tr>	  
+	  
+    </tbody>
+  </table>
+</div>

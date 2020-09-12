@@ -1,0 +1,50 @@
+<h1>Edit Basic Champion Info</h1>
+
+<p>You can manually edit some aspects of champion info below or you can upload a champion file to specify all of the champion info at once.</p>
+
+<h2>Upload Champion File</h2>
+
+<p>The JSON file format is described in <a href="http://basketball-gm.com/manual/customization/teams/">the manual</a>. You can also  <a href="http://zengm.com/files/championsSimple.json">download </a> the current champion file to make changes for uploading. You can have as few or many champions as you would like.</p>
+
+<p>If you are adding new champions give it a few seconds for the champions to update. Every player is getting a new player champion skill rating. </p>
+
+<p class="text-danger">Warning: selecting a valid champion file will instantly apply the new champion info to your league.</p>
+
+<p><input type="file" id="custom-champions"></p>
+
+<h2>Manual Editing</h2>
+
+<div class="row" style="margin-top: -9px">
+  <div class="col-xs-3">
+    <h3>Name</h3>
+  </div>
+  <div class="col-xs-3">
+    <h3>Attack </h3>
+  </div>
+  <div class="col-xs-3">
+    <h3>Defense</h3>
+  </div>
+  <div class="col-xs-3">
+    <h3>Ability</h3>
+  </div>
+</div>
+
+<form method="POST" data-bind="attrLeagueUrl: {action: ['edit_champion_info']}">
+  <div class="row" data-bind="foreach: champions">
+    <div class="col-xs-3 form-group">
+      <input type="text" class="form-control" name="name[]" data-bind="attr: {value: name}">
+    </div>
+    <div class="col-xs-3 form-group">
+      <input type="text" class="form-control" name="attack[]" data-bind="attr: {value: ratings.attack}">
+    </div>
+    <div class="col-xs-3 form-group">
+      <input type="text" class="form-control" name="defense[]" data-bind="attr: {value: ratings.defense}">
+    </div>
+    <div class="col-xs-3 form-group">
+      <input type="text" class="form-control" name="ability[]" data-bind="attr: {value: ratings.ability}">
+    </div>
+  </div>
+  <center>
+    <button type="submit" class="btn btn-primary" id="edit-champion-info">Update Champion Info</button>
+  </center>
+</form>

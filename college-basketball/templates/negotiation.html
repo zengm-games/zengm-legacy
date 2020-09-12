@@ -1,0 +1,100 @@
+<h1>Recruiting <span data-bind="newWindow: []"></span></h1>
+<!--
+<p data-bind="visible: negotiation.resigning">You are allowed to go over the salary cap to make this deal because you are re-signing <a data-bind="attrLeagueUrl: {href: ['player', player.pid]}, text: player.name"></a> to a contract extension. <strong>If you do not come to an agreement here, <a data-bind="attrLeagueUrl: {href: ['player', player.pid]}, text: player.name"></a> will become a free agent.</strong> He will then be able to sign with any team, and you won't be able to go over the salary cap to sign him.</p>
+<p data-bind="visible: !negotiation.resigning()">You are not allowed to go over the salary cap to make this deal because <a data-bind="attrLeagueUrl: {href: ['player', player.pid]}, text: player.name"></a> is a free agent.</p> -->
+
+<div class="row">
+  <div class="col-sm-6">
+    <h2><a data-bind="attrLeagueUrl: {href: ['player', player.pid]}, text: player.name"></a> <span data-bind="newWindow: ['player', player.pid]"></span></h2>
+    <p>
+      Mood: <span data-bind="html: player.mood"></span><br>
+      Age: <span data-bind="text: player.age"></span><br>
+      From: <span data-bind="text: player.city"></span>, <span data-bind="text: player.state"></span>  <br>
+	  Miles Away: <span data-bind="text: player.miles"> </span><br>
+      Overall: <span data-bind="text: player.ratings.ovr"></span>; Potential: <span data-bind="text: player.ratings.pot"></span>
+    </p>
+  <div class="row">
+      <div class="col-xs-4">
+        <strong>Physical</strong><br/ >
+        Height: <span data-bind="text: player.ratings.hgt"></span><br>
+        Strength: <span data-bind="text: player.ratings.stre"></span><br>
+        Speed: <span data-bind="text: player.ratings.spd"></span><br>
+        Jumping: <span data-bind="text: player.ratings.jmp"></span><br>
+        Endurance: <span data-bind="text: player.ratings.endu"></span>
+      </div>
+      <div class="col-xs-4">
+        <strong>Shooting</strong><br/ >
+        Inside: <span data-bind="text: player.ratings.ins"></span><br>
+        Dunks/Layups: <span data-bind="text: player.ratings.dnk"></span><br>
+        Free Throws: <span data-bind="text: player.ratings.ft"></span><br>
+        Two Pointers: <span data-bind="text: player.ratings.fg"></span><br>
+        Three Pointers: <span data-bind="text: player.ratings.tp"></span>
+      </div>
+      <div class="col-xs-4">
+        <strong>Skill</strong><br/ >
+        Blocks: <span data-bind="text: player.ratings.blk"></span><br>
+        Steals: <span data-bind="text: player.ratings.stl"></span><br>
+        Dribbling: <span data-bind="text: player.ratings.drb"></span><br>
+        Passing: <span data-bind="text: player.ratings.pss"></span><br>
+        Rebounding: <span data-bind="text: player.ratings.reb"></span>
+      </div>
+    </div>	
+  <!--  <h3>Player Proposal</h3>
+    <p><span data-bind="text: negotiation.player.years"></span> years (through <span data-bind="text: negotiation.player.expiration"></span>)</p>
+    <p>$<span data-bind="round: [negotiation.player.amount, 3]"></span>K needed to be spent recruiting</p>
+    <form data-bind="attrLeagueUrl: {action: ['negotiation', player.pid]}" class="form-horizontal" method="POST">
+      <input type="hidden" name="accept" value="1">
+      <button type="submit" class="btn btn-success" id="accept">Sign Player</button>
+    </form>
+
+    <p></p>
+
+    <form data-bind="attrLeagueUrl: {action: ['negotiation', player.pid]}" class="form-horizontal" method="POST">
+      <input type="hidden" name="cancel" value="1">
+      <button type="submit" class="btn btn-danger">Changed your mind? Hold off</button>
+    </form> -->
+  </div>
+
+  <div class="col-sm-6">
+    <h2 data-bind="text: team.region() + ' ' + team.name()"></h2>
+    <p>
+      Starting Cash: <span data-bind="currency: [cash, '']"></span><br> 
+      Used Cash: <span data-bind="currency: [payroll, '']"></span><br>
+      Cash Available: <span data-bind="currency: [cashAvailable, '']"></span><br>
+      Spots Available: <span data-bind="text: numRosterSpots"></span><br>
+<!--      Salary Cap: <span data-bind="currency: [salaryCap, '']"></span> -->
+   <!--   Max Cash: <span data-bind="currency: [cash, '']"></span> -->
+    </p>
+ <!--   <h3>Your Proposal</h3>
+    <form data-bind="attrLeagueUrl: {action: ['negotiation', player.pid]}" method="POST">
+      <div class="form-group input-group negotiation-team-years">
+        <input type="text" class="form-control" name="teamYears" data-bind="attr: {value: negotiation.team.years}">
+        <span class="input-group-addon">years</span>
+      </div>
+      <div class="form-group input-group negotiation-team-amount">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control" name="teamAmount" data-bind="attr: {value: negotiation.team.amount}">
+        <span class="input-group-addon">M per year</span>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Proposal</button>  
+    </form> -->		
+  <h3>Needed Recruiting Budget</h3>
+  <!--  <p><span data-bind="text: negotiation.player.years"></span> years (through <span data-bind="text: negotiation.player.expiration"></span>)</p> -->
+    <p><span data-bind="currency: [negotiation.player.amount, '']"></span> needed to be spent recruiting player</p>
+    <form data-bind="attrLeagueUrl: {action: ['negotiation', player.pid]}" class="form-horizontal" method="POST">
+      <input type="hidden" name="accept" value="1">
+      <button type="submit" class="btn btn-success" id="accept">Sign Player</button>
+    </form>
+
+    <p></p>
+
+    <form data-bind="attrLeagueUrl: {action: ['negotiation', player.pid]}" class="form-horizontal" method="POST">
+      <input type="hidden" name="cancel" value="1">
+      <button type="submit" class="btn btn-danger">Changed your mind? Hold off</button>
+    </form>
+  </div>
+   
+  
+ 
+</div>	  
+</div>

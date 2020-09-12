@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="329px" viewBox="0 0 359 329" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="eyes" transform="translate(0.000000, -1183.000000)">
+            <g id="3" transform="translate(0.000000, 1183.000000)">
+                <g id="1">
+                    <g transform="translate(128.000000, 181.000000)" id="Group" fill="#7F5035">
+                        <g transform="translate(0.000000, 1.000000)">
+                            <path d="M29.5092818,5.42585276 C23.1770182,2.52330741 17.3575909,2.60059231 10.7707364,3.71687613 C3.45223636,4.95732724 0.397118182,7.66147487 0.217336364,7.79938012 C0.608590909,7.8722183 18.5361273,3.22941297 32.8316727,7.6391418 C33.0275727,7.52094136 30.8047364,6.01979577 29.5092818,5.42585276 Z" id="Shape"></path>
+                            <path d="M99.5092818,5.42585276 C93.1770182,2.52330741 87.3575909,2.60059231 80.7707364,3.71687613 C73.4522364,4.95732724 70.3971182,7.66147487 70.2173364,7.79938012 C70.6085909,7.8722183 88.5361273,3.22941297 102.831673,7.6391418 C103.027573,7.52094136 100.804736,6.01979577 99.5092818,5.42585276 Z" id="Shape" transform="translate(86.530571, 5.400115) scale(-1, 1) translate(-86.530571, -5.400115) "></path>
+                        </g>
+                    </g>
+                    <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

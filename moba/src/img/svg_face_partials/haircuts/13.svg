@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="330px" viewBox="0 0 359 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="359" height="329"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="359" height="329" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="variations-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="haircuts" transform="translate(-20.000000, -6645.000000)">
+            <g id="13" transform="translate(20.000000, 6645.838611)">
+                <g>
+                    <polygon id="haircut_color_path" fill="#513A2A" fill-rule="nonzero" points="114.77454 204.580196 114.720228 135.714555 239.11954 159.808577 221.023357 128.301434 245.748429 142.289132 245.735036 204.580196 275.041821 155.556429 267.093408 131.374874 280.846272 147.301599 277.4188 76.3042285 211.245332 37.9192292 217.804433 18.0122334 134.400114 38.602298 125.190074 58.0104384 101.538143 56.043333 79.5116516 83.272464 77.1871927 148.365724 91.2917681 133.582166 82.6661916 155.556429"></polygon>
+                    <use id="Rectangle" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" opacity="0.01" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
