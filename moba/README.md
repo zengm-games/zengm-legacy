@@ -16,7 +16,7 @@ Watch during development (must run build first, since this only watches JS/CSS f
 
 Start development web server:
 
-`yarn run watch`
+`yarn run start`
 
 Watch and start at the same time:
 
