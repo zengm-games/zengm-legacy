@@ -5,7 +5,7 @@ import {PHASE, PLAYER, g, helpers} from '../../common';
 import actions from './actions';
 import {contractNegotiation, draft, finances, league, phase, player, team, trade} from '../core';
 import {connectMeta, idb} from '../db';
-import {account, beforeView, changes, checkNaNs, env, local, lock, random, updatePlayMenu, updateStatus} from '../util';
+import {account, beforeView, changes, checkNaNs, env, local, lock, random, toUI, updatePlayMenu, updateStatus} from '../util';
 import * as views from '../views';
 import type {Conditions, Env, GameAttributes, GetOutput, Local, LockName, Player, PlayerWithoutPid, UpdateEvents} from '../../common/types';
 
@@ -956,6 +956,7 @@ const handleUploadedDraftClass = async (uploadedFile: any, seasonOffset: 0 | 1 |
 };
 
 const init = async (inputEnv: Env, conditions: Conditions) => {
+	console.log('init!')
     Object.assign(env, inputEnv);
 
     // Kind of hacky, only run this for the first host tab
@@ -967,7 +968,9 @@ const init = async (inputEnv: Env, conditions: Conditions) => {
         // Account and changes checks can be async
         changes.check(conditions);
         account.check(conditions);
-    }
+	}
+	
+	await toUI(['initAds']);
 };
 
 const lockSet = async (name: LockName, value: boolean) => {

@@ -257,7 +257,9 @@ const genPage = (id, inLeague = true) => {
             }
 
             if (!initialLoad) {
-                ads.showBanner();
+                window.bbgmAds.cmd.push(() => {
+                    window.bbgmAds.refresh();
+                });
             } else {
                 initialLoad = false;
             }

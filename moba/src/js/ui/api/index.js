@@ -31,37 +31,47 @@ const emit = (name: string, content: any) => {
     emitter.emit(name, content);
 };
 
-const initAds = (goldUntil: number | void) => {
-    // No ads for Gold members
-    const currentTimestamp = Math.floor(Date.now() / 1000);
-    if (goldUntil === undefined || currentTimestamp > goldUntil) {
-        let el;
-        el = document.getElementById('banner-ad-top-wrapper');
-        if (el) {
-            el.innerHTML = '<div id="div-gpt-ad-1491369323599-3" style="text-align: center; min-height: 95px; margin-top: 1em"></div>';
+const initAds = () => {
+    window.bbgmAds.cmd.push(() => {
+        // Show hidden divs. skyscraper has its own code elsewhere to manage display.
+        const showDivs =
+          window.screen && window.screen.width < 768
+            ? ["bbgm-ads-mobile"]
+            : [
+                "bbgm-ads-top",
+                "bbgm-ads-bottom1",
+                "bbgm-ads-bottom2",
+                "skyscraper-wrapper"
+              ];
+    
+        for (const id of showDivs) {
+          const div = document.getElementById(id);
+    
+          if (div) {
+            div.style.removeProperty("display");
+          }
         }
-        el = document.getElementById('banner-ad-bottom-wrapper-1');
-        if (el) {
-            el.innerHTML = '<div id="div-gpt-ad-1491369323599-1" style="text-align: center; height: 250px; position: absolute; top: 5px; left: 0"></div>';
-        }
-        el = document.getElementById('banner-ad-bottom-wrapper-2');
-        if (el) {
-            el.innerHTML = '<div id="div-gpt-ad-1491369323599-2" style="text-align: center; height: 250px; position: absolute; top: 5px; right: 0"></div>';
-        }
-        el = document.getElementById('banner-ad-bottom-wrapper-logo');
-        if (el) {
-            el.innerHTML = '<div style="height: 250px; margin: 5px 310px 0 310px; display:flex; align-items: center; justify-content: center;"><img src="https://basketball-gm.com/files/logo.png" style="max-height: 100%; max-width: 100%"></div>';
-        }
-        ads.showBanner();
-    } else {
-        const wrappers = ['banner-ad-top-wrapper', 'banner-ad-bottom-wrapper-1', 'banner-ad-bottom-wrapper-logo', 'banner-ad-bottom-wrapper-2'];
-        for (const wrapper of wrappers) {
-            const el = document.getElementById(wrapper);
-            if (el) {
-                el.innerHTML = '';
+    
+        const adDivs =
+          window.screen && window.screen.width < 768
+            ? ["bbgm-ads-mobile"]
+            : [
+                "bbgm-ads-top",
+                "bbgm-ads-bottom1",
+                "bbgm-ads-bottom2",
+                "bbgm-ads-skyscraper"
+              ];
+        window.bbgmAds.init(adDivs).then(() => {
+          if (window.screen && window.screen.width >= 768) {
+            // Show the logo too
+            const logo = document.getElementById("bbgm-ads-logo");
+    
+            if (logo) {
+              logo.style.display = "flex";
             }
-        }
-    }
+          }
+        });
+    });
 };
 
 // Should only be called from Shared Worker, to move other tabs to new league because only one can be open at a time

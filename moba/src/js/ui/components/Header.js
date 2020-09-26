@@ -10,7 +10,28 @@ class Header extends React.Component {
 
     // eslint-disable-next-line class-methods-use-this
     render() {
-        return <div id="banner-ad-top-wrapper" />;
+        return <div>
+            <div
+                className="banner-ad"
+                id="bbgm-ads-top"
+                style={{
+                    display: "none",
+                    textAlign: "center",
+                    minHeight: 95,
+                    marginTop: 5,
+                }}
+            />
+            <div
+                className="banner-ad"
+                id="bbgm-ads-mobile"
+                style={{
+                    display: "none",
+                    textAlign: "center",
+                    minHeight: 55,
+                    marginTop: 5,
+                }}
+            />
+        </div>;
     }
 }
 

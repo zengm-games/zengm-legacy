@@ -47,13 +47,7 @@ body {
 }
 
 footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   text-align: center;
-  margin-bottom: 5px;
 }
 
 .moba-logo1 {
@@ -106,7 +100,7 @@ p, span, div {
 
   .nav-item {
     display: table-cell;
-    width: 110px;
+    cursor: pointer;
     height: 34px;
     padding: initial;
     vertical-align: middle;
@@ -143,8 +137,6 @@ p, span, div {
 }
 
 .main-wrapper {
-  margin: 50px 0;
-
   .btn-wrapper {
     width: 230px;
     float: right;

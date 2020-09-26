@@ -43,85 +43,22 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-38759330-3', {
-          cookieDomain: 'zengm.com',
-          legacyCookieDomain: 'zengm.com'
-        });
+        ga('create', 'UA-38759330-4');
         ga('send', 'pageview');
-      }
-
-      if (localStorage.debug !== "debug") {
-        var bs = document.createElement('script');
-        bs.type = 'text/javascript';
-        bs.src = '//d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js';
-        bs.addEventListener('load', function () {
-          if (window.Bugsnag) {
-            window.Bugsnag.apiKey = "f53f67cfdb3ecfc66569ea27e4152e16";
-            window.Bugsnag.appVersion = window.bbgmVersion;
-            if (location.host.indexOf("localhost") === 0) {
-              window.Bugsnag.releaseStage = "development";
-            } else if (location.host.indexOf("beta.zengm.com") === 0) {
-              window.Bugsnag.releaseStage = "beta";
-            } else if (location.host.indexOf("moba.zengm.com") === 0) {
-              window.Bugsnag.releaseStage = "production";
-            } else {
-              window.Bugsnag.releaseStage = "unknown";
-            }
-            window.Bugsnag.notifyReleaseStages = ["beta", "production", "unknown"];
-            window.Bugsnag.enableNotifyUnhandledRejections();
-          }
-        });
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(bs, s);
       }
     </script>
 
     <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script async="async" src="https://basketball-gm.com/prebid/zengm.js"></script>
+    <script type="text/javascript">
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+      var bbgmAds = bbgmAds || {};
+      bbgmAds.cmd = bbgmAds.cmd || [];
+    </script>
   </head>
 
   <body>
-    <script type="text/javascript">
-      // Banner ads
-     /* var googletag = googletag || {};
-      googletag.cmd = googletag.cmd || [];
-
-      if (window.enableLogging) {
-        // Google Consumer Surveys
-        var TriggerPrompt = function(articleUrl, contentId) {
-          var ARTICLE_URL = articleUrl;
-          var CONTENT_ID = contentId || '';
-          var el = document.createElement('script');
-          var url = '//survey.g.doubleclick.net/survey?site=6511841871134720' +
-                    '&url=' + encodeURIComponent(ARTICLE_URL) +
-                    (CONTENT_ID ? '&cid=' + encodeURIComponent(CONTENT_ID) : '') +
-                    '&random=' + (new Date).getTime() +
-                    '&after=1';
-          el.setAttribute('src', url);
-          var head = document.getElementsByTagName('head')[0] ||
-              document.getElementsByTagName('body')[0];
-          head.appendChild(el);
-        };
-
-        // Survata
-        (function(w, d, t, v) {
-            w[v] = w[v] || {}; w[v].qr = []; w[v].qf = [];
-            var got = 0, g = function() {
-                if (got) { return; } got = 1;
-                w[v].ft = setTimeout(function() {
-                    for (var i = 0; i < w[v].qf.length ; i++) { w[v].qf[i][0].call(w[v]); }
-                    w[v].f = 1; w[v].qf = [];
-                    w[v].fail = function(fn) { fn.call(w[v]); return w[v]; };
-                }, 5000);
-                var s = d.createElement(t);
-                s.src = ('https:' === d.location.protocol ? 'https:' : 'http:') + "//api.survata.net/latest/js/survata.js?cb="+((new Date().getTime())/1e3).toFixed();
-                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-            };
-            w[v].ready = function() { g(); w[v].qr.push(arguments); return w[v]; };
-            w[v].fail = function() { g(); w[v].qf.push(arguments); return w[v]; };
-            w[v].publisher = "ca71e3e4-0cc9-464d-aa0e-38e8d5d700f3";
-        }(window, document, 'script', 'Survata'));
-      }*/
-    </script> 
-
     <div id="content">
       <div id="loading-msg">
         <div style="max-width: 360px; margin: 0 auto;">
