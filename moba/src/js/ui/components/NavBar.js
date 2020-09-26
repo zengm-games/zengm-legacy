@@ -458,7 +458,7 @@ class NavBar extends React.Component {
                 throw new Error('Invalid event target');
             }
 
-            if (target.classList.contains('dropdown-toggle') || !collapsibleNav.classList.contains('in')) {
+            if (target.classList.contains('dropdown-toggle') || !collapsibleNav.classList.contains('in') || target.getAttribute("role") !== "menuitem") {
                 return;
             }
 
