@@ -1,6 +1,6 @@
 // @flow
 
-import faces from 'facesjs';
+import faces from '../../vendor/faces';
 import _ from 'underscore';
 import {COMPOSITE_WEIGHTS, PHASE, PLAYER, g, helpers} from '../../common';
 import {finances} from '../core';

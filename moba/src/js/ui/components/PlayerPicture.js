@@ -1,6 +1,6 @@
 // @flow
 
-import faces from 'facesjs';
+import faces from '../../vendor/faces';
 import React from 'react';
 
 class PlayerPicture extends React.Component {

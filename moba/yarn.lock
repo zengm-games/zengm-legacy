@@ -2866,11 +2866,6 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
-facesjs@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/facesjs/-/facesjs-1.0.1.tgz#9ec29f76f1af087bad515e5741165f091c23d781"
-  integrity sha1-nsKfdvGvCHutUV5XQRZfCRwj14E=
-
 falafel@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/falafel/-/falafel-1.2.0.tgz#c18d24ef5091174a497f318cd24b026a25cddab4"

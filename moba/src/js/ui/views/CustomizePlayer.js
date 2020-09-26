@@ -1,6 +1,6 @@
 /* eslint react/jsx-no-bind: "off" */
 
-import faces from 'facesjs';
+import faces from '../../vendor/faces';
 import React from 'react';
 //import {player} from '../core';
 import {PHASE, g, helpers} from '../../common';
