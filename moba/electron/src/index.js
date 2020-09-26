@@ -28,7 +28,7 @@ protocol.registerStandardSchemes([scheme], { secure:true });
 
 // From tools/server.js:
 const prefixesStaticWithHtml = [
-    '/export_3.3', '/manifest_hack', '/test', '/test_case'
+    '/export_3.3', '/test', '/test_case'
 ];
 
 const blockedUrls = {

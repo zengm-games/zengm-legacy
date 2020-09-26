@@ -48,7 +48,7 @@ const startsWith = (url, prefixes) => {
 };
 
 const server = http.createServer((req, res) => {
-    const prefixesStaticWithHtml = ['/export_3.3', '/manifest_hack', '/test', '/test_case'];
+    const prefixesStaticWithHtml = ['/export_3.3', '/test', '/test_case'];
     const prefixesStatic = ['/css/', '/fonts/', '/gen/', '/ico/', '/img/'];
 
     if (startsWith(req.url, prefixesStaticWithHtml)) {

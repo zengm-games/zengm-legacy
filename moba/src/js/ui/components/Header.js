@@ -17,7 +17,7 @@ class Header extends React.Component {
                 style={{
                     display: "none",
                     textAlign: "center",
-                    minHeight: 95,
+                    minHeight: 90,
                     marginTop: 5,
                 }}
             />
@@ -27,7 +27,7 @@ class Header extends React.Component {
                 style={{
                     display: "none",
                     textAlign: "center",
-                    minHeight: 55,
+                    minHeight: 50,
                     marginTop: 5,
                 }}
             />
