@@ -1,0 +1,39 @@
+{
+	"teams": 
+
+		[ 	
+		
+            {"tid": 0, "cid": 0, "did": 1, "region": "Astana", "name": "Barys", "abbrev": "AST", "pop": 0.3},  
+            {"tid": 1, "cid": 1, "did": 2, "region": "Bratislava", "name": "Slovan", "abbrev": "BRA", "pop": 0.2},  
+            {"tid": 2, "cid": 0, "did": 0, "region": "Chelyabinsk", "name": "Traktor", "abbrev": "CHL", "pop": 0.6}, 
+            {"tid": 3, "cid": 1, "did": 3, "region": "Cherepovets", "name": "Severstal", "abbrev": "CHE", "pop": 0.16}, 
+            {"tid": 4, "cid": 1, "did": 2, "region": "Helsinki", "name": "Jokerit", "abbrev": "HEL", "pop": 0.3},
+            {"tid": 5, "cid": 0, "did": 0, "region": "Kazan", "name": "Ak Bars", "abbrev": "KAZ", "pop": 0.6},  		
+            {"tid": 6, "cid": 0, "did": 1, "region": "Khabarovsk", "name": "Amur", "abbrev": "KHA", "pop": 0.3},
+            {"tid": 7, "cid": 0, "did": 0, "region": "Khanty-Mansiysk", "name": "Yugra", "abbrev": "KHA", "pop": 0.04},
+            {"tid": 8, "cid": 0, "did": 0, "region": "Kunlun", "name": "Red Star", "abbrev": "KUN", "pop": 0.02},  
+            {"tid": 9, "cid": 0, "did": 0, "region": "Magnitogorsk", "name": "Metallurg", "abbrev": "MAG", "pop": 0.2},  
+            {"tid": 10, "cid": 1, "did": 2, "region": "Malmö", "name": "Redhawks", "abbrev": "TOK", "pop": 0.16},  
+			{"tid": 11, "cid": 1, "did": 2, "region": "Minsk", "name": "Dinamo", "abbrev": "MIN", "pop": 1.0}, 
+            {"tid": 12, "cid": 1, "did": 3, "region": "Moscow-CSKA", "name": "CSKA", "abbrev": "MCS", "pop": 6}, 
+            {"tid": 13, "cid": 1, "did": 3, "region": "Moscow-Dynamo", "name": "Dynamo", "abbrev": "MDY", "pop": 6}, 
+            {"tid": 14, "cid": 1, "did": 3, "region": "Moscow Oblast", "name": "Vityaz", "abbrev": "MON", "pop": 6}, 
+            {"tid": 15, "cid": 1, "did": 2, "region": "Moscow-Spartak", "name": "Spartak", "abbrev": "MSP", "pop": 6}, 
+            {"tid": 16, "cid": 0, "did": 0, "region": "Nizhnekamsk", "name": "Neftekhimik", "abbrev": "NZH", "pop": 0.12},  
+            {"tid": 17, "cid": 1, "did": 3, "region": "Nizhny Novgorod", "name": "Torpedo", "abbrev": "NIZ", "pop": 0.6}, 
+            {"tid": 18, "cid": 0, "did": 1, "region": "Novokuznetsk", "name": "Metallurg", "abbrev": "NOV", "pop": 0.275},  
+            {"tid": 19, "cid": 0, "did": 1, "region": "Novosibirsk", "name": "Sibir", "abbrev": "NOS", "pop": 0.75},
+            {"tid": 20, "cid": 0, "did": 1, "region": "Omsk", "name": "Avangard", "abbrev": "OMS", "pop": 0.6}, 
+            {"tid": 21, "cid": 1, "did": 2, "region": "Riga", "name": "Dinamo", "abbrev": "RIG", "pop": 0.32},   
+            {"tid": 22, "cid": 1, "did": 2, "region": "Saint Petersburg", "name": "SKA", "abbrev": "STP", "pop": 2.6}, 
+            {"tid": 23, "cid": 1, "did": 3, "region": "Sochi", "name": "Sochi", "abbrev": "SOC", "pop": 0.18}, 
+            {"tid": 24, "cid": 0, "did": 0, "region": "Togliatti", "name": "Lada", "abbrev": "TOG", "pop": 0.36},   
+            {"tid": 25, "cid": 0, "did": 1, "region": "Ufa", "name": "Salavat Yulaev", "abbrev": "UFA", "pop": 0.54},
+            {"tid": 26, "cid": 0, "did": 1, "region": "Vladivostok", "name": "Admiral", "abbrev": "VLA", "pop": 0.3},
+            {"tid": 27, "cid": 1, "did": 3, "region": "Yaroslavl", "name": "Lokomotiv", "abbrev": "YAR", "pop": 0.3},      
+            {"tid": 28, "cid": 0, "did": 0, "region": "Yekaterinburg", "name": "Avtomobilist", "abbrev": "YEK", "pop": 0.7}, 
+            {"tid": 29, "cid": 1, "did": 2, "region": "Zagreb", "name": "Medveščak", "abbrev": "ZAG", "pop": 0.4}			
+
+		]
+
+}

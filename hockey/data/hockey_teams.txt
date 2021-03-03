@@ -1,0 +1,39 @@
+{
+	"teams": 
+
+		[ 	
+		
+			{"tid": 0, "cid": 0, "did": 1, "region": "Atlanta", "name": "Gold Club", "abbrev": "ATL", "pop": 0.2}, 
+            {"tid": 1, "cid": 0, "did": 1, "region": "Boston", "name": "Massacre", "abbrev": "BOS", "pop": 1.1},   
+            {"tid": 2, "cid": 0, "did": 0, "region": "Buffalo", "name": "Erie", "abbrev": "BUF", "pop": 0.5},
+            {"tid": 3, "cid": 1, "did": 3, "region": "Calgary", "name": "Horned Owls", "abbrev": "CAL", "pop": 1.0},   
+            {"tid": 4, "cid": 1, "did": 2, "region": "Chicago", "name": "Whirlwinds", "abbrev": "CHI", "pop": 1.0}, 
+            {"tid": 5, "cid": 1, "did": 2, "region": "Dallas", "name": "Snipers", "abbrev": "DAL", "pop": 0.3},  
+            {"tid": 6, "cid": 1, "did": 2, "region": "Denver", "name": "High", "abbrev": "DEN", "pop": 0.3}, 
+            {"tid": 7, "cid": 0, "did": 0, "region": "Detroit", "name": "Muscle", "abbrev": "DET", "pop": 0.7},  
+            {"tid": 8, "cid": 1, "did": 3, "region": "Edmonton", "name": "Gateway", "abbrev": "EDM", "pop": 1.1}, 
+            {"tid": 9, "cid": 0, "did": 0, "region": "Halifax", "name": "Highlanders", "abbrev": "HAL", "pop": 0.3}, 
+            {"tid": 10, "cid": 0, "did": 0, "region": "Hamilton", "name": "Tigers", "abbrev": "HAM", "pop": 0.4},       
+            {"tid": 11, "cid": 1, "did": 3, "region": "Los Angeles", "name": "Earthquakes", "abbrev": "LA", "pop": 1.1},
+            {"tid": 12, "cid": 0, "did": 1, "region": "Miami", "name": "Cyclones", "abbrev": "MIA", "pop": 0.2}, 
+            {"tid": 13, "cid": 1, "did": 2, "region": "Minneapolis", "name": "Blizzards", "abbrev": "MIN", "pop": 0.6},
+            {"tid": 14, "cid": 0, "did": 0, "region": "Montreal", "name": "Mounties", "abbrev": "MON", "pop": 2.2},  
+            {"tid": 15, "cid": 0, "did": 1, "region": "New York", "name": "Bankers", "abbrev": "NYC", "pop": 2.5}, 
+            {"tid": 16, "cid": 0, "did": 0, "region": "Ottawa", "name": "Traders", "abbrev": "OTT", "pop": 0.8}, 		
+            {"tid": 17, "cid": 0, "did": 1, "region": "Philadelphia", "name": "Cheesesteaks", "abbrev": "PHI", "pop": 1.1}, 
+            {"tid": 18, "cid": 1, "did": 3, "region": "Phoenix", "name": "Vultures", "abbrev": "PHO", "pop": 0.3},  
+            {"tid": 19, "cid": 0, "did": 1, "region": "Pittsburgh", "name": "Rivers", "abbrev": "PIT", "pop": 0.8}, 
+            {"tid": 20, "cid": 0, "did": 0, "region": "Quebec", "name": "Nordics", "abbrev": "QUE", "pop": 0.5},  
+            {"tid": 21, "cid": 1, "did": 2, "region": "Saskatoon", "name": "Sasquatches", "abbrev": "SAS", "pop": 0.2},		
+            {"tid": 22, "cid": 1, "did": 3, "region": "San Francisco", "name": "Venture Capitalists", "abbrev": "SF", "pop": 0.4}, 
+            {"tid": 23, "cid": 1, "did": 3, "region": "Seattle", "name": "Symphony", "abbrev": "SEA", "pop": 0.2},
+            {"tid": 24, "cid": 1, "did": 2, "region": "St. Louis", "name": "Spirits", "abbrev": "STL", "pop": 0.3}, 
+            {"tid": 25, "cid": 0, "did": 1, "region": "Tampa", "name": "Turtles", "abbrev": "TPA", "pop": 0.3}, 
+            {"tid": 26, "cid": 0, "did": 0, "region": "Toronto", "name": "Beavers", "abbrev": "TOR", "pop": 5.1},  
+            {"tid": 27, "cid": 1, "did": 3, "region": "Vancouver", "name": "Whalers", "abbrev": "VAN", "pop": 2.3}, 
+            {"tid": 28, "cid": 0, "did": 1, "region": "Washington", "name": "Monuments", "abbrev": "WAS", "pop": 0.5},  
+            {"tid": 29, "cid": 1, "did": 2, "region": "Winnipeg", "name": "Red", "abbrev": "WIN", "pop": 0.6}
+
+		]
+
+}
