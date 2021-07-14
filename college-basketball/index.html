@@ -66,18 +66,7 @@
       if (enableLogging) {
         // Google Consumer Surveys
         var TriggerPrompt = function(articleUrl, contentId) {
-          var ARTICLE_URL = articleUrl;
-          var CONTENT_ID = contentId || '';
-          var el = document.createElement('script');
-          var url = 'http://survey.g.doubleclick.net/survey?site=6511841871134720' +
-                    '&url=' + encodeURIComponent(ARTICLE_URL) +
-                    (CONTENT_ID ? '&cid=' + encodeURIComponent(CONTENT_ID) : '') +
-                    '&random=' + (new Date).getTime() +
-                    '&after=1';
-          el.setAttribute('src', url);
-          var head = document.getElementsByTagName('head')[0] ||
-              document.getElementsByTagName('body')[0];
-          head.appendChild(el);
+
         };
 
         // Survata
