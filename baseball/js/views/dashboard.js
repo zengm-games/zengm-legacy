@@ -19,6 +19,10 @@ define(["dao", "ui", "util/bbgmView", "util/viewHelpers"], function (dao, ui, bb
                 delete leagues[i].tid;
             }
 
+            if (leagues.length === 0 && window.location.host === "baseball.zengm.com") {
+                window.location.replace("https://baseball.zengm.com/");
+            }
+
             return {
                 leagues: leagues
             };
