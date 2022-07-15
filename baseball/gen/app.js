@@ -71722,7 +71722,13 @@ Davis.googleAnalytics = function () {
      * Track this request in google analytics
      */
     track: function () {
-      if (_gaq) _gaq.push(['_trackPageview', this.path])
+      if (window.gtag) {
+        var pagePath = this.path.replace(/^\/l\/[0-9]+/, "/l/0");
+        window.gtag("event", "page_view", {
+          page_path: pagePath,
+          page_location: window.location.origin + pagePath,
+        });
+      }
 
       bbgmAds.cmd.push(function () {
         bbgmAds.refresh();

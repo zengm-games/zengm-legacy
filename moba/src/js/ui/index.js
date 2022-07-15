@@ -249,10 +249,13 @@ const genPage = (id, inLeague = true) => {
     let initialLoad = true;
     page('*', (ctx) => {
         if (ctx.bbgm && !ctx.bbgm.noTrack) {
-            if (window.enableLogging && window.ga) {
+            if (window.enableLogging && window.gtag) {
                 if (!initialLoad) {
-                    window.ga('set', 'page', ctx.path);
-                    window.ga('send', 'pageview');
+                    const pagePath = ctx.path.replace(/^\/l\/[0-9]+/, "/l/0");
+                    window.gtag("event", "page_view", {
+                        page_path: pagePath,
+                        page_location: window.location.origin + pagePath,
+                    });
                 }
             }
 

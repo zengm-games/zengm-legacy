@@ -44,14 +44,17 @@
       if (enableLogging) {
         // Google Analytics
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-38759330-3']);
-        _gaq.push(['_setDomainName', 'zengm.com']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        }());
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=UA-38759330-3";
+        s.type = "text/javascript";
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-38759330-3', {
+          'cookie_domain': 'zengm.com'
+        });
       }
 
 
@@ -220,7 +223,7 @@
           <a href="http://zengm.com/blog/" target="_blank">Blog</a> ·
           <a href="http://zengm.com/contact/" target="_blank">Contact</a> ·
           <a href="http://zengm.com/share/" target="_blank">Share</a><br>
-          <p class="rev">v1.136 · <!--rev-->2021.02.28.29</p>
+          <p class="rev">v1.136 · <!--rev-->2022.07.15.834</p>
         </p>
       </footer>
     </div>

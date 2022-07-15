@@ -17,8 +17,6 @@
       googletag.cmd = googletag.cmd || [];
       var bbgmAds = bbgmAds || {};
       bbgmAds.cmd = bbgmAds.cmd || [];
-
-      !function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
     </script>
 
     <script type="text/javascript">
@@ -46,15 +44,17 @@
       if (enableLogging) {
         // Google Analytics
         var _gaq = _gaq || [];
-		        _gaq.push(['_setAccount', 'UA-38759330-3']);
-
-        _gaq.push(['_setDomainName', 'zengm.com']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=UA-38759330-3";
+        s.type = "text/javascript";
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-38759330-3', {
+          'cookie_domain': 'zengm.com'
+        });
       }
     </script>
   </head>
@@ -216,7 +216,7 @@
           <a href="http://zengm.com/blog/" target="_blank">Blog</a> ·
           <a href="http://zengm.com/contact/" target="_blank">Contact</a> ·
           <a href="http://zengm.com/share/" target="_blank">Share</a><br>
-          <p class="rev">v1.083 · <!--rev-->2019.12.27.1125</p>
+          <p class="rev">v1.083 · <!--rev-->2022.07.15.834</p>
         </p>
       </footer>
     </div>
